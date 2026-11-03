@@ -36,6 +36,19 @@ Die Baubetreuung beginnt erst mit der GIS-Nutzung und untersucht weitere möglic
 
 **Status:** Anwendungsfälle fachlich benannt, noch nicht als MVP priorisiert oder abgenommen. Weitere Anwendungsfälle ausdrücklich offen. Mobile Nutzung, Offline-Fähigkeit, Datenmodell und Prüf-/Freigabeworkflows sind daraus **noch nicht** abgeleitet.
 
+### Mobiler Erfassungsstand und Datenaustausch (2026-11-03)
+
+**Vom Fachbereich bestätigt:** Für BB-01 bis BB-03 werden **Happy MiniQ** und [QField](GLOSSAR.md#qfield) auf **Tablet und Smartphone** eingesetzt. Die Arbeitsabläufe zur **bidirektionalen Datenübertragung** sind noch nicht abschließend optimiert.
+
+**Noch nicht belegt:** verwendete Synchronisationskomponenten, Online-/Offline-Anteile, führender Speicherort, Übertragungsformate, Konfliktverhalten, Benutzerrechte und Freigabeschritte. Keine technische Variante als bereits produktiv erprobt oder beschlossen behandeln.
+
+**Für den Pilot getrennt prüfen:**
+1. Erfassung auf dem Mobilgerät: Geometrien, Attribute, Messwerte, Koordinaten-/Höhenbezug und Nachweise.
+2. Hin- und Rückübertragung: bestehende QField-/Happy-MiniQ-Funktionen, Dateiaustausch oder Dienste; Synchronisationskonflikte und Ausfälle.
+3. Fachliche Übernahme: Eingang, Plausibilisierung, ggf. Prüfung und Überführung in den führenden Datenbestand. **Synchronisiert bedeutet nicht validiert.**
+
+**Leitplanke A13:** Bewährte vorhandene Synchronisationswerkzeuge bevorzugen; keine eigene Synchronisationsplattform entwickeln. Die konkrete Lösung erst nach einem Ende-zu-Ende-Test mit echten Pilotdaten festlegen.
+
 ### Nächste fachliche Erhebung
 
 - Wie werden BB-01 bis BB-03 heute praktisch durchgeführt (Geräte, Messmittel, QGIS-Projekt, Datenquellen)?
