@@ -13,46 +13,20 @@
 
 ### Architekturübersicht (logisches Zielbild)
 
-Das Diagramm zeigt **logische Beziehungen, keine festgelegten Server, Container, Protokolle oder direkten Zugriffsrechte**. Gestrichelte Verbindungen sind noch zu validierende Integrationswege.
+Das Diagramm zeigt nur die **wesentlichen logischen Bausteine**. Direkte Desktop-Zugriffe, mobile Synchronisationswege, einzelne Dienste und Deploymentdetails bleiben bewusst ausgeblendet. Gestrichelte Linien stehen für noch zu konkretisierende Sicherheitsintegration.
 
 ```mermaid
-flowchart TB
-  subgraph Clients["Nutzung"]
-    Desktop["QGIS Desktop"]
-    Browser["Webviewer"]
-    Mobile["QField / Happy MiniQ"]
-  end
-  subgraph Services["Dienste - teils PoC"]
-    Map["QGIS Server"]
-    Search["Suche"]
-    Extract["Extract"]
-    MobileSync["Mobiler Datenaustausch - offen"]
-  end
-  subgraph Data["Führende Daten und Ressourcen"]
-    DB[("PostgreSQL / PostGIS")]
-    Files[("Fileserver: QGIS-Projekte und Fachdateien")]
-    External["Externe Geodatendienste"]
-    Shared["Git: Vorlagen, Stile, Konfiguration"]
-  end
-  Identity["Identität und Berechtigungen - mit IT klären"]
-  Desktop --> DB
-  Desktop --> Files
-  Desktop --> External
-  Shared --> Desktop
-  Browser --> Map
-  Browser --> Search
-  Browser --> Extract
-  Map --> DB
-  Map --> Files
-  Map --> External
-  Search -.-> DB
-  Extract -.-> DB
-  Mobile -.-> MobileSync
-  MobileSync -.-> DB
-  MobileSync -.-> Files
-  Identity -.-> Desktop
-  Identity -.-> Services
-  Identity -.-> Data
+flowchart LR
+  Users["Nutzung: Desktop, Web, Mobil"]
+  Services["GIS-Dienste"]
+  Data["Zentrale Geodaten: PostGIS und Fileserver"]
+  External["Externe Geodaten"]
+  Rules["Identität und Zugriffsrechte"]
+  Users --> Services
+  Services --> Data
+  Services --> External
+  Rules -.-> Services
+  Rules -.-> Data
 ```
 
 **Lesart:** Der Webviewer ist kein Ersatz für QGIS Desktop. Fachdateien verbleiben bei Bedarf auf dem Fileserver; geeignete gemeinsam bearbeitete Vektordaten liegen in PostGIS. Die konkrete mobile Synchronisation und die Sicherheitsintegration sind noch offen.
