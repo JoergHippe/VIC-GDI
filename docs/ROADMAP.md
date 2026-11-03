@@ -2,6 +2,8 @@
 
 **Status:** Interner Arbeitsentwurf · keine Termin-, Budget- oder Personalzusage.
 
+Die konkrete Erhebung ist in [Pilotkonkretisierung](PILOTKONKRETISIERUNG.md) vorbereitet; alle dortigen Use-Cases sind bis zur Bestätigung Prüfhypothesen.
+
 ## Vorgehensprinzip
 
 Gemeinsame, schlanke GDI-Basis und zwei früh beteiligte Pilotbereiche (A34). Der [MVP](GLOSSAR.md#mvp) ist priorisiert und anpassbar; gemeinsamer GDI-MVP und fachliche Pilot-MVPs werden getrennt geplant (A35). Phasen dürfen sich überlappen.
