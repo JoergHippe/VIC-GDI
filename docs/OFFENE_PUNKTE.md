@@ -22,6 +22,8 @@
 | A37 | Pflege und Lebenszyklus zentraler Daten | **Zurückgestellt**; Option B nur Empfehlung |
 | A38 | [PostGIS](GLOSSAR.md#postgis)-Constraints, QGIS-Eingabevalidierung | **Zurückgestellt**; Option B nur Empfehlung |
 
+Für die beiden Pilotbereiche liegt ein [Erhebungsleitfaden](PILOTKONKRETISIERUNG.md) vor. Die dort aufgeführten Anwendungsfälle sind noch nicht fachlich bestätigt.
+
 ## Fachliche Konkretisierung
 
 - Pilot-Use-Cases mit echten Anwendern und Erfolgskriterien aufnehmen.
