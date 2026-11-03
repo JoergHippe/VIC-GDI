@@ -40,7 +40,7 @@ Die Baubetreuung beginnt erst mit der GIS-Nutzung und untersucht weitere möglic
 
 **Vom Fachbereich bestätigt:** Für BB-01 bis BB-03 werden **Happy MiniQ** und [QField](GLOSSAR.md#qfield) auf **Tablet und Smartphone** eingesetzt. Die Arbeitsabläufe zur **bidirektionalen Datenübertragung** sind noch nicht abschließend optimiert.
 
-**Zusätzliche Rückmeldung (2026-11-03):** Es gibt **genau zwei zu validierende Übertragungswege**: **(1) cloudbasierter Austausch** und **(2) lokale Speicherung auf dem Mobilgerät mit anschließender Dateiübertragung per USB-Kabel**. Lokale Speicherung und USB-Kabelübertragung bilden ausdrücklich **einen gemeinsamen Workflow**, keine getrennten Varianten. Die Eignung beider Wege in den konkreten Happy-MiniQ-/QField-Konfigurationen ist noch zu prüfen.
+**Zusätzliche Rückmeldung (2026-11-03):** Es gibt **genau zwei zu validierende Übertragungswege**: **(1) cloudbasierter Austausch** und **(2) lokale Speicherung auf dem Mobilgerät mit anschließender Dateiübertragung per USB-Kabel**. Lokale Speicherung und USB-Kabelübertragung bilden ausdrücklich **einen gemeinsamen Workflow**, keine getrennten Varianten. Beide Übertragungswege sind in den konkreten Happy-MiniQ-/QField-Konfigurationen **genauer zu prüfen und systematisch miteinander zu vergleichen**; eine Auswahl ist noch nicht getroffen.
 
 **Vergleichstest:** Mit denselben Beispieldaten Hin- und Rückweg, Offline-Erfassung, Geometrien/Attribute/Anhänge, konkurrierende Änderungen, Berechtigungen, Bedienaufwand sowie Datenstand und fachliche Übernahme prüfen. Keine der beiden Varianten vorab bevorzugen.
 
