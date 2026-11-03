@@ -13,23 +13,35 @@
 
 ### Architekturübersicht (logisches Zielbild)
 
-Das Diagramm zeigt nur die **wesentlichen logischen Bausteine**. Direkte Desktop-Zugriffe, mobile Synchronisationswege, einzelne Dienste und Deploymentdetails bleiben bewusst ausgeblendet. Gestrichelte Linien stehen für noch zu konkretisierende Sicherheitsintegration.
+Das Diagramm zeigt die **wesentlichen Nutzungspfade und Datenhaltungen**, ohne einzelne technische Dienste oder Server aufzuschlüsseln. Der mobile Austausch ist noch zu validieren; gestrichelte Linien markieren mögliche, noch nicht festgelegte Zielanbindungen. Identität, Berechtigungen, Betrieb und Deployment gelten übergreifend und sind bewusst nicht als zusätzliche Pfeile dargestellt.
 
 ```mermaid
-flowchart LR
-  Users["Nutzung: Desktop, Web, Mobil"]
-  Services["GIS-Dienste"]
-  Data["Zentrale Geodaten: PostGIS und Fileserver"]
-  External["Externe Geodaten"]
-  Rules["Identität und Zugriffsrechte"]
-  Users --> Services
-  Services --> Data
-  Services --> External
-  Rules -.-> Services
-  Rules -.-> Data
+flowchart TB
+  subgraph Nutzung["Nutzung"]
+    Desktop["QGIS Desktop"]
+    Web["Webviewer"]
+    Mobile["QField / Happy MiniQ"]
+  end
+  subgraph Plattform["Gemeinsame GDI"]
+    Map["GIS-Dienste / Kartenbereitstellung"]
+    Data[("PostGIS: gemeinsame Vektordaten")]
+    Files["Fileserver: QGIS-Projekte und Fachdateien"]
+  end
+  External["Externe Geodaten / Dienste"]
+  MobileSync["Mobiler Datenaustausch: Weg offen"]
+  Desktop --> Data
+  Desktop --> Files
+  Desktop --> External
+  Web --> Map
+  Map --> Data
+  Map --> Files
+  Map --> External
+  Mobile <--> MobileSync
+  MobileSync -.-> Data
+  MobileSync -.-> Files
 ```
 
-**Lesart:** Der Webviewer ist kein Ersatz für QGIS Desktop. Fachdateien verbleiben bei Bedarf auf dem Fileserver; geeignete gemeinsam bearbeitete Vektordaten liegen in PostGIS. Die konkrete mobile Synchronisation und die Sicherheitsintegration sind noch offen.
+**Lesart:** QGIS Desktop arbeitet je nach Datenart mit PostGIS, Fileservern und externen Diensten. Der Webviewer nutzt GIS-Dienste zur Kartenbereitstellung. Fachdateien verbleiben bei Bedarf auf dem Fileserver; geeignete gemeinsam bearbeitete Vektordaten liegen in PostGIS. Der mobile Rückweg und die Sicherheitsintegration sind noch zu konkretisieren.
 
 ## Datenorganisation
 
