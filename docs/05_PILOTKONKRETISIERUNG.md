@@ -8,7 +8,7 @@ Die Piloten sollen die gemeinsame [GDI](ANHANG_A_GLOSSAR.md#gdi)-Basis anhand re
 
 ## Pilot 1 – Baubetreuung / Bauüberwachung
 
-**Gesichert:** Baubetreuung ist Pilotbereich; bisherige führende [QGIS](ANHANG_A_GLOSSAR.md#qgis)-Arbeitsdaten in synchronisierten [SharePoint](ANHANG_A_GLOSSAR.md#sharepoint)-/[OneDrive](ANHANG_A_GLOSSAR.md#onedrive)-Verzeichnissen verursachen Probleme. [A36](04_ENTSCHEIDUNGEN.md#a36) legt eine kontrollierte selektive Migration fest.
+**Gesichert:** Baubetreuung ist Pilotbereich; bisherige führende [QGIS](ANHANG_A_GLOSSAR.md#qgis)-Arbeitsdaten in synchronisierten SharePoint-/OneDrive-Verzeichnissen verursachen Probleme. [A36](04_ENTSCHEIDUNGEN.md#a36) legt eine kontrollierte selektive Migration fest.
 
 **Prüfhypothesen, nicht beschlossen:**
 - Projektbezogene Geodaten und Pläne sicher finden, anzeigen und mit geeigneten Informationen verknüpfen.
@@ -93,7 +93,7 @@ Die **Rückübertragung** muss für beide Varianten gesondert praktisch nachgewi
 **Zuerst klären:**
 1. Welche Daten und QGIS-Projekte sind für die Planung tatsächlich wiederkehrend?
 2. Welche Daten werden mit anderen Fachbereichen geteilt und wer ist führend?
-3. Welche CAD-/GIS-Schnittstellen und Koordinatenbezüge sind im Alltag kritisch?
+3. Welche [CAD](ANHANG_A_GLOSSAR.md#cad)-/GIS-Schnittstellen und Koordinatenbezüge sind im Alltag kritisch?
 4. Welche Kartenansichten werden von Projektleitung oder anderen Beteiligten benötigt?
 5. Welche Abläufe sind aktuell besonders fehleranfällig oder zeitaufwendig?
 

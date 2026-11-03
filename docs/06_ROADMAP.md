@@ -33,7 +33,7 @@ Aktuell laufen Vorbereitung und Abstimmung. IT klärt den Betriebsrahmen, die Ge
 ### 0 – Vorbereitung und Bestandsaufnahme
 - IT, [GIS](ANHANG_A_GLOSSAR.md#gis)-Team und Pilotbereiche abstimmen; Zuständigkeiten skizzieren.
 - Bestehende [QGIS](ANHANG_A_GLOSSAR.md#qgis)-Projekte, Datenquellen, Speicherorte und kritische Abläufe erfassen.
-- Problematische synchronisierte [SharePoint](ANHANG_A_GLOSSAR.md#sharepoint)-/[OneDrive](ANHANG_A_GLOSSAR.md#onedrive)-GIS-Arbeitsdatenhaltung in der Baubetreuung identifizieren.
+- Problematische synchronisierte SharePoint-/OneDrive-GIS-Arbeitsdatenhaltung in der Baubetreuung identifizieren.
 - Konkrete Pilot-Use-Cases und Minimalerfolgskriterien festlegen.
 - Wissens- und Schulungsbedarf samt Kapazitäten einplanen ([A33](04_ENTSCHEIDUNGEN.md#a33)).
 

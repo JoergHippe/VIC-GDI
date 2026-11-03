@@ -4,7 +4,7 @@
 
 ## Ausgangslage
 
-Geodaten und [QGIS](ANHANG_A_GLOSSAR.md#qgis)-Projekte werden in unterschiedlichen Fachbereichen und Speicherorten verwaltet. Gemeinsame Datennutzung, einheitliche Bereitstellung und kontrollierter Betrieb sollen verbessert werden. In der Baubetreuung werden QGIS-Arbeitsbestände teilweise über synchronisierte [SharePoint](ANHANG_A_GLOSSAR.md#sharepoint)-/[OneDrive](ANHANG_A_GLOSSAR.md#onedrive)-Verzeichnisse genutzt; diese Arbeitsweise soll für führende [GIS](ANHANG_A_GLOSSAR.md#gis)-Arbeitsdaten kontrolliert abgelöst werden ([A36](04_ENTSCHEIDUNGEN.md#a36)).
+Geodaten und [QGIS](ANHANG_A_GLOSSAR.md#qgis)-Projekte werden in unterschiedlichen Fachbereichen und Speicherorten verwaltet. Gemeinsame Datennutzung, einheitliche Bereitstellung und kontrollierter Betrieb sollen verbessert werden. In der Baubetreuung werden QGIS-Arbeitsbestände teilweise über synchronisierte SharePoint-/OneDrive-Verzeichnisse genutzt; diese Arbeitsweise soll für führende [GIS](ANHANG_A_GLOSSAR.md#gis)-Arbeitsdaten kontrolliert abgelöst werden ([A36](04_ENTSCHEIDUNGEN.md#a36)).
 
 ## Ziele
 
@@ -25,11 +25,11 @@ Die Piloten sind unterschiedlich und müssen nicht zeitgleich denselben Funktion
 ## Abgrenzung
 
 - Kein öffentliches anonymes GIS-Portal als primäres Ziel.
-- Die GDI ergänzt CAD-, BIM-, M365- und Fachanwendungen um eine gemeinsame Geodatenbasis.
+- Die GDI ergänzt [CAD](ANHANG_A_GLOSSAR.md#cad)-, [BIM](ANHANG_A_GLOSSAR.md#bim)-, M365- und Fachanwendungen um eine gemeinsame Geodatenbasis.
 - Keine vollständige Migration aller Dateiformate nach [PostGIS](ANHANG_A_GLOSSAR.md#postgis).
 - Keine Eigenentwicklung eines Offline-Synchronisationssystems.
 - Kein umfassendes formales Qualitätsmanagement für amtliche Geobasisdaten.
-- Kein umfangreiches ITSM-, [CI/CD](ANHANG_A_GLOSSAR.md#ci-cd)- oder [HA](ANHANG_A_GLOSSAR.md#ha)-System ohne nachgewiesenen Bedarf.
+- Kein umfangreiches [ITSM](ANHANG_A_GLOSSAR.md#itsm)-, [CI/CD](ANHANG_A_GLOSSAR.md#ci-cd)- oder [HA](ANHANG_A_GLOSSAR.md#ha)-System ohne nachgewiesenen Bedarf.
 
 ## Prinzipien
 

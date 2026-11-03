@@ -31,7 +31,7 @@
 | <a id="a21"></a>A21 | Koordinatenreferenz | B | EPSG:25832/25833 bevorzugt; Ausnahmen und Höhenbezug beachten |
 | <a id="a22"></a>A22 | Raster | B | Externe Dienste bevorzugt, lokale [GeoTIFF](ANHANG_A_GLOSSAR.md#geotiff)/[COG](ANHANG_A_GLOSSAR.md#cog) nach Bedarf |
 | <a id="a23"></a>A23 | Hosting | G | On-prem/[Proxmox](ANHANG_A_GLOSSAR.md#proxmox) bevorzugt; hybride Optionen möglich |
-| <a id="a24"></a>A24 | Deployment | O | VM-nativ, hybrid oder containerisiert – gemeinsam mit IT entscheiden |
+| <a id="a24"></a>A24 | Deployment | O | [VM](ANHANG_A_GLOSSAR.md#vm)-nativ, hybrid oder containerisiert – gemeinsam mit IT entscheiden |
 | <a id="a25"></a>A25 | Identitäten | G | AD/M365 und zentraler [IdP](ANHANG_A_GLOSSAR.md#idp) bevorzugt; technische Umsetzung IT-Entscheid |
 | <a id="a26"></a>A26 | Berechtigungen | G | Gemeinsames Rollen-/Rechteprinzip; Durchsetzung über alle Zugriffspfade, IT-Detailklärung |
 | <a id="a27"></a>A27 | Umgebungen | G | Schlanke getrennte TEST/PROD, lokale Entwicklung, Git/Migrationen; IT-Abstimmung |
@@ -43,7 +43,7 @@
 | <a id="a33"></a>A33 | Wissensaufbau | B | Themen-/rollenbezogen A/B/C kombinieren; Ressourcen verbindlich einplanen |
 | <a id="a34"></a>A34 | Pilotstrategie | B | Gemeinsame Basis, zwei früh beteiligte und zeitlich staffelbare Piloten |
 | <a id="a35"></a>A35 | [MVP](ANHANG_A_GLOSSAR.md#mvp) | B | Priorisierter anpassbarer Umfang; gemeinsame Basis und Pilot-MVPs unterscheiden |
-| <a id="a36"></a>A36 | Migration | B | **B+**: verbindliche Zielarchitektur, selektive Migration, problematische [SharePoint](ANHANG_A_GLOSSAR.md#sharepoint)-/[OneDrive](ANHANG_A_GLOSSAR.md#onedrive)-GIS-Arbeitsbestände ablösen · [überprüfungsbedürftig](#erneute-prüfung-a04-a15-und-a36) |
+| <a id="a36"></a>A36 | Migration | B | **B+**: verbindliche Zielarchitektur, selektive Migration, problematische SharePoint-/OneDrive-GIS-Arbeitsbestände ablösen · [überprüfungsbedürftig](#erneute-prüfung-a04-a15-und-a36) |
 | <a id="a37"></a>A37 | Datenlebenszyklus | Z | Option B plausibel, aber nicht beschlossen; später klären |
 | <a id="a38"></a>A38 | Datenbankregeln | Z | Option B plausibel, aber nicht beschlossen; später klären |
 
@@ -76,7 +76,7 @@ Priorisierte Suchfälle und vorhandene Quellen bestimmen den Katalogumfang. [OGC
 Eine fachlich führende Stelle je gemeinsamem Datenbestand. Lesende fachbereichsübergreifende Nutzung nach Freigabe, Schreibrechte nach Rolle und Zuständigkeit. Die Durchsetzung muss in DB, Diensten, Extract und mobilen Pfaden wirksam sein; das konkrete Berechtigungsdesign ist offen.
 
 ### [A12](#a12) – Extract
-Geplante Formate [GPKG](ANHANG_A_GLOSSAR.md#geopackage), [Shapefile](ANHANG_A_GLOSSAR.md#shapefile), [GeoJSON](ANHANG_A_GLOSSAR.md#geojson) und CSV; Flächenauswahl aus Karte, GeoJSON/Shapefile oder [BBox](ANHANG_A_GLOSSAR.md#bbox) und optional Ziel-[CRS](ANHANG_A_GLOSSAR.md#crs). **Selektion ganzer Objekte ist nicht gleich geometrischem Zuschnitt.** Diese Unterscheidung ist vor Implementierung zu erproben.
+Geplante Formate [GPKG](ANHANG_A_GLOSSAR.md#geopackage), [Shapefile](ANHANG_A_GLOSSAR.md#shapefile), [GeoJSON](ANHANG_A_GLOSSAR.md#geojson) und [CSV](ANHANG_A_GLOSSAR.md#csv); Flächenauswahl aus Karte, GeoJSON/Shapefile oder [BBox](ANHANG_A_GLOSSAR.md#bbox) und optional Ziel-[CRS](ANHANG_A_GLOSSAR.md#crs). **Selektion ganzer Objekte ist nicht gleich geometrischem Zuschnitt.** Diese Unterscheidung ist vor Implementierung zu erproben.
 
 ### [A24](#a24) – Deployment
 Die Varianten **A native VMs**, **B Datenbank nativ plus containerisierte GIS-Dienste**, **C umfassende Containerisierung** bleiben gleichberechtigte Untersuchungsoptionen. Vergleich nach Betrieb, IT-Know-how, Sicherheit, Wartbarkeit, Backup, Kosten und Zukunftsfähigkeit; kein voreiliger Technologieentscheid.

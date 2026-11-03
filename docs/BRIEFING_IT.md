@@ -31,14 +31,14 @@ Die [Architekturübersicht](03_ARCHITEKTUR.md#architekturübersicht-logisches-zi
 |---|---|
 | Fachliche Anforderungen, Geodatenmodelle, QGIS-Ressourcen | GIS-Team |
 | Fachliche Qualität und Pflege der Fachdaten | Zuständiger Fachbereich |
-| Server, VMs, Netzwerk, VPN, Basis-IT-Sicherheit | IT |
+| Server, [VMs](ANHANG_A_GLOSSAR.md#vm), Netzwerk, VPN, Basis-IT-Sicherheit | IT |
 | AD/Identitäten und zentrale Authentifizierung | IT |
 | Backups, Monitoring und Wiederherstellbarkeit | IT mit GIS-spezifischen Anforderungen |
 | PostgreSQL-Administration, GIS-Dienste, Updates | Gemeinsam; Federführung noch festzulegen |
 | Berechtigungen | Fachliche Vorgaben GIS/Fachbereiche, technische Umsetzung mit IT |
 | Support | GIS-Fachfragen GIS-Team; Infrastrukturstörungen IT |
 
-Für kritische Aufgaben federführende Person und Vertretung festlegen; kein eigenes ITSM-System einführen ([A31](04_ENTSCHEIDUNGEN.md#a31), [A32](04_ENTSCHEIDUNGEN.md#a32)).
+Für kritische Aufgaben federführende Person und Vertretung festlegen; kein eigenes [ITSM](ANHANG_A_GLOSSAR.md#itsm)-System einführen ([A31](04_ENTSCHEIDUNGEN.md#a31), [A32](04_ENTSCHEIDUNGEN.md#a32)).
 
 ## Technische Rahmenbedingungen
 

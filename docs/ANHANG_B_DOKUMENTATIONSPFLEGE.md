@@ -8,7 +8,7 @@
 4. Nicht beschlossene Varianten bleiben sichtbar; technische Details mit IT abstimmen.
 5. Nur bei tatsächlichem Bedarf zusätzliche Dokumente, Verzeichnisse oder Prozesse einführen.
 6. Keine Zugangsdaten, personenbezogenen Daten oder produktiven Geodaten in [Git](ANHANG_A_GLOSSAR.md#git) versionieren.
-7. Fachbegriffe, Abkürzungen und Produkte auf jeder Seite beim ersten Auftreten zum [Glossar](ANHANG_A_GLOSSAR.md) verlinken. Allgemein bekannte Begriffe wie Windows, Linux und Microsoft 365 voraussetzen. Bei unklarer Aufnahme ins Glossar nachfragen. Für Produkte offizielle Projektseiten oder Herstellerdokumentation verwenden.
+7. Fachbegriffe, Abkürzungen und Produkte auf jeder Seite beim ersten Auftreten zum [Glossar](ANHANG_A_GLOSSAR.md) verlinken. Allgemein bekannte Begriffe wie Windows, Linux, Microsoft 365, SharePoint und OneDrive voraussetzen. Bei unklarer Aufnahme ins Glossar nachfragen. Für Produkte offizielle Projektseiten oder Herstellerdokumentation verwenden.
 8. Kleine, thematisch nachvollziehbare Commits; `main` ist zunächst ausreichend.
 9. Aktuelle Dokumente halten geltende Beschlüsse samt Begründungen, den bekannten Ist-Stand und offene Aufgaben fest. Abgelöste Zwischenstände und abgeschlossene Dokumentationsreviews sind im Git-Verlauf nachvollziehbar.
 10. Jede Nennung einer Architekturentscheidungs-ID direkt mit der Zeile im Entscheidungsregister verlinken. Bei Bereichen beide Endpunkte verlinken. Einen konkreten Prüfauftrag zusätzlich über seinen Abschnitt verlinken.

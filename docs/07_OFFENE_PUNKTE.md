@@ -11,7 +11,7 @@ Gesprächsunterlagen: [IT-Briefing](BRIEFING_IT.md) und [Geschäftsführungs-Bri
 | [A10](04_ENTSCHEIDUNGEN.md#a10) | [QGIS](ANHANG_A_GLOSSAR.md#qgis) Server: tatsächliche Eignung, benötigte [OGC](ANHANG_A_GLOSSAR.md#ogc)-Funktionen | Bei priorisiertem Webbedarf technischer [PoC](ANHANG_A_GLOSSAR.md#poc) mit repräsentativer Pilotkarte |
 | [A12](04_ENTSCHEIDUNGEN.md#a12) | Objektselektion vs. geometrisches Clipping; Berechtigungen/Export | PoC mit typischen Layern, [CRS](ANHANG_A_GLOSSAR.md#crs) und Formaten |
 | [A13](04_ENTSCHEIDUNGEN.md#a13) | Mobiler Datenaustausch mit [QField](ANHANG_A_GLOSSAR.md#qfield): Offline-Sync, Konflikte und Sicherheit | [Cloud und lokalen USB-Transfer vergleichen](05_PILOTKONKRETISIERUNG.md#mobile-erfassung-und-datenaustausch). |
-| [A24](04_ENTSCHEIDUNGEN.md#a24) | Natives VM-Deployment vs. Hybrid vs. Container | IT-Workshop, Variantenvergleich; **noch keine Entscheidung** |
+| [A24](04_ENTSCHEIDUNGEN.md#a24) | Natives [VM](ANHANG_A_GLOSSAR.md#vm)-Deployment vs. Hybrid vs. Container | IT-Workshop, Variantenvergleich; **noch keine Entscheidung** |
 | [A25](04_ENTSCHEIDUNGEN.md#a25) | [IdP](ANHANG_A_GLOSSAR.md#idp)/[SSO](ANHANG_A_GLOSSAR.md#sso), Desktop-QGIS, externe Identitäten | Mit IT/Auth-Verantwortlichen konkretisieren |
 | [A26](04_ENTSCHEIDUNGEN.md#a26) | Rollen, Gruppen, Datenbank-/Dienstrechte | Rechte-Matrix und Zugriffstests über alle Schnittstellen |
 | [A27](04_ENTSCHEIDUNGEN.md#a27) | Technische Ausgestaltung TEST/PROD | IT-Abstimmung |

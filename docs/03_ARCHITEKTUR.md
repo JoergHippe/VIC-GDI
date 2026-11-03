@@ -11,7 +11,7 @@ Die Architektur zeigt den bisherigen Beschlussstand. Zentrale [PostgreSQL](ANHAN
 - **Fachprojekte:** QGIS-Projekte bleiben fachbereichs- bzw. projektbezogen; zentral gepflegte Verbindungen, Vorlagen und [QML](ANHANG_A_GLOSSAR.md#qml)-Stile können wiederverwendet und überschrieben werden ([A04](04_ENTSCHEIDUNGEN.md#a04), [A17](04_ENTSCHEIDUNGEN.md#a17)).
 - **Dienste:** [QGIS Server](ANHANG_A_GLOSSAR.md#qgis-server) bevorzugt, vorbehaltlich technischem [PoC](ANHANG_A_GLOSSAR.md#poc); Standard-Webviewer (z. B. [Lizmap](ANHANG_A_GLOSSAR.md#lizmap)/[QWC2](ANHANG_A_GLOSSAR.md#qwc2)) mit begrenzten Anpassungen; Webpublikation über getrennte Kartenprojekte ([A10](04_ENTSCHEIDUNGEN.md#a10), [A11](04_ENTSCHEIDUNGEN.md#a11), [A18](04_ENTSCHEIDUNGEN.md#a18)).
 - **Zusatzfunktionen:** Schlanke integrierte Suche und [Geodatenauszug](ANHANG_A_GLOSSAR.md#extract) mit eigener Rechteprüfung ([A12](04_ENTSCHEIDUNGEN.md#a12), [A20](04_ENTSCHEIDUNGEN.md#a20)). Die logische Abgrenzung des Auszugs lässt die Bereitstellung offen. Für einen priorisierten Pilotbedarf zuerst vorhandene QGIS-, Viewer- und Dienstfunktionen prüfen.
-- **Betrieb:** On-prem auf [Proxmox](ANHANG_A_GLOSSAR.md#proxmox) bevorzugt, hybride Varianten möglich; konkrete Container-/VM-Verteilung mit IT entscheiden ([A23](04_ENTSCHEIDUNGEN.md#a23), [A24](04_ENTSCHEIDUNGEN.md#a24)).
+- **Betrieb:** On-prem auf [Proxmox](ANHANG_A_GLOSSAR.md#proxmox) bevorzugt, hybride Varianten möglich; konkrete Container-/[VM](ANHANG_A_GLOSSAR.md#vm)-Verteilung mit IT entscheiden ([A23](04_ENTSCHEIDUNGEN.md#a23), [A24](04_ENTSCHEIDUNGEN.md#a24)).
 
 ### Architekturübersicht (logisches Zielbild)
 
@@ -57,7 +57,7 @@ flowchart TB
 ## GIS-Funktionen
 
 - **Suche:** Projekte, Orte/Adressen und ausgewählte GIS-Objekte; Ergebnisse nur entsprechend Berechtigung ([A20](04_ENTSCHEIDUNGEN.md#a20)).
-- **Auszug:** Autorisierte Layer, Geometrie/Fläche/[BBox](ANHANG_A_GLOSSAR.md#bbox), Ziel-CRS, [GPKG](ANHANG_A_GLOSSAR.md#geopackage)/[Shapefile](ANHANG_A_GLOSSAR.md#shapefile)/[GeoJSON](ANHANG_A_GLOSSAR.md#geojson)/CSV. Objektselektion und echtes geometrisches Clipping unterscheiden; technischer PoC erforderlich ([A12](04_ENTSCHEIDUNGEN.md#a12)).
+- **Auszug:** Autorisierte Layer, Geometrie/Fläche/[BBox](ANHANG_A_GLOSSAR.md#bbox), Ziel-CRS, [GPKG](ANHANG_A_GLOSSAR.md#geopackage)/[Shapefile](ANHANG_A_GLOSSAR.md#shapefile)/[GeoJSON](ANHANG_A_GLOSSAR.md#geojson)/[CSV](ANHANG_A_GLOSSAR.md#csv). Objektselektion und echtes geometrisches Clipping unterscheiden; technischer PoC erforderlich ([A12](04_ENTSCHEIDUNGEN.md#a12)).
 - **Mobil:** Vorhandene Synchronisationsmechanismen verwenden; Konfliktbehandlung und Rückübertragung pilotieren, keine eigene Offline-Engine ([A13](04_ENTSCHEIDUNGEN.md#a13)).
 - **[ETL](ANHANG_A_GLOSSAR.md#etl):** Manuelle Verfahren und Skripte zuerst; kontrollierte Staging-/Importprüfungen, später selektiv automatisieren ([A14](04_ENTSCHEIDUNGEN.md#a14)).
 - **Metadaten:** Schlanker Katalog für Quelle, Datensatz und Dienst; je Layer u. a. Herkunft, Datenstand, Lizenz, Importzeit, CRS ([A15](04_ENTSCHEIDUNGEN.md#a15)).

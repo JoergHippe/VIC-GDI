@@ -4,7 +4,7 @@
 
 ## Zielbild
 
-Eine gemeinsame [Geodateninfrastruktur](ANHANG_A_GLOSSAR.md#gdi) soll Geodaten fachbereichsübergreifend nutzbar machen, Mehrfachhaltung reduzieren und [GIS](ANHANG_A_GLOSSAR.md#gis)-Arbeitsabläufe in der Infrastrukturplanung zuverlässiger gestalten. Sie ergänzt die bestehenden CAD-, BIM-, M365- und Fachabläufe um eine gemeinsame Geodatenbasis. Die Einführung erfolgt schrittweise mit zwei Pilotbereichen: Baubetreuung/Bauüberwachung und Verkehrsanlagenplanung.
+Eine gemeinsame [Geodateninfrastruktur](ANHANG_A_GLOSSAR.md#gdi) soll Geodaten fachbereichsübergreifend nutzbar machen, Mehrfachhaltung reduzieren und [GIS](ANHANG_A_GLOSSAR.md#gis)-Arbeitsabläufe in der Infrastrukturplanung zuverlässiger gestalten. Sie ergänzt die bestehenden [CAD](ANHANG_A_GLOSSAR.md#cad)-, [BIM](ANHANG_A_GLOSSAR.md#bim)-, M365- und Fachabläufe um eine gemeinsame Geodatenbasis. Die Einführung erfolgt schrittweise mit zwei Pilotbereichen: Baubetreuung/Bauüberwachung und Verkehrsanlagenplanung.
 
 ## Erwarteter Nutzen – noch zu validieren
 
