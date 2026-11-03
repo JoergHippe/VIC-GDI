@@ -4,21 +4,21 @@
 
 ## Vorgehensprinzip
 
-Gemeinsame, schlanke GDI-Basis und zwei früh beteiligte Pilotbereiche (A34). Der MVP ist priorisiert und anpassbar; gemeinsamer GDI-MVP und fachliche Pilot-MVPs werden getrennt geplant (A35). Phasen dürfen sich überlappen.
+Gemeinsame, schlanke GDI-Basis und zwei früh beteiligte Pilotbereiche (A34). Der [MVP](GLOSSAR.md#mvp) ist priorisiert und anpassbar; gemeinsamer GDI-MVP und fachliche Pilot-MVPs werden getrennt geplant (A35). Phasen dürfen sich überlappen.
 
 ## Etappen
 
 ### 0 – Vorbereitung und Bestandsaufnahme
 - IT, GIS-Team und Pilotbereiche abstimmen; Zuständigkeiten skizzieren.
-- Bestehende QGIS-Projekte, Datenquellen, Speicherorte und kritische Abläufe erfassen.
+- Bestehende [QGIS](GLOSSAR.md#qgis)-Projekte, Datenquellen, Speicherorte und kritische Abläufe erfassen.
 - Problematische synchronisierte SharePoint-/OneDrive-GIS-Arbeitsdatenhaltung in der Baubetreuung identifizieren.
 - Konkrete Pilot-Use-Cases und Minimalerfolgskriterien festlegen.
 - Wissens- und Schulungsbedarf samt Kapazitäten einplanen (A33).
 
 ### 1 – Gemeinsame technische Basis
-- PostGIS und QGIS-Desktop-Anbindung; geeignete gemeinsame Datenmodelle.
+- [PostGIS](GLOSSAR.md#postgis) und QGIS-Desktop-Anbindung; geeignete gemeinsame Datenmodelle.
 - TEST/PROD, Grundrechte, Sicherung und Basisüberwachung mit IT abstimmen.
-- Git-basierte Ressourcen und kontrollierte Änderungen etablieren.
+- [Git](GLOSSAR.md#git)-basierte Ressourcen und kontrollierte Änderungen etablieren.
 - QGIS-Server-/Webviewer-PoC und einfache Kartenbereitstellung.
 
 ### 2 – Erste nutzbare Pilotfunktionen
