@@ -6,6 +6,7 @@ VIC-GDI ist die geplante unternehmensweite, fachbereichsneutrale Geodateninfrast
 
 ## Dokumentation
 
+- [Glossar](docs/GLOSSAR.md) – Fachbegriffe und Abkürzungen
 - [Projektkonzept](docs/PROJEKTKONZEPT.md) – Ziele, Grenzen, Pilotbereiche
 - [Management](docs/MANAGEMENT.md) – Nutzen, Ressourcen, Risiken
 - [Anforderungen](docs/ANFORDERUNGEN.md) – fachliche und nichtfunktionale Anforderungen
@@ -23,6 +24,7 @@ VIC-GDI ist die geplante unternehmensweite, fachbereichsneutrale Geodateninfrast
 4. Nicht beschlossene Varianten bleiben sichtbar; technische Details mit IT abstimmen.
 5. Nur bei tatsächlichem Bedarf zusätzliche Dokumente, Verzeichnisse oder Prozesse einführen.
 6. Keine Zugangsdaten, personenbezogenen Daten oder produktiven Geodaten in Git versionieren.
-7. Kleine, thematisch nachvollziehbare Commits; `main` ist zunächst ausreichend.
+7. Fachbegriffe beim ersten Auftreten je Dokument zum [Glossar](docs/GLOSSAR.md) verlinken.
+8. Kleine, thematisch nachvollziehbare Commits; `main` ist zunächst ausreichend.
 
 **Quellenlage:** Erstkonsolidierung aus den bisherigen Architekturgesprächen A01–A38. Wo kein detailliertes Entscheidungsprotokoll vorliegt, sind die Aussagen bewusst auf die gesicherten Grundsätze begrenzt. Die Dokumente sind keine Implementierungs- oder Freigabenachweise.
