@@ -26,7 +26,7 @@ Die Piloten sollen die gemeinsame [GDI](ANHANG_A_GLOSSAR.md#gdi)-Basis anhand re
 
 ## Fachlich benannte Anwendungsfälle der Baubetreuung
 
-Die Baubetreuung beginnt erst mit der GIS-Nutzung und untersucht weitere mögliche Anwendungsfälle. **Die folgenden Tätigkeiten wurden vom Fachbereich konkret genannt**, ihre Priorität, Umsetzungstiefe und technische Ausgestaltung sind noch offen.
+Die Baubetreuung beginnt erst mit der [GIS](ANHANG_A_GLOSSAR.md#gis)-Nutzung und untersucht weitere mögliche Anwendungsfälle. **Die folgenden Tätigkeiten wurden vom Fachbereich konkret genannt**, ihre Priorität, Umsetzungstiefe und technische Ausgestaltung sind noch offen.
 
 | ID | Tatsächlich genannte Tätigkeit | Fachliche Abgrenzung und nächste Klärung |
 |---|---|---|
@@ -38,7 +38,7 @@ Die Baubetreuung beginnt erst mit der GIS-Nutzung und untersucht weitere möglic
 
 ### Mobile Erfassung und Datenaustausch
 
-**Vom Fachbereich bestätigt:** Für BB-01 bis BB-03 wird der GNSS-Empfänger **[HAPPY MINI Q](ANHANG_A_GLOSSAR.md#happy-mini-q)** zusammen mit [QField](ANHANG_A_GLOSSAR.md#qfield) auf **Tablet und Smartphone** eingesetzt. Die Arbeitsabläufe zur **bidirektionalen Datenübertragung** sind noch nicht abschließend optimiert.
+**Vom Fachbereich bestätigt:** Für BB-01 bis BB-03 wird der [GNSS](ANHANG_A_GLOSSAR.md#gnss)-Empfänger **[HAPPY MINI Q](ANHANG_A_GLOSSAR.md#happy-mini-q)** zusammen mit [QField](ANHANG_A_GLOSSAR.md#qfield) auf **Tablet und Smartphone** eingesetzt. Die Arbeitsabläufe zur **bidirektionalen Datenübertragung** sind noch nicht abschließend optimiert.
 
 Für den Datenaustausch mit den eingesetzten QField-Konfigurationen sind zwei Übertragungswege zu vergleichen. **Variante A** ist der cloudbasierte Austausch. **Variante B** verbindet lokale Speicherung auf dem Mobilgerät mit anschließender Dateiübertragung per USB-Kabel. Die Auswahl ist offen.
 

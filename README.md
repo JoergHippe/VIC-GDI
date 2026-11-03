@@ -2,7 +2,7 @@
 
 **Status:** Interner Arbeitsentwurf · keine formale Freigabe durch IT oder Geschäftsführung.
 
-VIC-GDI ist die geplante unternehmensweite, fachbereichsneutrale Geodateninfrastruktur für die gemeinsame, sichere und wartbare Nutzung von Geodaten in der Infrastrukturplanung. Die ersten Piloten sind Baubetreuung/Bauüberwachung und Verkehrsanlagenplanung.
+VIC-GDI ist die geplante unternehmensweite, fachbereichsneutrale [Geodateninfrastruktur](docs/ANHANG_A_GLOSSAR.md#gdi) für die gemeinsame, sichere und wartbare Nutzung von Geodaten in der Infrastrukturplanung. Die ersten Piloten sind Baubetreuung/Bauüberwachung und Verkehrsanlagenplanung.
 
 ## Gesprächsunterlagen
 
@@ -14,9 +14,9 @@ VIC-GDI ist die geplante unternehmensweite, fachbereichsneutrale Geodateninfrast
 1. [Projektkonzept](docs/01_PROJEKTKONZEPT.md) – Ziele, Grenzen, Pilotbereiche
 2. [Anforderungen](docs/02_ANFORDERUNGEN.md) – fachliche und nichtfunktionale Anforderungen
 3. [Architektur](docs/03_ARCHITEKTUR.md) – technisches Zielbild mit offenen Festlegungen
-4. [Entscheidungen](docs/04_ENTSCHEIDUNGEN.md) – A01–A38, Status, Begründungen und Prüfvorbehalte
+4. [Entscheidungen](docs/04_ENTSCHEIDUNGEN.md) – [A01](docs/04_ENTSCHEIDUNGEN.md#a01)–[A38](docs/04_ENTSCHEIDUNGEN.md#a38), Status, Begründungen und Prüfvorbehalte
 5. [Pilotkonkretisierung](docs/05_PILOTKONKRETISIERUNG.md) – bekannte Praxis, Ablaufvorschläge und Erhebungsfragen
-6. [Roadmap](docs/06_ROADMAP.md) – MVP, Piloten, Einführungsfolge
+6. [Roadmap](docs/06_ROADMAP.md) – [MVP](docs/ANHANG_A_GLOSSAR.md#mvp), Piloten, Einführungsfolge
 7. [Offene Punkte](docs/07_OFFENE_PUNKTE.md) – Klärungsbedarf, nächste Schritte und Rückstellungen
 
 ## Nachschlagen und mitarbeiten

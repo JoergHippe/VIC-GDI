@@ -1,10 +1,10 @@
-# IT-Briefing – GDI, Infrastruktur und Betrieb
+# IT-Briefing – [GDI](ANHANG_A_GLOSSAR.md#gdi), Infrastruktur und Betrieb
 
 **Status:** Interner Arbeitsentwurf · keine technische Freigabe der IT.
 
 ## Worum es geht
 
-Ein [GIS](ANHANG_A_GLOSSAR.md#gis) bearbeitet und zeigt räumliche Daten, etwa den dokumentierten Verlauf einer Leitung. Die [GDI](ANHANG_A_GLOSSAR.md#gdi) organisiert, wo solche Daten geführt werden, wie berechtigte Personen sie finden und nutzen und wer sie pflegt. Die Baubetreuung kann beispielsweise einen Leitungsverlauf fachlich prüfen und übernehmen. Berechtigte Planende können anschließend denselben freigegebenen Stand in [QGIS](ANHANG_A_GLOSSAR.md#qgis) nutzen.
+Ein [GIS](ANHANG_A_GLOSSAR.md#gis) bearbeitet und zeigt räumliche Daten, etwa den dokumentierten Verlauf einer Leitung. Die GDI organisiert, wo solche Daten geführt werden, wie berechtigte Personen sie finden und nutzen und wer sie pflegt. Die Baubetreuung kann beispielsweise einen Leitungsverlauf fachlich prüfen und übernehmen. Berechtigte Planende können anschließend denselben freigegebenen Stand in [QGIS](ANHANG_A_GLOSSAR.md#qgis) nutzen.
 
 **Gesprächsziel:** Machbaren Betriebsrahmen, Zuständigkeiten und Aufwand für die nächste Planungsstufe ermitteln. Der Termin dient der Abstimmung. Technische Erprobungen und Bereitstellung folgen erst nach gesonderter Planung.
 
@@ -23,7 +23,7 @@ Die [Architekturübersicht](03_ARCHITEKTUR.md#architekturübersicht-logisches-zi
 
 **Im Konzept geklärt:** Die gemeinsame Datenbasis in PostGIS und die beiden Pilotbereiche sind festgelegt. On-prem/[Proxmox](ANHANG_A_GLOSSAR.md#proxmox), QGIS Server und zentrale Unternehmensidentitäten sind bevorzugte Richtungen. Die technische Freigabe und konkrete Ausgestaltung stehen aus.
 
-**Bedarfsabhängig:** Externe Zugänge, mobile Cloud-Anbindung, weitgehende Automatisierung und Hochverfügbarkeit erst anhand der bestätigten Pilotabläufe und Betriebsziele bewerten. Der erweiterte Katalog und die zentrale Projektablage stehen unter [Prüfvorbehalt](04_ENTSCHEIDUNGEN.md#erneute-prüfung-a04-a15-und-a36).
+**Bedarfsabhängig:** Externe Zugänge, mobile Cloud-Anbindung, weitgehende Automatisierung und [Hochverfügbarkeit](ANHANG_A_GLOSSAR.md#ha) erst anhand der bestätigten Pilotabläufe und Betriebsziele bewerten. Der erweiterte Katalog und die zentrale Projektablage stehen unter [Prüfvorbehalt](04_ENTSCHEIDUNGEN.md#erneute-prüfung-a04-a15-und-a36).
 
 ## Rollen und Verantwortlichkeiten ([A31](04_ENTSCHEIDUNGEN.md#a31))
 
@@ -38,20 +38,20 @@ Die [Architekturübersicht](03_ARCHITEKTUR.md#architekturübersicht-logisches-zi
 | Berechtigungen | Fachliche Vorgaben GIS/Fachbereiche, technische Umsetzung mit IT |
 | Support | GIS-Fachfragen GIS-Team; Infrastrukturstörungen IT |
 
-Für kritische Aufgaben federführende Person und Vertretung festlegen; kein eigenes ITSM-System einführen (A31, [A32](04_ENTSCHEIDUNGEN.md#a32)).
+Für kritische Aufgaben federführende Person und Vertretung festlegen; kein eigenes ITSM-System einführen ([A31](04_ENTSCHEIDUNGEN.md#a31), [A32](04_ENTSCHEIDUNGEN.md#a32)).
 
 ## Technische Rahmenbedingungen
 
-- Bevorzugt On-prem auf vorhandener Proxmox-Infrastruktur, [Linux](ANHANG_A_GLOSSAR.md#linux)/[Debian](ANHANG_A_GLOSSAR.md#debian) als naheliegende Option; keine endgültige VM-/Containerentscheidung ([A23](04_ENTSCHEIDUNGEN.md#a23), [A24](04_ENTSCHEIDUNGEN.md#a24)).
+- Bevorzugt On-prem auf vorhandener Proxmox-Infrastruktur, Linux/[Debian](ANHANG_A_GLOSSAR.md#debian) als naheliegende Option; keine endgültige VM-/Containerentscheidung ([A23](04_ENTSCHEIDUNGEN.md#a23), [A24](04_ENTSCHEIDUNGEN.md#a24)).
 - Zentrale PostgreSQL/PostGIS-Datenhaltung mit fachlichen Schemas ([A02](04_ENTSCHEIDUNGEN.md#a02)).
 - QGIS Server bevorzugt, technische Validierung erforderlich ([A10](04_ENTSCHEIDUNGEN.md#a10)).
-- [Git](ANHANG_A_GLOSSAR.md#git) für Konfigurationen, Skripte, QML, Vorlagen und Migrationen, nicht für produktive Geodaten oder Backups ([A30](04_ENTSCHEIDUNGEN.md#a30)).
-- TEST und PROD trennen; einfache kontrollierte Releases statt vollständiger CI/CD-Pflicht ([A27](04_ENTSCHEIDUNGEN.md#a27), A30).
+- [Git](ANHANG_A_GLOSSAR.md#git) für Konfigurationen, Skripte, [QML](ANHANG_A_GLOSSAR.md#qml), Vorlagen und Migrationen, nicht für produktive Geodaten oder Backups ([A30](04_ENTSCHEIDUNGEN.md#a30)).
+- TEST und PROD trennen; einfache kontrollierte Releases statt vollständiger [CI/CD](ANHANG_A_GLOSSAR.md#ci-cd)-Pflicht ([A27](04_ENTSCHEIDUNGEN.md#a27), [A30](04_ENTSCHEIDUNGEN.md#a30)).
 - Zugang intern/VPN; externe authentifizierte Zusammenarbeit nur nach Bedarf. Serverrechte gelten unabhängig von der Oberfläche ([A09](04_ENTSCHEIDUNGEN.md#a09), [A18](04_ENTSCHEIDUNGEN.md#a18), [A25](04_ENTSCHEIDUNGEN.md#a25), [A26](04_ENTSCHEIDUNGEN.md#a26)).
 
 ## Serverbetriebssystem und Deployment ([A23](04_ENTSCHEIDUNGEN.md#a23)/[A24](04_ENTSCHEIDUNGEN.md#a24))
 
-[Windows](ANHANG_A_GLOSSAR.md#windows) bleibt der Ausgangspunkt für die vorhandenen Arbeitsplätze und Unternehmensdienste. Für die Server ist eine betreute Linux-VM (Debian als Kandidat) zu prüfen. Wenn Linux-Patching, Diagnose oder Vertretung intern schwierig sind, Aufwand für Qualifizierung oder externe Unterstützung ermitteln und mit einer [Windows-Server](ANHANG_A_GLOSSAR.md#windows-server)-Variante vergleichen. Für Windows die Unterstützung der konkret benötigten Komponenten, Versionen, Erweiterungen und Betriebswerkzeuge klären.
+Windows bleibt der Ausgangspunkt für die vorhandenen Arbeitsplätze und Unternehmensdienste. Für die Server ist eine betreute Linux-VM (Debian als Kandidat) zu prüfen. Wenn Linux-Patching, Diagnose oder Vertretung intern schwierig sind, Aufwand für Qualifizierung oder externe Unterstützung ermitteln und mit einer Windows-Server-Variante vergleichen. Für Windows die Unterstützung der konkret benötigten Komponenten, Versionen, Erweiterungen und Betriebswerkzeuge klären.
 
 VM und [Docker](ANHANG_A_GLOSSAR.md#docker) liegen auf unterschiedlichen Ebenen. Eine VM stellt das Betriebssystem bereit. Docker kann innerhalb einer geeigneten VM Dienste paketieren. IT bewertet Betriebssystem und Dienstbereitstellung getrennt.
 
@@ -78,7 +78,7 @@ VM und [Docker](ANHANG_A_GLOSSAR.md#docker) liegen auf unterschiedlichen Ebenen.
 |---|---|
 | 10 Min. | Zielbild und Pilotabläufe. Welche Nutzungspfade und Datenarten muss IT für die Aufwandsschätzung kennen? |
 | 15 Min. | Hosting. Welche VM-, Linux- und Docker-Betriebsstandards gibt es? Welche Varianten kann IT dauerhaft betreuen und vertreten? Welche Last- und Speicherangaben fehlen? |
-| 15 Min. | Zugriff. Welche AD-/[M365](ANHANG_A_GLOSSAR.md#m365)-Integration und welche internen Netz- und VPN-Wege sind möglich? Wer verwaltet Gruppen, Zertifikate, Firewallregeln und Dienstkonten? |
+| 15 Min. | Zugriff. Welche AD-/M365-Integration und welche internen Netz- und VPN-Wege sind möglich? Wer verwaltet Gruppen, Zertifikate, Firewallregeln und Dienstkonten? |
 | 15 Min. | Betrieb. Wer übernimmt PostgreSQL/PostGIS, GIS-Dienste, Updates und Störungen? Was decken vorhandene Sicherung und Überwachung ab? Wer koordiniert Wiederherstellung und Abnahme? |
 | 5 Min. | Ergebnis festhalten. Pro offener Frage zuständige Person, benötigte Zuarbeit und Termin vereinbaren. Voraussetzungen und Aufwand für die nächste Freigabe benennen. |
 

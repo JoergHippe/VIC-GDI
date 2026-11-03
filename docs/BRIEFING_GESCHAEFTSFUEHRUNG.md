@@ -4,7 +4,7 @@
 
 ## Zielbild
 
-Eine gemeinsame Geodateninfrastruktur soll Geodaten fachbereichsübergreifend nutzbar machen, Mehrfachhaltung reduzieren und [GIS](ANHANG_A_GLOSSAR.md#gis)-Arbeitsabläufe in der Infrastrukturplanung zuverlässiger gestalten. Sie ergänzt die bestehenden CAD-, BIM-, [M365](ANHANG_A_GLOSSAR.md#m365)- und Fachabläufe um eine gemeinsame Geodatenbasis. Die Einführung erfolgt schrittweise mit zwei Pilotbereichen: Baubetreuung/Bauüberwachung und Verkehrsanlagenplanung.
+Eine gemeinsame [Geodateninfrastruktur](ANHANG_A_GLOSSAR.md#gdi) soll Geodaten fachbereichsübergreifend nutzbar machen, Mehrfachhaltung reduzieren und [GIS](ANHANG_A_GLOSSAR.md#gis)-Arbeitsabläufe in der Infrastrukturplanung zuverlässiger gestalten. Sie ergänzt die bestehenden CAD-, BIM-, M365- und Fachabläufe um eine gemeinsame Geodatenbasis. Die Einführung erfolgt schrittweise mit zwei Pilotbereichen: Baubetreuung/Bauüberwachung und Verkehrsanlagenplanung.
 
 ## Erwarteter Nutzen – noch zu validieren
 
@@ -32,7 +32,7 @@ Die Fachbereiche priorisieren je Pilot einen ersten Ablauf und legen vor der Ums
 |---|---|
 | Bestandsaufnahme, Pilotkonzeption, Datenmigration | Datenpflege und Weiterentwicklung |
 | Einrichtung von DB, Diensten und Anwendungen | Betrieb, Updates, Sicherheit, Backup |
-| Technische PoCs, Tests, Einführung | Support und Fehlerbehebung |
+| Technische [PoCs](ANHANG_A_GLOSSAR.md#poc), Tests, Einführung | Support und Fehlerbehebung |
 | Wissensaufbau und Schulungen | Auffrischung, Dokumentationspflege, Vertretung |
 
 **[Ressourcen für den Wissensaufbau](04_ENTSCHEIDUNGEN.md#a33):** Wissensaufbau benötigt explizit eingeplante personelle, zeitliche und gegebenenfalls finanzielle Ressourcen. Selbststudium ist nicht kostenfrei. Die Methode (Eigenlernen, gezielte Schulung, umfassende Qualifikation) richtet sich nach Rolle, Risiko und Wirtschaftlichkeit.

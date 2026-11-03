@@ -6,7 +6,7 @@ Die [Pilotkonkretisierung](05_PILOTKONKRETISIERUNG.md) trennt fachlich benannte 
 
 ## Vorgehensprinzip
 
-Gemeinsame, schlanke GDI-Basis und zwei früh beteiligte Pilotbereiche ([A34](04_ENTSCHEIDUNGEN.md#a34)). Der [MVP](ANHANG_A_GLOSSAR.md#mvp) ist priorisiert und anpassbar; gemeinsamer GDI-MVP und fachliche Pilot-MVPs werden getrennt geplant ([A35](04_ENTSCHEIDUNGEN.md#a35)). Phasen dürfen sich überlappen.
+Gemeinsame, schlanke [GDI](ANHANG_A_GLOSSAR.md#gdi)-Basis und zwei früh beteiligte Pilotbereiche ([A34](04_ENTSCHEIDUNGEN.md#a34)). Der [MVP](ANHANG_A_GLOSSAR.md#mvp) ist priorisiert und anpassbar; gemeinsamer GDI-MVP und fachliche Pilot-MVPs werden getrennt geplant ([A35](04_ENTSCHEIDUNGEN.md#a35)). Phasen dürfen sich überlappen.
 
 ### Ablauf bis zur belastbaren Pilotentscheidung
 
@@ -31,7 +31,7 @@ Aktuell laufen Vorbereitung und Abstimmung. IT klärt den Betriebsrahmen, die Ge
 ## Etappen
 
 ### 0 – Vorbereitung und Bestandsaufnahme
-- IT, GIS-Team und Pilotbereiche abstimmen; Zuständigkeiten skizzieren.
+- IT, [GIS](ANHANG_A_GLOSSAR.md#gis)-Team und Pilotbereiche abstimmen; Zuständigkeiten skizzieren.
 - Bestehende [QGIS](ANHANG_A_GLOSSAR.md#qgis)-Projekte, Datenquellen, Speicherorte und kritische Abläufe erfassen.
 - Problematische synchronisierte [SharePoint](ANHANG_A_GLOSSAR.md#sharepoint)-/[OneDrive](ANHANG_A_GLOSSAR.md#onedrive)-GIS-Arbeitsdatenhaltung in der Baubetreuung identifizieren.
 - Konkrete Pilot-Use-Cases und Minimalerfolgskriterien festlegen.
@@ -44,7 +44,7 @@ Aktuell laufen Vorbereitung und Abstimmung. IT klärt den Betriebsrahmen, die Ge
 
 ### 2 – Erste nutzbare Pilotfunktionen
 - **BB:** ausgewählte räumliche Arbeitsabläufe und, wo erforderlich, mobile Nutzung.
-- Einfache Karten über den geprüften Standard-Webviewer bereitstellen, sofern der ausgewählte Ablauf sie braucht.
+- Einfache Karten über den geprüften Standard-[Webviewer](ANHANG_A_GLOSSAR.md#webviewer) bereitstellen, sofern der ausgewählte Ablauf sie braucht.
 - **Verkehrsanlagenplanung:** gemeinsame Geodaten, Projektbezug und QGIS-Workflows.
 - Fachliche Abnahme an realen Daten; keine Pflicht zu gleichem Funktionsumfang.
 
@@ -64,7 +64,7 @@ Aktuell laufen Vorbereitung und Abstimmung. IT klärt den Betriebsrahmen, die Ge
 
 **Je nach Pilot:** Webviewer, mobile Erfassung, Suche, Datenexport, spezifische Datenmodelle.
 
-**Nicht pauschal MVP:** vollständiger Extract-Service, alle Fachbereiche, komplexe CI/CD- oder HA-Plattform, umfassende Datenfreigabeworkflows.
+**Nicht pauschal MVP:** vollständiger [Extract](ANHANG_A_GLOSSAR.md#extract)-Service, alle Fachbereiche, komplexe [CI/CD](ANHANG_A_GLOSSAR.md#ci-cd)- oder [HA](ANHANG_A_GLOSSAR.md#ha)-Plattform, umfassende Datenfreigabeworkflows.
 
 ## Prüfpunkte
 
