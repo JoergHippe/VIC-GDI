@@ -12,14 +12,15 @@ Gemeinsame, schlanke GDI-Basis und zwei früh beteiligte Pilotbereiche (A34). De
 
 ```mermaid
 flowchart LR
-  Inventory["Ist-Abläufe und Daten erheben"] --> Cases["Anwendungsfälle bestätigen"]
-  Cases --> Criteria["Abnahmekriterien festlegen"]
-  Criteria --> Test["Gezielte technische PoCs"]
-  Test --> Review{"Fachlich und betrieblich tragfähig?"}
-  Review -->|"Ja"| Pilot["Pilot-MVP umsetzen"]
-  Review -->|"Nein"| Adjust["Annahmen oder Lösung korrigieren"]
-  Adjust --> Criteria
-  Pilot --> Feedback["Nutzerfeedback und Betrieb prüfen"]
+  Record["Ist-Abläufe erheben"]
+  Select["Pilotfälle auswählen"]
+  Test["Lösung praktisch testen"]
+  Decide{"Geeignet?"}
+  Use["Pilot umsetzen"]
+  Revise["Ansatz anpassen"]
+  Record --> Select --> Test --> Decide
+  Decide -->|Ja| Use
+  Decide -->|Nein| Revise --> Test
 ```
 
 **Hinweis:** Die Schritte können sich überlappen. Das Schaubild ist ein Entscheidungsprozess, kein verbindlicher Terminplan.
