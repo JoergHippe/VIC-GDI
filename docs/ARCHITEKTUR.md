@@ -11,6 +11,52 @@
 - **Zusatzfunktionen:** Schlanker Suchdienst und logisch separater Extract-Service, in den Webviewer integriert (A12, A20).
 - **Betrieb:** On-prem auf Proxmox bevorzugt, hybride Varianten möglich; konkrete Container-/VM-Verteilung mit IT entscheiden (A23, A24).
 
+### Architekturübersicht (logisches Zielbild)
+
+Das Diagramm zeigt **logische Beziehungen, keine festgelegten Server, Container, Protokolle oder direkten Zugriffsrechte**. Gestrichelte Verbindungen sind noch zu validierende Integrationswege.
+
+```mermaid
+flowchart TB
+  subgraph Clients["Nutzung"]
+    Desktop["QGIS Desktop"]
+    Browser["Webviewer"]
+    Mobile["QField / Happy MiniQ"]
+  end
+  subgraph Services["Dienste - teils PoC"]
+    Map["QGIS Server"]
+    Search["Suche"]
+    Extract["Extract"]
+    MobileSync["Mobiler Datenaustausch - offen"]
+  end
+  subgraph Data["Führende Daten und Ressourcen"]
+    DB[("PostgreSQL / PostGIS")]
+    Files[("Fileserver: QGIS-Projekte und Fachdateien")]
+    External["Externe Geodatendienste"]
+    Shared["Git: Vorlagen, Stile, Konfiguration"]
+  end
+  Identity["Identität und Berechtigungen - mit IT klären"]
+  Desktop --> DB
+  Desktop --> Files
+  Desktop --> External
+  Shared --> Desktop
+  Browser --> Map
+  Browser --> Search
+  Browser --> Extract
+  Map --> DB
+  Map --> Files
+  Map --> External
+  Search -.-> DB
+  Extract -.-> DB
+  Mobile -.-> MobileSync
+  MobileSync -.-> DB
+  MobileSync -.-> Files
+  Identity -.-> Desktop
+  Identity -.-> Services
+  Identity -.-> Data
+```
+
+**Lesart:** Der Webviewer ist kein Ersatz für QGIS Desktop. Fachdateien verbleiben bei Bedarf auf dem Fileserver; geeignete gemeinsam bearbeitete Vektordaten liegen in PostGIS. Die konkrete mobile Synchronisation und die Sicherheitsintegration sind noch offen.
+
 ## Datenorganisation
 
 - Eine gemeinsame Projektidentität; schlanke Projektstammdaten und optionale räumliche Projektabgrenzung (A06–A08).
