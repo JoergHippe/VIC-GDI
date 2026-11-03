@@ -2,11 +2,11 @@
 
 **Status:** Interner Arbeitsentwurf · keine Termin-, Budget- oder Personalzusage.
 
-Die [Pilotkonkretisierung](PILOTKONKRETISIERUNG.md) trennt fachlich benannte Tätigkeiten und bestehende mobile Praxis der Baubetreuung von Ablaufvorschlägen und offenen Fragen. Die Auswahl und Abnahme der ersten Pilotabläufe stehen aus.
+Die [Pilotkonkretisierung](05_PILOTKONKRETISIERUNG.md) trennt fachlich benannte Tätigkeiten und bestehende mobile Praxis der Baubetreuung von Ablaufvorschlägen und offenen Fragen. Die Auswahl und Abnahme der ersten Pilotabläufe stehen aus.
 
 ## Vorgehensprinzip
 
-Gemeinsame, schlanke GDI-Basis und zwei früh beteiligte Pilotbereiche (A34). Der [MVP](GLOSSAR.md#mvp) ist priorisiert und anpassbar; gemeinsamer GDI-MVP und fachliche Pilot-MVPs werden getrennt geplant (A35). Phasen dürfen sich überlappen.
+Gemeinsame, schlanke GDI-Basis und zwei früh beteiligte Pilotbereiche (A34). Der [MVP](ANHANG_A_GLOSSAR.md#mvp) ist priorisiert und anpassbar; gemeinsamer GDI-MVP und fachliche Pilot-MVPs werden getrennt geplant (A35). Phasen dürfen sich überlappen.
 
 ### Ablauf bis zur belastbaren Pilotentscheidung
 
@@ -26,21 +26,21 @@ flowchart LR
   Decide -->|Überarbeiten| Select
 ```
 
-Aktuell laufen Vorbereitung und Abstimmung. IT klärt den Betriebsrahmen, die Geschäftsführung entscheidet über Ressourcen für die Vorbereitung. Praktische Erprobung folgt nach gesonderter Freigabe. Über Umfang, Budget und Start der Piloten entscheidet die Geschäftsführung anhand der Ergebnisse und des mit IT geklärten Betriebsrahmens. Siehe [IT-Briefing](BETRIEB_UND_IT.md) und [Geschäftsführungs-Briefing](MANAGEMENT.md).
+Aktuell laufen Vorbereitung und Abstimmung. IT klärt den Betriebsrahmen, die Geschäftsführung entscheidet über Ressourcen für die Vorbereitung. Praktische Erprobung folgt nach gesonderter Freigabe. Über Umfang, Budget und Start der Piloten entscheidet die Geschäftsführung anhand der Ergebnisse und des mit IT geklärten Betriebsrahmens. Siehe [IT-Briefing](BRIEFING_IT.md) und [Geschäftsführungs-Briefing](BRIEFING_GESCHAEFTSFUEHRUNG.md).
 
 ## Etappen
 
 ### 0 – Vorbereitung und Bestandsaufnahme
 - IT, GIS-Team und Pilotbereiche abstimmen; Zuständigkeiten skizzieren.
-- Bestehende [QGIS](GLOSSAR.md#qgis)-Projekte, Datenquellen, Speicherorte und kritische Abläufe erfassen.
+- Bestehende [QGIS](ANHANG_A_GLOSSAR.md#qgis)-Projekte, Datenquellen, Speicherorte und kritische Abläufe erfassen.
 - Problematische synchronisierte SharePoint-/OneDrive-GIS-Arbeitsdatenhaltung in der Baubetreuung identifizieren.
 - Konkrete Pilot-Use-Cases und Minimalerfolgskriterien festlegen.
 - Wissens- und Schulungsbedarf samt Kapazitäten einplanen (A33).
 
 ### 1 – Gemeinsame technische Basis
-- [PostGIS](GLOSSAR.md#postgis) und QGIS-Desktop-Anbindung; geeignete gemeinsame Datenmodelle.
+- [PostGIS](ANHANG_A_GLOSSAR.md#postgis) und QGIS-Desktop-Anbindung; geeignete gemeinsame Datenmodelle.
 - TEST/PROD, Grundrechte, Sicherung und Basisüberwachung mit IT abstimmen.
-- [Git](GLOSSAR.md#git)-basierte Ressourcen und kontrollierte Änderungen etablieren.
+- [Git](ANHANG_A_GLOSSAR.md#git)-basierte Ressourcen und kontrollierte Änderungen etablieren.
 
 ### 2 – Erste nutzbare Pilotfunktionen
 - **BB:** ausgewählte räumliche Arbeitsabläufe und, wo erforderlich, mobile Nutzung.

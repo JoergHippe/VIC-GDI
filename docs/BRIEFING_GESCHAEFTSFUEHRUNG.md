@@ -4,7 +4,7 @@
 
 ## Zielbild
 
-Eine gemeinsame Geodateninfrastruktur soll Geodaten fachbereichsübergreifend nutzbar machen, Mehrfachhaltung reduzieren und [GIS](GLOSSAR.md#gis)-Arbeitsabläufe in der Infrastrukturplanung zuverlässiger gestalten. Sie ergänzt die bestehenden CAD-, BIM-, M365- und Fachabläufe um eine gemeinsame Geodatenbasis. Die Einführung erfolgt schrittweise mit zwei Pilotbereichen: Baubetreuung/Bauüberwachung und Verkehrsanlagenplanung.
+Eine gemeinsame Geodateninfrastruktur soll Geodaten fachbereichsübergreifend nutzbar machen, Mehrfachhaltung reduzieren und [GIS](ANHANG_A_GLOSSAR.md#gis)-Arbeitsabläufe in der Infrastrukturplanung zuverlässiger gestalten. Sie ergänzt die bestehenden CAD-, BIM-, M365- und Fachabläufe um eine gemeinsame Geodatenbasis. Die Einführung erfolgt schrittweise mit zwei Pilotbereichen: Baubetreuung/Bauüberwachung und Verkehrsanlagenplanung.
 
 ## Erwarteter Nutzen – noch zu validieren
 
@@ -24,7 +24,7 @@ Dies sind **Zielwirkungen**, keine bereits gemessenen Einsparungen.
 | Baubetreuung/Bauüberwachung | Bei der Bestandsdokumentation einen vor Ort erfassten Leitungsverlauf prüfen und in einen führenden Bestand übernehmen. | Freigegebener Stand, Herkunft und Prüfstatus sind nachvollziehbar. Übergabeschritte und aufgetretene Datenkonflikte werden erfasst. |
 | Verkehrsanlagenplanung | Einen wiederkehrenden Geodatenbestand aus zwei Planungsprojekten nutzen. | Beide Projekte finden den freigegebenen Stand mit den vorgesehenen Rechten. Suchaufwand und Zahl zusätzlicher Arbeitskopien werden mit dem heutigen Ablauf verglichen. |
 
-Die Fachbereiche priorisieren je Pilot einen ersten Ablauf und legen vor der Umsetzung Ausgangswerte und Abnahmekriterien fest. Beide Piloten können zeitlich gestaffelt werden. Details und Status der Anwendungsfälle stehen in der [Pilotkonkretisierung](PILOTKONKRETISIERUNG.md).
+Die Fachbereiche priorisieren je Pilot einen ersten Ablauf und legen vor der Umsetzung Ausgangswerte und Abnahmekriterien fest. Beide Piloten können zeitlich gestaffelt werden. Details und Status der Anwendungsfälle stehen in der [Pilotkonkretisierung](05_PILOTKONKRETISIERUNG.md).
 
 ## Investitions- und Ressourcenfelder
 
@@ -43,7 +43,7 @@ GIS-Team verantwortet fachliche GDI-Fragen, IT die Infrastruktur und Basis-Siche
 
 ## Risiken und Gegenmaßnahmen
 
-- **Überlastung des GIS-Teams:** priorisierter [MVP](GLOSSAR.md#mvp), klarer Supportprozess, realistische Kapazitäten.
+- **Überlastung des GIS-Teams:** priorisierter [MVP](ANHANG_A_GLOSSAR.md#mvp), klarer Supportprozess, realistische Kapazitäten.
 - **Zu großer Funktionsumfang:** Standard vor Sonderentwicklung; Piloten statt Big Bang.
 - **Datenkonflikte:** führende Datenbestände und kontrollierte Migration.
 - **Unklare IT-Verantwortung:** frühe Abstimmung und Zuständigkeitsmatrix.
@@ -57,4 +57,4 @@ GIS-Team verantwortet fachliche GDI-Fragen, IT die Infrastruktur und Basis-Siche
 
 **Gesprächsablauf (Vorschlag, 30 Minuten):** 5 Minuten Ausgangslage und Nutzen, 10 Minuten Piloten und Erfolgskriterien, 10 Minuten Ressourcen und Risiken, 5 Minuten Beschluss und Zuständigkeiten.
 
-Weitere Details: [Projektkonzept](PROJEKTKONZEPT.md), [Roadmap](ROADMAP.md), [Entscheidungen](ENTSCHEIDUNGEN.md).
+Weitere Details: [Projektkonzept](01_PROJEKTKONZEPT.md), [Roadmap](06_ROADMAP.md), [Entscheidungen](04_ENTSCHEIDUNGEN.md).

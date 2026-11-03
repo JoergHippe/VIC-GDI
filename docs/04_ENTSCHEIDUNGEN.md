@@ -9,22 +9,22 @@
 | ID | Thema | Status | Festlegung / Ergebnis |
 |---|---|---|---|
 | A01 | Ausrichtung | B | Fachbereichsneutrale GDI, Piloten BB und Verkehrsanlagenplanung |
-| A02 | Datenbankorganisation | B | Gemeinsame [PostGIS](GLOSSAR.md#postgis)-Datenbank mit fachlichen Schemas |
+| A02 | Datenbankorganisation | B | Gemeinsame [PostGIS](ANHANG_A_GLOSSAR.md#postgis)-Datenbank mit fachlichen Schemas |
 | A03 | Projektbezug | B | Fachliche gemeinsame Tabellen; `project_id` selektiv, Ausnahmen zulässig |
-| A04 | [QGIS](GLOSSAR.md#qgis)-Projekte | B | Zentrale Ressourcen, eigenständige Fach-QGIS-Projekte; getrennte Webprojekte · [überprüfungsbedürftig](#erneute-prüfung-a04-a15-und-a36) |
+| A04 | [QGIS](ANHANG_A_GLOSSAR.md#qgis)-Projekte | B | Zentrale Ressourcen, eigenständige Fach-QGIS-Projekte; getrennte Webprojekte · [überprüfungsbedürftig](#erneute-prüfung-a04-a15-und-a36) |
 | A05 | Externe Basisdaten | B | Live bevorzugt; unveränderliche, nachvollziehbare Snapshots bei Bedarf |
 | A06 | Projektgeometrie | B | Optional; keine verpflichtende Projekt-AOI |
 | A07 | Projektstammdaten | B | Schlanker gemeinsamer Kern, kein Projektmanagement |
 | A08 | Fachbereichsübergreifende Nutzung | B | Gemeinsame Projektidentität, eindeutige Datenhoheit, keine führenden Dubletten |
 | A09 | Datenzugriff | B | Freigegebene gemeinsame Daten lesbar, Schreiben zuständigkeitsabhängig; serverseitige Durchsetzung |
-| A10 | GIS-Server | G | QGIS Server bevorzugt; [PoC](GLOSSAR.md#poc) und OGC-Fähigkeiten prüfen |
+| A10 | GIS-Server | G | QGIS Server bevorzugt; [PoC](ANHANG_A_GLOSSAR.md#poc) und OGC-Fähigkeiten prüfen |
 | A11 | Webviewer | B | Etablierte Open-Source-Lösung, gezielte Erweiterungen statt Eigenportal |
 | A12 | Geodatenauszug | G | Schlanker Extract-Service mit Rechteprüfung; Clipping/Selektion per PoC klären |
 | A13 | Mobile Arbeit | G | QField/Happy Mini Q, etablierte Synchronisation, keine Eigenentwicklung |
-| A14 | [ETL](GLOSSAR.md#etl) | B | Stufenweise Skript-/Importautomatisierung, keine ETL-Plattform vorab |
+| A14 | [ETL](ANHANG_A_GLOSSAR.md#etl) | B | Stufenweise Skript-/Importautomatisierung, keine ETL-Plattform vorab |
 | A15 | Metadaten | B | Schlanker quellen-/datensatz-/dienstbezogener Katalog · [überprüfungsbedürftig](#erneute-prüfung-a04-a15-und-a36) |
 | A16 | Datenqualität | B | Amtliche Daten technisch prüfen, eigene Daten pragmatisch fachlich prüfen; kein formales QA-System |
-| A17 | QGIS-Stile | B | Zentrale [Git](GLOSSAR.md#git)-versionierte QML, projektspezifische Overrides |
+| A17 | QGIS-Stile | B | Zentrale [Git](ANHANG_A_GLOSSAR.md#git)-versionierte QML, projektspezifische Overrides |
 | A18 | Webpublikation | B | Eigene Webkartenprojekte; primär intern, extern geschützt bei Bedarf |
 | A19 | Web-UI | B | Eine Anwendung, einfache Grundansicht und bedarfsbezogene Erweiterungen |
 | A20 | Suche | B | Schlanke integrierte Suche; keine separate Suchplattform |
@@ -42,7 +42,7 @@
 | A32 | Support und Weiterentwicklung | B | Schlanker gemeinsamer Prozess, vorhandene Werkzeuge bevorzugen |
 | A33 | Wissensaufbau | B | Themen-/rollenbezogen A/B/C kombinieren; Ressourcen verbindlich einplanen |
 | A34 | Pilotstrategie | B | Gemeinsame Basis, zwei früh beteiligte und zeitlich staffelbare Piloten |
-| A35 | [MVP](GLOSSAR.md#mvp) | B | Priorisierter anpassbarer Umfang; gemeinsame Basis und Pilot-MVPs unterscheiden |
+| A35 | [MVP](ANHANG_A_GLOSSAR.md#mvp) | B | Priorisierter anpassbarer Umfang; gemeinsame Basis und Pilot-MVPs unterscheiden |
 | A36 | Migration | B | **B+**: verbindliche Zielarchitektur, selektive Migration, problematische SharePoint-/OneDrive-GIS-Arbeitsbestände ablösen · [überprüfungsbedürftig](#erneute-prüfung-a04-a15-und-a36) |
 | A37 | Datenlebenszyklus | Z | Option B plausibel, aber nicht beschlossen; später klären |
 | A38 | Datenbankregeln | Z | Option B plausibel, aber nicht beschlossen; später klären |
@@ -76,7 +76,7 @@ Priorisierte Suchfälle und vorhandene Quellen bestimmen den Katalogumfang. [OGC
 Eine fachlich führende Stelle je gemeinsamem Datenbestand. Lesende fachbereichsübergreifende Nutzung nach Freigabe, Schreibrechte nach Rolle und Zuständigkeit. Die Durchsetzung muss in DB, Diensten, Extract und mobilen Pfaden wirksam sein; das konkrete Berechtigungsdesign ist offen.
 
 ### A12 – Extract
-Geplante Formate GPKG, Shapefile, GeoJSON und CSV; Flächenauswahl aus Karte, GeoJSON/Shapefile oder BBox und optional Ziel-[CRS](GLOSSAR.md#crs). **Selektion ganzer Objekte ist nicht gleich geometrischem Zuschnitt.** Diese Unterscheidung ist vor Implementierung zu erproben.
+Geplante Formate GPKG, Shapefile, GeoJSON und CSV; Flächenauswahl aus Karte, GeoJSON/Shapefile oder BBox und optional Ziel-[CRS](ANHANG_A_GLOSSAR.md#crs). **Selektion ganzer Objekte ist nicht gleich geometrischem Zuschnitt.** Diese Unterscheidung ist vor Implementierung zu erproben.
 
 ### A24 – Deployment
 Die Varianten **A native VMs**, **B Datenbank nativ plus containerisierte GIS-Dienste**, **C umfassende Containerisierung** bleiben gleichberechtigte Untersuchungsoptionen. Vergleich nach Betrieb, IT-Know-how, Sicherheit, Wartbarkeit, Backup, Kosten und Zukunftsfähigkeit; kein voreiliger Technologieentscheid.

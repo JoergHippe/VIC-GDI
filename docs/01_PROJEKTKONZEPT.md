@@ -4,7 +4,7 @@
 
 ## Ausgangslage
 
-Geodaten und [QGIS](GLOSSAR.md#qgis)-Projekte werden in unterschiedlichen Fachbereichen und Speicherorten verwaltet. Gemeinsame Datennutzung, einheitliche Bereitstellung und kontrollierter Betrieb sollen verbessert werden. In der Baubetreuung werden [QGIS](GLOSSAR.md#qgis)-Arbeitsbestände teilweise über synchronisierte SharePoint-/OneDrive-Verzeichnisse genutzt; diese Arbeitsweise soll für führende GIS-Arbeitsdaten kontrolliert abgelöst werden (A36).
+Geodaten und [QGIS](ANHANG_A_GLOSSAR.md#qgis)-Projekte werden in unterschiedlichen Fachbereichen und Speicherorten verwaltet. Gemeinsame Datennutzung, einheitliche Bereitstellung und kontrollierter Betrieb sollen verbessert werden. In der Baubetreuung werden [QGIS](ANHANG_A_GLOSSAR.md#qgis)-Arbeitsbestände teilweise über synchronisierte SharePoint-/OneDrive-Verzeichnisse genutzt; diese Arbeitsweise soll für führende GIS-Arbeitsdaten kontrolliert abgelöst werden (A36).
 
 ## Ziele
 
@@ -26,11 +26,11 @@ Die Piloten sind unterschiedlich und müssen nicht zeitgleich denselben Funktion
 
 - Kein öffentliches anonymes GIS-Portal als primäres Ziel.
 - Die GDI ergänzt CAD-, BIM-, M365- und Fachanwendungen um eine gemeinsame Geodatenbasis.
-- Keine vollständige Migration aller Dateiformate nach [PostGIS](GLOSSAR.md#postgis).
+- Keine vollständige Migration aller Dateiformate nach [PostGIS](ANHANG_A_GLOSSAR.md#postgis).
 - Keine Eigenentwicklung eines Offline-Synchronisationssystems.
 - Kein umfassendes formales Qualitätsmanagement für amtliche Geobasisdaten.
 - Kein umfangreiches ITSM-, CI/CD- oder HA-System ohne nachgewiesenen Bedarf.
 
 ## Prinzipien
 
-Bedarf vor Technik; Datenhoheit; nachvollziehbare Änderungen; Standard vor Sonderlösung; schrittweise Einführung; zentrale Bereitstellung ohne unnötige Kopien. Verbindliche Details siehe [Entscheidungen](ENTSCHEIDUNGEN.md), technische Umsetzung siehe [Architektur](ARCHITEKTUR.md).
+Bedarf vor Technik; Datenhoheit; nachvollziehbare Änderungen; Standard vor Sonderlösung; schrittweise Einführung; zentrale Bereitstellung ohne unnötige Kopien. Verbindliche Details siehe [Entscheidungen](04_ENTSCHEIDUNGEN.md), technische Umsetzung siehe [Architektur](03_ARCHITEKTUR.md).

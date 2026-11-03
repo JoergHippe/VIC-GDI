@@ -1,14 +1,14 @@
 # Pilotkonkretisierung – Baubetreuung und Verkehrsanlagenplanung
 
-**Status:** Interner Arbeitsentwurf. Fachlich benannte Tätigkeiten und bestehende mobile Praxis sind gekennzeichnet. Pilotumfang und Sollabläufe stehen zur Auswahl. Quelle der beschlossenen Rahmenbedingungen: [Entscheidungen](ENTSCHEIDUNGEN.md), insbesondere A01, A04, A09, A13, A34–A36.
+**Status:** Interner Arbeitsentwurf. Fachlich benannte Tätigkeiten und bestehende mobile Praxis sind gekennzeichnet. Pilotumfang und Sollabläufe stehen zur Auswahl. Quelle der beschlossenen Rahmenbedingungen: [Entscheidungen](04_ENTSCHEIDUNGEN.md), insbesondere A01, A04, A09, A13, A34–A36.
 
 ## Ziel und Vorgehen
 
-Die Piloten sollen die gemeinsame [GDI](GLOSSAR.md#gdi)-Basis anhand realer Arbeitsabläufe überprüfen. Nicht beide Fachbereiche müssen dieselben Funktionen benötigen. Pro Pilot zunächst **ein bis zwei häufige oder problematische Abläufe** auswählen, vorhandene Daten/Programme prüfen, minimalen Sollablauf beschreiben, danach Akzeptanzkriterien und [MVP](GLOSSAR.md#mvp)-Umfang festlegen. Keine zusätzlichen Architekturentscheidungen aus unbestätigten Annahmen ableiten.
+Die Piloten sollen die gemeinsame [GDI](ANHANG_A_GLOSSAR.md#gdi)-Basis anhand realer Arbeitsabläufe überprüfen. Nicht beide Fachbereiche müssen dieselben Funktionen benötigen. Pro Pilot zunächst **ein bis zwei häufige oder problematische Abläufe** auswählen, vorhandene Daten/Programme prüfen, minimalen Sollablauf beschreiben, danach Akzeptanzkriterien und [MVP](ANHANG_A_GLOSSAR.md#mvp)-Umfang festlegen. Keine zusätzlichen Architekturentscheidungen aus unbestätigten Annahmen ableiten.
 
 ## Pilot 1 – Baubetreuung / Bauüberwachung
 
-**Gesichert:** Baubetreuung ist Pilotbereich; bisherige führende [QGIS](GLOSSAR.md#qgis)-Arbeitsdaten in synchronisierten SharePoint-/OneDrive-Verzeichnissen verursachen Probleme. A36 legt eine kontrollierte selektive Migration fest.
+**Gesichert:** Baubetreuung ist Pilotbereich; bisherige führende [QGIS](ANHANG_A_GLOSSAR.md#qgis)-Arbeitsdaten in synchronisierten SharePoint-/OneDrive-Verzeichnissen verursachen Probleme. A36 legt eine kontrollierte selektive Migration fest.
 
 **Prüfhypothesen, nicht beschlossen:**
 - Projektbezogene Geodaten und Pläne sicher finden, anzeigen und mit geeigneten Informationen verknüpfen.
@@ -38,7 +38,7 @@ Die Baubetreuung beginnt erst mit der GIS-Nutzung und untersucht weitere möglic
 
 ### Mobile Erfassung und Datenaustausch
 
-**Vom Fachbereich bestätigt:** Für BB-01 bis BB-03 werden **Happy MiniQ** und [QField](GLOSSAR.md#qfield) auf **Tablet und Smartphone** eingesetzt. Die Arbeitsabläufe zur **bidirektionalen Datenübertragung** sind noch nicht abschließend optimiert.
+**Vom Fachbereich bestätigt:** Für BB-01 bis BB-03 werden **Happy MiniQ** und [QField](ANHANG_A_GLOSSAR.md#qfield) auf **Tablet und Smartphone** eingesetzt. Die Arbeitsabläufe zur **bidirektionalen Datenübertragung** sind noch nicht abschließend optimiert.
 
 Für die konkreten Happy-MiniQ-/QField-Konfigurationen sind zwei Übertragungswege zu vergleichen. **Variante A** ist der cloudbasierte Austausch. **Variante B** verbindet lokale Speicherung auf dem Mobilgerät mit anschließender Dateiübertragung per USB-Kabel. Die Auswahl ist offen.
 
@@ -87,7 +87,7 @@ Die **Rückübertragung** muss für beide Varianten gesondert praktisch nachgewi
 
 **Prüfhypothesen, nicht beschlossen:**
 - Projekt- und fachbereichsübergreifende Geobasis- und Fachdaten ohne redundante Kopien nutzen.
-- Wiederkehrende QGIS-Layer, Datenquellen und [QML](GLOSSAR.md#qml)-Stile zentral bereitstellen.
+- Wiederkehrende QGIS-Layer, Datenquellen und [QML](ANHANG_A_GLOSSAR.md#qml)-Stile zentral bereitstellen.
 - Bei Bedarf Karten für weniger GIS-erfahrene Projektbeteiligte im Browser veröffentlichen.
 
 **Zuerst klären:**
@@ -129,7 +129,7 @@ Für jeden bestätigten Anwendungsfall ein kompakter Datensatz:
 
 1. Pro Pilot ein bis zwei **bestätigte** Anwendungsfälle priorisieren.
 2. Daraus gemeinsamen GDI-Kern und getrennte Pilot-MVPs ableiten.
-3. Nur dafür benötigte technische [PoCs](GLOSSAR.md#poc) und IT-Abstimmungen ansetzen.
-4. Ergebnisse mit [Roadmap](ROADMAP.md), [Anforderungen](ANFORDERUNGEN.md) und [Offenen Punkten](OFFENE_PUNKTE.md) synchronisieren.
+3. Nur dafür benötigte technische [PoCs](ANHANG_A_GLOSSAR.md#poc) und IT-Abstimmungen ansetzen.
+4. Ergebnisse mit [Roadmap](06_ROADMAP.md), [Anforderungen](02_ANFORDERUNGEN.md) und [Offenen Punkten](07_OFFENE_PUNKTE.md) synchronisieren.
 
 **Abgrenzung:** Dieses Dokument ist ein Erhebungsleitfaden. Es ist kein bereits bestätigtes Fachkonzept und enthält keine erfundenen fachlichen Anforderungen.
