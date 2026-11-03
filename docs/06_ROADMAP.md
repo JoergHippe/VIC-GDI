@@ -6,7 +6,7 @@ Die [Pilotkonkretisierung](05_PILOTKONKRETISIERUNG.md) trennt fachlich benannte 
 
 ## Vorgehensprinzip
 
-Gemeinsame, schlanke GDI-Basis und zwei früh beteiligte Pilotbereiche (A34). Der [MVP](ANHANG_A_GLOSSAR.md#mvp) ist priorisiert und anpassbar; gemeinsamer GDI-MVP und fachliche Pilot-MVPs werden getrennt geplant (A35). Phasen dürfen sich überlappen.
+Gemeinsame, schlanke GDI-Basis und zwei früh beteiligte Pilotbereiche ([A34](04_ENTSCHEIDUNGEN.md#a34)). Der [MVP](ANHANG_A_GLOSSAR.md#mvp) ist priorisiert und anpassbar; gemeinsamer GDI-MVP und fachliche Pilot-MVPs werden getrennt geplant ([A35](04_ENTSCHEIDUNGEN.md#a35)). Phasen dürfen sich überlappen.
 
 ### Ablauf bis zur belastbaren Pilotentscheidung
 
@@ -26,16 +26,16 @@ flowchart LR
   Decide -->|Überarbeiten| Select
 ```
 
-Aktuell laufen Vorbereitung und Abstimmung. IT klärt den Betriebsrahmen, die Geschäftsführung entscheidet über Ressourcen für die Vorbereitung. Praktische Erprobung folgt nach gesonderter Freigabe. Über Umfang, Budget und Start der Piloten entscheidet die Geschäftsführung anhand der Ergebnisse und des mit IT geklärten Betriebsrahmens. Siehe [IT-Briefing](BRIEFING_IT.md) und [Geschäftsführungs-Briefing](BRIEFING_GESCHAEFTSFUEHRUNG.md).
+Aktuell laufen Vorbereitung und Abstimmung. IT klärt den Betriebsrahmen, die Geschäftsführung entscheidet über Ressourcen für die Vorbereitung. Praktische Erprobung folgt nach gesonderter Freigabe. Über Umfang, Budget und Start der Piloten entscheidet die Geschäftsführung anhand der Ergebnisse und des mit IT geklärten Betriebsrahmens. Siehe [Mindestabnahme für den Betrieb](BRIEFING_IT.md#mindestabnahme-vor-produktivem-pilot) und [Folgeentscheidung der Geschäftsführung](BRIEFING_GESCHAEFTSFUEHRUNG.md#folgeentscheidung).
 
 ## Etappen
 
 ### 0 – Vorbereitung und Bestandsaufnahme
 - IT, GIS-Team und Pilotbereiche abstimmen; Zuständigkeiten skizzieren.
 - Bestehende [QGIS](ANHANG_A_GLOSSAR.md#qgis)-Projekte, Datenquellen, Speicherorte und kritische Abläufe erfassen.
-- Problematische synchronisierte SharePoint-/OneDrive-GIS-Arbeitsdatenhaltung in der Baubetreuung identifizieren.
+- Problematische synchronisierte [SharePoint](ANHANG_A_GLOSSAR.md#sharepoint)-/[OneDrive](ANHANG_A_GLOSSAR.md#onedrive)-GIS-Arbeitsdatenhaltung in der Baubetreuung identifizieren.
 - Konkrete Pilot-Use-Cases und Minimalerfolgskriterien festlegen.
-- Wissens- und Schulungsbedarf samt Kapazitäten einplanen (A33).
+- Wissens- und Schulungsbedarf samt Kapazitäten einplanen ([A33](04_ENTSCHEIDUNGEN.md#a33)).
 
 ### 1 – Gemeinsame technische Basis
 - [PostGIS](ANHANG_A_GLOSSAR.md#postgis) und QGIS-Desktop-Anbindung; geeignete gemeinsame Datenmodelle.
@@ -49,7 +49,7 @@ Aktuell laufen Vorbereitung und Abstimmung. IT klärt den Betriebsrahmen, die Ge
 - Fachliche Abnahme an realen Daten; keine Pflicht zu gleichem Funktionsumfang.
 
 ### 3 – Stabilisierung und kontrollierte Migration
-- OneDrive-/SharePoint-basierte führende GIS-Arbeitsbestände der BB nach A36 kontrolliert ablösen.
+- OneDrive-/SharePoint-basierte führende GIS-Arbeitsbestände der BB nach [A36](04_ENTSCHEIDUNGEN.md#a36) kontrolliert ablösen.
 - Datenquellen, Mehrbenutzerbearbeitung, Datenhoheit und Berechtigungen testen.
 - Betriebs-, Schulungs- und Supportaufwand aus der Praxis erfassen.
 

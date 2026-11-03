@@ -4,7 +4,7 @@
 
 ## Zielbild
 
-Eine gemeinsame Geodateninfrastruktur soll Geodaten fachbereichsübergreifend nutzbar machen, Mehrfachhaltung reduzieren und [GIS](ANHANG_A_GLOSSAR.md#gis)-Arbeitsabläufe in der Infrastrukturplanung zuverlässiger gestalten. Sie ergänzt die bestehenden CAD-, BIM-, M365- und Fachabläufe um eine gemeinsame Geodatenbasis. Die Einführung erfolgt schrittweise mit zwei Pilotbereichen: Baubetreuung/Bauüberwachung und Verkehrsanlagenplanung.
+Eine gemeinsame Geodateninfrastruktur soll Geodaten fachbereichsübergreifend nutzbar machen, Mehrfachhaltung reduzieren und [GIS](ANHANG_A_GLOSSAR.md#gis)-Arbeitsabläufe in der Infrastrukturplanung zuverlässiger gestalten. Sie ergänzt die bestehenden CAD-, BIM-, [M365](ANHANG_A_GLOSSAR.md#m365)- und Fachabläufe um eine gemeinsame Geodatenbasis. Die Einführung erfolgt schrittweise mit zwei Pilotbereichen: Baubetreuung/Bauüberwachung und Verkehrsanlagenplanung.
 
 ## Erwarteter Nutzen – noch zu validieren
 
@@ -21,7 +21,7 @@ Dies sind **Zielwirkungen**, keine bereits gemessenen Einsparungen.
 
 | Pilot | Möglicher erster Ablauf | Späterer Nachweis |
 |---|---|---|
-| Baubetreuung/Bauüberwachung | Bei der Bestandsdokumentation einen vor Ort erfassten Leitungsverlauf prüfen und in einen führenden Bestand übernehmen. | Freigegebener Stand, Herkunft und Prüfstatus sind nachvollziehbar. Übergabeschritte und aufgetretene Datenkonflikte werden erfasst. |
+| Baubetreuung/Bauüberwachung | Bei der [Bestandsdokumentation (BB-01)](05_PILOTKONKRETISIERUNG.md#bb-01) einen vor Ort erfassten Leitungsverlauf prüfen und in einen führenden Bestand übernehmen. | Freigegebener Stand, Herkunft und Prüfstatus sind nachvollziehbar. Übergabeschritte und aufgetretene Datenkonflikte werden erfasst. |
 | Verkehrsanlagenplanung | Einen wiederkehrenden Geodatenbestand aus zwei Planungsprojekten nutzen. | Beide Projekte finden den freigegebenen Stand mit den vorgesehenen Rechten. Suchaufwand und Zahl zusätzlicher Arbeitskopien werden mit dem heutigen Ablauf verglichen. |
 
 Die Fachbereiche priorisieren je Pilot einen ersten Ablauf und legen vor der Umsetzung Ausgangswerte und Abnahmekriterien fest. Beide Piloten können zeitlich gestaffelt werden. Details und Status der Anwendungsfälle stehen in der [Pilotkonkretisierung](05_PILOTKONKRETISIERUNG.md).
@@ -35,11 +35,11 @@ Die Fachbereiche priorisieren je Pilot einen ersten Ablauf und legen vor der Ums
 | Technische PoCs, Tests, Einführung | Support und Fehlerbehebung |
 | Wissensaufbau und Schulungen | Auffrischung, Dokumentationspflege, Vertretung |
 
-**Verbindlicher Grundsatz A33:** Wissensaufbau benötigt explizit eingeplante personelle, zeitliche und gegebenenfalls finanzielle Ressourcen. Selbststudium ist nicht kostenfrei. Die Methode (Eigenlernen, gezielte Schulung, umfassende Qualifikation) richtet sich nach Rolle, Risiko und Wirtschaftlichkeit.
+**[Ressourcen für den Wissensaufbau](04_ENTSCHEIDUNGEN.md#a33):** Wissensaufbau benötigt explizit eingeplante personelle, zeitliche und gegebenenfalls finanzielle Ressourcen. Selbststudium ist nicht kostenfrei. Die Methode (Eigenlernen, gezielte Schulung, umfassende Qualifikation) richtet sich nach Rolle, Risiko und Wirtschaftlichkeit.
 
 ## Organisationsmodell
 
-GIS-Team verantwortet fachliche GDI-Fragen, IT die Infrastruktur und Basis-Sicherheit; Datenhoheit liegt bei den zuständigen Fachbereichen. Für DB und GIS-Dienste sind konkrete Betriebszuständigkeiten noch festzulegen (A31). Kein neues umfangreiches Service-Management-System vorgesehen.
+GIS-Team verantwortet fachliche GDI-Fragen, IT die Infrastruktur und Basis-Sicherheit; Datenhoheit liegt bei den zuständigen Fachbereichen. Die konkrete [Betriebsverantwortung](04_ENTSCHEIDUNGEN.md#a31) für Datenbank und GIS-Dienste ist noch festzulegen. Kein neues umfangreiches Service-Management-System vorgesehen.
 
 ## Risiken und Gegenmaßnahmen
 
@@ -53,7 +53,9 @@ GIS-Team verantwortet fachliche GDI-Fragen, IT die Infrastruktur und Basis-Siche
 
 **Erbetener Beschluss für die Vorbereitung:** Eine fachliche Projektverantwortung und je eine Ansprechperson aus IT und den beiden Pilotbereichen benennen. Zeit für Bestandsaufnahme, Pilotkonzeption, IT-Abstimmung und Einarbeitungsplanung einräumen und die Priorität gegenüber laufenden Projekten festlegen.
 
-**Folgeentscheidung:** Das Team legt priorisierte Abläufe, Erfolgskriterien, einmaligen Aufwand, laufenden Betriebsbedarf und Risiken vor. Auf dieser Grundlage entscheidet die Geschäftsführung über Umfang, Budget und Start der Piloten. Die IT bestätigt vorher den tragfähigen Betriebsrahmen.
+### Folgeentscheidung
+
+Das Team legt priorisierte Abläufe, Erfolgskriterien, einmaligen Aufwand, laufenden Betriebsbedarf und Risiken vor. Auf dieser Grundlage entscheidet die Geschäftsführung über Umfang, Budget und Start der Piloten. Die IT bestätigt vorher den tragfähigen Betriebsrahmen.
 
 **Gesprächsablauf (Vorschlag, 30 Minuten):** 5 Minuten Ausgangslage und Nutzen, 10 Minuten Piloten und Erfolgskriterien, 10 Minuten Ressourcen und Risiken, 5 Minuten Beschluss und Zuständigkeiten.
 

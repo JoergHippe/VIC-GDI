@@ -8,9 +8,10 @@
 4. Nicht beschlossene Varianten bleiben sichtbar; technische Details mit IT abstimmen.
 5. Nur bei tatsächlichem Bedarf zusätzliche Dokumente, Verzeichnisse oder Prozesse einführen.
 6. Keine Zugangsdaten, personenbezogenen Daten oder produktiven Geodaten in Git versionieren.
-7. Fachbegriffe beim ersten Auftreten je Dokument zum [Glossar](ANHANG_A_GLOSSAR.md) verlinken.
+7. Fachbegriffe und Produkte beim ersten relevanten Auftreten je Dokument zum [Glossar](ANHANG_A_GLOSSAR.md) verlinken. Dort bevorzugt offizielle Projektseiten oder Herstellerdokumentation angeben.
 8. Kleine, thematisch nachvollziehbare Commits; `main` ist zunächst ausreichend.
 9. Aktuelle Dokumente halten geltende Beschlüsse samt Begründungen, den bekannten Ist-Stand und offene Aufgaben fest. Abgelöste Zwischenstände und abgeschlossene Dokumentationsreviews sind im Git-Verlauf nachvollziehbar.
+10. In Bezugsspalten und beim ersten fachlichen Bezug je Abschnitt direkt zur Entscheidungszeile verlinken. Bei ID-Bereichen genügt der Einstieg bei der ersten Zeile. Für konkrete Prüfaufträge den zuständigen Abschnitt verlinken.
 
 ## Diagramme
 

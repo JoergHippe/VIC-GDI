@@ -1,6 +1,6 @@
 # Pilotkonkretisierung – Baubetreuung und Verkehrsanlagenplanung
 
-**Status:** Interner Arbeitsentwurf. Fachlich benannte Tätigkeiten und bestehende mobile Praxis sind gekennzeichnet. Pilotumfang und Sollabläufe stehen zur Auswahl. Quelle der beschlossenen Rahmenbedingungen: [Entscheidungen](04_ENTSCHEIDUNGEN.md), insbesondere A01, A04, A09, A13, A34–A36.
+**Status:** Interner Arbeitsentwurf. Fachlich benannte Tätigkeiten und bestehende mobile Praxis sind gekennzeichnet. Pilotumfang und Sollabläufe stehen zur Auswahl. Quelle der beschlossenen Rahmenbedingungen: [Entscheidungen](04_ENTSCHEIDUNGEN.md), insbesondere [A01](04_ENTSCHEIDUNGEN.md#a01), [A04](04_ENTSCHEIDUNGEN.md#a04), [A09](04_ENTSCHEIDUNGEN.md#a09), [A13](04_ENTSCHEIDUNGEN.md#a13), [A34–A36](04_ENTSCHEIDUNGEN.md#a34).
 
 ## Ziel und Vorgehen
 
@@ -8,7 +8,7 @@ Die Piloten sollen die gemeinsame [GDI](ANHANG_A_GLOSSAR.md#gdi)-Basis anhand re
 
 ## Pilot 1 – Baubetreuung / Bauüberwachung
 
-**Gesichert:** Baubetreuung ist Pilotbereich; bisherige führende [QGIS](ANHANG_A_GLOSSAR.md#qgis)-Arbeitsdaten in synchronisierten SharePoint-/OneDrive-Verzeichnissen verursachen Probleme. A36 legt eine kontrollierte selektive Migration fest.
+**Gesichert:** Baubetreuung ist Pilotbereich; bisherige führende [QGIS](ANHANG_A_GLOSSAR.md#qgis)-Arbeitsdaten in synchronisierten [SharePoint](ANHANG_A_GLOSSAR.md#sharepoint)-/[OneDrive](ANHANG_A_GLOSSAR.md#onedrive)-Verzeichnissen verursachen Probleme. [A36](04_ENTSCHEIDUNGEN.md#a36) legt eine kontrollierte selektive Migration fest.
 
 **Prüfhypothesen, nicht beschlossen:**
 - Projektbezogene Geodaten und Pläne sicher finden, anzeigen und mit geeigneten Informationen verknüpfen.
@@ -30,7 +30,7 @@ Die Baubetreuung beginnt erst mit der GIS-Nutzung und untersucht weitere möglic
 
 | ID | Tatsächlich genannte Tätigkeit | Fachliche Abgrenzung und nächste Klärung |
 |---|---|---|
-| BB-01 | Bestandsdokumentation, z. B. Erfassung und Validierung von Leitungen nach Öffnen der Baugrube | Vorhandene Leitungsangaben und vor Ort festgestellte Lage auseinanderhalten; Herkunft, Zeitpunkt, Genauigkeit und Prüfstatus klären. Keine automatische Leitungsfreigabe oder umfassende Netzfachschale unterstellen. |
+| <a id="bb-01"></a>BB-01 | Bestandsdokumentation, z. B. Erfassung und Validierung von Leitungen nach Öffnen der Baugrube | Vorhandene Leitungsangaben und vor Ort festgestellte Lage auseinanderhalten; Herkunft, Zeitpunkt, Genauigkeit und Prüfstatus klären. Keine automatische Leitungsfreigabe oder umfassende Netzfachschale unterstellen. |
 | BB-02 | Punktuelle Lage- und Höhenkontrollen | Messwerte und Referenzen, Koordinaten- und Höhenbezug, Toleranzen sowie führende Vermessungssoftware klären. GIS ersetzt keine fachlich erforderliche Vermessungsprüfung. |
 | BB-03 | Aufnahme von Linien und Flächen zur Mengenermittlung und Kontrolle | Erfassungsmethode, Genauigkeit, Maßeinheiten, Auswertungsregeln und Abgrenzung zu Fachsoftware klären. |
 
@@ -38,9 +38,9 @@ Die Baubetreuung beginnt erst mit der GIS-Nutzung und untersucht weitere möglic
 
 ### Mobile Erfassung und Datenaustausch
 
-**Vom Fachbereich bestätigt:** Für BB-01 bis BB-03 werden **Happy MiniQ** und [QField](ANHANG_A_GLOSSAR.md#qfield) auf **Tablet und Smartphone** eingesetzt. Die Arbeitsabläufe zur **bidirektionalen Datenübertragung** sind noch nicht abschließend optimiert.
+**Vom Fachbereich bestätigt:** Für BB-01 bis BB-03 wird der GNSS-Empfänger **[HAPPY MINI Q](ANHANG_A_GLOSSAR.md#happy-mini-q)** zusammen mit [QField](ANHANG_A_GLOSSAR.md#qfield) auf **Tablet und Smartphone** eingesetzt. Die Arbeitsabläufe zur **bidirektionalen Datenübertragung** sind noch nicht abschließend optimiert.
 
-Für die konkreten Happy-MiniQ-/QField-Konfigurationen sind zwei Übertragungswege zu vergleichen. **Variante A** ist der cloudbasierte Austausch. **Variante B** verbindet lokale Speicherung auf dem Mobilgerät mit anschließender Dateiübertragung per USB-Kabel. Die Auswahl ist offen.
+Für den Datenaustausch mit den eingesetzten QField-Konfigurationen sind zwei Übertragungswege zu vergleichen. **Variante A** ist der cloudbasierte Austausch. **Variante B** verbindet lokale Speicherung auf dem Mobilgerät mit anschließender Dateiübertragung per USB-Kabel. Die Auswahl ist offen.
 
 ### Datenflussdiagramm – zwei zu vergleichende Varianten
 
@@ -71,7 +71,7 @@ Die **Rückübertragung** muss für beide Varianten gesondert praktisch nachgewi
 2. Hin- und Rückübertragung: bestehende QField-/Happy-MiniQ-Funktionen, Dateiaustausch oder Dienste; Synchronisationskonflikte und Ausfälle.
 3. Fachliche Übernahme: Eingang, Plausibilisierung, ggf. Prüfung und Überführung in den führenden Datenbestand. **Synchronisiert bedeutet nicht validiert.**
 
-**Leitplanke A13:** Bewährte vorhandene Synchronisationswerkzeuge bevorzugen; keine eigene Synchronisationsplattform entwickeln. Die konkrete Lösung erst nach einem Ende-zu-Ende-Test mit echten Pilotdaten festlegen.
+**Leitplanke [A13](04_ENTSCHEIDUNGEN.md#a13):** Bewährte vorhandene Synchronisationswerkzeuge bevorzugen; keine eigene Synchronisationsplattform entwickeln. Die konkrete Lösung erst nach einem Ende-zu-Ende-Test mit echten Pilotdaten festlegen.
 
 ### Nächste fachliche Erhebung
 
@@ -97,7 +97,7 @@ Die **Rückübertragung** muss für beide Varianten gesondert praktisch nachgewi
 4. Welche Kartenansichten werden von Projektleitung oder anderen Beteiligten benötigt?
 5. Welche Abläufe sind aktuell besonders fehleranfällig oder zeitaufwendig?
 
-**Möglicher erster Testfall:** Einen realen, wiederkehrenden gemeinsamen Datenbestand in PostGIS bereitstellen und aus zwei fachlich getrennten QGIS-Projekten mit definierten Leserechten nutzen. Nur nach fachlicher Bestätigung priorisieren.
+**Möglicher erster Testfall:** Einen realen, wiederkehrenden gemeinsamen Datenbestand in [PostGIS](ANHANG_A_GLOSSAR.md#postgis) bereitstellen und aus zwei fachlich getrennten QGIS-Projekten mit definierten Leserechten nutzen. Nur nach fachlicher Bestätigung priorisieren.
 
 ## Einheitliches Erhebungsraster
 

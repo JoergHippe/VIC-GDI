@@ -4,7 +4,7 @@
 
 ## Ausgangslage
 
-Geodaten und [QGIS](ANHANG_A_GLOSSAR.md#qgis)-Projekte werden in unterschiedlichen Fachbereichen und Speicherorten verwaltet. Gemeinsame Datennutzung, einheitliche Bereitstellung und kontrollierter Betrieb sollen verbessert werden. In der Baubetreuung werden [QGIS](ANHANG_A_GLOSSAR.md#qgis)-Arbeitsbestände teilweise über synchronisierte SharePoint-/OneDrive-Verzeichnisse genutzt; diese Arbeitsweise soll für führende GIS-Arbeitsdaten kontrolliert abgelöst werden (A36).
+Geodaten und [QGIS](ANHANG_A_GLOSSAR.md#qgis)-Projekte werden in unterschiedlichen Fachbereichen und Speicherorten verwaltet. Gemeinsame Datennutzung, einheitliche Bereitstellung und kontrollierter Betrieb sollen verbessert werden. In der Baubetreuung werden [QGIS](ANHANG_A_GLOSSAR.md#qgis)-Arbeitsbestände teilweise über synchronisierte [SharePoint](ANHANG_A_GLOSSAR.md#sharepoint)-/[OneDrive](ANHANG_A_GLOSSAR.md#onedrive)-Verzeichnisse genutzt; diese Arbeitsweise soll für führende GIS-Arbeitsdaten kontrolliert abgelöst werden ([A36](04_ENTSCHEIDUNGEN.md#a36)).
 
 ## Ziele
 
@@ -20,12 +20,12 @@ Geodaten und [QGIS](ANHANG_A_GLOSSAR.md#qgis)-Projekte werden in unterschiedlich
 1. **Baubetreuung/Bauüberwachung:** räumlich bezogene Vorgänge, Karten, geeignete mobile Arbeitsabläufe.
 2. **Verkehrsanlagenplanung:** projektbezogene und gemeinsam genutzte Geodaten, QGIS-Arbeitsabläufe.
 
-Die Piloten sind unterschiedlich und müssen nicht zeitgleich denselben Funktionsumfang erreichen (A34).
+Die Piloten sind unterschiedlich und müssen nicht zeitgleich denselben Funktionsumfang erreichen ([A34](04_ENTSCHEIDUNGEN.md#a34)).
 
 ## Abgrenzung
 
 - Kein öffentliches anonymes GIS-Portal als primäres Ziel.
-- Die GDI ergänzt CAD-, BIM-, M365- und Fachanwendungen um eine gemeinsame Geodatenbasis.
+- Die GDI ergänzt CAD-, BIM-, [M365](ANHANG_A_GLOSSAR.md#m365)- und Fachanwendungen um eine gemeinsame Geodatenbasis.
 - Keine vollständige Migration aller Dateiformate nach [PostGIS](ANHANG_A_GLOSSAR.md#postgis).
 - Keine Eigenentwicklung eines Offline-Synchronisationssystems.
 - Kein umfassendes formales Qualitätsmanagement für amtliche Geobasisdaten.
