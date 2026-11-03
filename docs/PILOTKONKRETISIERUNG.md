@@ -44,25 +44,20 @@ Die Baubetreuung beginnt erst mit der GIS-Nutzung und untersucht weitere möglic
 
 ### Datenflussdiagramm – zwei zu vergleichende Varianten
 
-**Prüfmodell, keine festgelegte Implementierung.** Die Pfeile bezeichnen die zu untersuchenden Übertragungsrichtungen; der technische Transport und die konkrete Datenübernahme sind noch offen.
+**Prüfmodell, keine festgelegte Implementierung.** Die Doppelpfeile zeigen nur, dass **beide Übertragungsrichtungen zu testen** sind; sie bestätigen keine bereits funktionierende Synchronisation. Die fachliche Prüfung und die Übernahme sind noch zu konkretisieren.
 
 ```mermaid
 flowchart TB
-  Device["Tablet / Smartphone: Happy MiniQ oder QField"]
-  Choice{"Zu vergleichender Übertragungsweg"}
-  Cloud["Variante 1: Cloudbasierter Austausch"]
-  USB["Variante 2: Lokale Speicherung und USB-Kabel"]
-  Inbound["Eingang / Abgleich am Arbeitsplatz - zu klären"]
-  Check["Fachliche Plausibilisierung / Validierung - zu klären"]
-  Master["Führender Datenbestand - Ziel noch festzulegen"]
-  Device <--> Choice
-  Choice <--> Cloud
-  Choice <--> USB
-  Cloud <--> Inbound
-  USB <--> Inbound
-  Inbound --> Check
-  Check --> Master
-  Master -. "Rückübertragung ebenfalls testen" .-> Inbound
+  Mobile["Mobile Erfassung: QField / Happy MiniQ"]
+  Cloud["Variante A: Cloud"]
+  Cable["Variante B: Lokal speichern + USB-Kabel"]
+  Work["Arbeitsplatz: Daten abgleichen und fachlich prüfen"]
+  Master["Führender Datenbestand"]
+  Mobile <--> Cloud
+  Mobile <--> Cable
+  Cloud <--> Work
+  Cable <--> Work
+  Work <--> Master
 ```
 
 Die **Rückübertragung** muss für beide Varianten gesondert praktisch nachgewiesen werden. Ein erfolgreicher Transfer ersetzt keine fachliche Prüfung; die Darstellung schreibt keine Freigabe-Engine vor.
