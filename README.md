@@ -9,15 +9,15 @@ VIC-GDI ist die geplante unternehmensweite, fachbereichsneutrale Geodateninfrast
 - [IT-Briefing](docs/BETRIEB_UND_IT.md) – GDI-Grundlagen, Infrastruktur, Betrieb, Agenda und Fragen
 - [Geschäftsführungs-Briefing](docs/MANAGEMENT.md) – Nutzen, Piloten, Ressourcen und Beschlussbedarf
 
-## Konzept und Referenz
+## Lesereihenfolge für das GDI-Konzept
 
-- [Projektkonzept](docs/PROJEKTKONZEPT.md) – Ziele, Grenzen, Pilotbereiche
-- [Anforderungen](docs/ANFORDERUNGEN.md) – fachliche und nichtfunktionale Anforderungen
-- [Architektur](docs/ARCHITEKTUR.md) – technisches Zielbild mit offenen Festlegungen
-- [Entscheidungen](docs/ENTSCHEIDUNGEN.md) – A01–A38, Status, Begründungen und Prüfvorbehalte
-- [Pilotkonkretisierung](docs/PILOTKONKRETISIERUNG.md) – bekannte Praxis, Ablaufvorschläge und Erhebungsfragen
-- [Roadmap](docs/ROADMAP.md) – MVP, Piloten, Einführungsfolge
-- [Offene Punkte](docs/OFFENE_PUNKTE.md) – Klärungsbedarf, nächste Schritte und Rückstellungen
+1. [Projektkonzept](docs/PROJEKTKONZEPT.md) – Ziele, Grenzen, Pilotbereiche
+2. [Anforderungen](docs/ANFORDERUNGEN.md) – fachliche und nichtfunktionale Anforderungen
+3. [Architektur](docs/ARCHITEKTUR.md) – technisches Zielbild mit offenen Festlegungen
+4. [Entscheidungen](docs/ENTSCHEIDUNGEN.md) – A01–A38, Status, Begründungen und Prüfvorbehalte
+5. [Pilotkonkretisierung](docs/PILOTKONKRETISIERUNG.md) – bekannte Praxis, Ablaufvorschläge und Erhebungsfragen
+6. [Roadmap](docs/ROADMAP.md) – MVP, Piloten, Einführungsfolge
+7. [Offene Punkte](docs/OFFENE_PUNKTE.md) – Klärungsbedarf, nächste Schritte und Rückstellungen
 
 ## Nachschlagen und mitarbeiten
 
