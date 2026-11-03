@@ -11,6 +11,7 @@
 | <a id="cog"></a>**COG (Cloud Optimized GeoTIFF)** | Für effizienten teilweisen Zugriff organisiertes GeoTIFF. | [OGC](https://www.ogc.org/standards/) |
 | <a id="crs"></a>**CRS (Coordinate Reference System)** | Koordinatenreferenzsystem zur eindeutigen räumlichen Zuordnung. | [EPSG Registry](https://epsg.org/) |
 | <a id="etl"></a>**ETL (Extract, Transform, Load)** | Daten aus Quellen übernehmen, umwandeln und in Zielsysteme laden. | [Wikipedia](https://de.wikipedia.org/wiki/ETL-Prozess) |
+| <a id="gis"></a>**GIS (Geoinformationssystem)** | Software und Verfahren zur Bearbeitung, Analyse und Darstellung räumlicher Daten. | [Wikipedia](https://de.wikipedia.org/wiki/Geoinformationssystem) |
 | <a id="gdi"></a>**GDI (Geodateninfrastruktur)** | Organisierte Daten, Dienste, Standards und Zuständigkeiten für Geodatennutzung. | [GDI-DE](https://www.gdi-de.org/) |
 | <a id="geopackage"></a>**GeoPackage (GPKG)** | Offenes, SQLite-basiertes Format für Geodaten in einer Datei. | [OGC GeoPackage](https://www.geopackage.org/) |
 | <a id="geojson"></a>**GeoJSON** | JSON-basiertes Austauschformat für Vektorgeometrien und Attribute. | [RFC 7946](https://www.rfc-editor.org/rfc/rfc7946) |
