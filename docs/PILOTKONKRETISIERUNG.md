@@ -42,6 +42,31 @@ Die Baubetreuung beginnt erst mit der GIS-Nutzung und untersucht weitere möglic
 
 **Zusätzliche Rückmeldung (2026-11-03):** Es gibt **genau zwei zu validierende Übertragungswege**: **(1) cloudbasierter Austausch** und **(2) lokale Speicherung auf dem Mobilgerät mit anschließender Dateiübertragung per USB-Kabel**. Lokale Speicherung und USB-Kabelübertragung bilden ausdrücklich **einen gemeinsamen Workflow**, keine getrennten Varianten. Beide Übertragungswege sind in den konkreten Happy-MiniQ-/QField-Konfigurationen **genauer zu prüfen und systematisch miteinander zu vergleichen**; eine Auswahl ist noch nicht getroffen.
 
+### Datenflussdiagramm – zwei zu vergleichende Varianten
+
+**Prüfmodell, keine festgelegte Implementierung.** Die Pfeile bezeichnen die zu untersuchenden Übertragungsrichtungen; der technische Transport und die konkrete Datenübernahme sind noch offen.
+
+```mermaid
+flowchart TB
+  Device["Tablet / Smartphone: Happy MiniQ oder QField"]
+  Choice{"Zu vergleichender Übertragungsweg"}
+  Cloud["Variante 1: Cloudbasierter Austausch"]
+  USB["Variante 2: Lokale Speicherung und USB-Kabel"]
+  Inbound["Eingang / Abgleich am Arbeitsplatz - zu klären"]
+  Check["Fachliche Plausibilisierung / Validierung - zu klären"]
+  Master["Führender Datenbestand - Ziel noch festzulegen"]
+  Device <--> Choice
+  Choice <--> Cloud
+  Choice <--> USB
+  Cloud <--> Inbound
+  USB <--> Inbound
+  Inbound --> Check
+  Check --> Master
+  Master -. "Rückübertragung ebenfalls testen" .-> Inbound
+```
+
+Die **Rückübertragung** muss für beide Varianten gesondert praktisch nachgewiesen werden. Ein erfolgreicher Transfer ersetzt keine fachliche Prüfung; die Darstellung schreibt keine Freigabe-Engine vor.
+
 **Vergleichstest:** Mit denselben Beispieldaten Hin- und Rückweg, Offline-Erfassung, Geometrien/Attribute/Anhänge, konkurrierende Änderungen, Berechtigungen, Bedienaufwand sowie Datenstand und fachliche Übernahme prüfen. Keine der beiden Varianten vorab bevorzugen.
 
 **Noch nicht belegt:** verwendete Synchronisationskomponenten, Online-/Offline-Anteile, führender Speicherort, Übertragungsformate, Konfliktverhalten, Benutzerrechte und Freigabeschritte. Keine technische Variante als bereits produktiv erprobt oder beschlossen behandeln.
