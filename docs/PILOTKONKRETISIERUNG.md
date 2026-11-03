@@ -24,6 +24,26 @@ Die Piloten sollen die gemeinsame [GDI](GLOSSAR.md#gdi)-Basis anhand realer Arbe
 
 **Möglicher erster Testfall:** Ein bestehendes QGIS-Projekt mit realen, nicht sensitiven bzw. freigegebenen Testdaten auf geeignete Datenhaltung umstellen; Datenquellen, Pfade, gleichzeitige Nutzung und Rechte testen. Nur nach fachlicher Bestätigung priorisieren.
 
+## Erste fachlich benannte Anwendungsfälle der Baubetreuung (2026-11-03)
+
+Die Baubetreuung beginnt erst mit der GIS-Nutzung und untersucht weitere mögliche Anwendungsfälle. **Die folgenden Tätigkeiten wurden vom Fachbereich konkret genannt**, ihre Priorität, Umsetzungstiefe und technische Ausgestaltung sind noch offen.
+
+| ID | Tatsächlich genannte Tätigkeit | Fachliche Abgrenzung und nächste Klärung |
+|---|---|---|
+| BB-01 | Bestandsdokumentation, z. B. Erfassung und Validierung von Leitungen nach Öffnen der Baugrube | Vorhandene Leitungsangaben und vor Ort festgestellte Lage auseinanderhalten; Herkunft, Zeitpunkt, Genauigkeit und Prüfstatus klären. Keine automatische Leitungsfreigabe oder umfassende Netzfachschale unterstellen. |
+| BB-02 | Punktuelle Lage- und Höhenkontrollen | Messwerte und Referenzen, Koordinaten- und Höhenbezug, Toleranzen sowie führende Vermessungssoftware klären. GIS ersetzt keine fachlich erforderliche Vermessungsprüfung. |
+| BB-03 | Aufnahme von Linien und Flächen zur Mengenermittlung und Kontrolle | Erfassungsmethode, Genauigkeit, Maßeinheiten, Auswertungsregeln und Abgrenzung zu Fachsoftware klären. |
+
+**Status:** Anwendungsfälle fachlich benannt, noch nicht als MVP priorisiert oder abgenommen. Weitere Anwendungsfälle ausdrücklich offen. Mobile Nutzung, Offline-Fähigkeit, Datenmodell und Prüf-/Freigabeworkflows sind daraus **noch nicht** abgeleitet.
+
+### Nächste fachliche Erhebung
+
+- Wie werden BB-01 bis BB-03 heute praktisch durchgeführt (Geräte, Messmittel, QGIS-Projekt, Datenquellen)?
+- Wer erhebt, kontrolliert und übernimmt Ergebnisse in den führenden Datenbestand?
+- Welche Genauigkeit und welcher Lage-/Höhenbezug sind erforderlich?
+- Welche Nachweise (z. B. Messprotokoll, Foto, Datum, Herkunft) werden tatsächlich benötigt?
+- Welche Tätigkeiten sind häufig genug und einfach genug für einen ersten Pilotversuch?
+
 ## Pilot 2 – Verkehrsanlagenplanung
 
 **Gesichert:** Verkehrsanlagenplanung ist zweiter Pilotbereich; gemeinsame Projektidentität, geeignete zentrale Vektordaten und eigenständige QGIS-Fachprojekte sind Architekturgrundsätze.
