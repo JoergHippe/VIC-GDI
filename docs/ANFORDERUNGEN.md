@@ -4,6 +4,8 @@
 
 ## Fachliche Anforderungen
 
+Die Tabelle beschreibt das Zielbild. Webkarten, Suche, Geodatenauszug und mobile Arbeit (F05–F08) gehören zum ersten nutzbaren Stand, soweit ein priorisierter Pilotablauf sie benötigt. Die [Roadmap](ROADMAP.md#mvp-abgrenzung) führt den gemeinsamen Mindestumfang.
+
 | ID | Anforderung | Bezug |
 |---|---|---|
 | F01 | Gemeinsame, fachbereichsneutrale GDI mit zunächst zwei Pilotbereichen | A01, A34 |

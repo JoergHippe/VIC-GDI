@@ -1,6 +1,6 @@
 # Pilotkonkretisierung – Baubetreuung und Verkehrsanlagenplanung
 
-**Status:** Interner Arbeitsentwurf · 2026-11-03. **Keine fachliche Freigabe.** Die Beispiele sind *Prüfhypothesen*, keine bestätigten Anforderungen. Quelle der beschlossenen Rahmenbedingungen: [Entscheidungen](ENTSCHEIDUNGEN.md), insbesondere A01, A04, A09, A13, A34–A36.
+**Status:** Interner Arbeitsentwurf. Fachlich benannte Tätigkeiten und bestehende mobile Praxis sind gekennzeichnet. Pilotumfang und Sollabläufe stehen zur Auswahl. Quelle der beschlossenen Rahmenbedingungen: [Entscheidungen](ENTSCHEIDUNGEN.md), insbesondere A01, A04, A09, A13, A34–A36.
 
 ## Ziel und Vorgehen
 
@@ -24,7 +24,7 @@ Die Piloten sollen die gemeinsame [GDI](GLOSSAR.md#gdi)-Basis anhand realer Arbe
 
 **Möglicher erster Testfall:** Ein bestehendes QGIS-Projekt mit realen, nicht sensitiven bzw. freigegebenen Testdaten auf geeignete Datenhaltung umstellen; Datenquellen, Pfade, gleichzeitige Nutzung und Rechte testen. Nur nach fachlicher Bestätigung priorisieren.
 
-## Erste fachlich benannte Anwendungsfälle der Baubetreuung (2026-11-03)
+## Fachlich benannte Anwendungsfälle der Baubetreuung
 
 Die Baubetreuung beginnt erst mit der GIS-Nutzung und untersucht weitere mögliche Anwendungsfälle. **Die folgenden Tätigkeiten wurden vom Fachbereich konkret genannt**, ihre Priorität, Umsetzungstiefe und technische Ausgestaltung sind noch offen.
 
@@ -34,13 +34,13 @@ Die Baubetreuung beginnt erst mit der GIS-Nutzung und untersucht weitere möglic
 | BB-02 | Punktuelle Lage- und Höhenkontrollen | Messwerte und Referenzen, Koordinaten- und Höhenbezug, Toleranzen sowie führende Vermessungssoftware klären. GIS ersetzt keine fachlich erforderliche Vermessungsprüfung. |
 | BB-03 | Aufnahme von Linien und Flächen zur Mengenermittlung und Kontrolle | Erfassungsmethode, Genauigkeit, Maßeinheiten, Auswertungsregeln und Abgrenzung zu Fachsoftware klären. |
 
-**Status:** Anwendungsfälle fachlich benannt, noch nicht als MVP priorisiert oder abgenommen. Weitere Anwendungsfälle ausdrücklich offen. Mobile Nutzung, Offline-Fähigkeit, Datenmodell und Prüf-/Freigabeworkflows sind daraus **noch nicht** abgeleitet.
+**Status:** Anwendungsfälle fachlich benannt, noch nicht als MVP priorisiert oder abgenommen. Weitere Anwendungsfälle ausdrücklich offen. Der Bedarf an Online-/Offline-Funktionen, das Datenmodell und die fachliche Übernahme sind für den Pilotablauf zu konkretisieren.
 
-### Mobiler Erfassungsstand und Datenaustausch (2026-11-03)
+### Mobile Erfassung und Datenaustausch
 
 **Vom Fachbereich bestätigt:** Für BB-01 bis BB-03 werden **Happy MiniQ** und [QField](GLOSSAR.md#qfield) auf **Tablet und Smartphone** eingesetzt. Die Arbeitsabläufe zur **bidirektionalen Datenübertragung** sind noch nicht abschließend optimiert.
 
-**Zusätzliche Rückmeldung (2026-11-03):** Es gibt **genau zwei zu validierende Übertragungswege**: **(1) cloudbasierter Austausch** und **(2) lokale Speicherung auf dem Mobilgerät mit anschließender Dateiübertragung per USB-Kabel**. Lokale Speicherung und USB-Kabelübertragung bilden ausdrücklich **einen gemeinsamen Workflow**, keine getrennten Varianten. Beide Übertragungswege sind in den konkreten Happy-MiniQ-/QField-Konfigurationen **genauer zu prüfen und systematisch miteinander zu vergleichen**; eine Auswahl ist noch nicht getroffen.
+Für die konkreten Happy-MiniQ-/QField-Konfigurationen sind zwei Übertragungswege zu vergleichen. **Variante A** ist der cloudbasierte Austausch. **Variante B** verbindet lokale Speicherung auf dem Mobilgerät mit anschließender Dateiübertragung per USB-Kabel. Die Auswahl ist offen.
 
 ### Datenflussdiagramm – zwei zu vergleichende Varianten
 

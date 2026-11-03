@@ -10,7 +10,7 @@ Die Architektur zeigt den bisherigen Beschlussstand. Zentrale PostgreSQL-Projekt
 - **Daten:** Gemeinsame [PostgreSQL](GLOSSAR.md#postgresql)/[PostGIS](GLOSSAR.md#postgis)-Instanz mit fachbereichsbezogenen Schemas; projektbezogene Zuordnung über `project_id` nur, wo fachlich sinnvoll (A02, A03).
 - **Fachprojekte:** QGIS-Projekte bleiben fachbereichs- bzw. projektbezogen; zentral gepflegte Verbindungen, Vorlagen und [QML](GLOSSAR.md#qml)-Stile können wiederverwendet und überschrieben werden (A04, A17).
 - **Dienste:** QGIS Server bevorzugt, vorbehaltlich technischem [PoC](GLOSSAR.md#poc); Standard-Webviewer (z. B. Lizmap/QWC2) mit begrenzten Anpassungen; Webpublikation über getrennte Kartenprojekte (A10, A11, A18).
-- **Zusatzfunktionen:** Schlanker Suchdienst und logisch separater Extract-Service, in den Webviewer integriert (A12, A20).
+- **Zusatzfunktionen:** Schlanke integrierte Suche und Geodatenauszug mit eigener Rechteprüfung (A12, A20). Die logische Abgrenzung des Auszugs lässt die Bereitstellung offen. Für einen priorisierten Pilotbedarf zuerst vorhandene QGIS-, Viewer- und Dienstfunktionen prüfen.
 - **Betrieb:** On-prem auf Proxmox bevorzugt, hybride Varianten möglich; konkrete Container-/VM-Verteilung mit IT entscheiden (A23, A24).
 
 ### Architekturübersicht (logisches Zielbild)
@@ -66,7 +66,7 @@ flowchart TB
 ## Sicherheits- und Betriebsprinzipien
 
 - Rechte nicht allein über ausgeblendete UI-Elemente, sondern auf den jeweiligen Server-/Datenzugriffspfaden durchsetzen (A09, A26).
-- AD/M365-basierte Identitäten und zentraler IdP bevorzugt; konkrete SSO-/QGIS-Desktop-/Externe-Konten-Integration mit IT klären (A25).
+- Vorhandene Unternehmensidentitäten bevorzugt nutzen. IT klärt, welche Rolle AD DS und Microsoft Entra ID für Browseranmeldung, direkten Datenbankzugriff und externe Konten übernehmen können (A25).
 - Getrennte TEST-/PROD-Umgebung, versionierte Konfiguration und Datenbankmigrationen, kontrollierte Bereitstellung (A27, A30).
 - Bestehende IT-Backups und Monitoring nutzen, um GDI-spezifische Prüfungen und Restore-Tests ergänzen (A28, A29).
 

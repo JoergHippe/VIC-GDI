@@ -55,6 +55,19 @@ Die Kennzeichnung ergänzt den bisherigen Status. Bis zu einer dokumentierten Fo
 | A15 | Internen Katalog über den bisherigen schlanken Umfang hinaus erweitern und Metadaten hybrid pflegen. | Welche Suche und Felder bringen Nutzen? Technisch ableitbare Angaben wie Schema oder Importzeit automatisiert übernehmen. Fachliche Angaben wie Zweck, Zuständigkeit und Nutzungsauflagen redaktionell pflegen und freigeben. Führende Quelle je Feld und Aktualisierung bei Konflikten klären. |
 | A36 | Zentrale PostgreSQL-Projektablage als Ziel für geeignete Projekte prüfen. | Projektinventar, Pfade und externe Dateien, Rechte, Übernahme, Rückfallweg und fachliche Abnahme. Selektive Migration und kontrollierte Ablösung problematischer Synchronisationsordner bleiben der Ausgangspunkt. |
 
+### Prüfrahmen für die Projektablage (A04/A36)
+
+Für eine spätere, gesondert freigegebene Erprobung genügt ein repräsentatives Projekt mit PostGIS-Vektordaten und einer referenzierten Rasterdatei, zwei QGIS-Arbeitsplätzen und getrennten Rollen.
+
+- **Grundfunktion:** Projekt speichern und mit dem zweiten Konto öffnen. Leserecht, verweigertes Überschreiben und erreichbare Rasterreferenzen prüfen.
+- **Zusammenarbeit:** Gleichzeitige Änderungen an Vektordaten und konkurrierende Änderungen an der Projektdefinition getrennt betrachten. Das Konfliktverhalten muss nachvollziehbar sein. Für Datenänderungen ist ein Umgang ohne unkontrollierten Verlust erforderlich.
+- **Wiederherstellung:** Einen praktikablen Weg zu einem früheren Projektstand samt benötigten Ressourcen prüfen.
+- **Webpublikation:** Bei vorgesehener Webnutzung zusätzlich Kartenbereitstellung über QGIS Server mit den vorgesehenen Rechten prüfen. Die Desktop-Eignung separat bewerten.
+
+### Katalogumfang und Standards (A15)
+
+Priorisierte Suchfälle und vorhandene Quellen bestimmen den Katalogumfang. [OGC API – Records](https://docs.ogc.org/is/20-004r1/20-004r1.html) kann als Referenz für die Auffindbarkeit dienen. Eine Katalogsoftware oder Schnittstelle wird erst bei konkretem Bedarf ausgewählt.
+
 ## Erläuterungen zu entscheidenden Festlegungen
 
 ### A09 / A26 – Datenhoheit und Rechte

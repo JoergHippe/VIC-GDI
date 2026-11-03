@@ -1,6 +1,6 @@
 # Projektkonzept VIC-GDI
 
-**Status:** Interner Arbeitsentwurf · 2026-11-03
+**Status:** Interner Arbeitsentwurf
 
 ## Ausgangslage
 
@@ -25,7 +25,7 @@ Die Piloten sind unterschiedlich und müssen nicht zeitgleich denselben Funktion
 ## Abgrenzung
 
 - Kein öffentliches anonymes GIS-Portal als primäres Ziel.
-- Kein Ersatz für CAD-, BIM- oder Fachanwendungen.
+- Die GDI ergänzt CAD-, BIM-, M365- und Fachanwendungen um eine gemeinsame Geodatenbasis.
 - Keine vollständige Migration aller Dateiformate nach [PostGIS](GLOSSAR.md#postgis).
 - Keine Eigenentwicklung eines Offline-Synchronisationssystems.
 - Kein umfassendes formales Qualitätsmanagement für amtliche Geobasisdaten.

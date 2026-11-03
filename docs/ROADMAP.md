@@ -2,7 +2,7 @@
 
 **Status:** Interner Arbeitsentwurf · keine Termin-, Budget- oder Personalzusage.
 
-Die konkrete Erhebung ist in [Pilotkonkretisierung](PILOTKONKRETISIERUNG.md) vorbereitet; alle dortigen Use-Cases sind bis zur Bestätigung Prüfhypothesen.
+Die [Pilotkonkretisierung](PILOTKONKRETISIERUNG.md) trennt fachlich benannte Tätigkeiten und bestehende mobile Praxis der Baubetreuung von Ablaufvorschlägen und offenen Fragen. Die Auswahl und Abnahme der ersten Pilotabläufe stehen aus.
 
 ## Vorgehensprinzip
 
@@ -12,18 +12,21 @@ Gemeinsame, schlanke GDI-Basis und zwei früh beteiligte Pilotbereiche (A34). De
 
 ```mermaid
 flowchart LR
-  Record["Ist-Abläufe erheben"]
-  Select["Pilotfälle auswählen"]
-  Test["Lösung praktisch testen"]
-  Decide{"Geeignet?"}
+  Prepare["IT und Geschäftsführung abstimmen, Ist-Abläufe erheben"]
+  Select["Pilotfälle und Prüfumfang festlegen"]
+  Release["Erprobung gesondert freigeben"]
+  Test["Offene Machbarkeit gezielt prüfen"]
+  Decide{"Pilot freigeben?"}
   Use["Pilot umsetzen"]
-  Revise["Ansatz anpassen"]
-  Record --> Select --> Test --> Decide
+  Prepare --> Select
+  Select -->|Machbarkeit offen| Release
+  Release --> Test --> Decide
+  Select -->|Machbarkeit ausreichend geklärt| Decide
   Decide -->|Ja| Use
-  Decide -->|Nein| Revise --> Test
+  Decide -->|Überarbeiten| Select
 ```
 
-**Hinweis:** Die Schritte können sich überlappen. Das Schaubild ist ein Entscheidungsprozess, kein verbindlicher Terminplan.
+Aktuell laufen Vorbereitung und Abstimmung. IT klärt den Betriebsrahmen, die Geschäftsführung entscheidet über Ressourcen für die Vorbereitung. Praktische Erprobung folgt nach gesonderter Freigabe. Über Umfang, Budget und Start der Piloten entscheidet die Geschäftsführung anhand der Ergebnisse und des mit IT geklärten Betriebsrahmens. Siehe [IT-Briefing](BETRIEB_UND_IT.md) und [Geschäftsführungs-Briefing](MANAGEMENT.md).
 
 ## Etappen
 
@@ -38,10 +41,10 @@ flowchart LR
 - [PostGIS](GLOSSAR.md#postgis) und QGIS-Desktop-Anbindung; geeignete gemeinsame Datenmodelle.
 - TEST/PROD, Grundrechte, Sicherung und Basisüberwachung mit IT abstimmen.
 - [Git](GLOSSAR.md#git)-basierte Ressourcen und kontrollierte Änderungen etablieren.
-- QGIS-Server-/Webviewer-PoC und einfache Kartenbereitstellung.
 
 ### 2 – Erste nutzbare Pilotfunktionen
 - **BB:** ausgewählte räumliche Arbeitsabläufe und, wo erforderlich, mobile Nutzung.
+- Einfache Karten über den geprüften Standard-Webviewer bereitstellen, sofern der ausgewählte Ablauf sie braucht.
 - **Verkehrsanlagenplanung:** gemeinsame Geodaten, Projektbezug und QGIS-Workflows.
 - Fachliche Abnahme an realen Daten; keine Pflicht zu gleichem Funktionsumfang.
 
@@ -57,7 +60,7 @@ flowchart LR
 
 ## MVP-Abgrenzung
 
-**Muss für den ersten nutzbaren Stand:** sicherer Datenzugriff, geeignete zentrale Datenhaltung, funktionierende QGIS-Arbeitsabläufe, notwendige Sicherung/Wiederherstellung und ein konkret nutzbarer Pilotfall.
+**Muss für den ersten nutzbaren Stand:** ein konkreter QGIS-Desktop-Ablauf mit geeigneten gemeinsamen Geodaten in PostGIS, wirksamen Rechten und nachgewiesener Wiederherstellbarkeit.
 
 **Je nach Pilot:** Webviewer, mobile Erfassung, Suche, Datenexport, spezifische Datenmodelle.
 

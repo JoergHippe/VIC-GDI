@@ -8,6 +8,8 @@ Ein [GIS](GLOSSAR.md#gis) bearbeitet und zeigt räumliche Daten, etwa den dokume
 
 **Gesprächsziel:** Machbaren Betriebsrahmen, Zuständigkeiten und Aufwand für die nächste Planungsstufe ermitteln. Der Termin dient der Abstimmung. Technische Erprobungen und Bereitstellung folgen erst nach gesonderter Planung.
 
+Die [Architekturübersicht](ARCHITEKTUR.md#architekturübersicht-logisches-zielbild) zeigt, wie Desktop, Browser und Mobilgeräte auf Daten und Dienste zugreifen.
+
 ## Mindestbedarf für einen produktiven Pilotbetrieb
 
 | Bereich | Was IT bereitstellen oder verbindlich klären soll |
@@ -16,7 +18,7 @@ Ein [GIS](GLOSSAR.md#gis) bearbeitet und zeigt räumliche Daten, etwa den dokume
 | Datenbank | Betreibbare [PostgreSQL](GLOSSAR.md#postgresql)-Instanz mit [PostGIS](GLOSSAR.md#postgis) für geeignete gemeinsam genutzte Geodaten. Rollen, Verbindungsschutz, Updates und Sicherung mit GIS abstimmen. |
 | Kartendienste | Wenn Webkarten im Pilotumfang liegen, internen HTTPS-Endpunkt und den Betrieb eines Kartendiensts einplanen. QGIS Server ist der bevorzugte Kandidat und stellt Karten aus freigegebenen Webprojekten bereit. QGIS Desktop greift je nach Quelle direkt auf Datenbank, Dateien oder Dienste zu. |
 | Netz und Zugang | Interne Namensauflösung, Zertifikate, Firewallregeln und Zugriff vom Arbeitsplatz bzw. über [VPN](GLOSSAR.md#vpn) klären. Datenbankzugriff auf erforderliche Clients und Dienste begrenzen. |
-| Identitäten und Rechte | [AD](GLOSSAR.md#ad)/M365 als Ausgangspunkt für zentrale Identitäten prüfen. Anmeldung und Rechte für Browser, Desktop-Datenbankzugriff und technische Dienstkonten separat festlegen. GIS und Fachbereiche definieren Lesende, Bearbeitende und Freigabeberechtigte. |
+| Identitäten und Rechte | Vorhandene Unternehmensidentitäten prüfen. [AD DS](GLOSSAR.md#ad) und [Microsoft Entra ID](GLOSSAR.md#entra-id) unterscheiden. Anmeldung und Rechte für Browser, Desktop-Datenbankzugriff und technische Dienstkonten separat festlegen. GIS und Fachbereiche definieren Lesende, Bearbeitende und Freigabeberechtigte. |
 | Sicherung und Betrieb | Datenbankkonsistente Sicherung einschließlich benötigter Rollen, Projektdateien, abhängiger Ressourcen und Konfigurationen. Wiederherstellung in TEST, Überwachung, Patchfenster, Support und Vertretung einplanen. Zielwerte für Datenverlust und Wiederanlauf gemeinsam festlegen. |
 
 **Im Konzept geklärt:** Die gemeinsame Datenbasis in PostGIS und die beiden Pilotbereiche sind festgelegt. On-prem/Proxmox, QGIS Server und zentrale Unternehmensidentitäten sind bevorzugte Richtungen. Die technische Freigabe und konkrete Ausgestaltung stehen aus.
@@ -59,14 +61,14 @@ VM und Docker liegen auf unterschiedlichen Ebenen. Eine VM stellt das Betriebssy
 | B – PostgreSQL nativ, GIS-Dienste containerisiert | Trennung persistenter DB und paketierter Dienste | Mischbetrieb, Update-/Backup-Schnittstellen |
 | C – Weitgehend containerisiert | Reproduzierbare Services, standardisierte Bereitstellung | Kompetenzbedarf, persistente Daten, Orchestrierung nicht automatisch nötig |
 
-**Bewertungskriterien:** IT-Kompetenz, Sicherheitsvorgaben, Wartbarkeit, Updatefähigkeit, Backup/Restore, Debugging, Ressourceneinsatz, langfristige Zukunftsfähigkeit. Keine Container-Orchestrierung ohne Bedarf. Entscheidung mit IT nach kleinem [PoC](GLOSSAR.md#poc) und Betriebssicht.
+**Bewertungskriterien:** IT-Kompetenz, Sicherheitsvorgaben, Wartbarkeit, Updatefähigkeit, Backup/Restore, Debugging, Ressourceneinsatz, langfristige Zukunftsfähigkeit. Keine Container-Orchestrierung ohne Bedarf. Mit IT die dauerhaft betreibbaren Varianten eingrenzen. Verbleibende Machbarkeitsfragen bei Bedarf nach gesonderter Freigabe mit einem kleinen [PoC](GLOSSAR.md#poc) klären.
 
 ## Noch abzustimmen
 
-1. **Identität/[SSO](GLOSSAR.md#sso) (A25):** bestehendes AD/M365, geeigneter OIDC/OAuth2-[IdP](GLOSSAR.md#idp), QGIS Desktop, externe Personen und mobile Geräte.
-2. **Rechte (A26):** Fachrollen, AD-Gruppen, DB-/Service-/Extract-/Mobile-Durchsetzung und Testfälle.
+1. **Identität/[SSO](GLOSSAR.md#sso) (A25):** Vorhandene Identitätsdienste und Gruppen prüfen. Für Browseranmeldung Eignung von [OIDC](GLOSSAR.md#oidc) klären, für Desktop den Datenbankzugriff separat betrachten. Externe Personen und mobile Geräte nach Bedarf einbeziehen.
+2. **Rechte (A26):** Fachrollen und Gruppen den genutzten Zugriffspfaden zuordnen. Berechtigte und abgewiesene Zugriffe prüfen, bei Webkarten auch den direkten Dienstaufruf.
 3. **Backup (A28):** konsistente PostgreSQL-Sicherung, Dateien/QGIS-Ressourcen, Restore-Proben, [RPO/RTO](GLOSSAR.md#rpo-rto) und mobile unsynchronisierte Daten.
-4. **Monitoring (A29):** DB, funktionaler WMS-Aufruf, Webviewer, Authentifizierung, Extract, Backup, datenschutzgerechte Logs.
+4. **Monitoring (A29):** Vorhandene IT-Überwachung für Datenbank und Sicherung nutzen. Für tatsächlich eingesetzte GIS-Dienste Funktionsprüfungen ergänzen, etwa einen [WMS](GLOSSAR.md#wms)-Kartenaufruf. Alarmierung und datenschutzgerechte Protokollierung abstimmen.
 5. **Betriebsorganisation (A31):** Installation, Patchmanagement, DB-Migrationen, Vorfälle, Vertretung.
 6. **Wissensaufbau (A33):** Schulungen und Einarbeitung passend zu Rollen; Zeit-/Personal-/Budgetbedarf sichtbar machen.
 
@@ -79,6 +81,12 @@ VM und Docker liegen auf unterschiedlichen Ebenen. Eine VM stellt das Betriebssy
 | 15 Min. | Zugriff. Welche AD-/M365-Integration und welche internen Netz- und VPN-Wege sind möglich? Wer verwaltet Gruppen, Zertifikate, Firewallregeln und Dienstkonten? |
 | 15 Min. | Betrieb. Wer übernimmt PostgreSQL/PostGIS, GIS-Dienste, Updates und Störungen? Was decken vorhandene Sicherung und Überwachung ab? Wer koordiniert Wiederherstellung und Abnahme? |
 | 5 Min. | Ergebnis festhalten. Pro offener Frage zuständige Person, benötigte Zuarbeit und Termin vereinbaren. Voraussetzungen und Aufwand für die nächste Freigabe benennen. |
+
+### Ergebnis festhalten
+
+| Frage | Ergebnis | Zuständige Person | Nächster Schritt | Termin |
+|---|---|---|---|---|
+| | | | | |
 
 Technische Referenzen für die spätere Planung sind das [QGIS-Server-Handbuch](https://docs.qgis.org/3.44/pdf/en/QGIS-3.44-ServerUserGuide-en.pdf) und die [PostgreSQL-Dokumentation zu Sicherung und Wiederherstellung](https://www.postgresql.org/docs/current/backup.html).
 

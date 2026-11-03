@@ -1,6 +1,6 @@
 # VIC-GDI
 
-**Status:** Interner Arbeitsentwurf · Stand: 2026-11-03 · keine formale Freigabe durch IT oder Geschäftsführung.
+**Status:** Interner Arbeitsentwurf · keine formale Freigabe durch IT oder Geschäftsführung.
 
 VIC-GDI ist die geplante unternehmensweite, fachbereichsneutrale Geodateninfrastruktur für die gemeinsame, sichere und wartbare Nutzung von Geodaten in der Infrastrukturplanung. Die ersten Piloten sind Baubetreuung/Bauüberwachung und Verkehrsanlagenplanung.
 
@@ -14,7 +14,7 @@ VIC-GDI ist die geplante unternehmensweite, fachbereichsneutrale Geodateninfrast
 - [Glossar](docs/GLOSSAR.md) – Fachbegriffe und Abkürzungen
 - [Projektkonzept](docs/PROJEKTKONZEPT.md) – Ziele, Grenzen, Pilotbereiche
 - [Anforderungen](docs/ANFORDERUNGEN.md) – fachliche und nichtfunktionale Anforderungen
-- [Architektur](docs/ARCHITEKTUR.md) – konsolidierter technischer Sollzustand
+- [Architektur](docs/ARCHITEKTUR.md) – technisches Zielbild mit offenen Festlegungen
 - [Entscheidungen](docs/ENTSCHEIDUNGEN.md) – A01–A38, Status, Begründungen und Prüfvorbehalte
 - [Offene Punkte](docs/OFFENE_PUNKTE.md) – Rückstellungen, IT-Abstimmungen, PoCs
 - [Pilotkonkretisierung](docs/PILOTKONKRETISIERUNG.md) – Erhebung und Prüfhypothesen der beiden Pilotbereiche
@@ -30,6 +30,7 @@ VIC-GDI ist die geplante unternehmensweite, fachbereichsneutrale Geodateninfrast
 6. Keine Zugangsdaten, personenbezogenen Daten oder produktiven Geodaten in Git versionieren.
 7. Fachbegriffe beim ersten Auftreten je Dokument zum [Glossar](docs/GLOSSAR.md) verlinken.
 8. Kleine, thematisch nachvollziehbare Commits; `main` ist zunächst ausreichend.
+9. Aktuelle Dokumente halten geltende Beschlüsse samt Begründungen, den bekannten Ist-Stand und offene Aufgaben fest. Abgelöste Zwischenstände und abgeschlossene Dokumentationsreviews sind im Git-Verlauf nachvollziehbar.
 
 **Quellenlage:** Erstkonsolidierung aus den bisherigen Architekturgesprächen A01–A38. Wo kein detailliertes Entscheidungsprotokoll vorliegt, sind die Aussagen bewusst auf die gesicherten Grundsätze begrenzt. Die Dokumente sind keine Implementierungs- oder Freigabenachweise.
 

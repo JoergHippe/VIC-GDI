@@ -1,15 +1,16 @@
 # Glossar – VIC-GDI
 
-**Status:** Interner Arbeitsentwurf · Stand: 2026-11-03. Kurze, projektbezogene Erläuterungen; Links führen zu anerkannten Referenzen. Kein vollständiges GIS-Lexikon.
+**Status:** Interner Arbeitsentwurf. Kurze, projektbezogene Erläuterungen; Links führen zu anerkannten Referenzen. Kein vollständiges GIS-Lexikon.
 
 | Begriff | Bedeutung in VIC-GDI | Weiterführend |
 |---|---|---|
-| <a id="ad"></a>**AD (Active Directory)** | Verzeichnisdienst für Unternehmensidentitäten und Gruppen. | [Microsoft Learn](https://learn.microsoft.com/de-de/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview) |
+| <a id="ad"></a>**AD DS (Active Directory Domain Services)** | Windows-Verzeichnisdienst für Domänen, Unternehmensidentitäten und Gruppen. | [Microsoft Learn](https://learn.microsoft.com/de-de/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview) |
 | <a id="api"></a>**API** | Programmierschnittstelle zwischen Anwendungen und Diensten. | [Wikipedia](https://de.wikipedia.org/wiki/Programmierschnittstelle) |
 | <a id="bbox"></a>**BBox (Bounding Box)** | Rechteckige räumliche Umgrenzung für Suche oder Export. | [OGC](https://www.ogc.org/standards/) |
 | <a id="ci-cd"></a>**CI/CD** | Automatisiertes Prüfen und Bereitstellen von Softwareänderungen. | [GitLab](https://docs.gitlab.com/ci/) |
 | <a id="cog"></a>**COG (Cloud Optimized GeoTIFF)** | Für effizienten teilweisen Zugriff organisiertes GeoTIFF. | [OGC](https://www.ogc.org/standards/) |
 | <a id="crs"></a>**CRS (Coordinate Reference System)** | Koordinatenreferenzsystem zur eindeutigen räumlichen Zuordnung. | [EPSG Registry](https://epsg.org/) |
+| <a id="entra-id"></a>**Microsoft Entra ID** | Cloud-Identitätsdienst, unter anderem für die Anmeldung bei Microsoft 365. Eine Kopplung mit AD DS ist möglich. | [Microsoft Learn](https://learn.microsoft.com/en-us/entra/identity/domain-services/compare-identity-solutions) |
 | <a id="etl"></a>**ETL (Extract, Transform, Load)** | Daten aus Quellen übernehmen, umwandeln und in Zielsysteme laden. | [Wikipedia](https://de.wikipedia.org/wiki/ETL-Prozess) |
 | <a id="gis"></a>**GIS (Geoinformationssystem)** | Software und Verfahren zur Bearbeitung, Analyse und Darstellung räumlicher Daten. | [Wikipedia](https://de.wikipedia.org/wiki/Geoinformationssystem) |
 | <a id="gdi"></a>**GDI (Geodateninfrastruktur)** | Organisierte Daten, Dienste, Standards und Zuständigkeiten für Geodatennutzung. | [GDI-DE](https://www.gdi-de.org/) |
