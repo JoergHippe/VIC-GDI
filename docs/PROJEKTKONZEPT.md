@@ -4,7 +4,7 @@
 
 ## Ausgangslage
 
-Geodaten und [Q[GIS](GLOSSAR.md#gdi)](GLOSSAR.md#qgis)-Projekte werden in unterschiedlichen Fachbereichen und Speicherorten verwaltet. Gemeinsame Datennutzung, einheitliche Bereitstellung und kontrollierter Betrieb sollen verbessert werden. In der Baubetreuung werden QGIS-Arbeitsbestände teilweise über synchronisierte SharePoint-/OneDrive-Verzeichnisse genutzt; diese Arbeitsweise soll für führende GIS-Arbeitsdaten kontrolliert abgelöst werden (A36).
+Geodaten und [Q[GIS](GLOSSAR.md#gdi)](GLOSSAR.md#qgis)-Projekte werden in unterschiedlichen Fachbereichen und Speicherorten verwaltet. Gemeinsame Datennutzung, einheitliche Bereitstellung und kontrollierter Betrieb sollen verbessert werden. In der Baubetreuung werden [QGIS](GLOSSAR.md#qgis)-Arbeitsbestände teilweise über synchronisierte SharePoint-/OneDrive-Verzeichnisse genutzt; diese Arbeitsweise soll für führende GIS-Arbeitsdaten kontrolliert abgelöst werden (A36).
 
 ## Ziele
 
@@ -26,7 +26,7 @@ Die Piloten sind unterschiedlich und müssen nicht zeitgleich denselben Funktion
 
 - Kein öffentliches anonymes GIS-Portal als primäres Ziel.
 - Kein Ersatz für CAD-, BIM- oder Fachanwendungen.
-- Keine vollständige Migration aller Dateiformate nach [PostGIS](GLOSSAR.md#postgis).
+- Keine vollständige Migration aller Dateiformate nach [[PostGIS](GLOSSAR.md#postgis)](GLOSSAR.md#postgis).
 - Keine Eigenentwicklung eines Offline-Synchronisationssystems.
 - Kein umfassendes formales Qualitätsmanagement für amtliche Geobasisdaten.
 - Kein umfangreiches ITSM-, CI/CD- oder HA-System ohne nachgewiesenen Bedarf.
