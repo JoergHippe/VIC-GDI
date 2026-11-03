@@ -13,6 +13,7 @@ VIC-GDI ist die geplante unternehmensweite, fachbereichsneutrale Geodateninfrast
 - [Architektur](docs/ARCHITEKTUR.md) – konsolidierter technischer Sollzustand
 - [Entscheidungen](docs/ENTSCHEIDUNGEN.md) – A01–A38, Status und Begründungen
 - [Offene Punkte](docs/OFFENE_PUNKTE.md) – Rückstellungen, IT-Abstimmungen, PoCs
+- [Pilotkonkretisierung](docs/PILOTKONKRETISIERUNG.md) – Erhebung und Prüfhypothesen der beiden Pilotbereiche
 - [Roadmap](docs/ROADMAP.md) – MVP, Piloten, Einführungsfolge
 - [Betrieb und IT](docs/BETRIEB_UND_IT.md) – Betriebsperspektive und Zuständigkeiten
 
