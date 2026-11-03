@@ -4,7 +4,7 @@
 
 ## Zielbild
 
-Eine gemeinsame Geodateninfrastruktur soll Geodaten fachbereichsübergreifend nutzbar machen, Mehrfachhaltung reduzieren und GIS-Arbeitsabläufe in der Infrastrukturplanung zuverlässiger gestalten. Die Einführung erfolgt schrittweise mit zwei Pilotbereichen: Baubetreuung/Bauüberwachung und Verkehrsanlagenplanung.
+Eine gemeinsame Geodateninfrastruktur soll Geodaten fachbereichsübergreifend nutzbar machen, Mehrfachhaltung reduzieren und [GIS](GLOSSAR.md#gdi)-Arbeitsabläufe in der Infrastrukturplanung zuverlässiger gestalten. Die Einführung erfolgt schrittweise mit zwei Pilotbereichen: Baubetreuung/Bauüberwachung und Verkehrsanlagenplanung.
 
 ## Erwarteter Nutzen – noch zu validieren
 
@@ -34,7 +34,7 @@ GIS-Team verantwortet fachliche GDI-Fragen, IT die Infrastruktur und Basis-Siche
 
 ## Risiken und Gegenmaßnahmen
 
-- **Überlastung des GIS-Teams:** priorisierter MVP, klarer Supportprozess, realistische Kapazitäten.
+- **Überlastung des GIS-Teams:** priorisierter [MVP](GLOSSAR.md#mvp), klarer Supportprozess, realistische Kapazitäten.
 - **Zu großer Funktionsumfang:** Standard vor Sonderentwicklung; Piloten statt Big Bang.
 - **Datenkonflikte:** führende Datenbestände und kontrollierte Migration.
 - **Unklare IT-Verantwortung:** frühe Abstimmung und Zuständigkeitsmatrix.
