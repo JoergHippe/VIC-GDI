@@ -1,6 +1,8 @@
 # Architekturentscheidungen A01–A38
 
-**Status:** Konsolidierter interner Arbeitsentwurf, Stand 2026-11-03. Dieses Register ist die führende Stelle für Beschlussstatus und Entscheidungsbegründungen. Die knappen Zusammenfassungen ersetzen nicht die spätere Detailprüfung mit IT und Fachbereichen.
+**Status:** Konsolidierter interner Arbeitsentwurf. Dieses Register ist die führende Stelle für Beschlussstatus und Entscheidungsbegründungen. Die knappen Zusammenfassungen ersetzen nicht die spätere Detailprüfung mit IT und Fachbereichen.
+
+**Quellenlage:** Erstkonsolidierung aus den bisherigen Architekturgesprächen A01–A38. Wo kein detailliertes Entscheidungsprotokoll vorliegt, sind die Aussagen bewusst auf die gesicherten Grundsätze begrenzt. Die Dokumente sind keine Implementierungs- oder Freigabenachweise.
 
 **Statusschlüssel:** **B** = beschlossen; **G** = Grundsatz beschlossen, Detail offen; **Z** = zurückgestellt; **O** = offen.
 
