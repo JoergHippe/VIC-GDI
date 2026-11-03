@@ -29,3 +29,7 @@ VIC-GDI ist die geplante unternehmensweite, fachbereichsneutrale Geodateninfrast
 8. Kleine, thematisch nachvollziehbare Commits; `main` ist zunächst ausreichend.
 
 **Quellenlage:** Erstkonsolidierung aus den bisherigen Architekturgesprächen A01–A38. Wo kein detailliertes Entscheidungsprotokoll vorliegt, sind die Aussagen bewusst auf die gesicherten Grundsätze begrenzt. Die Dokumente sind keine Implementierungs- oder Freigabenachweise.
+
+## Diagramme
+
+Architektur- und Ablaufdiagramme werden bei erkennbarem Verständlichkeitsgewinn als **Mermaid-Quelltext direkt in den fachlich zuständigen Markdown-Dokumenten** gepflegt (GitHub-Darstellung, im Repository versionierbar). Beschlossene Beziehungen, bevorzugte Kandidaten und offene Prüfvarianten sind in Diagramm und Begleittext klar zu unterscheiden. Keine zusätzliche Diagrammdatei oder Grafikduplikate ohne konkreten Bedarf; Diagramme bei inhaltlichen Änderungen mitpflegen.
