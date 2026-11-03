@@ -4,18 +4,21 @@
 
 VIC-GDI ist die geplante unternehmensweite, fachbereichsneutrale Geodateninfrastruktur für die gemeinsame, sichere und wartbare Nutzung von Geodaten in der Infrastrukturplanung. Die ersten Piloten sind Baubetreuung/Bauüberwachung und Verkehrsanlagenplanung.
 
-## Dokumentation
+## Gesprächsunterlagen
+
+- [IT-Briefing](docs/BETRIEB_UND_IT.md) – GDI-Grundlagen, Infrastruktur, Betrieb, Agenda und Fragen
+- [Geschäftsführungs-Briefing](docs/MANAGEMENT.md) – Nutzen, Piloten, Ressourcen und Beschlussbedarf
+
+## Konzept und Referenz
 
 - [Glossar](docs/GLOSSAR.md) – Fachbegriffe und Abkürzungen
 - [Projektkonzept](docs/PROJEKTKONZEPT.md) – Ziele, Grenzen, Pilotbereiche
-- [Management](docs/MANAGEMENT.md) – Nutzen, Ressourcen, Risiken
 - [Anforderungen](docs/ANFORDERUNGEN.md) – fachliche und nichtfunktionale Anforderungen
 - [Architektur](docs/ARCHITEKTUR.md) – konsolidierter technischer Sollzustand
-- [Entscheidungen](docs/ENTSCHEIDUNGEN.md) – A01–A38, Status und Begründungen
+- [Entscheidungen](docs/ENTSCHEIDUNGEN.md) – A01–A38, Status, Begründungen und Prüfvorbehalte
 - [Offene Punkte](docs/OFFENE_PUNKTE.md) – Rückstellungen, IT-Abstimmungen, PoCs
 - [Pilotkonkretisierung](docs/PILOTKONKRETISIERUNG.md) – Erhebung und Prüfhypothesen der beiden Pilotbereiche
 - [Roadmap](docs/ROADMAP.md) – MVP, Piloten, Einführungsfolge
-- [Betrieb und IT](docs/BETRIEB_UND_IT.md) – Betriebsperspektive und Zuständigkeiten
 
 ## Pflegegrundsätze
 

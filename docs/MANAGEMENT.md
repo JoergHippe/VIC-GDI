@@ -1,4 +1,4 @@
-# VIC-GDI – Managementsicht
+# Geschäftsführungs-Briefing – VIC-GDI
 
 **Status:** Interner Arbeitsentwurf · Entscheidungsgrundlage, keine Kosten- oder Terminzusage.
 
@@ -16,6 +16,15 @@ Eine gemeinsame Geodateninfrastruktur soll Geodaten fachbereichsübergreifend nu
 - Verbesserte Nachvollziehbarkeit und geringere technische Abhängigkeiten von Einzelpersonen.
 
 Dies sind **Zielwirkungen**, keine bereits gemessenen Einsparungen.
+
+## Pilotvorschläge und Erfolgskriterien
+
+| Pilot | Möglicher erster Ablauf | Späterer Nachweis |
+|---|---|---|
+| Baubetreuung/Bauüberwachung | Bei der Bestandsdokumentation einen vor Ort erfassten Leitungsverlauf prüfen und in einen führenden Bestand übernehmen. | Freigegebener Stand, Herkunft und Prüfstatus sind nachvollziehbar. Übergabeschritte und aufgetretene Datenkonflikte werden erfasst. |
+| Verkehrsanlagenplanung | Einen wiederkehrenden Geodatenbestand aus zwei Planungsprojekten nutzen. | Beide Projekte finden den freigegebenen Stand mit den vorgesehenen Rechten. Suchaufwand und Zahl zusätzlicher Arbeitskopien werden mit dem heutigen Ablauf verglichen. |
+
+Die Fachbereiche priorisieren je Pilot einen ersten Ablauf und legen vor der Umsetzung Ausgangswerte und Abnahmekriterien fest. Beide Piloten können zeitlich gestaffelt werden. Details und Status der Anwendungsfälle stehen in der [Pilotkonkretisierung](PILOTKONKRETISIERUNG.md).
 
 ## Investitions- und Ressourcenfelder
 
@@ -42,6 +51,10 @@ GIS-Team verantwortet fachliche GDI-Fragen, IT die Infrastruktur und Basis-Siche
 
 ## Nächste Managemententscheidungen
 
-Kapazitäten für Bestandsaufnahme, Piloten und Wissensaufbau; Priorität gegenüber laufendem Projektgeschäft; Benennung fachlicher Ansprechpartner; Beteiligung der IT. Budget, Meilensteine und wirtschaftliche Effekte erst nach belastbaren Pilotannahmen quantifizieren.
+**Erbetener Beschluss für die Vorbereitung:** Eine fachliche Projektverantwortung und je eine Ansprechperson aus IT und den beiden Pilotbereichen benennen. Zeit für Bestandsaufnahme, Pilotkonzeption, IT-Abstimmung und Einarbeitungsplanung einräumen und die Priorität gegenüber laufenden Projekten festlegen.
+
+**Folgeentscheidung:** Das Team legt priorisierte Abläufe, Erfolgskriterien, einmaligen Aufwand, laufenden Betriebsbedarf und Risiken vor. Auf dieser Grundlage entscheidet die Geschäftsführung über Umfang, Budget und Start der Piloten. Die IT bestätigt vorher den tragfähigen Betriebsrahmen.
+
+**Gesprächsablauf (Vorschlag, 30 Minuten):** 5 Minuten Ausgangslage und Nutzen, 10 Minuten Piloten und Erfolgskriterien, 10 Minuten Ressourcen und Risiken, 5 Minuten Beschluss und Zuständigkeiten.
 
 Weitere Details: [Projektkonzept](PROJEKTKONZEPT.md), [Roadmap](ROADMAP.md), [Entscheidungen](ENTSCHEIDUNGEN.md).

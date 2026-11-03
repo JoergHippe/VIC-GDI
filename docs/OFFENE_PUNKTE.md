@@ -2,6 +2,8 @@
 
 **Status:** Interner Arbeitsentwurf · Stand 2026-11-03. Hier stehen Aufgaben zur Klärung, **keine vorweggenommenen Beschlüsse**.
 
+Gesprächsunterlagen: [IT-Briefing](BETRIEB_UND_IT.md) und [Geschäftsführungs-Briefing](MANAGEMENT.md). Die [Prüfaufträge zu A04, A15 und A36](ENTSCHEIDUNGEN.md#erneute-prüfung-a04-a15-und-a36) ergänzen die bisherigen Beschlüsse. Die nächsten Termine dienen der Planung und Abstimmung.
+
 ## Architekturentscheidungen
 
 | Bezug | Offene Frage | Nächster sinnvoller Schritt |
@@ -18,7 +20,9 @@
 | A30 | [Git](GLOSSAR.md#git)-Arbeitsweise, Deployment-Skripte, Freigabeverfahren | GIS/IT gemeinsam festlegen |
 | A31 | Konkrete Aufgabenverteilung und Vertretungen | Schlanke Zuständigkeitsmatrix GIS/IT |
 | A35 | Tatsächlicher [MVP](GLOSSAR.md#mvp)-Umfang und Abnahmekriterien | Pilot-Use-Cases priorisieren |
-| A36 | Bestandsaufnahme und Migrationsplanung BB | Datenquellen, Dubletten, Konflikte und Pfade inventarisieren |
+| A04/A36 | Zentrale PostgreSQL-Projektablage und Auswirkungen auf Migration | GIS und IT vergleichen Projektablage, Berechtigungen, Publikation und Wiederherstellung auf Basis des Projektinventars. |
+| A15 | Erweiterter interner Katalog und hybride Metadatenpflege | GIS und Fachbereiche priorisieren Suchfälle und Felder. Mit IT automatisierbare Quellen und mit den Fachbereichen redaktionelle Zuständigkeiten abgrenzen. |
+| A36 | Bestandsaufnahme und Migrationsplanung BB | Datenquellen, Dubletten, Konflikte und Pfade inventarisieren. |
 | A37 | Pflege und Lebenszyklus zentraler Daten | **Zurückgestellt**; Option B nur Empfehlung |
 | A38 | [PostGIS](GLOSSAR.md#postgis)-Constraints, QGIS-Eingabevalidierung | **Zurückgestellt**; Option B nur Empfehlung |
 

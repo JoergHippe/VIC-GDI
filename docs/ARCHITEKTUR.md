@@ -2,6 +2,8 @@
 
 **Status:** Interner Arbeitsentwurf · beschlossene Grundsätze und noch offene technische Festlegungen getrennt.
 
+Die Architektur zeigt den bisherigen Beschlussstand. Zentrale PostgreSQL-Projektablage und erweiterter interner Katalog mit hybrider Metadatenpflege sind [Prüfvarianten zu A04, A15 und A36](ENTSCHEIDUNGEN.md#erneute-prüfung-a04-a15-und-a36).
+
 ## Logische Architektur
 
 - **Clients:** [QGIS](GLOSSAR.md#qgis) Desktop als Facharbeitsplatz; Webviewer für vereinfachte und erweiterte Kartennutzung; [QField](GLOSSAR.md#qfield)/Happy Mini Q für geeignete mobile Online-/Offline-Szenarien.
