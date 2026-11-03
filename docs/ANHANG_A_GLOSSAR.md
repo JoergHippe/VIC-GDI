@@ -10,7 +10,7 @@
 
 ## AD DS (Active Directory Domain Services)
 
-Windows-Verzeichnisdienst für Domänen, Unternehmensidentitäten und Gruppen.
+Windows-Verzeichnisdienst für Domänen, Unternehmensidentitäten und Gruppen. Für VIC-GDI ist zu klären, welche vorhandenen Gruppen und Anmeldewege für den Browser und für den direkten Datenbankzugriff nutzbar sind.
 
 Weiterführend · [Microsoft Learn](https://learn.microsoft.com/de-de/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview)
 
@@ -18,7 +18,7 @@ Weiterführend · [Microsoft Learn](https://learn.microsoft.com/de-de/windows-se
 
 ## AOI (Area of Interest)
 
-Räumlich abgegrenztes Interessengebiet, etwa die optionale Projektabgrenzung.
+Räumlich abgegrenztes Interessengebiet, etwa die optionale Projektabgrenzung. Ein Projekt kann auch ohne eigene räumliche Abgrenzung geführt werden.
 
 ## API
 
@@ -30,7 +30,7 @@ Weiterführend · [Wikipedia](https://de.wikipedia.org/wiki/Programmierschnittst
 
 ## BBox (Bounding Box)
 
-Rechteckige räumliche Umgrenzung für Suche oder Export.
+Rechteckige räumliche Umgrenzung für Suche oder Export. Sie beschreibt die äußere Ausdehnung. Für den exakten Zuschnitt entlang einer unregelmäßigen Grenze wird die tatsächliche Grenzgeometrie benötigt.
 
 Weiterführend · [OGC](https://www.ogc.org/standards/)
 
@@ -58,7 +58,7 @@ Weiterführend · [GitLab](https://docs.gitlab.com/ci/)
 
 ## COG (Cloud Optimized GeoTIFF)
 
-Für effizienten teilweisen Zugriff organisiertes GeoTIFF.
+Für effizienten teilweisen Zugriff organisiertes GeoTIFF. Bei geeignetem Speicher und Client lassen sich benötigte Bildausschnitte lesen, ohne vorher die gesamte Datei zu laden.
 
 Weiterführend · [OGC](https://www.ogc.org/standards/)
 
@@ -66,7 +66,7 @@ Weiterführend · [OGC](https://www.ogc.org/standards/)
 
 ## CRS (Coordinate Reference System)
 
-Koordinatenreferenzsystem zur eindeutigen räumlichen Zuordnung.
+Koordinatenreferenzsystem zur eindeutigen räumlichen Zuordnung. Es legt fest, wie Koordinaten einem Ort zugeordnet werden. Bei der Übernahme von Daten ist der Höhenbezug gesondert zu beachten, wenn Höhenwerte verwendet werden.
 
 Weiterführend · [EPSG Registry](https://epsg.org/)
 
@@ -84,7 +84,7 @@ Weiterführend · [Projekt- oder Produktseite](https://www.debian.org/)
 
 ## Docker
 
-Werkzeuge zum Paketieren und Betreiben von Diensten in Containern.
+Werkzeuge zum Paketieren und Betreiben von Diensten in Containern. Für VIC-GDI ist offen, welche Dienste nativ und welche in Containern laufen. Container können dabei innerhalb einer virtuellen Maschine betrieben werden.
 
 Weiterführend · [Projekt- oder Produktseite](https://docs.docker.com/engine/)
 
@@ -92,7 +92,7 @@ Weiterführend · [Projekt- oder Produktseite](https://docs.docker.com/engine/)
 
 ## ETL (Extract, Transform, Load)
 
-Daten aus Quellen übernehmen, umwandeln und in Zielsysteme laden.
+Daten aus Quellen übernehmen, umwandeln und in Zielsysteme laden. Ein typischer Import übernimmt Quelldaten, passt Felder oder Koordinaten an und lädt das Ergebnis in die Zieldatenbank. In VIC-GDI beginnt die Automatisierung mit überschaubaren Importabläufen und Skripten.
 
 Weiterführend · [Wikipedia](https://de.wikipedia.org/wiki/ETL-Prozess)
 
@@ -100,7 +100,7 @@ Weiterführend · [Wikipedia](https://de.wikipedia.org/wiki/ETL-Prozess)
 
 ## GDI (Geodateninfrastruktur)
 
-Organisierte Daten, Dienste, Standards und Zuständigkeiten für Geodatennutzung.
+Organisierte Daten, Dienste, Standards und Zuständigkeiten für Geodatennutzung. In VIC-GDI sollen die Fachbereiche gemeinsame Daten finden und verwenden können. Dazu gehören ein nachvollziehbarer Datenstand, geregelte Zugriffsrechte und eine zuständige Stelle für die Pflege.
 
 Weiterführend · [GDI-DE](https://www.gdi-de.org/)
 
@@ -108,7 +108,7 @@ Weiterführend · [GDI-DE](https://www.gdi-de.org/)
 
 ## Geodatenauszug (Extract)
 
-Bereitstellung ausgewählter Geodaten für einen bestimmten Ausschnitt oder Verwendungszweck.
+Bereitstellung ausgewählter Geodaten für einen bestimmten Ausschnitt oder Verwendungszweck. Bei einer räumlichen Auswahl können ganze Objekte übernommen oder an der Auswahlgrenze zugeschnitten werden. Welche Variante der Pilot braucht, ist noch zu klären.
 
 ## GeoJSON
 
@@ -120,7 +120,7 @@ Weiterführend · [RFC 7946](https://www.rfc-editor.org/rfc/rfc7946)
 
 ## GeoPackage (GPKG)
 
-Offenes, SQLite-basiertes Format für Geodaten in einer Datei.
+Offenes, SQLite-basiertes Format für Geodaten in einer Datei. Eine Datei kann mehrere räumliche Tabellen enthalten und eignet sich für die Weitergabe eines abgegrenzten Datenbestands.
 
 Weiterführend · [OGC GeoPackage](https://www.geopackage.org/)
 
@@ -134,13 +134,13 @@ Weiterführend · [OGC GeoTIFF](https://www.ogc.org/standards/geotiff/)
 
 ## GIS (Geoinformationssystem)
 
-Software und Verfahren zur Bearbeitung, Analyse und Darstellung räumlicher Daten.
+Software und Verfahren zur Bearbeitung, Analyse und Darstellung räumlicher Daten. Im Arbeitsalltag lassen sich damit beispielsweise Leitungen erfassen, Flächen auswerten und die Ergebnisse auf einer Karte darstellen.
 
 Weiterführend · [Wikipedia](https://de.wikipedia.org/wiki/Geoinformationssystem)
 
 ## Git
 
-Verteilte Versionsverwaltung für Quelltext und geeignete Konfigurationsdateien.
+Verteilte Versionsverwaltung für Quelltext und geeignete Konfigurationsdateien. In VIC-GDI dient Git zur Pflege der Dokumentation und geeigneter technischer Ressourcen wie Skripte und Stildateien.
 
 Weiterführend · [git-scm.com](https://git-scm.com/doc)
 
@@ -148,7 +148,7 @@ Weiterführend · [git-scm.com](https://git-scm.com/doc)
 
 ## GNSS (Global Navigation Satellite System)
 
-Sammelbegriff für satellitengestützte Positionsbestimmung, etwa mit GPS oder Galileo.
+Sammelbegriff für satellitengestützte Positionsbestimmung, etwa mit GPS oder Galileo. In der Baubetreuung liefert der Empfänger die Position für die Erfassung. Welche Lage- und Höhengenauigkeit benötigt wird, hängt vom jeweiligen Arbeitsablauf ab.
 
 Weiterführend · [EU Agency for the Space Programme](https://www.euspa.europa.eu/eu-space-programme/galileo/what-gnss)
 
@@ -170,7 +170,7 @@ Weiterführend · [Projekt- oder Produktseite](https://happy-q.com/)
 
 ## IdP (Identity Provider)
 
-Dienst zur Authentifizierung und Bereitstellung von Identitätsinformationen.
+Dienst zur Authentifizierung und Bereitstellung von Identitätsinformationen. Er bestätigt einer Anwendung die Identität einer Person. Die Anwendung oder der jeweilige Dienst entscheidet anhand seiner Berechtigungsregeln, welche Daten sie nutzen darf.
 
 Weiterführend · [OpenID Foundation](https://openid.net/developers/how-connect-works/)
 
@@ -178,7 +178,7 @@ Weiterführend · [OpenID Foundation](https://openid.net/developers/how-connect-
 
 ## ITSM (IT-Service-Management)
 
-Organisation und Betrieb von IT-Diensten, etwa Support, Störungsbehebung und Änderungen.
+Organisation und Betrieb von IT-Diensten, etwa Support, Störungsbehebung und Änderungen. Für VIC-GDI sollen vorhandene Supportwege genutzt und Zuständigkeiten zwischen IT und GIS geklärt werden.
 
 <a id="lizmap"></a>
 
@@ -200,7 +200,7 @@ Weiterführend · [Microsoft Learn](https://learn.microsoft.com/en-us/entra/iden
 
 ## MVP (Minimum Viable Product)
 
-Kleinster sinnvoll nutzbarer Funktionsumfang zum frühen Praxistest.
+Kleinster sinnvoll nutzbarer Funktionsumfang zum frühen Praxistest. In VIC-GDI umfasst der erste nutzbare Stand einen konkreten Pilotablauf samt sicherem Zugriff und Wiederherstellbarkeit. Weitere Funktionen folgen dem Bedarf dieses Ablaufs.
 
 Weiterführend · [Wikipedia](https://de.wikipedia.org/wiki/Minimum_Viable_Product)
 
@@ -208,7 +208,7 @@ Weiterführend · [Wikipedia](https://de.wikipedia.org/wiki/Minimum_Viable_Produ
 
 ## OAuth 2.0
 
-Standardrahmen zur delegierten Autorisierung; nicht selbst ein Anmeldeprotokoll.
+Standardrahmen zur delegierten Autorisierung. Es regelt, wie eine Anwendung Zugriff auf geschützte Ressourcen erhält. Für eine Anmeldung kann darauf OpenID Connect aufsetzen.
 
 Weiterführend · [RFC 6749](https://www.rfc-editor.org/rfc/rfc6749)
 
@@ -224,7 +224,7 @@ Weiterführend · [OGC](https://www.ogc.org/)
 
 ## OIDC (OpenID Connect)
 
-Identitätsschicht für Anmeldung auf Basis von OAuth 2.0.
+Identitätsschicht für Anmeldung auf Basis von OAuth 2.0. Eine Anwendung kann damit nach der Anmeldung Identitätsinformationen vom Identitätsdienst erhalten. Die konkrete Integration für den Webzugriff ist mit der IT abzustimmen.
 
 Weiterführend · [OpenID Foundation](https://openid.net/developers/how-connect-works/)
 
@@ -232,19 +232,19 @@ Weiterführend · [OpenID Foundation](https://openid.net/developers/how-connect-
 
 ## PoC (Proof of Concept)
 
-Begrenzter technischer Machbarkeitstest.
+Begrenzter technischer Machbarkeitstest. Ein Beispiel wäre der Nachweis, dass ein zentral gespeichertes QGIS-Projekt mit zwei unterschiedlichen Rollen geöffnet und kontrolliert bearbeitet werden kann.
 
 Weiterführend · [Wikipedia](https://de.wikipedia.org/wiki/Proof_of_Concept)
 
 ## PostGIS
 
-Räumliche Erweiterung der Datenbank PostgreSQL.
+Räumliche Erweiterung der Datenbank PostgreSQL. Die Erweiterung stellt räumliche Datentypen und Abfragen bereit, etwa für die Suche nach Objekten innerhalb eines Gebiets. In VIC-GDI bildet sie die Basis für gemeinsam genutzte Vektordaten.
 
 Weiterführend · [PostGIS](https://postgis.net/)
 
 ## PostgreSQL
 
-Relationales Open-Source-Datenbanksystem.
+Relationales Open-Source-Datenbanksystem. Sie verwaltet Tabellen, Rollen und Transaktionen. Für räumliche Daten wird sie in VIC-GDI mit PostGIS erweitert.
 
 Weiterführend · [PostgreSQL](https://www.postgresql.org/)
 
@@ -252,25 +252,25 @@ Weiterführend · [PostgreSQL](https://www.postgresql.org/)
 
 ## Proxmox VE
 
-Plattform zur Virtualisierung von Servern und Containern.
+Plattform zur Virtualisierung von Servern und Containern. Für VIC-GDI ist die vorhandene Plattform der bevorzugte Ausgangspunkt für das Hosting. Die genaue Verteilung von Diensten auf virtuelle Maschinen und Container ist offen.
 
 Weiterführend · [Proxmox](https://www.proxmox.com/en/products/proxmox-virtual-environment/overview)
 
 ## QField
 
-Mobile GIS-Anwendung für QGIS-basierte Erfassungsabläufe.
+Mobile GIS-Anwendung für QGIS-basierte Erfassungsabläufe. Die Baubetreuung nutzt die Anwendung auf Tablets und Smartphones. Cloud-Austausch und lokale Speicherung mit anschließender USB-Übertragung werden als zwei Wege für den Datentransfer betrachtet.
 
 Weiterführend · [QField](https://qfield.org/)
 
 ## QGIS
 
-Freies Desktop-GIS zur Erfassung, Analyse und Darstellung von Geodaten.
+Freies Desktop-GIS zur Erfassung, Analyse und Darstellung von Geodaten. Fachanwender nutzen QGIS Desktop am Arbeitsplatz, um Datenquellen einzubinden, Layer zu gestalten und Projekte zu bearbeiten.
 
 Weiterführend · [QGIS](https://qgis.org/)
 
 ## QGIS Server
 
-Serverkomponente zur Bereitstellung von QGIS-Projekten als standardisierte Karten- und Datendienste.
+Serverkomponente zur Bereitstellung von QGIS-Projekten als standardisierte Karten- und Datendienste. Er liefert Karten oder Daten an andere Anwendungen, etwa einen Webviewer. Sein Einsatz im Pilot hängt davon ab, ob Webkarten benötigt werden.
 
 Weiterführend · [Projekt- oder Produktseite](https://qgis.org/project/overview/)
 
@@ -294,7 +294,7 @@ Weiterführend · [QGIS-Dokumentation](https://docs.qgis.org/)
 
 ## RPO/RTO
 
-Maximal tolerierter Datenverlustzeitraum / maximal tolerierte Wiederherstellungsdauer.
+RPO (Recovery Point Objective) bezeichnet den maximal tolerierten Datenverlustzeitraum. RTO (Recovery Time Objective) bezeichnet die maximal tolerierte Wiederherstellungsdauer. Ein RPO von vier Stunden bedeutet beispielsweise, dass höchstens vier Stunden an Änderungen verloren gehen dürfen. Ein RTO von acht Stunden bedeutet, dass der Dienst innerhalb von acht Stunden wieder verfügbar sein soll. Die konkreten Ziele legt VIC-GDI mit der IT fest.
 
 Weiterführend · [Wikipedia: Recovery Point Objective](https://en.wikipedia.org/wiki/Recovery_point_objective)
 
@@ -308,13 +308,13 @@ Weiterführend · [Esri](https://support.esri.com/en-us/technical-paper/esri-sha
 
 ## Snapshot (Datenstand)
 
-Zu einem Zeitpunkt fixierter, nachvollziehbarer Datenbestand.
+Zu einem Zeitpunkt fixierter, nachvollziehbarer Datenbestand. Ein solcher Stand kann bei externen Basisdaten sinnvoll sein, wenn eine spätere Auswertung mit derselben Datengrundlage nachvollziehbar bleiben soll.
 
 <a id="sso"></a>
 
 ## SSO (Single Sign-on)
 
-Anmeldung über eine zentrale Identität statt separate Konten je Anwendung.
+Anmeldung über eine zentrale Identität statt separate Konten je Anwendung. Eine bestehende Anmeldung kann für mehrere angebundene Anwendungen genutzt werden. Welche Daten die Person dort sehen oder bearbeiten darf, richtet sich weiterhin nach ihren Berechtigungen.
 
 Weiterführend · [Wikipedia](https://de.wikipedia.org/wiki/Single_Sign-on)
 
@@ -340,12 +340,12 @@ Weiterführend · [BSI](https://www.bsi.bund.de/)
 
 ## Webviewer
 
-Kartenanwendung im Browser ohne lokale GIS-Installation.
+Kartenanwendung im Browser ohne lokale GIS-Installation. Er richtet sich etwa an Projektbeteiligte, die Karten ansehen oder Informationen abfragen möchten. Für VIC-GDI ist er vorgesehen, wenn ein priorisierter Pilotablauf ihn benötigt.
 
 <a id="wms"></a>
 
 ## WMS (Web Map Service)
 
-OGC-Dienst zur Bereitstellung gerenderter Kartenbilder.
+OGC-Dienst zur Bereitstellung gerenderter Kartenbilder. Ein Client fordert für einen Ausschnitt und ausgewählte Ebenen ein Kartenbild an. Für die Weiterverarbeitung der zugrunde liegenden Vektorgeometrien braucht er einen geeigneten Datendienst oder Geodatenauszug.
 
 Weiterführend · [OGC WMS](https://www.ogc.org/standards/wms/)
