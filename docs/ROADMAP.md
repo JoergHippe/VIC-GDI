@@ -8,6 +8,22 @@ Die konkrete Erhebung ist in [Pilotkonkretisierung](PILOTKONKRETISIERUNG.md) vor
 
 Gemeinsame, schlanke GDI-Basis und zwei früh beteiligte Pilotbereiche (A34). Der [MVP](GLOSSAR.md#mvp) ist priorisiert und anpassbar; gemeinsamer GDI-MVP und fachliche Pilot-MVPs werden getrennt geplant (A35). Phasen dürfen sich überlappen.
 
+### Ablauf bis zur belastbaren Pilotentscheidung
+
+```mermaid
+flowchart LR
+  Inventory["Ist-Abläufe und Daten erheben"] --> Cases["Anwendungsfälle bestätigen"]
+  Cases --> Criteria["Abnahmekriterien festlegen"]
+  Criteria --> Test["Gezielte technische PoCs"]
+  Test --> Review{"Fachlich und betrieblich tragfähig?"}
+  Review -->|"Ja"| Pilot["Pilot-MVP umsetzen"]
+  Review -->|"Nein"| Adjust["Annahmen oder Lösung korrigieren"]
+  Adjust --> Criteria
+  Pilot --> Feedback["Nutzerfeedback und Betrieb prüfen"]
+```
+
+**Hinweis:** Die Schritte können sich überlappen. Das Schaubild ist ein Entscheidungsprozess, kein verbindlicher Terminplan.
+
 ## Etappen
 
 ### 0 – Vorbereitung und Bestandsaufnahme
