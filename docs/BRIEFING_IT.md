@@ -46,6 +46,18 @@ Der vorgesehene GDI-Kern (QGIS, PostgreSQL/PostGIS, bevorzugt QGIS Server und fr
 
 Für kritische Aufgaben federführende Person und Vertretung festlegen; kein eigenes [ITSM](ANHANG_A_GLOSSAR.md#itsm)-System einführen ([A31](04_ENTSCHEIDUNGEN.md#a31), [A32](04_ENTSCHEIDUNGEN.md#a32)).
 
+## Umsetzung, Qualifizierung und spätere Betreuung – IT-Prüfauftrag
+
+Die **Personen und Organisationen, die den Aufbau ausführen**, sind noch nicht festgelegt. Der [gesonderte Variantenvergleich](08_UMSETZUNGS_UND_BETRIEBSMODELLE.md) hält **A1–A3** (eigener Aufbau), **B1** (Co-Implementation), **C1/C2** (externe Umsetzung, ggf. mit Betrieb) sowie die unabhängig zu wählenden Betriebsmodelle **D1** (intern), **D2** (intern mit externem Spezialistensupport) und **D3** (überwiegend extern) offen. Fachlich erscheint A3/B1 + D2 prüfenswert, **ohne IT-Bewertung oder GF-Entscheidung vorwegzunehmen**.
+
+**IT soll dazu insbesondere klären:**
+
+- Welche **personellen Kapazitäten und Kompetenzen** für Installation, Linux/Windows, PostgreSQL/PostGIS, GIS-Dienste, Netze/Identitäten, Sicherheitsupdates, Restore und Störungen real vorhanden sind und welche Vertretung möglich ist.
+- Welche Aufgaben **intern durchführbar**, durch Schulung/Beratung erreichbar oder sinnvoll **gemeinsam bzw. extern umzusetzen** sind. Selbststudium und Schulungen als echte Zeit-/Kostenposition behandeln ([A33](04_ENTSCHEIDUNGEN.md#a33)).
+- Wer bei jedem Modell den **dauerhaften Betrieb**, 2nd-Level-Support, Eskalation, Migration und Pflege der Konfigurationen übernimmt ([A31](04_ENTSCHEIDUNGEN.md#a31)); auch bei D3 bleiben interne Ansprechpartner und Kontrollfähigkeit nötig.
+- Bei Fremdleistungen **Dokumentation, Nutzungs-/Änderungsrechte, Übergabe, reale Restore-/Update-Probe, externe Zugriffsrechte sowie Exit-/Anbieterwechsel** und ggf. Serviceumfang vertraglich absichern.
+- Gemeinsam mit GIS 2–3 realistische Kombinationen vergleichen und **GF/IT zur Auswahl vorlegen**. Keine vorgezogene Beauftragung oder Festlegung eines Betriebsmodells.
+
 ## Technische Rahmenbedingungen
 
 - Bevorzugt On-prem auf vorhandener Proxmox-Infrastruktur, Linux/[Debian](ANHANG_A_GLOSSAR.md#debian) als naheliegende Option; keine endgültige VM-/Containerentscheidung ([A23](04_ENTSCHEIDUNGEN.md#a23), [A24](04_ENTSCHEIDUNGEN.md#a24)).
@@ -75,7 +87,7 @@ VM und [Docker](ANHANG_A_GLOSSAR.md#docker) liegen auf unterschiedlichen Ebenen.
 2. **Rechte ([A26](04_ENTSCHEIDUNGEN.md#a26)):** Fachrollen und Gruppen den genutzten Zugriffspfaden zuordnen. Berechtigte und abgewiesene Zugriffe prüfen, bei Webkarten auch den direkten Dienstaufruf.
 3. **Backup ([A28](04_ENTSCHEIDUNGEN.md#a28)):** konsistente PostgreSQL-Sicherung, Dateien/QGIS-Ressourcen, Restore-Proben, [RPO/RTO](ANHANG_A_GLOSSAR.md#rpo-rto) und mobile unsynchronisierte Daten.
 4. **Monitoring ([A29](04_ENTSCHEIDUNGEN.md#a29)):** Vorhandene IT-Überwachung für Datenbank und Sicherung nutzen. Für tatsächlich eingesetzte GIS-Dienste Funktionsprüfungen ergänzen, etwa einen [WMS](ANHANG_A_GLOSSAR.md#wms)-Kartenaufruf. Alarmierung und datenschutzgerechte Protokollierung abstimmen.
-5. **Betriebsorganisation ([A31](04_ENTSCHEIDUNGEN.md#a31)):** Installation, Patchmanagement, DB-Migrationen, Vorfälle, Vertretung.
+5. **Betriebsorganisation ([A31](04_ENTSCHEIDUNGEN.md#a31)):** Installation, Patchmanagement, DB-Migrationen, Vorfälle, Vertretung; [Umsetzungs- und Betriebsmodelle](08_UMSETZUNGS_UND_BETRIEBSMODELLE.md) gemeinsam mit GF und GIS abwägen.
 6. **Wissensaufbau ([A33](04_ENTSCHEIDUNGEN.md#a33)):** Schulungen und Einarbeitung passend zu Rollen; Zeit-/Personal-/Budgetbedarf sichtbar machen.
 
 ## Agenda und Fragen für den IT-Termin (Vorschlag, 60 Minuten)
@@ -85,7 +97,7 @@ VM und [Docker](ANHANG_A_GLOSSAR.md#docker) liegen auf unterschiedlichen Ebenen.
 | 10 Min. | Zielbild und Pilotabläufe. Welche Nutzungspfade und Datenarten muss IT für die Aufwandsschätzung kennen? |
 | 15 Min. | Hosting. Welche VM-, Linux- und Docker-Betriebsstandards gibt es? Welche Varianten kann IT dauerhaft betreuen und vertreten? Welche Last- und Speicherangaben fehlen? |
 | 15 Min. | Zugriff. Welche AD-/M365-Integration und welche internen Netz- und VPN-Wege sind möglich? Wer verwaltet Gruppen, Zertifikate, Firewallregeln und Dienstkonten? |
-| 15 Min. | Betrieb. Wer übernimmt PostgreSQL/PostGIS, GIS-Dienste, Updates und Störungen? Was decken vorhandene Sicherung und Überwachung ab? Wer koordiniert Wiederherstellung und Abnahme? |
+| 15 Min. | Betrieb und Umsetzung. Wer kann Aufbau, PostgreSQL/PostGIS, GIS-Dienste, Updates und Störungen übernehmen? Welche Schulung, Beratung oder externen Leistungen wären nötig? Was decken Sicherung und Überwachung ab? Wer koordiniert Wiederherstellung und Abnahme? |
 | 5 Min. | Ergebnis festhalten. Pro offener Frage zuständige Person, benötigte Zuarbeit und Termin vereinbaren. Voraussetzungen und Aufwand für die nächste Freigabe benennen. |
 
 ### Ergebnis festhalten
