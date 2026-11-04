@@ -34,8 +34,13 @@ Ein Webviewer ermöglicht die einfache Anzeige freigegebener Karten und Abfragen
 
 Standardisierte Dimensionen und Gewichte nach [Methodik](BEWERTUNGSMETHODIK.md); `0–3` nur nach Quellenprüfung bzw. Test, sonst `?`.
 
+**Produkt-/Release-Recherche noch ausstehend:** `?` = noch nicht geprüft, `n. a.` = kein eigenständig versioniertes Produkt bzw. gegenwärtig keine konkrete Software ausgewählt. Beim tatsächlichen Vergleich Erstveröffentlichung, Version samt Releasedatum und Aktivität der letzten 12 Monate mit offiziellem Release-/Changelog-Beleg und Bewertungsstichtag ergänzen. Diese drei Angaben werden nicht zusätzlich bepunktet.
+
 | Dimension (Gewicht) | Lizmap | QWC2 / QWC |
 |---|---:|---:|
+| **Erstveröffentlichung / seit (Jahr)** | ? | ? |
+| **Aktuelle stabile Version (Releasedatum)** | ? | ? |
+| **Entwicklungsaktivität (12 Monate)** | ? | ? |
 | Fachliche/funktionale Eignung (30 %) | ? | ? |
 | Integration/Interoperabilität (20 %) | ? | ? |
 | Sicherheit/Berechtigungen (15 %) | ? | ? |
