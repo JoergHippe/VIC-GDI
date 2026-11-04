@@ -47,6 +47,14 @@ Die Fachbereiche priorisieren je Pilot einen ersten Ablauf und legen vor der Ums
 
 **[Ressourcen für den Wissensaufbau](04_ENTSCHEIDUNGEN.md#a33):** Wissensaufbau benötigt explizit eingeplante personelle, zeitliche und gegebenenfalls finanzielle Ressourcen. Selbststudium ist nicht kostenfrei. Die Methode (Eigenlernen, gezielte Schulung, umfassende Qualifikation) richtet sich nach Rolle, Risiko und Wirtschaftlichkeit.
 
+## Wer setzt die GDI um – und wer betreibt sie anschließend?
+
+**Noch keine Entscheidung:** Die [Umsetzungs- und Betriebsmodelle](08_UMSETZUNGS_UND_BETRIEBSMODELLE.md) stellen alle derzeit sinnvollen Möglichkeiten gegenüber: **A1–A3** (interner Aufbau mit Selbststudium, Schulungen oder zusätzlich Beratung), **B1** (gemeinsame Implementierung mit externen Spezialisten) sowie **C1/C2** (externe Umsetzung mit Übergabe bzw. einschließlich Betrieb). Der **Wissensaufbau** und der spätere **Betrieb D1–D3** (intern, intern mit Spezialistensupport, überwiegend extern) sind dabei **eigenständige Entscheidungen**; Mischmodelle je Komponente sind zulässig.
+
+**Vorläufig fachlich prüfenswert** ist A3 oder B1 mit D2, **sofern** GIS-Team und IT ausreichend Zeit, Kompetenzen und Vertretung bereitstellen können. Das ist **keine Vorentscheidung**; bei fehlender interner Kapazität können externe Gesamtleistungen sinnvoller sein. Bei allen Varianten zählen **interne Personentage, Schulungen, externe Leistungen, Betriebskosten und Wissenstransfer**, nicht nur externe Rechnungen. Auch Fremdbetrieb setzt internes Steuerungswissen voraus.
+
+**Entscheidung durch Geschäftsführung und IT:** Nach Bestandsaufnahme und IT-Bewertung über Organisationsmodell, personelle Ressourcen, Budget/Beauftragung und tragfähigen Betriebsrahmen entscheiden; GIS-Team und Fachbereiche fachlich beteiligen. Detailvergleich, Vor-/Nachteile und Mindestanforderungen an externe Übergaben: [Gesonderte Entscheidungsgrundlage](08_UMSETZUNGS_UND_BETRIEBSMODELLE.md).
+
 ## Organisationsmodell
 
 GIS-Team verantwortet fachliche GDI-Fragen, IT die Infrastruktur und Basis-Sicherheit; Datenhoheit liegt bei den zuständigen Fachbereichen. Die konkrete [Betriebsverantwortung](04_ENTSCHEIDUNGEN.md#a31) für Datenbank und GIS-Dienste ist noch festzulegen. Kein neues umfangreiches Service-Management-System vorgesehen.
@@ -65,7 +73,7 @@ GIS-Team verantwortet fachliche GDI-Fragen, IT die Infrastruktur und Basis-Siche
 
 ### Folgeentscheidung
 
-Das Team legt priorisierte Abläufe, Erfolgskriterien, einmaligen Aufwand, laufenden Betriebsbedarf und Risiken vor. Auf dieser Grundlage entscheidet die Geschäftsführung über Umfang, Budget und Start der Piloten. Die IT bestätigt vorher den tragfähigen Betriebsrahmen.
+Das Team legt priorisierte Abläufe, Erfolgskriterien, einmaligen Aufwand, laufenden Betriebsbedarf, Risiken sowie **realistische Varianten für Umsetzung, Wissensaufbau und späteren Betrieb** vor. Auf dieser Grundlage entscheidet die Geschäftsführung über Umfang, Budget und Start der Piloten; das **Organisations- und Betriebsmodell** wird mit der IT in den jeweiligen Zuständigkeiten festgelegt. Die IT bestätigt vorher den tragfähigen Betriebsrahmen.
 
 **Gesprächsablauf (Vorschlag, 30 Minuten):** 5 Minuten Ausgangslage und Nutzen, 10 Minuten Piloten und Erfolgskriterien, 10 Minuten Ressourcen und Risiken, 5 Minuten Beschluss und Zuständigkeiten.
 
