@@ -56,6 +56,8 @@ Standardisierte Dimensionen und Gewichte nach [Methodik](BEWERTUNGSMETHODIK.md);
 
 **Windows Server (Bestandsoption):** Bekannte interne Betriebswerkzeuge könnten ein Vorteil sein; mögliche Serverlizenzkosten und Linux-orientierte GIS-Deployments könnten Nachteile darstellen. **Noch zu verifizieren:** Lizenzabdeckung, PostgreSQL/QGIS-Server-Support, automatisierte Wartbarkeit.
 
+**Lizenz-/Kostenabgrenzung:** [Debian GNU/Linux](https://www.debian.org/intro/why_debian) ist in den vorgesehenen freien Standardpaketen ohne Lizenzgebühr nutzbar; Administration, Sicherheitsupdates und möglicher externer Support verursachen Aufwand. **Windows Server** ist keine lizenzfreie Alternative: vorhandene Nutzungsrechte und mögliche Zusatzlizenzen durch die IT prüfen. Die bereits vorhandene Virtualisierungsplattform **Proxmox VE ist nicht der OS-Kandidat**; ihre optionalen Subskriptionskosten gehören in die Infrastruktur-/IT-Prüfung ([IT-Briefing](../BRIEFING_IT.md#softwarelizenzen-und-optionaler-herstellersupport)).
+
 ## 6. Bewertung und Empfehlung
 
 **Aktueller Status: Noch keine belastbare Produktempfehlung.** Linux ist als kostengünstige Richtung plausibel, die finale Machbarkeit und eine mögliche Hardware-Aufstockung beurteilt nur die IT.

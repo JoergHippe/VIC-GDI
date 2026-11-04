@@ -13,6 +13,18 @@ Dieses Dokument bewertet, **durch wen** die [GDI](ANHANG_A_GLOSSAR.md#gdi) aufge
 | **W – Wissensaufbau** | Wie werden erforderliche Fähigkeiten erworben und gesichert? | Selbststudium, Schulung, angeleitete Praxis, Beratung und Wissenstransfer kombinierbar. |
 | **D – Dauerbetrieb** | Wer übernimmt Updates, Fehleranalyse, Support, Sicherung und technische Weiterentwicklung? | Eigenständige Entscheidung – nicht automatisch durch den Umsetzungsauftrag vorgegeben. |
 
+Die drei Entscheidungen müssen **gemeinsam auf Tragfähigkeit** geprüft werden, dürfen aber unterschiedliche interne und externe Anteile haben:
+
+```mermaid
+flowchart LR
+  U["Umsetzung: intern / gemeinsam / extern"] --> V["Gemeinsame Bewertung: Fähigkeiten, Kapazitäten, Risiken, Kosten"]
+  W["Wissensaufbau: Schulung / Praxis / Transfer"] --> V
+  D["Dauerbetrieb: intern / unterstützt / extern"] --> V
+  V --> E["GF + IT: tragfähige Richtung und Freigaben"]
+```
+
+Das Schema ist eine **Entscheidungshilfe**, keine bereits gewählte Kombination. Die konkrete technische Dienstverteilung, Umsetzungsaufträge und Betriebsübernahme bleiben bis zu den jeweiligen Freigaben offen.
+
 **Unterscheidung:** Auch vollständig extern umgesetzte oder betriebene Systeme brauchen interne fachliche Verantwortung, Vertrags-/Dienstleistersteuerung, Zugangskontrolle, Entscheidungsfähigkeit und eine hinreichende Vertretungsregelung. Umgekehrt ist **intern** nicht gleichbedeutend mit **ohne Kosten**: Arbeitszeit, Weiterbildung, laufende Wartung und Kapazitätsreserve gehören in die Betrachtung.
 
 ## 2. Umsetzungsmodelle – alle Optionen offen
@@ -120,6 +132,23 @@ Bei **A3 (Beratungsanteil), B1, C1 und C2** ist der jeweilige Leistungsumfang kl
 - **Serviceleistungen bei D2/D3:** Unterstützung, Verfügbarkeit, Reaktions- und Wiederherstellungswege, Eskalation, Kostenmodell, Laufzeit und Übergabepflichten vereinbaren.
 
 **Keine eigenen umfangreichen Service-Management-Prozesse erfinden:** vorhandene IT-Verfahren nutzen ([A32](04_ENTSCHEIDUNGEN.md#a32)). Open Source senkt Softwarelizenzkosten, garantiert aber weder kostenlose externe Leistungen noch einen betreibbaren Betrieb.
+
+## Kostenrahmen und Lizenzabgrenzung
+
+**Softwarelizenzen sind nicht die Gesamtkosten.** Für die im Konzept vorgesehenen freien GDI-Kernkomponenten fallen grundsätzlich keine zusätzlichen Softwarelizenz-/Nutzergebühren an (Software- und Quellenübersicht: [software/README](software/README.md#lizenz--und-kostenüberblick-gdi-kern)). Kosten für Implementierung, Qualifizierung, Betrieb, externe Leistungen und gegebenenfalls zusätzliche Infrastruktur sind davon getrennt.
+
+| Kostenfeld | Bei der A39-Bewertung berücksichtigen |
+|---|---|
+| **Einmalige Eigenleistung** | Bestandsaufnahme, Konzeption, Installation, Datenmodelle, Migration, Tests, Einführung und Dokumentation; reale interne Personentage. |
+| **Qualifizierung** | Einarbeitung, Schulung, gemeinsame Praxis, Wissenstransfer und Vertretungsfähigkeit; nicht als kostenlose Nebenaufgabe behandeln. |
+| **Laufender Betrieb** | Administration, Fachpflege, Sicherheitsupdates, Monitoring, Backups/Restore-Tests, Support und Weiterentwicklung. |
+| **Infrastruktur (offen)** | Bestehende CPU-/RAM-/Speicher-/Backup-Reserven und ggf. zusätzliche Hardware, Energie und Netzwerkressourcen; **Bedarf und Kosten nur nach IT-Prüfung**. |
+| **Externe/optionale Leistungen** | Beratung, Implementierung, Supportverträge, optionale Proxmox-Subskription, gehostete QFieldCloud und kommerzielle Zusatzdienste. |
+| **Daten und Bestandssoftware** | Rechte und Gebühren für externe Geodaten/Karten/APIs; mögliche Kapazitäts- und Vertragsfolgen bestehender Unternehmenssoftware. |
+
+**Wirtschaftlichkeitsprüfung:** Für zwei bis drei realistische Umsetzungs-/Betriebskombinationen dieselben Kostenarten und denselben Betrachtungszeitraum (z. B. drei Jahre) zugrunde legen. Erwartete Nutzenwirkungen der Piloten nicht als bereits realisierte Einsparungen rechnen. Eine GDI ist nur sinnvoll, wenn Verbesserungen und laufende Verpflichtungen in einem tragfähigen Verhältnis stehen.
+
+**Abgrenzungen:** QField-App ist kostenlos, gehostete [QFieldCloud](https://qfield.cloud/pricing) kann kostenpflichtig sein; selbst gehosteter Synchronisationsbetrieb verursacht Aufwand ([SW-05](software/05_MOBILER_DATENAUSTAUSCH.md)). Proxmox VE ist ohne Subskription nutzbar, das Enterprise-Repository und Herstellersupport sind optional; vorhandene Infrastruktur/Verträge entscheidet die IT ([IT-Briefing](BRIEFING_IT.md#softwarelizenzen-und-optionaler-herstellersupport)). Docker Engine unter Linux ist nicht Docker Desktop. Die freie Kernsoftware löst keine Lizenzrechte an Dritt-Geodaten.
 
 ## 7. Kriterien und Vorgehen für die Entscheidung
 

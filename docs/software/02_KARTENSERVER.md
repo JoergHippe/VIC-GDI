@@ -59,6 +59,8 @@ Standardisierte Dimensionen und Gewichte nach [Methodik](BEWERTUNGSMETHODIK.md);
 
 **MapServer:** Eine fokussierte Kartenbereitstellung kann für einfache Dienste geeignet sein; Projekt-/Style-Übernahme aus QGIS und Rechteintegration könnten Mehraufwand bedeuten. **Noch zu verifizieren:** Abdeckung des konkret geforderten Funktionsumfangs und Rechtepfad.
 
+**Lizenzabgrenzung:** Der bevorzugte [QGIS Server](https://qgis.org/download/) ist frei verfügbar und erfordert für die Open-Source-Software keine zusätzliche Nutzer- oder Serverlizenzgebühr. Betrieb, Konfiguration, Absicherung sowie eventuelle Zusatzdienste sind nicht kostenfrei. Bei alternativen Produkten sind Lizenz und benötigte Edition einzeln zu belegen.
+
 ## 6. Bewertung und Empfehlung
 
 **Aktueller Status: Noch keine belastbare Produktempfehlung.** Die bisherige Präferenz für QGIS Server wird **nicht** zu einem formalen Beschluss hochgestuft; andere Produkte sind nur Vergleichskandidaten.

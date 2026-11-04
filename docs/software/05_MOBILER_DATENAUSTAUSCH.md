@@ -59,6 +59,8 @@ Standardisierte Dimensionen und Gewichte nach [Methodik](BEWERTUNGSMETHODIK.md);
 
 **Selbst gehostete QFieldCloud:** Mehr Kontrolle über Infrastruktur/Daten kann ein Vorteil sein; zusätzliche Betriebs-, Update- und Supportaufgaben können den MVP überladen. **Noch zu verifizieren:** IT-Kapazität, Komponenten/Abhängigkeiten, Restore, Zugriff und laufender Betrieb.
 
+**Lizenz-/Kostenabgrenzung:** Die [QField-App](https://docs.qfield.org/get-started/license/) ist kostenlos. Bei [gehosteter QFieldCloud](https://qfield.cloud/pricing) sind abhängig von Tarif und benötigtem Funktionsumfang Gebühren möglich; die selbst gehostete Open-Source-Variante benötigt eigene Administration, Serverressourcen und Sicherung. Lokaler Datei-/USB-Transfer kann ohne zusätzliches Cloudabonnement auskommen, verursacht aber manuellen Prozessaufwand. Weder ein bezahlter Dienst noch Self-Hosting ist beschlossen.
+
 ## 6. Bewertung und Empfehlung
 
 **Aktueller Status: Noch keine belastbare Produktempfehlung.** Der Vergleich muss mit derselben QField-Pilotkonfiguration stattfinden; keine Cloudvariante allein aufgrund von Komfort vorab festlegen.

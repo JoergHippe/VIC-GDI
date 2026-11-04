@@ -6,6 +6,48 @@
 
 [Geodaten](ANHANG_A_GLOSSAR.md#geodaten) und [QGIS](ANHANG_A_GLOSSAR.md#qgis)-Projekte werden in unterschiedlichen Fachbereichen und Speicherorten verwaltet. Gemeinsame Datennutzung, einheitliche Bereitstellung und kontrollierter Betrieb sollen verbessert werden. In der Baubetreuung werden QGIS-Arbeitsbestände teilweise über synchronisierte SharePoint-/OneDrive-Verzeichnisse genutzt; diese Arbeitsweise soll für führende [GIS](ANHANG_A_GLOSSAR.md#gis)-Arbeitsdaten kontrolliert abgelöst werden ([A36](04_ENTSCHEIDUNGEN.md#a36)).
 
+## Warum wir VIC-GDI einführen wollen
+
+Die heutige Arbeit mit Geodaten verteilt sich auf Fachbereiche, Projekte und unterschiedliche Speicherorte. Gemeinsame Bestände sind dadurch nicht immer unmittelbar auffindbar; Daten können mehrfach kopiert und unabhängig fortgeschrieben werden. Das erhöht den Abstimmungsaufwand und das Risiko voneinander abweichender Datenstände. In der Baubetreuung werden GIS-Arbeitsbestände teilweise über synchronisierte SharePoint-/OneDrive-Verzeichnisse genutzt; diese Arbeitsweise soll für führende Arbeitsdaten kontrolliert abgelöst werden. Wie groß die einzelnen Probleme tatsächlich sind, wird mit den Pilotbereichen erhoben.
+
+Die geplante [Geodateninfrastruktur](ANHANG_A_GLOSSAR.md#gdi) soll **nicht bloß neue Server bereitstellen**, sondern eine gemeinsame, verlässliche Arbeitsgrundlage organisieren: Wo liegt ein führender Datenbestand? Wer verantwortet und pflegt ihn? Wie greifen andere Berechtigte auf denselben freigegebenen Stand zu? Wie können QGIS-Fachanwender, gelegentliche Kartennutzer und mobile Teams aufgabenbezogen arbeiten? Die GDI **ergänzt** vorhandene CAD-, BIM-, M365- und Fachsysteme; sie ersetzt sie nicht.
+
+### Heutige Herausforderungen und angestrebte Verbesserung
+
+| Ausgangssituation / zu prüfendes Problem | Erwarteter Beitrag der GDI |
+|---|---|
+| Daten, QGIS-Projekte und Zuständigkeiten verteilen sich auf verschiedene Ablagen. | Nachvollziehbare Quellen, klare Datenhoheit und verlässliche Zugriffswege. |
+| Geeignete Bestände werden zwischen Projekten kopiert und ggf. unterschiedlich weitergeführt. | Gemeinsame Nutzung führender Daten statt unnötiger unabhängiger Kopien. |
+| Herkunft, Aktualität oder Freigabestand sind nicht immer unmittelbar erkennbar. | Verantwortliche und relevante Datenstände nachvollziehbar machen. |
+| Gelegentliche Kartenfragen erfordern teilweise GIS-Unterstützung. | Bei Bedarf einfache, berechtigungsgesteuerte Webkarten für Nicht-Spezialisten. |
+| Mobile Erfassungen müssen in den fachlich geprüften Bestand übernommen werden. | Übertragung, fachliche Prüfung und Freigabe klar unterscheiden. |
+| Wiederkehrende Konfigurationen und Betriebswissen sind uneinheitlich verteilt. | Gemeinsame Ressourcen und dokumentierte, vertretbare Abläufe. |
+
+### Zielprinzip auf einen Blick
+
+```mermaid
+flowchart LR
+  A["Projekt A: eigene Datenkopie"] --> X["Heute: mehrere Arbeitsstände"]
+  B["Projekt B: eigene Datenkopie"] --> X
+  X -.->|Für geeignete gemeinsame Daten| D["Ziel: ein führender, fachlich verantworteter Bestand"]
+  D --> Q["QGIS-Facharbeitsplätze"]
+  D --> W["Freigegebene Webkarten bei Bedarf"]
+  M["Mobile Erfassung"] --> P["Fachliche Prüfung"]
+  P --> D
+```
+
+**Einordnung:** Das Diagramm illustriert ein Zielprinzip, keinen nachgewiesenen heutigen Ablauf und keine Pflicht, sämtliche QGIS-Projekte, Raster- oder CAD-Dateien in PostGIS zu speichern. Der mobile Datenweg und die Webbereitstellung sind pilotabhängig.
+
+### Was das im Arbeitsalltag bedeuten kann
+
+- **Baubetreuung:** Ein mobil erfasster Leitungsverlauf wird übertragen, geprüft und – nur bei fachlicher Eignung – in einen führenden Bestand übernommen. Die Synchronisation ist keine automatische Freigabe ([BB-01](05_PILOTKONKRETISIERUNG.md#bb-01)).
+- **Verkehrsanlagenplanung:** Zwei Planungsprojekte verwenden einen geeigneten gemeinsamen Geodatenbestand, anstatt eigene Kopien mit möglicherweise verschiedenen Aktualisierungsständen zu pflegen.
+- **Gelegentliche Kartennutzung:** Wer kein QGIS benötigt, kann bei entsprechendem Pilotbedarf freigegebene Karten im Browser einsehen, ohne die führenden Daten verändern zu können.
+
+### Erwarteten Nutzen nachweisen, nicht voraussetzen
+
+Die Piloten sollen untersuchen, ob sich **fachlich** Herkunft, Aktualität und Datenqualität verbessern, **organisatorisch** Such-, Kopier- und Übergabeschritte reduzieren und **technisch** sichere, einfach nutzbare und wartbare Abläufe erreichen lassen. Dafür sind Ausgangssituation und geeignete Abnahmekriterien vorab zu erfassen. Die genannten Wirkungen sind **Ziele, keine bereits gemessenen Einsparungen**. Aufbau, Qualifizierung und laufender Betrieb müssen sich am tatsächlichen Nutzen messen lassen.
+
 ## Ziele
 
 - Fachbereichsneutrale, interne [Geodateninfrastruktur](ANHANG_A_GLOSSAR.md#gdi).

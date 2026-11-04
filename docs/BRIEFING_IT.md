@@ -10,11 +10,27 @@ Ein [GIS](ANHANG_A_GLOSSAR.md#gis) bearbeitet und zeigt räumliche Daten, etwa d
 
 Die [Architekturübersicht](03_ARCHITEKTUR.md#architekturübersicht-logisches-zielbild) zeigt, wie Desktop, Browser und Mobilgeräte auf Daten und Dienste zugreifen.
 
+## Ziel des ersten IT-Termins: Machbarkeit und A39
+
+IT und GIS sollen **zuerst** klären, unter welchen Bedingungen ein sicherer, dauerhaft betreibbarer GDI-Pilot überhaupt realistisch ist. Die bereits dokumentierte Architektur ist eine Planungsgrundlage, **keine Anweisung zur sofortigen Bereitstellung**.
+
+| Jetzt beantworten | Spätere Vertiefung |
+|---|---|
+| Welche internen Zuständigkeiten, Vertretungen und real verfügbaren Personentage gibt es? | Zuständigkeitsmatrix und konkrete Administrationsverfahren |
+| Welche Linux-, PostgreSQL-, GIS-Dienst-, Sicherheits- und Restore-Kompetenzen sind vorhanden? | Gezielt nötige Qualifizierung, externe Beratung oder Co-Implementation |
+| Können bestehende Infrastruktur, Zugänge, Backup und Sicherheitsvorgaben einen Pilot tragen? | Dimensionierung, technische Tests und ggf. zusätzliche Ressourcen |
+| Welches Umsetzungs-/Wissens-/Betriebsmodell erscheint tragfähig ([A39](04_ENTSCHEIDUNGEN.md#a39))? | Vergleich von 2–3 realistischen Varianten mit Kosten und Übergabe |
+| Welche Pilotanforderungen müssen vor einer konkreten IT-Zusage noch erhoben werden? | Technische Komponenten- und Deploymententscheidung [A24](04_ENTSCHEIDUNGEN.md#a24) |
+
+**Ergebnis des Termins:** dokumentierte Machbarkeits- und Ressourcenfragen sowie konkrete nächste Verantwortliche, **keine Produktivfreigabe**. Vertiefende Anforderungen, Rollen und Prüfaufträge folgen in den nachstehenden Abschnitten.
+
 ## Softwarelizenzen und optionaler Herstellersupport
 
 Der vorgesehene GDI-Kern (QGIS, PostgreSQL/PostGIS, bevorzugt QGIS Server und freie Webviewer) kann ohne zusätzliche Softwarelizenzgebühren betrieben werden. Auch Debian, Git und **Proxmox VE** sind grundsätzlich kostenlos nutzbar. Eine Proxmox-Subskription ist **optional**, kann aber für das Enterprise-Repository und Herstellersupport im Produktivbetrieb aus Betriebs-/Sicherheitsgründen sinnvoll sein. Bei vorhandener Proxmox-Infrastruktur zunächst belegte CPU-Sockel, bestehende Subskriptionsstufe, Kapazität und Backup-Abdeckung klären; keine automatische Lizenzmehrbelastung pro zusätzlicher VM unterstellen.
 
-**Lizenzgrenzen beachten:** QField-App kostenlos, gehostete QFieldCloud bei benötigten Funktionen gegebenenfalls kostenpflichtig; Docker Engine unter Linux Open Source, Docker Desktop unter Umständen lizenzpflichtig. Projekt-, Personal-, Betriebs- und Datenkosten sind getrennt zu ermitteln. Siehe [Softwarelizenzen und Kostenrahmen](ANHANG_C_SOFTWARE_LIZENZEN_KOSTEN.md).
+**Lizenzgrenzen beachten:** QField-App kostenlos, gehostete QFieldCloud gegebenenfalls kostenpflichtig; Docker Engine unter Linux Open Source, Docker Desktop im gewerblichen Einsatz abhängig von den Lizenzbedingungen ggf. kostenpflichtig und für den Serverbetrieb nicht erforderlich. Bestehende Windows-/M365-/AD-Verträge und externe Datenlizenzen sind nicht von der freien GDI-Kernsoftware abgedeckt. Einzelheiten: [Software-/Lizenzübersicht](software/README.md#lizenz--und-kostenüberblick-gdi-kern) und [Kostenrahmen der A39-Entscheidung](06_UMSETZUNGS_UND_BETRIEBSMODELLE.md#kostenrahmen-und-lizenzabgrenzung).
+
+**Proxmox-Konkretisierung:** Proxmox VE ist als Open-Source-Virtualisierung auch gewerblich ohne kostenpflichtige Subskription nutzbar. Das `pve-no-subscription`-Repository ist verfügbar, wird vom Hersteller jedoch **nicht als bevorzugtes Produktiv-Repository** empfohlen. Eine kostenpflichtige Subskription ermöglicht Enterprise-Repository und je nach Tarif Herstellersupport – dies ist eine Frage des Betriebsrisikos, keine zwingende Nutzungslizenz. Bei einem Ausbau sind belegte physische CPU-Sockel pro Host (bei Clustern alle betroffenen Hosts), vorhandene Verträge, Backup-Abdeckung und mögliche zusätzliche Ressourcen zu prüfen; neue GDI-VMs allein lösen nicht automatisch weitere Subskriptionen aus. Quellen: [Proxmox-Tarife](https://www.proxmox.com/en/products/proxmox-virtual-environment/pricing), [Admin-Guide/Repositories](https://pve.proxmox.com/pve-docs/pve-admin-guide.html). **A24 bleibt offen.**
 
 ## Mindestbedarf für einen produktiven Pilotbetrieb
 
@@ -67,7 +83,7 @@ Die **Personen und Organisationen, die den Aufbau ausführen**, sind noch nicht 
 - TEST und PROD trennen; einfache kontrollierte Releases statt vollständiger [CI/CD](ANHANG_A_GLOSSAR.md#ci-cd)-Pflicht ([A27](04_ENTSCHEIDUNGEN.md#a27), [A30](04_ENTSCHEIDUNGEN.md#a30)).
 - Zugang intern/VPN; externe authentifizierte Zusammenarbeit nur nach Bedarf. Serverrechte gelten unabhängig von der Oberfläche ([A09](04_ENTSCHEIDUNGEN.md#a09), [A18](04_ENTSCHEIDUNGEN.md#a18), [A25](04_ENTSCHEIDUNGEN.md#a25), [A26](04_ENTSCHEIDUNGEN.md#a26)).
 
-**GIS-/CAD-Auszug ([A12](04_ENTSCHEIDUNGEN.md#a12)):** GPKG, klassisches GeoJSON mit CRS (RFC 7946 separat), DXF und CSV werden fachlich vorgesehen; EPSG:25832/25833 sowie **EPSG:3068 (DHDN / Soldner Berlin)** gezielt prüfen. Die IT klärt mit GIS insbesondere DXF-Einheiten/CRS-Nachweis, empfangende CAD-Programme und verfügbare Transformationsgitter, bevor produktive Exportpfade festgelegt werden.
+**GIS-/CAD-Auszug ([A12](04_ENTSCHEIDUNGEN.md#a12)):** Für einen konkret benötigten Pilotexport prüft IT mit GIS **Berechtigungen über alle Zugriffspfade**, sichere Freigabe und technisch korrekte Datenübergabe. Bereits beschlossene Formate/CRS bleiben gültig; Prüfdetails zu GeoJSON, DXF, Soldner-Transformation und Testfällen stehen im [SW-06-Prüfkatalog](software/06_GEODATENAUSZUG.md). Kein eigener Auszugsdienst ohne nachgewiesenen Bedarf.
 
 ## Serverbetriebssystem und Deployment ([A23](04_ENTSCHEIDUNGEN.md#a23)/[A24](04_ENTSCHEIDUNGEN.md#a24))
 

@@ -6,6 +6,22 @@
 
 Eine gemeinsame [Geodateninfrastruktur](ANHANG_A_GLOSSAR.md#gdi) soll Geodaten fachbereichsübergreifend nutzbar machen, Mehrfachhaltung reduzieren und [GIS](ANHANG_A_GLOSSAR.md#gis)-Arbeitsabläufe in der Infrastrukturplanung zuverlässiger gestalten. Sie ergänzt die bestehenden [CAD](ANHANG_A_GLOSSAR.md#cad)-, [BIM](ANHANG_A_GLOSSAR.md#bim)-, M365- und Fachabläufe um eine gemeinsame Geodatenbasis. Die Einführung erfolgt schrittweise mit zwei Pilotbereichen: Baubetreuung und Verkehrsanlagenplanung.
 
+## Warum das Vorhaben wichtig ist
+
+Heute verteilen sich Geodaten und QGIS-Projekte auf unterschiedliche Speicherorte und fachliche Zuständigkeiten. Für vergleichbare Aufgaben werden teils Daten kopiert und projektweise weiterbearbeitet. Das kann die Suche nach dem richtigen Stand, die Abstimmung zwischen Beteiligten und die Weitergabe von Informationen erschweren. In der Baubetreuung ist außerdem die Nutzung synchronisierter Ordner für führende GIS-Arbeitsdaten ein konkreter Verbesserungsansatz.
+
+**Die GDI soll diese Abläufe verbessern, nicht einfach mehr Technik bereitstellen.** Geeignete gemeinsame Daten sollen an einer führenden Stelle gepflegt werden. Berechtigte Mitarbeitende können dieselbe freigegebene Informationsgrundlage in ihren Projekten verwenden. Für gelegentliche Anwender sind bei Bedarf einfache Webkarten vorgesehen; mobile Erfassungen gelangen erst nach fachlicher Prüfung in den führenden Bestand.
+
+**Zwei praktische Beispiele:** Die **Baubetreuung** kann vor Ort erfasste Leitungsverläufe kontrolliert übernehmen, statt mobile Arbeitsstände ungeprüft mit dem zentralen Bestand gleichzusetzen. In der **Verkehrsanlagenplanung** können mehrere Projekte geeignete gemeinsame Geodaten nutzen, ohne voneinander unabhängige Kopien fortzuschreiben.
+
+Der erwartete Nutzen ist **fachlich** (verlässlichere Datenstände und Herkunft), **organisatorisch** (weniger Mehrfachpflege und Abstimmung) und **technisch** (wiederverwendbare Komponenten, klarere Betriebswege). **Noch nicht nachgewiesen** sind messbare Einsparungen. Die GDI ist nur dann wirtschaftlich sinnvoll, wenn die Piloten reale Verbesserungen zeigen und Aufbau, Qualifizierung sowie Dauerbetrieb in einem angemessenen Verhältnis dazu stehen. Vertiefung: [Projektkonzept](01_PROJEKTKONZEPT.md#warum-wir-vic-gdi-einführen-wollen).
+
+## Aktueller Beschlussbedarf: Vorbereitung von A39
+
+**A39 ist noch offen:** Die Geschäftsführung und IT sollen auf Grundlage realer Ressourcen prüfen, ob die GDI überwiegend **intern**, **gemeinsam mit Spezialisten** oder **extern** aufgebaut wird, wie erforderliches Wissen entsteht und wer den **Dauerbetrieb** gewährleistet. Diese drei Fragen hängen zusammen, sind aber nicht mit einer einzigen Softwareentscheidung beantwortet. Vollständige Varianten: [A39-Grundlage](06_UMSETZUNGS_UND_BETRIEBSMODELLE.md).
+
+**Jetzt erbeten:** Fachliche Projektverantwortung, IT-Ansprechperson und Beteiligte der beiden Piloten benennen; begrenzte Zeit für Ist-Aufnahme, fachliche Pilotdefinition sowie GIS-/IT-Kompetenz- und Kapazitätsklärung priorisieren. Das ist **noch keine Freigabe für Aufbau, Beauftragung oder Produktivbetrieb**. Nach der Vorbereitung folgt die Entscheidung über Modell, Budget und Pilotumfang. Siehe [nächste Managemententscheidungen](#nächste-managemententscheidungen).
+
 ## Softwarelizenzen: zentraler Kostenvorteil
 
 **Die geplante VIC-GDI setzt für ihren eigentlichen technischen Kern auf freie Open-Source-Software. Für die vorgesehenen Komponenten sind grundsätzlich keine zusätzlichen Softwarelizenzgebühren, Nutzerlizenzen oder verpflichtenden Hersteller-Abonnements erforderlich.** Das betrifft QGIS Desktop und QGIS Server, PostgreSQL/PostGIS sowie die zur Auswahl stehenden freien Webviewer (z. B. Lizmap/QWC2). Auch die bereits eingesetzte QField-App ist kostenlos. Die konkrete Komponentenauswahl und Lizenzprüfung erfolgt bei der Pilotplanung.
@@ -14,7 +30,7 @@ Eine gemeinsame [Geodateninfrastruktur](ANHANG_A_GLOSSAR.md#gdi) soll Geodaten f
 
 **Keine Lizenzgebühren für die Kernsoftware ≠ keine Projektkosten.** Personal für Aufbau, Betrieb und Qualifizierung, Support sowie optionale Zusatzdienste (z. B. gehostete QFieldCloud-Synchronisation) müssen separat bewertet werden. **Auch eine Aufstockung vorhandener Hardware-Ressourcen kann erforderlich werden**, insbesondere von Speicherplatz, Arbeitsspeicher (RAM), CPU-Leistung oder Backup-Kapazität. **Ob und in welchem Umfang tatsächlich zusätzlicher Bedarf besteht und welche Kosten daraus entstehen, kann nur die IT nach Prüfung der vorhandenen Infrastruktur und des konkreten Pilotbedarfs beurteilen.** Ein zusätzlicher Hardwarebedarf ist derzeit weder festgestellt noch ausgeschlossen. Bestehende Unternehmenssoftware- und externe Geodatenlizenzen sind davon nicht automatisch abgedeckt. Eine Kosten- oder Budgetzusage lässt sich daraus nicht ableiten.
 
-Nachweise und Abgrenzungen: [Softwarelizenzen und Kostenrahmen](ANHANG_C_SOFTWARE_LIZENZEN_KOSTEN.md).
+Softwarelizenzen und Quellen: [Softwareübersicht](software/README.md#lizenz--und-kostenüberblick-gdi-kern). Einmalige und laufende Kosten: [Kostenrahmen der A39-Entscheidungsgrundlage](06_UMSETZUNGS_UND_BETRIEBSMODELLE.md#kostenrahmen-und-lizenzabgrenzung).
 
 ## Erwarteter Nutzen – noch zu validieren
 
