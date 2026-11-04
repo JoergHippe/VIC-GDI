@@ -35,8 +35,13 @@ Ein Metadatenkatalog soll Geodaten, Dienste und zugehörige Verantwortlichkeiten
 
 Standardisierte Dimensionen und Gewichte nach [Methodik](BEWERTUNGSMETHODIK.md); `0–3` nur nach Quellenprüfung bzw. Test, sonst `?`.
 
+**Produkt-/Release-Recherche noch ausstehend:** `?` = noch nicht geprüft, `n. a.` = kein eigenständig versioniertes Produkt bzw. gegenwärtig keine konkrete Software ausgewählt. Beim tatsächlichen Vergleich Erstveröffentlichung, Version samt Releasedatum und Aktivität der letzten 12 Monate mit offiziellem Release-/Changelog-Beleg und Bewertungsstichtag ergänzen. Diese drei Angaben werden nicht zusätzlich bepunktet.
+
 | Dimension (Gewicht) | Schlanke interne Metadatenlösung | pycsw | GeoNetwork |
 |---|---:|---:|---:|
+| **Erstveröffentlichung / seit (Jahr)** | n. a. (kein separates Produkt) | ? | ? |
+| **Aktuelle stabile Version (Releasedatum)** | n. a. (noch kein Produkt) | ? | ? |
+| **Entwicklungsaktivität (12 Monate)** | n. a. (noch nicht implementiert) | ? | ? |
 | Fachliche/funktionale Eignung (30 %) | ? | ? | ? |
 | Integration/Interoperabilität (20 %) | ? | ? | ? |
 | Sicherheit/Berechtigungen (15 %) | ? | ? | ? |
