@@ -58,6 +58,8 @@ Standardisierte Dimensionen und Gewichte nach [Methodik](BEWERTUNGSMETHODIK.md);
 
 **QWC2 / QWC:** Modularität kann eine passgenaue Oberfläche ermöglichen; Build-/Konfigurations- und ggf. zusätzliche Backenddienste können den Betrieb komplexer machen. **Noch zu verifizieren:** Erforderliche Backenddienste, Rollen, Konfigurationsaufwand, einfache Tablet-Ansicht.
 
+**Lizenzabgrenzung:** [Lizmap](https://github.com/3liz/lizmap-web-client) und [QWC2](https://github.com/qgis/qwc2) sind in den betrachteten Open-Source-Varianten ohne zusätzliche Softwarelizenzgebühr nutzbar. Gehostete Angebote, individuelle Erweiterungen, Zusatzdienste und laufender Betrieb sind hiervon nicht automatisch erfasst. Die konkret verwendete QWC-Release-Linie und Komponentenliste vor der Lizenzprüfung eindeutig bestimmen.
+
 ## 6. Bewertung und Empfehlung
 
 **Aktueller Status: Noch keine belastbare Produktempfehlung.** Für einen Pilot ohne Webkartenbedarf ist der Rollout verschiebbar; für die Zielarchitektur bleibt eine Standard-Open-Source-Lösung vorgesehen.
