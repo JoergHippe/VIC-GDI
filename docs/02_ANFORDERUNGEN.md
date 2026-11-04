@@ -25,7 +25,7 @@ Die Tabelle beschreibt das Zielbild. Webkarten, Suche, [Geodatenauszug](ANHANG_A
 
 - **Sicherheit:** Bestehende Unternehmensidentitäten und serverseitig durchgesetzte Zugriffsrechte; IT-Abstimmung offen ([A09](04_ENTSCHEIDUNGEN.md#a09), [A25](04_ENTSCHEIDUNGEN.md#a25), [A26](04_ENTSCHEIDUNGEN.md#a26)).
 - **Betrieb:** Test/Produktion getrennt, Backups, Wiederherstellbarkeit, Monitoring ([A27–A29](04_ENTSCHEIDUNGEN.md#a27)).
-- **Wartbarkeit:** [Git](ANHANG_A_GLOSSAR.md#git) für geeignete Konfigurationen, Skripte, [QML](ANHANG_A_GLOSSAR.md#qml) und Migrationen; keine produktiven Geodaten in Git ([A30](04_ENTSCHEIDUNGEN.md#a30)).
+- **Wartbarkeit:** [Git](ANHANG_A_GLOSSAR.md#git) für geeignete Konfigurationen, Skripte, [QML](ANHANG_A_GLOSSAR.md#qml) und Migrationen; keine produktiven [Geodaten](ANHANG_A_GLOSSAR.md#geodaten) in Git ([A30](04_ENTSCHEIDUNGEN.md#a30)).
 - **Bedienbarkeit:** Desktop/Tablet und vereinfachte Kartenansichten; mobile Nutzung nach Anwendungsfall ([A13](04_ENTSCHEIDUNGEN.md#a13), [A19](04_ENTSCHEIDUNGEN.md#a19)).
 - **Interoperabilität:** QGIS, [PostGIS](ANHANG_A_GLOSSAR.md#postgis), etablierte GIS-Dienste und offene Austauschformate ([A10–A12](04_ENTSCHEIDUNGEN.md#a10)).
 - **Koordinatenbezug:** ETRS89/[UTM](ANHANG_A_GLOSSAR.md#utm) EPSG:25832/25833 bevorzugt; **DHDN / Soldner Berlin (EPSG:3068)** ausdrücklich berücksichtigen; weitere lokale Systeme und Höhenbezüge nach Geografie und Genauigkeit prüfen ([A21](04_ENTSCHEIDUNGEN.md#a21)).

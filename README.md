@@ -2,18 +2,16 @@
 
 **Status:** Interner Arbeitsentwurf · keine formale Freigabe durch IT oder Geschäftsführung.
 
-VIC-GDI ist die geplante unternehmensweite, fachbereichsneutrale [Geodateninfrastruktur](docs/ANHANG_A_GLOSSAR.md#gdi) für die gemeinsame, sichere und wartbare Nutzung von Geodaten in der Infrastrukturplanung. Die ersten Piloten sind Baubetreuung/Bauüberwachung und Verkehrsanlagenplanung.
+VIC-GDI ist die geplante unternehmensweite, fachbereichsneutrale [Geodateninfrastruktur](docs/ANHANG_A_GLOSSAR.md#gdi) für die gemeinsame, sichere und wartbare Nutzung von [Geodaten](docs/ANHANG_A_GLOSSAR.md#geodaten) in der Infrastrukturplanung. Die ersten Piloten sind Baubetreuung/Bauüberwachung und Verkehrsanlagenplanung.
+
+Der geplante GDI-Kern basiert auf **freier Open-Source-Software ohne zusätzliche Softwarelizenzgebühren**. Auch Proxmox VE ist kostenlos nutzbar; optionale Subskriptionen und der Aufwand für Aufbau, Betrieb und Infrastruktur sind davon zu unterscheiden. Einzelheiten und Quellen: [Softwarelizenzen und Kostenrahmen](docs/ANHANG_C_SOFTWARE_LIZENZEN_KOSTEN.md).
 
 ## Gesprächsunterlagen
 
 - [IT-Briefing](docs/BRIEFING_IT.md) – GDI-Grundlagen, Infrastruktur, Betrieb, Agenda und Fragen
 - [Geschäftsführungs-Briefing](docs/BRIEFING_GESCHAEFTSFUEHRUNG.md) – Nutzen, Piloten, Ressourcen und Beschlussbedarf
 
-## Lizenz- und Kostenrahmen
-
-Der geplante GDI-Kern basiert auf **freier Open-Source-Software ohne zusätzliche Softwarelizenzgebühren**. Auch Proxmox VE ist kostenlos nutzbar; optionale Subskriptionen und der Aufwand für Aufbau, Betrieb und Infrastruktur sind davon zu unterscheiden. Einzelheiten und Quellen: [Softwarelizenzen und Kostenrahmen](docs/ANHANG_C_SOFTWARE_LIZENZEN_KOSTEN.md).
-
-## Lesereihenfolge für das GDI-Konzept
+## Hauptdokumente zum GDI-Konzept
 
 1. [Projektkonzept](docs/01_PROJEKTKONZEPT.md) – Ziele, Grenzen, Pilotbereiche
 2. [Anforderungen](docs/02_ANFORDERUNGEN.md) – fachliche und nichtfunktionale Anforderungen
@@ -24,11 +22,9 @@ Der geplante GDI-Kern basiert auf **freier Open-Source-Software ohne zusätzlich
 7. [Roadmap](docs/07_ROADMAP.md) – [MVP](docs/ANHANG_A_GLOSSAR.md#mvp), Piloten, Einführungsfolge
 8. [Offene Punkte](docs/08_OFFENE_PUNKTE.md) – Klärungsbedarf, nächste Schritte und Rückstellungen
 
-## Softwareauswahl und Bewertungen
+## Komponentenauswahl und Bewertungen
 
 - [Softwarekomponenten – Übersicht](docs/software/README.md) – sechs noch zu klärende Komponenten und die Abgrenzung zu bestehenden Festlegungen
-- [Einheitliche Bewertungsmethodik](docs/software/BEWERTUNGSMETHODIK.md) – Kriterien, Prüfschritte, Belege, Vergleichsskala
-- [Fiktiver Mustervergleich](docs/software/BEISPIEL_DUMMY.md) – vollständig ausgefülltes **Layoutbeispiel**, keine reale Bewertung
 
 ## Nachschlagen und mitarbeiten
 
