@@ -6,6 +6,16 @@
 
 Eine gemeinsame [Geodateninfrastruktur](ANHANG_A_GLOSSAR.md#gdi) soll Geodaten fachbereichsübergreifend nutzbar machen, Mehrfachhaltung reduzieren und [GIS](ANHANG_A_GLOSSAR.md#gis)-Arbeitsabläufe in der Infrastrukturplanung zuverlässiger gestalten. Sie ergänzt die bestehenden [CAD](ANHANG_A_GLOSSAR.md#cad)-, [BIM](ANHANG_A_GLOSSAR.md#bim)-, M365- und Fachabläufe um eine gemeinsame Geodatenbasis. Die Einführung erfolgt schrittweise mit zwei Pilotbereichen: Baubetreuung und Verkehrsanlagenplanung.
 
+## Warum das Vorhaben wichtig ist
+
+Heute verteilen sich Geodaten und QGIS-Projekte auf unterschiedliche Speicherorte und fachliche Zuständigkeiten. Für vergleichbare Aufgaben werden teils Daten kopiert und projektweise weiterbearbeitet. Das kann die Suche nach dem richtigen Stand, die Abstimmung zwischen Beteiligten und die Weitergabe von Informationen erschweren. In der Baubetreuung ist außerdem die Nutzung synchronisierter Ordner für führende GIS-Arbeitsdaten ein konkreter Verbesserungsansatz.
+
+**Die GDI soll diese Abläufe verbessern, nicht einfach mehr Technik bereitstellen.** Geeignete gemeinsame Daten sollen an einer führenden Stelle gepflegt werden. Berechtigte Mitarbeitende können dieselbe freigegebene Informationsgrundlage in ihren Projekten verwenden. Für gelegentliche Anwender sind bei Bedarf einfache Webkarten vorgesehen; mobile Erfassungen gelangen erst nach fachlicher Prüfung in den führenden Bestand.
+
+**Zwei praktische Beispiele:** Die **Baubetreuung** kann vor Ort erfasste Leitungsverläufe kontrolliert übernehmen, statt mobile Arbeitsstände ungeprüft mit dem zentralen Bestand gleichzusetzen. In der **Verkehrsanlagenplanung** können mehrere Projekte geeignete gemeinsame Geodaten nutzen, ohne voneinander unabhängige Kopien fortzuschreiben.
+
+Der erwartete Nutzen ist **fachlich** (verlässlichere Datenstände und Herkunft), **organisatorisch** (weniger Mehrfachpflege und Abstimmung) und **technisch** (wiederverwendbare Komponenten, klarere Betriebswege). **Noch nicht nachgewiesen** sind messbare Einsparungen. Die GDI ist nur dann wirtschaftlich sinnvoll, wenn die Piloten reale Verbesserungen zeigen und Aufbau, Qualifizierung sowie Dauerbetrieb in einem angemessenen Verhältnis dazu stehen. Vertiefung: [Projektkonzept](01_PROJEKTKONZEPT.md#warum-wir-vic-gdi-einführen-wollen).
+
 ## Softwarelizenzen: zentraler Kostenvorteil
 
 **Die geplante VIC-GDI setzt für ihren eigentlichen technischen Kern auf freie Open-Source-Software. Für die vorgesehenen Komponenten sind grundsätzlich keine zusätzlichen Softwarelizenzgebühren, Nutzerlizenzen oder verpflichtenden Hersteller-Abonnements erforderlich.** Das betrifft QGIS Desktop und QGIS Server, PostgreSQL/PostGIS sowie die zur Auswahl stehenden freien Webviewer (z. B. Lizmap/QWC2). Auch die bereits eingesetzte QField-App ist kostenlos. Die konkrete Komponentenauswahl und Lizenzprüfung erfolgt bei der Pilotplanung.
