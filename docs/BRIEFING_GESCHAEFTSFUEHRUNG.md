@@ -16,6 +16,12 @@ Heute verteilen sich Geodaten und QGIS-Projekte auf unterschiedliche Speicherort
 
 Der erwartete Nutzen ist **fachlich** (verlässlichere Datenstände und Herkunft), **organisatorisch** (weniger Mehrfachpflege und Abstimmung) und **technisch** (wiederverwendbare Komponenten, klarere Betriebswege). **Noch nicht nachgewiesen** sind messbare Einsparungen. Die GDI ist nur dann wirtschaftlich sinnvoll, wenn die Piloten reale Verbesserungen zeigen und Aufbau, Qualifizierung sowie Dauerbetrieb in einem angemessenen Verhältnis dazu stehen. Vertiefung: [Projektkonzept](01_PROJEKTKONZEPT.md#warum-wir-vic-gdi-einführen-wollen).
 
+## Aktueller Beschlussbedarf: Vorbereitung von A39
+
+**A39 ist noch offen:** Die Geschäftsführung und IT sollen auf Grundlage realer Ressourcen prüfen, ob die GDI überwiegend **intern**, **gemeinsam mit Spezialisten** oder **extern** aufgebaut wird, wie erforderliches Wissen entsteht und wer den **Dauerbetrieb** gewährleistet. Diese drei Fragen hängen zusammen, sind aber nicht mit einer einzigen Softwareentscheidung beantwortet. Vollständige Varianten: [A39-Grundlage](06_UMSETZUNGS_UND_BETRIEBSMODELLE.md).
+
+**Jetzt erbeten:** Fachliche Projektverantwortung, IT-Ansprechperson und Beteiligte der beiden Piloten benennen; begrenzte Zeit für Ist-Aufnahme, fachliche Pilotdefinition sowie GIS-/IT-Kompetenz- und Kapazitätsklärung priorisieren. Das ist **noch keine Freigabe für Aufbau, Beauftragung oder Produktivbetrieb**. Nach der Vorbereitung folgt die Entscheidung über Modell, Budget und Pilotumfang. Siehe [nächste Managemententscheidungen](#nächste-managemententscheidungen).
+
 ## Softwarelizenzen: zentraler Kostenvorteil
 
 **Die geplante VIC-GDI setzt für ihren eigentlichen technischen Kern auf freie Open-Source-Software. Für die vorgesehenen Komponenten sind grundsätzlich keine zusätzlichen Softwarelizenzgebühren, Nutzerlizenzen oder verpflichtenden Hersteller-Abonnements erforderlich.** Das betrifft QGIS Desktop und QGIS Server, PostgreSQL/PostGIS sowie die zur Auswahl stehenden freien Webviewer (z. B. Lizmap/QWC2). Auch die bereits eingesetzte QField-App ist kostenlos. Die konkrete Komponentenauswahl und Lizenzprüfung erfolgt bei der Pilotplanung.
