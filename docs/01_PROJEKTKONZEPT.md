@@ -8,7 +8,8 @@
 
 ## Ziele
 
-- Fachbereichsneutrale, schrittweise ausbaubare interne [Geodateninfrastruktur](ANHANG_A_GLOSSAR.md#gdi).
+- Fachbereichsneutrale, interne [Geodateninfrastruktur](ANHANG_A_GLOSSAR.md#gdi).
+- Schrittweise ausbaubar und erweiterbar.
 - Verlässliche gemeinsame Datenhaltung mit eindeutiger fachlicher Zuständigkeit.
 - QGIS Desktop als zentraler Fachclient; einfache Webkarten für Gelegenheitsnutzer; geeignete mobile Workflows.
 - Sichere Nutzung im Unternehmensnetz bzw. über [VPN](ANHANG_A_GLOSSAR.md#vpn); kontrollierte externe Zusammenarbeit bei Bedarf.
@@ -17,7 +18,7 @@
 
 ## Pilotbereiche
 
-1. **Baubetreuung/Bauüberwachung:** räumlich bezogene Vorgänge, Karten, geeignete mobile Arbeitsabläufe.
+1. **Baubetreuung:** räumlich bezogene Vorgänge, Karten, geeignete mobile Arbeitsabläufe.
 2. **Verkehrsanlagenplanung:** projektbezogene und gemeinsam genutzte Geodaten, QGIS-Arbeitsabläufe.
 
 Die Piloten sind unterschiedlich und müssen nicht zeitgleich denselben Funktionsumfang erreichen ([A34](04_ENTSCHEIDUNGEN.md#a34)).

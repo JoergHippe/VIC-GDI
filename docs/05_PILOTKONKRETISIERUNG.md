@@ -26,7 +26,7 @@ Die Piloten sollen die gemeinsame [GDI](ANHANG_A_GLOSSAR.md#gdi)-Basis anhand re
 
 ## Fachlich benannte Anwendungsfälle der Baubetreuung
 
-Die Baubetreuung beginnt erst mit der [GIS](ANHANG_A_GLOSSAR.md#gis)-Nutzung und untersucht weitere mögliche Anwendungsfälle. **Die folgenden Tätigkeiten wurden vom Fachbereich konkret genannt**, ihre Priorität, Umsetzungstiefe und technische Ausgestaltung sind noch offen.
+Die Baubetreuung hat bereit erste Erfahrungen mit der [GIS](ANHANG_A_GLOSSAR.md#gis)-Nutzung gesammelt, und untersucht weitere mögliche Anwendungsfälle. **Die folgenden Tätigkeiten wurden vom Fachbereich konkret genannt**, ihre Priorität, Umsetzungstiefe und technische Ausgestaltung sind noch offen.
 
 | ID | Tatsächlich genannte Tätigkeit | Fachliche Abgrenzung und nächste Klärung |
 |---|---|---|
