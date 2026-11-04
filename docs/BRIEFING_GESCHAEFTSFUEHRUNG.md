@@ -6,6 +6,16 @@
 
 Eine gemeinsame [Geodateninfrastruktur](ANHANG_A_GLOSSAR.md#gdi) soll Geodaten fachbereichsübergreifend nutzbar machen, Mehrfachhaltung reduzieren und [GIS](ANHANG_A_GLOSSAR.md#gis)-Arbeitsabläufe in der Infrastrukturplanung zuverlässiger gestalten. Sie ergänzt die bestehenden [CAD](ANHANG_A_GLOSSAR.md#cad)-, [BIM](ANHANG_A_GLOSSAR.md#bim)-, M365- und Fachabläufe um eine gemeinsame Geodatenbasis. Die Einführung erfolgt schrittweise mit zwei Pilotbereichen: Baubetreuung/Bauüberwachung und Verkehrsanlagenplanung.
 
+## Softwarelizenzen: zentraler Kostenvorteil
+
+**Die geplante VIC-GDI setzt für ihren eigentlichen technischen Kern auf freie Open-Source-Software. Für die vorgesehenen Komponenten sind grundsätzlich keine zusätzlichen Softwarelizenzgebühren, Nutzerlizenzen oder verpflichtenden Hersteller-Abonnements erforderlich.** Das betrifft QGIS Desktop und QGIS Server, PostgreSQL/PostGIS sowie die zur Auswahl stehenden freien Webviewer (z. B. Lizmap/QWC2). Auch die bereits eingesetzte QField-App ist kostenlos. Die konkrete Komponentenauswahl und Lizenzprüfung erfolgt bei der Pilotplanung.
+
+**Auch Proxmox VE kann gewerblich kostenlos betrieben werden.** Eine kostenpflichtige Proxmox-Subskription ist **nicht für die Nutzung vorgeschrieben**; sie kann für das Enterprise-Update-Repository und Herstellersupport aus betrieblichen Gründen sinnvoll sein. Ob bestehende IT-Subskriptionen und Serverkapazitäten ausreichen, klärt die IT.
+
+**Keine Lizenzgebühren für die Kernsoftware ≠ keine Projektkosten.** Personal für Aufbau, Betrieb und Qualifizierung, ggf. Hardware-/Speicherbedarf, Support sowie optionale Zusatzdienste (z. B. gehostete QFieldCloud-Synchronisation) müssen separat bewertet werden. Bestehende Unternehmenssoftware- und externe Geodatenlizenzen sind davon nicht automatisch abgedeckt. Eine Kosten- oder Budgetzusage lässt sich daraus nicht ableiten.
+
+Nachweise und Abgrenzungen: [Softwarelizenzen und Kostenrahmen](ANHANG_C_SOFTWARE_LIZENZEN_KOSTEN.md).
+
 ## Erwarteter Nutzen – noch zu validieren
 
 - Weniger redundante, widersprüchliche Geodatenstände.
