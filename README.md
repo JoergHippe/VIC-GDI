@@ -4,7 +4,7 @@
 
 VIC-GDI ist die geplante unternehmensweite, fachbereichsneutrale [Geodateninfrastruktur](docs/ANHANG_A_GLOSSAR.md#gdi) für die gemeinsame, sichere und wartbare Nutzung von [Geodaten](docs/ANHANG_A_GLOSSAR.md#geodaten) in der Infrastrukturplanung. Die ersten Piloten sind Baubetreuung und Verkehrsanlagenplanung.
 
-Der geplante GDI-Kern basiert auf **freier Open-Source-Software ohne zusätzliche Softwarelizenzgebühren**. Auch Proxmox VE ist kostenlos nutzbar; optionale Subskriptionen und der Aufwand für Aufbau, Betrieb und Infrastruktur sind davon zu unterscheiden. Einzelheiten und Quellen: [Softwarelizenzen und Kostenrahmen](docs/ANHANG_C_SOFTWARE_LIZENZEN_KOSTEN.md).
+Der geplante GDI-Kern basiert auf **freier Open-Source-Software ohne zusätzliche Softwarelizenzgebühren**. Auch Proxmox VE ist kostenlos nutzbar; optionale Subskriptionen und der Aufwand für Aufbau, Betrieb und Infrastruktur sind davon zu unterscheiden. Einordnung und Quellen: [Software- und Lizenzübersicht](docs/software/README.md#lizenz--und-kostenüberblick-gdi-kern) sowie [wirtschaftlicher Gesamtrahmen](docs/06_UMSETZUNGS_UND_BETRIEBSMODELLE.md#kostenrahmen-und-lizenzabgrenzung).
 
 ## Gesprächsunterlagen
 
