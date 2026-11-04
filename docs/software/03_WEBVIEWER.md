@@ -28,7 +28,9 @@ Ein Webviewer ermöglicht die einfache Anzeige freigegebener Karten und Abfragen
 | Kandidat | Charakter / Prüfansatz | Ausgangsquelle |
 |---|---|---|
 | **Lizmap** | Webkartenbereitstellung auf Basis von QGIS Server. | [Projekt-/Herstellerdokumentation](https://docs.lizmap.com/current/en/) |
-| **QWC2 / QWC** | Modularer responsiver QGIS-Webclient; optional mit weiteren QWC-Services. | [Projekt-/Herstellerdokumentation](https://docs.qwc.app/) |
+| **QWC2 / QWC** | Responsive QGIS-Webclients; Frontend und optionale QWC-Backenddienste getrennt betrachten. | [QWC2-Frontend](https://github.com/qgis/qwc2), [aktuelle QWC-Dokumentation](https://docs.qwc.app/) |
+
+**Versions- und Architekturabgrenzung:** [QWC2](https://github.com/qgis/qwc2) bezeichnet das Frontend-Projekt; die [QWC-Dokumentation](https://docs.qwc.app/) beschreibt auch die neuere QWC-Veröffentlichung und den optionalen Einsatz von **qwc-services**. Ein eigenständig bereitgestellter Viewer und eine Kombination aus Viewer **plus** Backenddiensten verursachen unterschiedliche Betriebs-, Rechte- und Integrationsaufwände. Vor einer echten Bewertung die konkret geprüfte **Release-Linie** samt benötigter Services festlegen und **nicht** die Angaben verschiedener Generationen vermischen.
 
 ## 4. Vergleichsmatrix
 
@@ -65,7 +67,8 @@ Standardisierte Dimensionen und Gewichte nach [Methodik](BEWERTUNGSMETHODIK.md);
 ## 7. Quellen und Stand
 
 - [Lizmap – offizielle Dokumentation](https://docs.lizmap.com/current/en/) – Projektdoku; Publikation, Authentifizierung, Installationsanforderungen
-- [QWC / QWC Services](https://docs.qwc.app/) – Projektdoku; Standalone versus Backend-Dienste
-- [QWC2 – QGIS-DE](https://qgis.de/doku.php/site/qgisserver/qwc2) – Community-Material; Anwendungsaufbau; Versionsaktualität gesondert prüfen
+- [QWC2 – Frontend-/Quellcode](https://github.com/qgis/qwc2) – Upstream-Repository; Versions- und Entwicklungsstand getrennt prüfen
+- [QWC – aktuelle Dokumentation](https://docs.qwc.app/) – Projektdoku; Standalone versus optionale Backenddienste/qwc-services
+- [QWC2 – QGIS-DE](https://qgis.de/doku.php/site/qgisserver/qwc2) – älterer Community-Leitfaden; nur als historische Einordnung verwenden, nicht als Nachweis aktueller Releases
 
 **Quellenstand:** Ausgangslinks am 04.11.2026 zusammengestellt; **keine vollständige Release-, Lizenz-, Sicherheits- oder Praxistestprüfung**. Unabhängige Bewertungen/Erfahrungsberichte und gegebenenfalls PoC-Ergebnisse werden beim echten Vergleich mit Version und Datum ergänzt.

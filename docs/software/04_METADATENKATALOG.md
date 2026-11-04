@@ -28,7 +28,7 @@ Ein Metadatenkatalog soll Geodaten, Dienste und zugehörige Verantwortlichkeiten
 | Kandidat | Charakter / Prüfansatz | Ausgangsquelle |
 |---|---|---|
 | **Schlanke interne Metadatenlösung** | Kein zusätzliches Katalogprodukt: vorhandene PostgreSQL-/GIS-Metadaten gezielt nutzen. | [Projekt-/Herstellerdokumentation](https://www.postgresql.org/docs/current/) |
-| **pycsw** | Open-Source-Implementierung für Katalogschnittstellen; grundsätzlich API-/Backend-orientiert. | [Projekt-/Herstellerdokumentation](https://docs.pycsw.org/en/latest/introduction.html) |
+| **pycsw** | Open-Source-Implementierung für Katalogschnittstellen; grundsätzlich API-/Backend-orientiert. | [Projekt-/Herstellerdokumentation](https://docs.pycsw.org/en/stable/) |
 | **GeoNetwork** | Eigenständige Open-Source-Kataloganwendung mit Metadatenverwaltung. | [Projekt-/Herstellerdokumentation](https://docs.geonetwork-opensource.org/stable/) |
 
 ## 4. Vergleichsmatrix
@@ -68,7 +68,8 @@ Standardisierte Dimensionen und Gewichte nach [Methodik](BEWERTUNGSMETHODIK.md);
 ## 7. Quellen und Stand
 
 - [PostgreSQL-Dokumentation](https://www.postgresql.org/docs/current/) – offizielle Dokumentation; Daten-/Such-/Rechtefunktionen als mögliche vorhandene Grundlage
-- [pycsw – Einführung](https://docs.pycsw.org/en/latest/introduction.html) – offizielle Projektdoku; API-/Katalogfunktionen; latest-Seite kann Entwicklungsstand zeigen
+- [pycsw – stabile Dokumentation](https://docs.pycsw.org/en/stable/) – offizielle Projektdoku für die stabile Produktlinie; angezeigt wird zur Prüfzeit **2.6.2**, Versions-/Releasedatum vor einer Entscheidung nochmals bestätigen
+- [pycsw – Dokumentationsübersicht](https://pycsw.org/docs/) – offizielle Übersicht: *Current Release* und *Latest/master* ausdrücklich auseinanderhalten
 - [pycsw – FAQ](https://pycsw.org/faq/) – Projekt-FAQ; insbesondere Grenzen der grafischen Oberfläche
 - [GeoNetwork – Stable Docs](https://docs.geonetwork-opensource.org/stable/) – offizielle Dokumentation; Metadatenbearbeitung, Betrieb und APIs
 - [OGC API – Records](https://docs.ogc.org/is/20-004r1/20-004r1.html) – Standard; nur bei konkret benötigter Interoperabilität

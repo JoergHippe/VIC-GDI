@@ -106,7 +106,7 @@ VM und [Docker](ANHANG_A_GLOSSAR.md#docker) liegen auf unterschiedlichen Ebenen.
 |---|---|---|---|---|
 | | | | | |
 
-Technische Referenzen für die spätere Planung sind das [QGIS-Server-Handbuch](https://docs.qgis.org/3.44/pdf/en/QGIS-3.44-ServerUserGuide-en.pdf) und die [PostgreSQL-Dokumentation zu Sicherung und Wiederherstellung](https://www.postgresql.org/docs/current/backup.html).
+Technische Referenzen für die spätere Planung sind das [QGIS-Server-Handbuch für QGIS 3.44 LTR](https://docs.qgis.org/3.44/pdf/en/QGIS-3.44-ServerUserGuide-en.pdf) und die [PostgreSQL-Dokumentation zu Sicherung und Wiederherstellung](https://www.postgresql.org/docs/current/backup.html).
 
 ## Mindestabnahme vor produktivem Pilot
 

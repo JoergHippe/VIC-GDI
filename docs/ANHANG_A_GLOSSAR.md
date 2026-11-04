@@ -112,7 +112,7 @@ Bereitstellung ausgewählter Geodaten für einen bestimmten Ausschnitt oder Verw
 
 ## GeoJSON
 
-JSON-basiertes Austauschformat für Vektorgeometrien und Attribute.
+JSON-basiertes Austauschformat für Vektorgeometrien und Attribute. **GeoJSON gemäß RFC 7946** nutzt WGS 84/CRS84 in der Reihenfolge Länge/Breite; ältere oder projektspezifische GeoJSON-Varianten können abweichende CRS-Angaben verwenden und sind dann nicht als RFC-7946-konformes GeoJSON zu behandeln.
 
 Weiterführend · [RFC 7946](https://www.rfc-editor.org/rfc/rfc7946)
 
