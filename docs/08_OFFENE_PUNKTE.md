@@ -4,6 +4,19 @@
 
 Gesprächsunterlagen: [IT-Briefing](BRIEFING_IT.md) und [Geschäftsführungs-Briefing](BRIEFING_GESCHAEFTSFUEHRUNG.md). Die [Prüfaufträge](04_ENTSCHEIDUNGEN.md#erneute-prüfung-a04-a15-und-a36) zu [A04](04_ENTSCHEIDUNGEN.md#a04), [A15](04_ENTSCHEIDUNGEN.md#a15) und [A36](04_ENTSCHEIDUNGEN.md#a36) ergänzen die bisherigen Beschlüsse. Die nächsten Termine dienen der Planung und Abstimmung. Praktische Erprobungen folgen bei Bedarf nach gesonderter Freigabe.
 
+## Arbeitspriorität nach Entscheidungshorizont
+
+**Diese Prioritäten steuern nur den nächsten Prüf-/Arbeitszeitpunkt.** Sie ändern weder die Beschlussstatus **B/G/Z/O** noch bestehende fachliche Festlegungen im [Entscheidungsregister](04_ENTSCHEIDUNGEN.md). Ein Thema kann bei konkret priorisiertem Pilotbedarf vorgezogen werden; es ist kein pauschaler Implementierungsstopp.
+
+| Horizont | Was jetzt relevant ist | Auslöser für Vertiefung |
+|---|---|---|
+| **P0 – Organisations-/Vorbereitungsentscheidung** | **[A39](04_ENTSCHEIDUNGEN.md#a39)**: Umsetzungs-, Qualifizierungs- und Betriebsrichtung, reale GIS-/IT-Kapazitäten und erste Kostenfelder; **[A31](04_ENTSCHEIDUNGEN.md#a31)** Zuständigkeiten/Vertretungen im Grundsatz; fachliche Pilotfälle und Ist-Situation | Gespräch und Vorbereitungsauftrag durch GF/IT |
+| **P1 – Vor Pilotfreigabe** | Pilotumfang/[A35](04_ENTSCHEIDUNGEN.md#a35), überprüfbare Erfolgskriterien, IT-Sicherheits-/Betriebsrahmen (insb. [A25–A29](04_ENTSCHEIDUNGEN.md#a25)), ggf. erforderliche Machbarkeitstests, Konkretisierung A39 | Entscheidung über konkrete Erprobung bzw. produktiven Pilot |
+| **P2 – Vor jeweiliger technischer Implementierung** | Deployment [A24](04_ENTSCHEIDUNGEN.md#a24), Softwarekandidaten, technische Ausgestaltung von [A10](04_ENTSCHEIDUNGEN.md#a10), [A12](04_ENTSCHEIDUNGEN.md#a12), [A13](04_ENTSCHEIDUNGEN.md#a13), [A15](04_ENTSCHEIDUNGEN.md#a15), [A30](04_ENTSCHEIDUNGEN.md#a30) sowie QGIS-Projektablage A04/A36 | Bestätigter Pilotbedarf und zuständiges Umsetzungsteam |
+| **P3 – Spätere Vertiefung/bei Bedarf** | Zurückgestellte [A37](04_ENTSCHEIDUNGEN.md#a37)/[A38](04_ENTSCHEIDUNGEN.md#a38), nicht pilotrelevante Funktionen und umfangreichere Produktauswahl | Nachgewiesener fachlicher, Sicherheits- oder Betriebsbedarf |
+
+**Sicherheitsvorbehalt:** Rechte, Datenintegrität und Wiederherstellbarkeit werden **nicht** aufgeschoben, wenn ein konkreter Pilot oder Exportweg sie bereits benötigt. Freigaben für PoC, produktiven Piloten und Dauerbetrieb sind voneinander zu unterscheiden. Die Detailtabellen unten bleiben als Arbeitsvorrat erhalten; ihre Reihenfolge ist **keine** gleichrangige Sofort-Priorisierung.
+
 ## Architekturentscheidungen
 
 | Bezug | Offene Frage | Nächster sinnvoller Schritt |
