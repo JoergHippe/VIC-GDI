@@ -22,6 +22,7 @@ Der geplante GDI-Kern basiert auf **freier Open-Source-Software ohne zusätzlich
 5. [Pilotkonkretisierung](docs/05_PILOTKONKRETISIERUNG.md) – bekannte Praxis, Ablaufvorschläge und Erhebungsfragen
 6. [Roadmap](docs/06_ROADMAP.md) – [MVP](docs/ANHANG_A_GLOSSAR.md#mvp), Piloten, Einführungsfolge
 7. [Offene Punkte](docs/07_OFFENE_PUNKTE.md) – Klärungsbedarf, nächste Schritte und Rückstellungen
+8. [Umsetzungs- und Betriebsmodelle](docs/08_UMSETZUNGS_UND_BETRIEBSMODELLE.md) – Eigenleistung, Schulungen, Beratung, externe Umsetzung sowie langfristige Betreuung; **Entscheidung durch GF und IT offen**
 
 ## Softwareauswahl und Bewertungen
 
