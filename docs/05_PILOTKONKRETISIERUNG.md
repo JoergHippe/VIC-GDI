@@ -11,7 +11,7 @@ Die Piloten sollen die gemeinsame [GDI](ANHANG_A_GLOSSAR.md#gdi)-Basis anhand re
 **Gesichert:** Baubetreuung ist Pilotbereich; bisherige führende [QGIS](ANHANG_A_GLOSSAR.md#qgis)-Arbeitsdaten in synchronisierten SharePoint-/OneDrive-Verzeichnissen verursachen Probleme. [A36](04_ENTSCHEIDUNGEN.md#a36) legt eine kontrollierte selektive Migration fest.
 
 **Prüfhypothesen, nicht beschlossen:**
-- Projektbezogene Geodaten und Pläne sicher finden, anzeigen und mit geeigneten Informationen verknüpfen.
+- Projektbezogene [Geodaten](ANHANG_A_GLOSSAR.md#geodaten) und Pläne sicher finden, anzeigen und mit geeigneten Informationen verknüpfen.
 - Vor Ort auf Tablet/mobilem Gerät Karten verwenden; Online-/Offline-Bedarf tatsächlich ermitteln.
 - Gemeinsame Vektordaten ohne Synchronisationskonflikte bearbeiten; andere Dateien geeignet auf Fileservern verwalten.
 

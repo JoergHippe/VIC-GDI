@@ -46,7 +46,7 @@ Aktuell laufen Vorbereitung und Abstimmung. IT klärt den Betriebsrahmen, die Ge
 ### 2 – Erste nutzbare Pilotfunktionen
 - **BB:** ausgewählte räumliche Arbeitsabläufe und, wo erforderlich, mobile Nutzung.
 - Einfache Karten über den geprüften Standard-[Webviewer](ANHANG_A_GLOSSAR.md#webviewer) bereitstellen, sofern der ausgewählte Ablauf sie braucht.
-- **Verkehrsanlagenplanung:** gemeinsame Geodaten, Projektbezug und QGIS-Workflows.
+- **Verkehrsanlagenplanung:** gemeinsame [Geodaten](ANHANG_A_GLOSSAR.md#geodaten), Projektbezug und QGIS-Workflows.
 - Fachliche Abnahme an realen Daten; keine Pflicht zu gleichem Funktionsumfang.
 
 ### 3 – Stabilisierung und kontrollierte Migration
