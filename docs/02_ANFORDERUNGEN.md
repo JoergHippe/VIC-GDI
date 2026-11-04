@@ -14,7 +14,7 @@ Die Tabelle beschreibt das Zielbild. Webkarten, Suche, [Geodatenauszug](ANHANG_A
 | F04 | [QGIS](ANHANG_A_GLOSSAR.md#qgis) Desktop mit zentralen Ressourcen, aber eigenständigen Fachprojekten | [A04](04_ENTSCHEIDUNGEN.md#a04), [A17](04_ENTSCHEIDUNGEN.md#a17) |
 | F05 | Webkarten für Gelegenheitsnutzer mit einfacher und erweiterter Sicht | [A10](04_ENTSCHEIDUNGEN.md#a10), [A11](04_ENTSCHEIDUNGEN.md#a11), [A18](04_ENTSCHEIDUNGEN.md#a18), [A19](04_ENTSCHEIDUNGEN.md#a19) |
 | F06 | Suche nach Projekten, Orten/Adressen und ausgewählten Objekten | [A20](04_ENTSCHEIDUNGEN.md#a20) |
-| F07 | Berechtigter Geodatenauszug in geeigneten Formaten und zueinander passenden Raumbezügen (z. B. GeoJSON nach RFC 7946 nur WGS 84/CRS84). Die **Funktion**, nicht ein separater Dienst, ist gefordert; vorhandene Werkzeuge zuerst prüfen. | [A12](04_ENTSCHEIDUNGEN.md#a12) |
+| F07 | **Berechtigter Geodatenauszug als Funktion**, vorhandene Werkzeuge zuerst. **Objektselektion vollständig als Standard, optional Clipping.** GPKG, GeoJSON (klassisch mit Quell-/Ziel-CRS; RFC 7946 nur Sondermodus), DXF und CSV fest; Shapefile optional. Quell-/Ziel-CRS einschließlich EPSG:25832, 25833 und 3068; Rechteausgestaltung noch zu klären. | [A12](04_ENTSCHEIDUNGEN.md#a12), [A21](04_ENTSCHEIDUNGEN.md#a21), [A26](04_ENTSCHEIDUNGEN.md#a26) |
 | F08 | Mobile Online-/Offline-Arbeit mit erprobten Werkzeugen | [A13](04_ENTSCHEIDUNGEN.md#a13) |
 | F09 | Amtliche Basisdaten bevorzugt über Dienste; dokumentierte Stände bei Bedarf | [A05](04_ENTSCHEIDUNGEN.md#a05), [A22](04_ENTSCHEIDUNGEN.md#a22) |
 | F10 | Geodatenquellen, Aktualität, Herkunft und Nutzungseinschränkungen nachvollziehen | [A15](04_ENTSCHEIDUNGEN.md#a15) |
@@ -28,7 +28,7 @@ Die Tabelle beschreibt das Zielbild. Webkarten, Suche, [Geodatenauszug](ANHANG_A
 - **Wartbarkeit:** [Git](ANHANG_A_GLOSSAR.md#git) für geeignete Konfigurationen, Skripte, [QML](ANHANG_A_GLOSSAR.md#qml) und Migrationen; keine produktiven Geodaten in Git ([A30](04_ENTSCHEIDUNGEN.md#a30)).
 - **Bedienbarkeit:** Desktop/Tablet und vereinfachte Kartenansichten; mobile Nutzung nach Anwendungsfall ([A13](04_ENTSCHEIDUNGEN.md#a13), [A19](04_ENTSCHEIDUNGEN.md#a19)).
 - **Interoperabilität:** QGIS, [PostGIS](ANHANG_A_GLOSSAR.md#postgis), etablierte GIS-Dienste und offene Austauschformate ([A10–A12](04_ENTSCHEIDUNGEN.md#a10)).
-- **Koordinatenbezug:** ETRS89/[UTM32](ANHANG_A_GLOSSAR.md#utm) oder UTM33 bevorzugt nach Geografie, Ausnahmen und Höhenbezug berücksichtigen ([A21](04_ENTSCHEIDUNGEN.md#a21)).
+- **Koordinatenbezug:** ETRS89/[UTM](ANHANG_A_GLOSSAR.md#utm) EPSG:25832/25833 bevorzugt; **DHDN / Soldner Berlin (EPSG:3068)** ausdrücklich berücksichtigen; weitere lokale Systeme und Höhenbezüge nach Geografie und Genauigkeit prüfen ([A21](04_ENTSCHEIDUNGEN.md#a21)).
 - **Datenintegrität:** Fachlich eindeutige Datenmodelle; konkrete Durchsetzung von DB-Regeln ist noch nicht beschlossen ([A38](04_ENTSCHEIDUNGEN.md#a38)).
 - **Wirtschaftlichkeit:** Gezielter Wissensaufbau mit eingeplanten Ressourcen; keine pauschale Zertifizierungspflicht ([A33](04_ENTSCHEIDUNGEN.md#a33)).
 

@@ -108,11 +108,11 @@ Weiterführend · [GDI-DE](https://www.gdi-de.org/)
 
 ## Geodatenauszug (Extract)
 
-Bereitstellung ausgewählter Geodaten für einen bestimmten Ausschnitt oder Verwendungszweck. Bei einer räumlichen Auswahl können ganze Objekte übernommen oder an der Auswahlgrenze zugeschnitten werden. Welche Variante der Pilot braucht, ist noch zu klären.
+Bereitstellung ausgewählter, **berechtigter** Geodaten für einen bestimmten Ausschnitt oder Verwendungszweck. VIC-GDI sieht **vollständige Objektselektion als Standard** und **geometrisches Clipping als zusätzliche Option** vor; ein eigener Exportserver ist nicht verpflichtend. Beide Verfahren dürfen bestehende Zugriffsbeschränkungen nicht umgehen.
 
 ## GeoJSON
 
-JSON-basiertes Austauschformat für Vektorgeometrien und Attribute. **GeoJSON gemäß RFC 7946** nutzt WGS 84/CRS84 in der Reihenfolge Länge/Breite; ältere oder projektspezifische GeoJSON-Varianten können abweichende CRS-Angaben verwenden und sind dann nicht als RFC-7946-konformes GeoJSON zu behandeln.
+JSON-basiertes Austauschformat für Vektorgeometrien und Attribute. Für VIC-GDI ist **klassisches GeoJSON (GeoJSON 2008) mit Quell- oder Ziel-CRS und expliziter CRS-Kennzeichnung** vorgesehen; Empfänger müssen die CRS-Angabe korrekt interpretieren. **GeoJSON nach RFC 7946** ist lediglich ein **separater Sondermodus** mit WGS 84/CRS84 (Länge/Breite). Ein GeoJSON mit z. B. UTM-Koordinaten ist **nicht** RFC-7946-konform.
 
 Weiterführend · [RFC 7946](https://www.rfc-editor.org/rfc/rfc7946)
 

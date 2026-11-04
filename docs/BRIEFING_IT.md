@@ -67,6 +67,8 @@ Die **Personen und Organisationen, die den Aufbau ausführen**, sind noch nicht 
 - TEST und PROD trennen; einfache kontrollierte Releases statt vollständiger [CI/CD](ANHANG_A_GLOSSAR.md#ci-cd)-Pflicht ([A27](04_ENTSCHEIDUNGEN.md#a27), [A30](04_ENTSCHEIDUNGEN.md#a30)).
 - Zugang intern/VPN; externe authentifizierte Zusammenarbeit nur nach Bedarf. Serverrechte gelten unabhängig von der Oberfläche ([A09](04_ENTSCHEIDUNGEN.md#a09), [A18](04_ENTSCHEIDUNGEN.md#a18), [A25](04_ENTSCHEIDUNGEN.md#a25), [A26](04_ENTSCHEIDUNGEN.md#a26)).
 
+**GIS-/CAD-Auszug ([A12](04_ENTSCHEIDUNGEN.md#a12)):** GPKG, klassisches GeoJSON mit CRS (RFC 7946 separat), DXF und CSV werden fachlich vorgesehen; EPSG:25832/25833 sowie **EPSG:3068 (DHDN / Soldner Berlin)** gezielt prüfen. Die IT klärt mit GIS insbesondere DXF-Einheiten/CRS-Nachweis, empfangende CAD-Programme und verfügbare Transformationsgitter, bevor produktive Exportpfade festgelegt werden.
+
 ## Serverbetriebssystem und Deployment ([A23](04_ENTSCHEIDUNGEN.md#a23)/[A24](04_ENTSCHEIDUNGEN.md#a24))
 
 Windows bleibt der Ausgangspunkt für die vorhandenen Arbeitsplätze und Unternehmensdienste. Für die Server ist eine betreute Linux-VM (Debian als Kandidat) zu prüfen. Wenn Linux-Patching, Diagnose oder Vertretung intern schwierig sind, Aufwand für Qualifizierung oder externe Unterstützung ermitteln und mit einer Windows-Server-Variante vergleichen. Für Windows die Unterstützung der konkret benötigten Komponenten, Versionen, Erweiterungen und Betriebswerkzeuge klären.
@@ -84,7 +86,7 @@ VM und [Docker](ANHANG_A_GLOSSAR.md#docker) liegen auf unterschiedlichen Ebenen.
 ## Noch abzustimmen
 
 1. **Identität/[SSO](ANHANG_A_GLOSSAR.md#sso) ([A25](04_ENTSCHEIDUNGEN.md#a25)):** Vorhandene Identitätsdienste und Gruppen prüfen. Für Browseranmeldung Eignung von [OIDC](ANHANG_A_GLOSSAR.md#oidc) klären, für Desktop den Datenbankzugriff separat betrachten. Externe Personen und mobile Geräte nach Bedarf einbeziehen.
-2. **Rechte ([A26](04_ENTSCHEIDUNGEN.md#a26)):** Fachrollen und Gruppen den genutzten Zugriffspfaden zuordnen. Berechtigte und abgewiesene Zugriffe prüfen, bei Webkarten auch den direkten Dienstaufruf.
+2. **Rechte ([A26](04_ENTSCHEIDUNGEN.md#a26), [A12](04_ENTSCHEIDUNGEN.md#a12)):** Fachrollen, Gruppen und reale Datenbestände **zuerst erheben**; Rechte-Granularität für den Export ist **nicht beschlossen**. DB-/QGIS-/Webdienst-/Export- und Downloadpfade auch mit verweigerten Zugriffen testen. Vollständige Objektselektion darf räumliche Berechtigungsgrenzen nicht umgehen; ungeprüfte Exportwege nicht produktiv öffnen.
 3. **Backup ([A28](04_ENTSCHEIDUNGEN.md#a28)):** konsistente PostgreSQL-Sicherung, Dateien/QGIS-Ressourcen, Restore-Proben, [RPO/RTO](ANHANG_A_GLOSSAR.md#rpo-rto) und mobile unsynchronisierte Daten.
 4. **Monitoring ([A29](04_ENTSCHEIDUNGEN.md#a29)):** Vorhandene IT-Überwachung für Datenbank und Sicherung nutzen. Für tatsächlich eingesetzte GIS-Dienste Funktionsprüfungen ergänzen, etwa einen [WMS](ANHANG_A_GLOSSAR.md#wms)-Kartenaufruf. Alarmierung und datenschutzgerechte Protokollierung abstimmen.
 5. **Betriebsorganisation ([A31](04_ENTSCHEIDUNGEN.md#a31)):** Installation, Patchmanagement, DB-Migrationen, Vorfälle, Vertretung; [Umsetzungs- und Betriebsmodelle](06_UMSETZUNGS_UND_BETRIEBSMODELLE.md) gemeinsam mit GF und GIS abwägen.
