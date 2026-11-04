@@ -9,11 +9,11 @@ Gesprächsunterlagen: [IT-Briefing](BRIEFING_IT.md) und [Geschäftsführungs-Bri
 | Bezug | Offene Frage | Nächster sinnvoller Schritt |
 |---|---|---|
 | [A10](04_ENTSCHEIDUNGEN.md#a10) | [QGIS](ANHANG_A_GLOSSAR.md#qgis) Server: tatsächliche Eignung, benötigte [OGC](ANHANG_A_GLOSSAR.md#ogc)-Funktionen | Bei priorisiertem Webbedarf technischer [PoC](ANHANG_A_GLOSSAR.md#poc) mit repräsentativer Pilotkarte |
-| [A12](04_ENTSCHEIDUNGEN.md#a12) | **Nur technische Details offen:** Objektselektion vs. geometrisches Clipping, Exportformate/CRS und Rechteprüfung | Vorhandene QGIS-/Viewer-Funktionen mit typischen Layern testen; einen eigenen Dienst nur bei nachgewiesenem Bedarf prüfen |
+| [A12](04_ENTSCHEIDUNGEN.md#a12) | **Auswahl/Clipping und Formate/CRS fachlich entschieden:** Umsetzung und Validierung (GPKG, GeoJSON klassisch/RFC 7946 optional, DXF, CSV; Shapefile optional; EPSG:25832/25833/3068) noch offen. **Berechtigungsmodell ausdrücklich offen (Punkt 3, D).** | GIS/Fachbereiche/IT erheben Rollen, Datenbestände, Zugriffspfade; danach Positiv-/Negativtests, Objektselektion/Clipping, GeoJSON-CRS, CAD/DXF und Soldner-Transformationen im PoC prüfen; keine ungeschützten Exporte |
 | [A13](04_ENTSCHEIDUNGEN.md#a13) | Mobiler Datenaustausch mit [QField](ANHANG_A_GLOSSAR.md#qfield): Offline-Sync, Konflikte und Sicherheit | [Cloud und lokalen USB-Transfer vergleichen](05_PILOTKONKRETISIERUNG.md#mobile-erfassung-und-datenaustausch). |
 | [A24](04_ENTSCHEIDUNGEN.md#a24) | Natives [VM](ANHANG_A_GLOSSAR.md#vm)-Deployment vs. Hybrid vs. Container | IT-Workshop, Variantenvergleich; **noch keine Entscheidung** |
 | [A25](04_ENTSCHEIDUNGEN.md#a25) | [IdP](ANHANG_A_GLOSSAR.md#idp)/[SSO](ANHANG_A_GLOSSAR.md#sso), Desktop-QGIS, externe Identitäten | Mit IT/Auth-Verantwortlichen konkretisieren |
-| [A26](04_ENTSCHEIDUNGEN.md#a26) | Rollen, Gruppen, Datenbank-/Dienstrechte | Rechte-Matrix und Zugriffstests über alle Schnittstellen |
+| [A26](04_ENTSCHEIDUNGEN.md#a26) | Rollen, Gruppen, Datenbank-/Dienstrechte **einschließlich Exportwegen**; Granularität erst aus realen Datenbeständen und Nutzern ableiten | GIS/Fachbereiche/IT inventarisieren reale Zugriffswege (QGIS/PostGIS/Webdienst/Export), prüfen räumliche Begrenzungen, Views/Spalten und Download-/Zwischendateien; daraus Rechte-Matrix und Positiv-/Negativtests ableiten |
 | [A27](04_ENTSCHEIDUNGEN.md#a27) | Technische Ausgestaltung TEST/PROD | IT-Abstimmung |
 | [A28](04_ENTSCHEIDUNGEN.md#a28) | Backupumfang, Restore, [RPO/RTO](ANHANG_A_GLOSSAR.md#rpo-rto), mobile Offline-Daten | IT-Abstimmung und Wiederherstellungstest |
 | [A29](04_ENTSCHEIDUNGEN.md#a29) | Funktionale [GIS](ANHANG_A_GLOSSAR.md#gis)-Checks, Alarmierung und Log-Retention | Bestehendes IT-Monitoring aufnehmen |

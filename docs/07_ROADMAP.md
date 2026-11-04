@@ -63,7 +63,7 @@ Aktuell laufen Vorbereitung und Abstimmung. IT klärt den Betriebsrahmen, die Ge
 
 **Muss für den ersten nutzbaren Stand:** ein konkreter QGIS-Desktop-Ablauf mit geeigneten gemeinsamen Geodaten in PostGIS, wirksamen Rechten und nachgewiesener Wiederherstellbarkeit.
 
-**Je nach Pilot:** Webviewer, mobile Erfassung, Suche, Datenexport, spezifische Datenmodelle.
+**Je nach Pilot:** Webviewer, mobile Erfassung, Suche, **Geodatenauszug nach [A12](04_ENTSCHEIDUNGEN.md#a12) (beide räumlichen Verfahren vorgesehen; GPKG/GeoJSON/DXF/CSV, Shapefile optional; Rechte vor Freischaltung prüfen)**, spezifische Datenmodelle.
 
 **Nicht pauschal MVP:** eigenständiger [Extract](ANHANG_A_GLOSSAR.md#extract)-Service (A12 verlangt nur die Funktion; vorhandene Exportmöglichkeiten zuerst nutzen), alle Fachbereiche, komplexe [CI/CD](ANHANG_A_GLOSSAR.md#ci-cd)- oder [HA](ANHANG_A_GLOSSAR.md#ha)-Plattform, umfassende Datenfreigabeworkflows.
 
