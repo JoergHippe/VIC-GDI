@@ -7,9 +7,21 @@
 1. **Bedarf zuerst:** Aufgabe, Nutzer, Pilotbezug und betroffene Schnittstellen kurz beschreiben. „Keine zusätzliche Software“ bzw. vorhandene Werkzeuge als Kandidat zulassen, soweit sachlich möglich.
 2. **Muss-Kriterien separat:** Als `erfüllt`, `nicht erfüllt` oder `?` bewerten. Ein belegtes, nicht erfülltes Muss-Kriterium scheidet den Kandidaten aus; ein offenes Muss-Kriterium verhindert eine endgültige Empfehlung.
 3. **Kandidaten begrenzen:** Zwei bis vier ernsthaft geeignete Varianten. Bei stark verschiedenen Lösungswegen (z. B. Cloud vs. USB) die Architektur-/Kostenfolgen ausdrücklich nennen.
-4. **Einheitlicher Vergleich:** Die sechs übergreifenden Kriterien verwenden; je Kategorie konkrete fachliche Prüfhinweise ergänzen, **ohne die Gewichte stillschweigend zu verändern**.
+4. **Einheitlicher Vergleich:** Die sechs übergreifenden Kriterien und zusätzlich **Produktalter, aktuelle stabile Version und Entwicklungsaktivität** verwenden; je Kategorie konkrete fachliche Prüfhinweise ergänzen, **ohne die Gewichte stillschweigend zu verändern**.
 5. **Belege und Nachteile:** Nach jedem Vergleich textlich die wichtigsten Stärken, Schwächen, Ausschlussgründe und offene Risiken nennen.
 6. **Ergebnisstatus:** `offen` / `vorläufig empfohlen` / `durch IT/Pilot zu prüfen` / `beschlossen`. **Nur das Entscheidungsregister** kann eine Beschlusslage belegen.
+
+## Produktstand und Entwicklungsaktivität (in jeder Vergleichsmatrix)
+
+Diese drei **Sachangaben** stehen oberhalb der gewichteten Bewertungszeilen. Sie erhalten **keine eigenen Punkte oder zusätzlichen Gewichte**; ihre Bedeutung fließt begründet in **Reife und Zukunftsfähigkeit** (ggf. Betrieb/Sicherheit) ein.
+
+| Angabe | Einheitliche Erfassung | Beleg |
+|---|---|---|
+| **Erstveröffentlichung / seit (Jahr)** | Möglichst erstes öffentliches Release der tatsächlich bewerteten Software; bei Forks die eigenständige Produktgeschichte angeben, nicht nur die Vorgeschichte des Ursprungsprojekts. | Projektchronik, dokumentiertes erstes Release, Archiv/Repository |
+| **Aktuelle stabile Version (Datum)** | Versionsnummer **und Releasedatum**, soweit veröffentlicht; LTS/LTR und Rolling-/Cloud-Releases klar unterscheiden. Keine Betaversion als stabile Version ausgeben. | Offizielle Release Notes, Changelog, Tag mit Veröffentlichung |
+| **Entwicklungsaktivität (12 Monate)** | Soweit ermittelbar Anzahl stabiler Releases im zurückliegenden 12-Monats-Fenster und kurze qualitative Einordnung; Sicherheitsfixes, Wartung, reale Beiträge und bekannte Unterbrechungen mit berücksichtigen. | Releasehistorie, Maintainer-Updates, Security Advisories, ggf. Issue-Tracker |
+
+**Bewertungsstichtag** je Produktvergleich angeben; die Version ist nur **zu diesem Stichtag** aktuell. Ein hoher Release-Takt ist **nicht automatisch** ein Qualitätsmerkmal. Reife, Wartung und langfristige Zukunftsfähigkeit können auch mit seltenen, aber gut gepflegten stabilen Releases hoch sein. Commits, Issues und Releasezahlen sind lediglich Indikatoren, keine mechanische Bewertung. Bei Produkten ohne öffentliches Versionsschema „laufend bereitgestellt / Version nicht veröffentlicht“ verwenden, **falls belegt**. Bei Lösungswegen ohne eigenes Softwareprodukt (z. B. USB-Transfer, Eigenlösung ohne Implementierung) `n. a.` eintragen; bei nicht recherchierten Angaben `?`.
 
 ## Bewertungsraster (identisch für alle Kategorien)
 
@@ -45,7 +57,7 @@
 1. Zweck und Abgrenzung
 2. Spezifische Anforderungen / Muss-Prüfung
 3. Kandidaten und Quellen
-4. Vergleichsmatrix (sechs Dimensionen + Muss-Status; Skala/Evidenz)
+4. Vergleichsmatrix (drei Sachangaben zu Produktstand/Entwicklungsaktivität, sechs gewichtete Dimensionen, Evidenz)
 5. Vor- und Nachteile je Kandidat (kurz, sachlich, mit Belegen)
 6. Bewertung und vorläufige Empfehlung / offener Prüfauftrag
 7. Quellen-/Aktualitätsverzeichnis
