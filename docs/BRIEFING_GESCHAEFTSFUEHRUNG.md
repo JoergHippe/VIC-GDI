@@ -24,7 +24,7 @@ Der erwartete Nutzen ist **fachlich** (verlässlichere Datenstände und Herkunft
 
 **Keine Lizenzgebühren für die Kernsoftware ≠ keine Projektkosten.** Personal für Aufbau, Betrieb und Qualifizierung, Support sowie optionale Zusatzdienste (z. B. gehostete QFieldCloud-Synchronisation) müssen separat bewertet werden. **Auch eine Aufstockung vorhandener Hardware-Ressourcen kann erforderlich werden**, insbesondere von Speicherplatz, Arbeitsspeicher (RAM), CPU-Leistung oder Backup-Kapazität. **Ob und in welchem Umfang tatsächlich zusätzlicher Bedarf besteht und welche Kosten daraus entstehen, kann nur die IT nach Prüfung der vorhandenen Infrastruktur und des konkreten Pilotbedarfs beurteilen.** Ein zusätzlicher Hardwarebedarf ist derzeit weder festgestellt noch ausgeschlossen. Bestehende Unternehmenssoftware- und externe Geodatenlizenzen sind davon nicht automatisch abgedeckt. Eine Kosten- oder Budgetzusage lässt sich daraus nicht ableiten.
 
-Nachweise und Abgrenzungen: [Softwarelizenzen und Kostenrahmen](ANHANG_C_SOFTWARE_LIZENZEN_KOSTEN.md).
+Softwarelizenzen und Quellen: [Softwareübersicht](software/README.md#lizenz--und-kostenüberblick-gdi-kern). Einmalige und laufende Kosten: [Kostenrahmen der A39-Entscheidungsgrundlage](06_UMSETZUNGS_UND_BETRIEBSMODELLE.md#kostenrahmen-und-lizenzabgrenzung).
 
 ## Erwarteter Nutzen – noch zu validieren
 
