@@ -32,10 +32,13 @@
 
 ## 4. Vergleichsmatrix
 
-Werte `0` bis `3` bzw. `?`, siehe [Methodik](BEWERTUNGSMETHODIK.md); belegtes Detail je Aussage möglichst in Abschnitt 7.
+Werte `0` bis `3` bzw. `?` für die **gewichteten Kriterien**, siehe [Methodik](BEWERTUNGSMETHODIK.md). Produktstand und Entwicklungstempo sind **nicht bepunktete Sachangaben**. **Bewertungsstichtag:** [TT.MM.JJJJ]; Einzelbelege mit Version/Datum in Abschnitt 7.
 
 | Kriterium (Gewicht) | A | B | C |
 |---|---:|---:|---:|
+| **Erstveröffentlichung / seit (Jahr)** | ? | ? | ? |
+| **Aktuelle stabile Version (Releasedatum)** | ? | ? | ? |
+| **Entwicklungsaktivität (12 Monate)** | ? | ? | ? |
 | Fachliche/funktionale Eignung (30 %) | ? | ? | ? |
 | Integration/Interoperabilität (20 %) | ? | ? | ? |
 | Sicherheit/Berechtigungen (15 %) | ? | ? | ? |
@@ -65,4 +68,4 @@ Werte `0` bis `3` bzw. `?`, siehe [Methodik](BEWERTUNGSMETHODIK.md); belegtes De
 | [Erfahrungsbericht/OSGeo/Review] | Extern (E2) | [Datum] | [Aussage + Einschränkung] |
 | [Pilotprotokoll] | VIC-Test (E3) | [Datum] | [Wiederholbarer Testfall] |
 
-**Vermerk:** Nicht verifizierte Inhalte als offen kennzeichnen, keine unbelegten Rankings oder erfundenen externen Bewertungen eintragen.
+**Vermerk:** Nicht verifizierte Inhalte als offen kennzeichnen, keine unbelegten Rankings oder erfundenen externen Bewertungen eintragen. Für Erstveröffentlichung, aktuelle Version und Release-/Wartungsaktivität möglichst **offizielle Releasehistorie / Changelog und einen Prüfstichtag** nennen. `n. a.` für tatsächlich nicht anwendbare Angaben, `?` für noch nicht geprüfte. Schnelle Releases sind kein automatischer Qualitätsnachweis.
