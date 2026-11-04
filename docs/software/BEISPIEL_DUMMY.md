@@ -1,6 +1,6 @@
 # Mustervergleich (DUMMY) – fiktiver Kartenserver
 
-**WICHTIG: Dies ist ausschließlich eine Darstellungsvorlage. Alle drei Produkte, Bewertungen, Prüfergebnisse und Kostenannahmen sind frei erfunden.** Keine Bewertung existierender Kartenserver; keine Technologie- oder Architekturentscheidung.
+**WICHTIG: Dies ist ausschließlich eine Darstellungsvorlage. Alle drei Produkte, Versionen, Veröffentlichungsdaten, Entwicklungsaktivitäten, Bewertungen, Prüfergebnisse und Kostenannahmen sind frei erfunden.** Keine Bewertung existierender Kartenserver; keine Technologie- oder Architekturentscheidung.
 
 ## 1. Zweck und Abgrenzung
 
@@ -30,10 +30,13 @@ Ein Kartenserver veröffentlicht freigegebene Geodaten und Karten für Webviewer
 
 ## 4. Vergleichsmatrix – Werte vollständig erfunden
 
-Bewertungsskala `0–3`; `3` = sehr passend. Gewichte entsprechen der [Methodik](BEWERTUNGSMETHODIK.md).
+Bewertungsskala `0–3`; `3` = sehr passend. Gewichte entsprechen der [Methodik](BEWERTUNGSMETHODIK.md). **Fiktiver Bewertungsstichtag: 04.11.2026.** Die drei zusätzlichen Zeilen sind Sachangaben, keine Punktekriterien.
 
 | Kriterium (Gewicht) | Atlas | Brücke | Fokus |
 |---|---:|---:|---:|
+| **Erstveröffentlichung / seit (Jahr)** | 2012 (erfunden) | 2007 (erfunden) | 2020 (erfunden) |
+| **Aktuelle stabile Version (Releasedatum)** | 4.2.1 (15.10.2026; erfunden) | 7.1.0 (05.09.2026; erfunden) | 1.9.0 (25.06.2025; erfunden) |
+| **Entwicklungsaktivität (12 Monate)** | 4 stabile Releases, aktiv (erfunden) | 2 stabile Releases, kontinuierlich (erfunden) | 0 stabile Releases, geringer Release-Takt (erfunden) |
 | Fachliche/funktionale Eignung (30 %) | 3 | 2 | 2 |
 | Integration/Interoperabilität (20 %) | 3 | 2 | 1 |
 | Sicherheit/Berechtigungen (15 %) | 2 | 3 | 1 |
@@ -42,6 +45,8 @@ Bewertungsskala `0–3`; `3` = sehr passend. Gewichte entsprechen der [Methodik]
 | Kosten/Lizenzen (10 %) | 3 | 2 | 3 |
 | **Demo-Gesamt (0–100 Punkte)** | **86,7** | **70,0** | **63,3** |
 | **Evidenzstand** | E0 (fiktiv) | E0 (fiktiv) | E0 (fiktiv) |
+
+*Die frei erfundenen Releasezahlen zeigen lediglich die gewünschte Darstellungsform. Weniger Releases bedeuten nicht automatisch schlechtere Software; Wartungsqualität, Sicherheitsfixes und Projektentwicklung sind separat zu beurteilen.*
 
 *Beispielrechnung Atlas: `(30×3 + 20×3 + 15×2 + 15×2 + 10×2 + 10×3) / 3 = 86,7`. In echten Bewertungen wäre bei Evidenz E0 und unbekannten Sachverhalten keine belastbare Rangliste zulässig. Die Zahlen illustrieren nur das Layout.*
 
