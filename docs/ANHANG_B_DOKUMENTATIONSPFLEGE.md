@@ -13,6 +13,13 @@
 9. Aktuelle Dokumente halten geltende Beschlüsse samt Begründungen, den bekannten Ist-Stand und offene Aufgaben fest. Abgelöste Zwischenstände und abgeschlossene Dokumentationsreviews sind im Git-Verlauf nachvollziehbar.
 10. Jede Nennung einer Architekturentscheidungs-ID direkt mit der Zeile im Entscheidungsregister verlinken. Bei Bereichen beide Endpunkte verlinken. Einen konkreten Prüfauftrag zusätzlich über seinen Abschnitt verlinken.
 
+## Lesbarkeit und führende Informationsquellen
+
+- **Erst die Entscheidungsfrage:** README und die getrennten GF-/IT-Briefings erläutern Nutzen, aktuellen A39-Klärungsbedarf und gezielte Lesepfade. Sie sind **Zusammenfassungen**, keine zusätzliche Beschluss- oder Architekturquelle. Das [Projektkonzept](01_PROJEKTKONZEPT.md) bleibt führend für Motivation und fachlichen Nutzen.
+- **Zeitpunkt statt Informationsverlust:** [Offene Punkte](08_OFFENE_PUNKTE.md) nach Entscheidungszeitpunkt priorisieren, ohne Beschlussstatus oder technische Grundlagen zu verwerfen. Technische Details nur bei echtem Verständlichkeitsgewinn konsolidieren und an bestehende Fachquellen verlinken; keine neuen Anhänge als Selbstzweck.
+- **Kosten klar trennen:** Produktbezogene Lizenzen und Quellen unter [software/](software/README.md#lizenz--und-kostenüberblick-gdi-kern), allgemeine Einmal-/Betriebskosten und A39-Vergleich unter [Umsetzungs- und Betriebsmodelle](06_UMSETZUNGS_UND_BETRIEBSMODELLE.md#kostenrahmen-und-lizenzabgrenzung). Die Null-Lizenzkosten-Aussage **niemals** mit kostenlosem Betrieb gleichsetzen.
+- **Visualisierung nur bei Mehrwert:** Wenige, fachlich richtige und durch Begleittext erklärte Mermaid-Diagramme bevorzugen. Kein zusätzliches Bildmaterial, wenn eine kleine Tabelle oder ein Satz verständlicher ist.
+
 ## Softwarebewertungen
 
 Für noch offene Produktauswahlen ist [`docs/software/`](software/README.md) der einheitliche Bewertungsbereich. Alle Kategorie-Dateien folgen der [gemeinsamen Methodik](software/BEWERTUNGSMETHODIK.md) und [Vorlage](software/VORLAGE.md): klare Anforderungen, Muss-Prüfung, begrenzte Kandidatenliste, standardisierte Vergleichsmatrix, belegte Vor-/Nachteile und eine als solche gekennzeichnete Empfehlung bzw. offener Prüfauftrag. **Unbekannte Aussagen bleiben `?`; fiktive Beispielwerte dürfen nie als echte Bewertung oder Entscheidung übernommen werden.**
