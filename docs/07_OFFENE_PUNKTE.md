@@ -32,6 +32,7 @@ Für die beiden Pilotbereiche liegt ein [Erhebungsleitfaden](05_PILOTKONKRETISIE
 
 - Den [Lizenz- und Kostenrahmen](ANHANG_C_SOFTWARE_LIZENZEN_KOSTEN.md) für den später ausgewählten GDI-MVP bestätigen: Kernsoftware, konkret eingesetzte Versionen/Erweiterungen und Open-Source-Lizenzpflichten.
 - **Proxmox:** Bestehende Hosts und belegte CPU-Sockel, Subskriptions-/Repository-Strategie, Kapazitäten, Sicherung und mögliche Zusatzkosten mit IT klären; kostenpflichtige Subskription nicht als zwingende Softwarelizenz darstellen.
+- **Hardware-Ressourcen (IT-Prüfauftrag):** Die IT beurteilt auf Basis der vorhandenen Infrastruktur und der konkretisierten Pilotlast, ob zusätzliche Kapazitäten für Speicherplatz, RAM, CPU und Backups oder neue Hardware nötig werden. Erst danach ggf. Kosten beziffern; noch keine Notwendigkeit oder Beschaffung unterstellen.
 - Bei mobilem Datenaustausch optionalen Bedarf und mögliche Kosten einer gehosteten QFieldCloud von der kostenfreien QField-App trennen; erst nach Vergleich der Übertragungswege.
 - Budgetschätzung nach Lizenzgebühren, einmaligen internen Aufwänden, laufendem Betrieb und optionalen Leistungen aufgliedern; keine pauschalen Einsparungen ohne Daten behaupten.
 
