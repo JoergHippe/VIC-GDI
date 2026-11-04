@@ -13,6 +13,8 @@ Die Architektur zeigt den bisherigen Beschlussstand. Zentrale [PostgreSQL](ANHAN
 - **Zusatzfunktionen:** Schlanke integrierte Suche und [Geodatenauszug](ANHANG_A_GLOSSAR.md#extract) mit eigener Rechteprüfung ([A12](04_ENTSCHEIDUNGEN.md#a12), [A20](04_ENTSCHEIDUNGEN.md#a20)). Die logische Abgrenzung des Auszugs lässt die Bereitstellung offen. Für einen priorisierten Pilotbedarf zuerst vorhandene QGIS-, Viewer- und Dienstfunktionen prüfen.
 - **Betrieb:** On-prem auf [Proxmox](ANHANG_A_GLOSSAR.md#proxmox) bevorzugt, hybride Varianten möglich; konkrete Container-/[VM](ANHANG_A_GLOSSAR.md#vm)-Verteilung mit IT entscheiden ([A23](04_ENTSCHEIDUNGEN.md#a23), [A24](04_ENTSCHEIDUNGEN.md#a24)).
 
+**Lizenz-/Kostenprinzip:** Die hier vorgesehenen GDI-Kernkomponenten sind freie Open-Source-Software ohne zusätzliche Softwarelizenzgebühren. Proxmox VE ist ebenfalls ohne verpflichtende kostenpflichtige Lizenz nutzbar; eine Subskription für Enterprise-Repository/Support kann sich betrieblich empfehlen. Optional benötigte Drittanbieter-Dienste, Betriebsressourcen und die konkrete Softwarestückliste werden getrennt geprüft. Siehe [Softwarelizenzen und Kostenrahmen](ANHANG_C_SOFTWARE_LIZENZEN_KOSTEN.md). Dies legt keine der offenen Deploymentvarianten [A24](04_ENTSCHEIDUNGEN.md#a24) fest.
+
 ### Architekturübersicht (logisches Zielbild)
 
 Das Diagramm zeigt die **wesentlichen Nutzungspfade und Datenhaltungen**, ohne einzelne technische Dienste oder Server aufzuschlüsseln. Der mobile Austausch ist noch zu validieren; gestrichelte Linien markieren mögliche, noch nicht festgelegte Zielanbindungen. Identität, Berechtigungen, Betrieb und Deployment gelten übergreifend und sind bewusst nicht als zusätzliche Pfeile dargestellt.
