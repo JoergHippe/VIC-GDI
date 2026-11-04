@@ -9,7 +9,7 @@ Gesprächsunterlagen: [IT-Briefing](BRIEFING_IT.md) und [Geschäftsführungs-Bri
 | Bezug | Offene Frage | Nächster sinnvoller Schritt |
 |---|---|---|
 | [A10](04_ENTSCHEIDUNGEN.md#a10) | [QGIS](ANHANG_A_GLOSSAR.md#qgis) Server: tatsächliche Eignung, benötigte [OGC](ANHANG_A_GLOSSAR.md#ogc)-Funktionen | Bei priorisiertem Webbedarf technischer [PoC](ANHANG_A_GLOSSAR.md#poc) mit repräsentativer Pilotkarte |
-| [A12](04_ENTSCHEIDUNGEN.md#a12) | Objektselektion vs. geometrisches Clipping; Berechtigungen/Export | PoC mit typischen Layern, [CRS](ANHANG_A_GLOSSAR.md#crs) und Formaten |
+| [A12](04_ENTSCHEIDUNGEN.md#a12) | **Nur technische Details offen:** Objektselektion vs. geometrisches Clipping, Exportformate/CRS und Rechteprüfung | Vorhandene QGIS-/Viewer-Funktionen mit typischen Layern testen; einen eigenen Dienst nur bei nachgewiesenem Bedarf prüfen |
 | [A13](04_ENTSCHEIDUNGEN.md#a13) | Mobiler Datenaustausch mit [QField](ANHANG_A_GLOSSAR.md#qfield): Offline-Sync, Konflikte und Sicherheit | [Cloud und lokalen USB-Transfer vergleichen](05_PILOTKONKRETISIERUNG.md#mobile-erfassung-und-datenaustausch). |
 | [A24](04_ENTSCHEIDUNGEN.md#a24) | Natives [VM](ANHANG_A_GLOSSAR.md#vm)-Deployment vs. Hybrid vs. Container | IT-Workshop, Variantenvergleich; **noch keine Entscheidung** |
 | [A25](04_ENTSCHEIDUNGEN.md#a25) | [IdP](ANHANG_A_GLOSSAR.md#idp)/[SSO](ANHANG_A_GLOSSAR.md#sso), Desktop-QGIS, externe Identitäten | Mit IT/Auth-Verantwortlichen konkretisieren |
@@ -33,10 +33,6 @@ Für die beiden Pilotbereiche liegt ein [Erhebungsleitfaden](05_PILOTKONKRETISIE
 - **Wer setzt die GDI um? ([A39](04_ENTSCHEIDUNGEN.md#a39))** Die Optionen **A1–A3** (intern mit Selbststudium/Schulung/Beratung), **B1** (gemeinsame Umsetzung) und **C1/C2** (externe Umsetzung mit Übergabe bzw. Betrieb) sind in [06_UMSETZUNGS_UND_BETRIEBSMODELLE.md](06_UMSETZUNGS_UND_BETRIEBSMODELLE.md) beschrieben und **nicht entschieden**.
 - **Wie werden Wissen und dauerhafter Betrieb sichergestellt?** Schulungs-/Wissenstransferbedarf und **D1–D3** (interner, unterstützter oder überwiegend externer Betrieb) getrennt vom Aufbau klären ([A31](04_ENTSCHEIDUNGEN.md#a31), [A33](04_ENTSCHEIDUNGEN.md#a33)).
 - **Nächster Schritt:** GIS/IT konkretisieren Kompetenzen, Personentage, Betriebsverantwortung, externe Leistungspakete und Gesamtkosten; **GF und IT wählen das Modell erst auf dieser Grundlage** in ihren jeweiligen Zuständigkeiten. A3/B1 mit D2 bleibt eine unverbindliche Prüfrichtung.
-
-## Offener fachlicher Beschlussinhalt: Geodatenauszug ([A12](04_ENTSCHEIDUNGEN.md#a12))
-
-Die Kurzfassung A12 nennt einen „Extract-Service“; Architektur und [SW-06](software/06_GEODATENAUSZUG.md) lassen dagegen ausdrücklich offen, ob ein **eigener Dienst** benötigt wird. **GIS und IT müssen anhand des ursprünglichen Beschlusses bzw. einer Folgeentscheidung klären, ob A12 nur die Exportfunktion oder tatsächlich einen dedizierten Service festlegt.** Bis dahin keine stillschweigende Änderung von A12 und keine vorschnelle Eigenentwicklung.
 
 ## Öffentliches GitHub-Repository: Freigabe- und Lizenzklärung
 
