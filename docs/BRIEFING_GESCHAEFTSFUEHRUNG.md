@@ -49,11 +49,11 @@ Die Fachbereiche priorisieren je Pilot einen ersten Ablauf und legen vor der Ums
 
 ## Wer setzt die GDI um – und wer betreibt sie anschließend?
 
-**Noch keine Entscheidung:** Die [Umsetzungs- und Betriebsmodelle](08_UMSETZUNGS_UND_BETRIEBSMODELLE.md) stellen alle derzeit sinnvollen Möglichkeiten gegenüber: **A1–A3** (interner Aufbau mit Selbststudium, Schulungen oder zusätzlich Beratung), **B1** (gemeinsame Implementierung mit externen Spezialisten) sowie **C1/C2** (externe Umsetzung mit Übergabe bzw. einschließlich Betrieb). Der **Wissensaufbau** und der spätere **Betrieb D1–D3** (intern, intern mit Spezialistensupport, überwiegend extern) sind dabei **eigenständige Entscheidungen**; Mischmodelle je Komponente sind zulässig.
+**Noch keine Entscheidung:** Die [Umsetzungs- und Betriebsmodelle](06_UMSETZUNGS_UND_BETRIEBSMODELLE.md) stellen alle derzeit sinnvollen Möglichkeiten gegenüber: **A1–A3** (interner Aufbau mit Selbststudium, Schulungen oder zusätzlich Beratung), **B1** (gemeinsame Implementierung mit externen Spezialisten) sowie **C1/C2** (externe Umsetzung mit Übergabe bzw. einschließlich Betrieb). Der **Wissensaufbau** und der spätere **Betrieb D1–D3** (intern, intern mit Spezialistensupport, überwiegend extern) sind dabei **eigenständige Entscheidungen**; Mischmodelle je Komponente sind zulässig.
 
 **Vorläufig fachlich prüfenswert** ist A3 oder B1 mit D2, **sofern** GIS-Team und IT ausreichend Zeit, Kompetenzen und Vertretung bereitstellen können. Das ist **keine Vorentscheidung**; bei fehlender interner Kapazität können externe Gesamtleistungen sinnvoller sein. Bei allen Varianten zählen **interne Personentage, Schulungen, externe Leistungen, Betriebskosten und Wissenstransfer**, nicht nur externe Rechnungen. Auch Fremdbetrieb setzt internes Steuerungswissen voraus.
 
-**Entscheidung durch Geschäftsführung und IT:** Nach Bestandsaufnahme und IT-Bewertung über Organisationsmodell, personelle Ressourcen, Budget/Beauftragung und tragfähigen Betriebsrahmen entscheiden; GIS-Team und Fachbereiche fachlich beteiligen. Detailvergleich, Vor-/Nachteile und Mindestanforderungen an externe Übergaben: [Gesonderte Entscheidungsgrundlage](08_UMSETZUNGS_UND_BETRIEBSMODELLE.md).
+**Offene Organisationsentscheidung ([A39](04_ENTSCHEIDUNGEN.md#a39)) durch Geschäftsführung und IT:** Nach Bestandsaufnahme und IT-Bewertung über Organisationsmodell, personelle Ressourcen, Budget/Beauftragung und tragfähigen Betriebsrahmen entscheiden; GIS-Team und Fachbereiche fachlich beteiligen. Detailvergleich, Vor-/Nachteile und Mindestanforderungen an externe Übergaben: [Gesonderte Entscheidungsgrundlage](06_UMSETZUNGS_UND_BETRIEBSMODELLE.md).
 
 ## Organisationsmodell
 
@@ -77,4 +77,4 @@ Das Team legt priorisierte Abläufe, Erfolgskriterien, einmaligen Aufwand, laufe
 
 **Gesprächsablauf (Vorschlag, 30 Minuten):** 5 Minuten Ausgangslage und Nutzen, 10 Minuten Piloten und Erfolgskriterien, 10 Minuten Ressourcen und Risiken, 5 Minuten Beschluss und Zuständigkeiten.
 
-Weitere Details: [Projektkonzept](01_PROJEKTKONZEPT.md), [Roadmap](06_ROADMAP.md), [Entscheidungen](04_ENTSCHEIDUNGEN.md).
+Weitere Details: [Projektkonzept](01_PROJEKTKONZEPT.md), [Roadmap](07_ROADMAP.md), [Entscheidungen](04_ENTSCHEIDUNGEN.md).

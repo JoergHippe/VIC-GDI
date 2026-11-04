@@ -59,7 +59,7 @@ flowchart TB
 ## GIS-Funktionen
 
 - **Suche:** Projekte, Orte/Adressen und ausgewählte GIS-Objekte; Ergebnisse nur entsprechend Berechtigung ([A20](04_ENTSCHEIDUNGEN.md#a20)).
-- **Auszug:** Autorisierte Layer, Geometrie/Fläche/[BBox](ANHANG_A_GLOSSAR.md#bbox), Ziel-CRS, [GPKG](ANHANG_A_GLOSSAR.md#geopackage)/[Shapefile](ANHANG_A_GLOSSAR.md#shapefile)/[GeoJSON](ANHANG_A_GLOSSAR.md#geojson)/[CSV](ANHANG_A_GLOSSAR.md#csv). Objektselektion und echtes geometrisches Clipping unterscheiden; technischer PoC erforderlich ([A12](04_ENTSCHEIDUNGEN.md#a12)).
+- **Auszug:** Autorisierte Layer, Geometrie/Fläche/[BBox](ANHANG_A_GLOSSAR.md#bbox), Ziel-CRS, [GPKG](ANHANG_A_GLOSSAR.md#geopackage)/[Shapefile](ANHANG_A_GLOSSAR.md#shapefile)/[GeoJSON](ANHANG_A_GLOSSAR.md#geojson)/[CSV](ANHANG_A_GLOSSAR.md#csv). Objektselektion und echtes geometrisches Clipping unterscheiden; technischer PoC erforderlich ([A12](04_ENTSCHEIDUNGEN.md#a12)). Bei **GeoJSON gemäß [RFC 7946](https://www.rfc-editor.org/rfc/rfc7946#section-4)** ist das Ausgabe-CRS WGS 84/CRS84 (Länge/Breite) festgelegt; für lokale UTM-Koordinaten geeignete andere Formate wie GeoPackage verwenden.
 - **Mobil:** Vorhandene Synchronisationsmechanismen verwenden; Konfliktbehandlung und Rückübertragung pilotieren, keine eigene Offline-Engine ([A13](04_ENTSCHEIDUNGEN.md#a13)).
 - **[ETL](ANHANG_A_GLOSSAR.md#etl):** Manuelle Verfahren und Skripte zuerst; kontrollierte Staging-/Importprüfungen, später selektiv automatisieren ([A14](04_ENTSCHEIDUNGEN.md#a14)).
 - **Metadaten:** Schlanker Katalog für Quelle, Datensatz und Dienst; je Layer u. a. Herkunft, Datenstand, Lizenz, Importzeit, CRS ([A15](04_ENTSCHEIDUNGEN.md#a15)).
@@ -76,4 +76,4 @@ Die noch offenen produktbezogenen Auswahlfragen sind als [einheitlich bewertete 
 
 ## Bewusst nicht festgelegt
 
-Deploymentmodell [A24](04_ENTSCHEIDUNGEN.md#a24), Details des Identitäts- und Berechtigungsmodells, Datenlebenszyklus [A37](04_ENTSCHEIDUNGEN.md#a37) und konkrete Datenbankvalidierung [A38](04_ENTSCHEIDUNGEN.md#a38). Diese Themen sind in [07_OFFENE_PUNKTE.md](07_OFFENE_PUNKTE.md) dokumentiert. Nicht jede hier genannte bevorzugte Technologie ist bereits technisch freigegeben.
+Deploymentmodell [A24](04_ENTSCHEIDUNGEN.md#a24), Details des Identitäts- und Berechtigungsmodells, Datenlebenszyklus [A37](04_ENTSCHEIDUNGEN.md#a37) und konkrete Datenbankvalidierung [A38](04_ENTSCHEIDUNGEN.md#a38). Diese Themen sind in [08_OFFENE_PUNKTE.md](08_OFFENE_PUNKTE.md) dokumentiert. Nicht jede hier genannte bevorzugte Technologie ist bereits technisch freigegeben.

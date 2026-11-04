@@ -48,7 +48,7 @@ Für kritische Aufgaben federführende Person und Vertretung festlegen; kein eig
 
 ## Umsetzung, Qualifizierung und spätere Betreuung – IT-Prüfauftrag
 
-Die **Personen und Organisationen, die den Aufbau ausführen**, sind noch nicht festgelegt. Der [gesonderte Variantenvergleich](08_UMSETZUNGS_UND_BETRIEBSMODELLE.md) hält **A1–A3** (eigener Aufbau), **B1** (Co-Implementation), **C1/C2** (externe Umsetzung, ggf. mit Betrieb) sowie die unabhängig zu wählenden Betriebsmodelle **D1** (intern), **D2** (intern mit externem Spezialistensupport) und **D3** (überwiegend extern) offen. Fachlich erscheint A3/B1 + D2 prüfenswert, **ohne IT-Bewertung oder GF-Entscheidung vorwegzunehmen**.
+Die **Personen und Organisationen, die den Aufbau ausführen**, sind noch nicht festgelegt ([A39](04_ENTSCHEIDUNGEN.md#a39)). Der [gesonderte Variantenvergleich](06_UMSETZUNGS_UND_BETRIEBSMODELLE.md) hält **A1–A3** (eigener Aufbau), **B1** (Co-Implementation), **C1/C2** (externe Umsetzung, ggf. mit Betrieb) sowie die unabhängig zu wählenden Betriebsmodelle **D1** (intern), **D2** (intern mit externem Spezialistensupport) und **D3** (überwiegend extern) offen. Fachlich erscheint A3/B1 + D2 prüfenswert, **ohne IT-Bewertung oder GF-Entscheidung vorwegzunehmen**.
 
 **IT soll dazu insbesondere klären:**
 
@@ -87,7 +87,7 @@ VM und [Docker](ANHANG_A_GLOSSAR.md#docker) liegen auf unterschiedlichen Ebenen.
 2. **Rechte ([A26](04_ENTSCHEIDUNGEN.md#a26)):** Fachrollen und Gruppen den genutzten Zugriffspfaden zuordnen. Berechtigte und abgewiesene Zugriffe prüfen, bei Webkarten auch den direkten Dienstaufruf.
 3. **Backup ([A28](04_ENTSCHEIDUNGEN.md#a28)):** konsistente PostgreSQL-Sicherung, Dateien/QGIS-Ressourcen, Restore-Proben, [RPO/RTO](ANHANG_A_GLOSSAR.md#rpo-rto) und mobile unsynchronisierte Daten.
 4. **Monitoring ([A29](04_ENTSCHEIDUNGEN.md#a29)):** Vorhandene IT-Überwachung für Datenbank und Sicherung nutzen. Für tatsächlich eingesetzte GIS-Dienste Funktionsprüfungen ergänzen, etwa einen [WMS](ANHANG_A_GLOSSAR.md#wms)-Kartenaufruf. Alarmierung und datenschutzgerechte Protokollierung abstimmen.
-5. **Betriebsorganisation ([A31](04_ENTSCHEIDUNGEN.md#a31)):** Installation, Patchmanagement, DB-Migrationen, Vorfälle, Vertretung; [Umsetzungs- und Betriebsmodelle](08_UMSETZUNGS_UND_BETRIEBSMODELLE.md) gemeinsam mit GF und GIS abwägen.
+5. **Betriebsorganisation ([A31](04_ENTSCHEIDUNGEN.md#a31)):** Installation, Patchmanagement, DB-Migrationen, Vorfälle, Vertretung; [Umsetzungs- und Betriebsmodelle](06_UMSETZUNGS_UND_BETRIEBSMODELLE.md) gemeinsam mit GF und GIS abwägen.
 6. **Wissensaufbau ([A33](04_ENTSCHEIDUNGEN.md#a33)):** Schulungen und Einarbeitung passend zu Rollen; Zeit-/Personal-/Budgetbedarf sichtbar machen.
 
 ## Agenda und Fragen für den IT-Termin (Vorschlag, 60 Minuten)
