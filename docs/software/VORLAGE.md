@@ -1,4 +1,4 @@
-# SW-XX – <Softwarekategorie>
+# SW-XX – [Name der Softwarekategorie]
 
 **Status:** Bewertungsgerüst · **Entscheidung:** offen · **Stand der Quellen:** noch nicht erhoben  
 **Bezug:** [Axx](../04_ENTSCHEIDUNGEN.md) · **Federführung:** GIS / IT nach Klärung
