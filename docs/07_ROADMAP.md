@@ -12,18 +12,19 @@ Gemeinsame, schlanke [GDI](ANHANG_A_GLOSSAR.md#gdi)-Basis und zwei früh beteili
 
 ```mermaid
 flowchart LR
-  Prepare["IT und Geschäftsführung abstimmen, Ist-Abläufe erheben"]
+  Prepare["Vorbereitungsressourcen und Ist-Abläufe klären"]
+  Model["A39: Umsetzung, Wissen und Betrieb bewerten"]
   Select["Pilotfälle und Prüfumfang festlegen"]
   Release["Erprobung gesondert freigeben"]
   Test["Offene Machbarkeit gezielt prüfen"]
-  Decide{"Pilot freigeben?"}
+  Decide{"Produktiven Pilot freigeben?"}
   Use["Pilot umsetzen"]
-  Prepare --> Select
+  Prepare --> Model --> Select
   Select -->|Machbarkeit offen| Release
   Release --> Test --> Decide
   Select -->|Machbarkeit ausreichend geklärt| Decide
-  Decide -->|Ja| Use
-  Decide -->|Überarbeiten| Select
+  Decide -->|Ja, inkl. tragfähigem Betrieb| Use
+  Decide -->|Überarbeiten| Model
 ```
 
 Aktuell laufen Vorbereitung und Abstimmung. IT klärt den Betriebsrahmen, die Geschäftsführung entscheidet über Ressourcen für die Vorbereitung. Praktische Erprobung folgt nach gesonderter Freigabe. Über Umfang, Budget und Start der Piloten entscheidet die Geschäftsführung anhand der Ergebnisse und des mit IT geklärten Betriebsrahmens. Siehe [Mindestabnahme für den Betrieb](BRIEFING_IT.md#mindestabnahme-vor-produktivem-pilot) und [Folgeentscheidung der Geschäftsführung](BRIEFING_GESCHAEFTSFUEHRUNG.md#folgeentscheidung).
