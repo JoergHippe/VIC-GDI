@@ -28,6 +28,13 @@ Gesprächsunterlagen: [IT-Briefing](BRIEFING_IT.md) und [Geschäftsführungs-Bri
 
 Für die beiden Pilotbereiche liegt ein [Erhebungsleitfaden](05_PILOTKONKRETISIERUNG.md) vor. Die Baubetreuung hat Tätigkeiten benannt und nutzt bereits mobile Werkzeuge. Für beide Piloten stehen die Auswahl des ersten Ablaufs und seine Abnahmekriterien aus.
 
+## Kosten- und Lizenzklärung mit IT
+
+- Den [Lizenz- und Kostenrahmen](ANHANG_C_SOFTWARE_LIZENZEN_KOSTEN.md) für den später ausgewählten GDI-MVP bestätigen: Kernsoftware, konkret eingesetzte Versionen/Erweiterungen und Open-Source-Lizenzpflichten.
+- **Proxmox:** Bestehende Hosts und belegte CPU-Sockel, Subskriptions-/Repository-Strategie, Kapazitäten, Sicherung und mögliche Zusatzkosten mit IT klären; kostenpflichtige Subskription nicht als zwingende Softwarelizenz darstellen.
+- Bei mobilem Datenaustausch optionalen Bedarf und mögliche Kosten einer gehosteten QFieldCloud von der kostenfreien QField-App trennen; erst nach Vergleich der Übertragungswege.
+- Budgetschätzung nach Lizenzgebühren, einmaligen internen Aufwänden, laufendem Betrieb und optionalen Leistungen aufgliedern; keine pauschalen Einsparungen ohne Daten behaupten.
+
 ## Fachliche Konkretisierung
 
 - Pilot-Use-Cases mit echten Anwendern und Erfolgskriterien aufnehmen.
