@@ -25,7 +25,7 @@ Hier werden **noch zu klärende Softwarekomponenten bzw. unmittelbar damit verbu
 
 1. Konkrete Pilotanforderungen und Muss-Kriterien mit GIS/Fachbereich/IT bestätigen.
 2. Maximal zwei bis vier ernsthaft relevante Kandidaten einschließlich **„keine zusätzliche Software“**, wo sinnvoll, untersuchen.
-3. Herstellerdokumentation, Projekt-/Versionsstand, Sicherheitsinformationen, externe Erfahrungsberichte und bei Bedarf PoC-Belege zuordnen. **Nicht recherchierte Angaben bleiben `?`.**
+3. Herstellerdokumentation, **Erstveröffentlichung, aktuelle stabile Version mit Datum und Entwicklungsaktivität der letzten 12 Monate**, Sicherheitsinformationen, externe Erfahrungsberichte und bei Bedarf PoC-Belege zuordnen. Bewertungsstichtag dokumentieren. **Nicht recherchierte Angaben bleiben `?`; nicht anwendbare Angaben werden als `n. a.` gekennzeichnet.**
 4. Anhand der [Methodik](BEWERTUNGSMETHODIK.md) bewerten, sachliche Vor-/Nachteile formulieren und eine **vorläufige Empfehlung** mit Unsicherheiten kennzeichnen.
 5. **Freigabe/Beschluss ausschließlich im [Entscheidungsregister](../04_ENTSCHEIDUNGEN.md)** festhalten. Die Einzeldateien sind Analyse, keine zweite Entscheidungsquelle.
 
