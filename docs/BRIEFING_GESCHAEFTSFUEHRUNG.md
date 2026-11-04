@@ -43,7 +43,7 @@ Die Fachbereiche priorisieren je Pilot einen ersten Ablauf und legen vor der Ums
 | Bestandsaufnahme, Pilotkonzeption, Datenmigration | Datenpflege und Weiterentwicklung |
 | Einrichtung von DB, Diensten und Anwendungen | Betrieb, Updates, Sicherheit, Backup |
 | Technische [PoCs](ANHANG_A_GLOSSAR.md#poc), Tests, Einführung | Support und Fehlerbehebung |
-| Wissensaufbau und Schulungen | Auffrischung, Dokumentationspflege, Vertretung |
+| Wissensaufbau und Schulungen; ggf. externe Beratung/Umsetzung je nach Modell | Auffrischung, Dokumentationspflege, Vertretung; ggf. externer Spezialistensupport oder Betriebsvertrag |
 
 **[Ressourcen für den Wissensaufbau](04_ENTSCHEIDUNGEN.md#a33):** Wissensaufbau benötigt explizit eingeplante personelle, zeitliche und gegebenenfalls finanzielle Ressourcen. Selbststudium ist nicht kostenfrei. Die Methode (Eigenlernen, gezielte Schulung, umfassende Qualifikation) richtet sich nach Rolle, Risiko und Wirtschaftlichkeit.
 
