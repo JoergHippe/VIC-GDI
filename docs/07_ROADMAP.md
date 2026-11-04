@@ -28,6 +28,17 @@ flowchart LR
 
 Aktuell laufen Vorbereitung und Abstimmung. IT klärt den Betriebsrahmen, die Geschäftsführung entscheidet über Ressourcen für die Vorbereitung. Praktische Erprobung folgt nach gesonderter Freigabe. Über Umfang, Budget und Start der Piloten entscheidet die Geschäftsführung anhand der Ergebnisse und des mit IT geklärten Betriebsrahmens. Siehe [Mindestabnahme für den Betrieb](BRIEFING_IT.md#mindestabnahme-vor-produktivem-pilot) und [Folgeentscheidung der Geschäftsführung](BRIEFING_GESCHAEFTSFUEHRUNG.md#folgeentscheidung).
 
+## Entscheidungstore und Abhängigkeiten
+
+| Entscheidungstor | Erforderliche Grundlage | Ergebnis |
+|---|---|---|
+| **Vorbereitung ermöglichen** | Erster fachlicher Nutzen, Pilotvorschläge, Ansprechpersonen, grober GIS-/IT-Prüfauftrag | GF legt priorisierte Vorbereitungsressourcen fest; **keine Umsetzungsfreigabe** |
+| **A39-Richtung bewerten** | Verfügbare Kompetenzen/Kapazitäten, realistische interne/externe Varianten, Qualifizierung, Kostenfelder, dauerhafte Verantwortung | GF/IT erarbeiten bzw. treffen in ihren Zuständigkeiten die tragfähige Organisationsrichtung; fehlende Voraussetzungen ausdrücklich dokumentieren |
+| **Gezielte Erprobung freigeben (falls nötig)** | Konkrete offene Machbarkeitsfrage, begrenzter Testumfang und Zuständigkeit | Separate Freigabe für einen PoC, **noch kein produktiver Pilot** |
+| **Produktiven Pilot freigeben** | Bestätigter Nutzen-/MVP-Umfang, Sicherheit/Rechte, Backup/Restore, Betriebsverantwortung und Ressourcen | GF entscheidet über Umfang/Budget, IT über tragfähigen Betrieb; fachliche Abnahme durch Pilotbereiche |
+
+**A39 ist vorrangig, aber kein Totalstopp:** Für eine vernünftige A39-Bewertung dürfen fachliche Pilotfälle, ein logisches Zielbild und grobe technische Aufwandstreiber bereits geklärt werden. Detailauswahl und Optimierung ohne unmittelbaren Einfluss auf A39 oder einen konkret freigegebenen Pilot werden zurückgestellt. [Priorisierte offene Punkte](08_OFFENE_PUNKTE.md#arbeitspriorität-nach-entscheidungshorizont).
+
 ## Etappen
 
 ### 0 – Vorbereitung und Bestandsaufnahme
