@@ -20,7 +20,7 @@ Der vorgesehene GDI-Kern (QGIS, PostgreSQL/PostGIS, bevorzugt QGIS Server und fr
 
 | Bereich | Was IT bereitstellen oder verbindlich klären soll |
 |---|---|
-| Hosting und Speicher | Verwaltete Serverumgebung mit getrennten TEST-/PROD-Umgebungen, persistentem Speicher und freigegebenen Dateiablagen. Dimensionierung anhand von Datenvolumen, Wachstum, gleichzeitigen Nutzern, Kartenlast und Sicherungsbedarf ableiten. |
+| Hosting und Speicher | Verwaltete Serverumgebung mit getrennten TEST-/PROD-Umgebungen, persistentem Speicher und freigegebenen Dateiablagen. **IT prüft vorhandene Kapazitätsreserven und entscheidet, ob eine Aufstockung von Speicherplatz, RAM, CPU-Leistung, Backup-Speicher oder ggf. Serverhardware notwendig ist.** Dimensionierung anhand von Datenvolumen, Wachstum, gleichzeitigen Nutzern, Kartenlast und Sicherungsbedarf ableiten. Etwaigen Mehrbedarf und Kosten erst nach dieser Prüfung ausweisen. |
 | Datenbank | Betreibbare [PostgreSQL](ANHANG_A_GLOSSAR.md#postgresql)-Instanz mit [PostGIS](ANHANG_A_GLOSSAR.md#postgis) für geeignete gemeinsam genutzte Geodaten. Rollen, Verbindungsschutz, Updates und Sicherung mit GIS abstimmen. |
 | Kartendienste | Wenn Webkarten im Pilotumfang liegen, internen HTTPS-Endpunkt und den Betrieb eines Kartendiensts einplanen. [QGIS Server](ANHANG_A_GLOSSAR.md#qgis-server) ist der bevorzugte Kandidat und stellt Karten aus freigegebenen Webprojekten bereit. QGIS Desktop greift je nach Quelle direkt auf Datenbank, Dateien oder Dienste zu. |
 | Netz und Zugang | Interne Namensauflösung, Zertifikate, Firewallregeln und Zugriff vom Arbeitsplatz bzw. über [VPN](ANHANG_A_GLOSSAR.md#vpn) klären. Datenbankzugriff auf erforderliche Clients und Dienste begrenzen. |
