@@ -13,6 +13,18 @@ Dieses Dokument bewertet, **durch wen** die [GDI](ANHANG_A_GLOSSAR.md#gdi) aufge
 | **W – Wissensaufbau** | Wie werden erforderliche Fähigkeiten erworben und gesichert? | Selbststudium, Schulung, angeleitete Praxis, Beratung und Wissenstransfer kombinierbar. |
 | **D – Dauerbetrieb** | Wer übernimmt Updates, Fehleranalyse, Support, Sicherung und technische Weiterentwicklung? | Eigenständige Entscheidung – nicht automatisch durch den Umsetzungsauftrag vorgegeben. |
 
+Die drei Entscheidungen müssen **gemeinsam auf Tragfähigkeit** geprüft werden, dürfen aber unterschiedliche interne und externe Anteile haben:
+
+```mermaid
+flowchart LR
+  U["Umsetzung: intern / gemeinsam / extern"] --> V["Gemeinsame Bewertung: Fähigkeiten, Kapazitäten, Risiken, Kosten"]
+  W["Wissensaufbau: Schulung / Praxis / Transfer"] --> V
+  D["Dauerbetrieb: intern / unterstützt / extern"] --> V
+  V --> E["GF + IT: tragfähige Richtung und Freigaben"]
+```
+
+Das Schema ist eine **Entscheidungshilfe**, keine bereits gewählte Kombination. Die konkrete technische Dienstverteilung, Umsetzungsaufträge und Betriebsübernahme bleiben bis zu den jeweiligen Freigaben offen.
+
 **Unterscheidung:** Auch vollständig extern umgesetzte oder betriebene Systeme brauchen interne fachliche Verantwortung, Vertrags-/Dienstleistersteuerung, Zugangskontrolle, Entscheidungsfähigkeit und eine hinreichende Vertretungsregelung. Umgekehrt ist **intern** nicht gleichbedeutend mit **ohne Kosten**: Arbeitszeit, Weiterbildung, laufende Wartung und Kapazitätsreserve gehören in die Betrachtung.
 
 ## 2. Umsetzungsmodelle – alle Optionen offen
