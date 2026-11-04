@@ -18,11 +18,11 @@ Der geplante GDI-Kern basiert auf **freier Open-Source-Software ohne zusätzlich
 1. [Projektkonzept](docs/01_PROJEKTKONZEPT.md) – Ziele, Grenzen, Pilotbereiche
 2. [Anforderungen](docs/02_ANFORDERUNGEN.md) – fachliche und nichtfunktionale Anforderungen
 3. [Architektur](docs/03_ARCHITEKTUR.md) – technisches Zielbild mit offenen Festlegungen
-4. [Entscheidungen](docs/04_ENTSCHEIDUNGEN.md) – [A01](docs/04_ENTSCHEIDUNGEN.md#a01)–[A38](docs/04_ENTSCHEIDUNGEN.md#a38), Status, Begründungen und Prüfvorbehalte
+4. [Entscheidungen](docs/04_ENTSCHEIDUNGEN.md) – [A01](docs/04_ENTSCHEIDUNGEN.md#a01)–[A39](docs/04_ENTSCHEIDUNGEN.md#a39), Status, Begründungen und Prüfvorbehalte
 5. [Pilotkonkretisierung](docs/05_PILOTKONKRETISIERUNG.md) – bekannte Praxis, Ablaufvorschläge und Erhebungsfragen
-6. [Roadmap](docs/06_ROADMAP.md) – [MVP](docs/ANHANG_A_GLOSSAR.md#mvp), Piloten, Einführungsfolge
-7. [Offene Punkte](docs/07_OFFENE_PUNKTE.md) – Klärungsbedarf, nächste Schritte und Rückstellungen
-8. [Umsetzungs- und Betriebsmodelle](docs/08_UMSETZUNGS_UND_BETRIEBSMODELLE.md) – Eigenleistung, Schulungen, Beratung, externe Umsetzung sowie langfristige Betreuung; **Entscheidung durch GF und IT offen**
+6. [Umsetzungs- und Betriebsmodelle](docs/06_UMSETZUNGS_UND_BETRIEBSMODELLE.md) – Eigenleistung, Schulungen, Beratung, externe Umsetzung sowie langfristige Betreuung; **Entscheidung durch GF und IT offen**
+7. [Roadmap](docs/07_ROADMAP.md) – [MVP](docs/ANHANG_A_GLOSSAR.md#mvp), Piloten, Einführungsfolge
+8. [Offene Punkte](docs/08_OFFENE_PUNKTE.md) – Klärungsbedarf, nächste Schritte und Rückstellungen
 
 ## Softwareauswahl und Bewertungen
 

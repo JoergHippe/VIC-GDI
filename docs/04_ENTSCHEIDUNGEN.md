@@ -1,8 +1,8 @@
-# Architekturentscheidungen [A01](#a01)–[A38](#a38)
+# Architekturentscheidungen [A01](#a01)–[A39](#a39)
 
 **Status:** Konsolidierter interner Arbeitsentwurf. Dieses Register ist die führende Stelle für Beschlussstatus und Entscheidungsbegründungen. Die knappen Zusammenfassungen ersetzen nicht die spätere Detailprüfung mit IT und Fachbereichen.
 
-**Quellenlage:** Erstkonsolidierung aus den bisherigen Architekturgesprächen [A01](#a01)–[A38](#a38). Wo kein detailliertes Entscheidungsprotokoll vorliegt, sind die Aussagen bewusst auf die gesicherten Grundsätze begrenzt. Die Dokumente sind keine Implementierungs- oder Freigabenachweise.
+**Quellenlage:** Erstkonsolidierung aus den bisherigen Architekturgesprächen [A01](#a01)–[A39](#a39). Wo kein detailliertes Entscheidungsprotokoll vorliegt, sind die Aussagen bewusst auf die gesicherten Grundsätze begrenzt. Die Dokumente sind keine Implementierungs- oder Freigabenachweise.
 
 **Statusschlüssel:** **B** = beschlossen; **G** = Grundsatz beschlossen, Detail offen; **Z** = zurückgestellt; **O** = offen.
 
@@ -46,6 +46,7 @@
 | <a id="a36"></a>A36 | Migration | B | **B+**: verbindliche Zielarchitektur, selektive Migration, problematische SharePoint-/OneDrive-GIS-Arbeitsbestände ablösen · [überprüfungsbedürftig](#erneute-prüfung-a04-a15-und-a36) |
 | <a id="a37"></a>A37 | Datenlebenszyklus | Z | Option B plausibel, aber nicht beschlossen; später klären |
 | <a id="a38"></a>A38 | Datenbankregeln | Z | Option B plausibel, aber nicht beschlossen; später klären |
+| <a id="a39"></a>A39 | Umsetzungs-, Qualifizierungs- und Betriebsmodell | O | [A1–A3, B1, C1/C2 und D1–D3](06_UMSETZUNGS_UND_BETRIEBSMODELLE.md) sind Prüfoptionen; **GF und IT** entscheiden auf Grundlage von GIS-/IT-Bedarf, Kapazitäten und Kosten; keine Variante beschlossen |
 
 ## Erneute Prüfung [A04](#a04), [A15](#a15) und [A36](#a36)
 
@@ -76,7 +77,9 @@ Priorisierte Suchfälle und vorhandene Quellen bestimmen den Katalogumfang. [OGC
 Eine fachlich führende Stelle je gemeinsamem Datenbestand. Lesende fachbereichsübergreifende Nutzung nach Freigabe, Schreibrechte nach Rolle und Zuständigkeit. Die Durchsetzung muss in DB, Diensten, Extract und mobilen Pfaden wirksam sein; das konkrete Berechtigungsdesign ist offen.
 
 ### [A12](#a12) – Extract
-Geplante Formate [GPKG](ANHANG_A_GLOSSAR.md#geopackage), [Shapefile](ANHANG_A_GLOSSAR.md#shapefile), [GeoJSON](ANHANG_A_GLOSSAR.md#geojson) und [CSV](ANHANG_A_GLOSSAR.md#csv); Flächenauswahl aus Karte, GeoJSON/Shapefile oder [BBox](ANHANG_A_GLOSSAR.md#bbox) und optional Ziel-[CRS](ANHANG_A_GLOSSAR.md#crs). **Selektion ganzer Objekte ist nicht gleich geometrischem Zuschnitt.** Diese Unterscheidung ist vor Implementierung zu erproben.
+Geplante Formate [GPKG](ANHANG_A_GLOSSAR.md#geopackage), [Shapefile](ANHANG_A_GLOSSAR.md#shapefile), [GeoJSON](ANHANG_A_GLOSSAR.md#geojson) und [CSV](ANHANG_A_GLOSSAR.md#csv); Flächenauswahl aus Karte, GeoJSON/Shapefile oder [BBox](ANHANG_A_GLOSSAR.md#bbox) und optional Ziel-[CRS](ANHANG_A_GLOSSAR.md#crs). **Selektion ganzer Objekte ist nicht gleich geometrischem Zuschnitt.** Diese Unterscheidung ist vor Implementierung zu erproben. **Format/CRS beachten:** GeoJSON nach [RFC 7946](https://www.rfc-editor.org/rfc/rfc7946#section-4) nutzt WGS 84/CRS84 (Länge, Breite); UTM-Ausgaben in EPSG:25832/25833 brauchen z. B. GeoPackage oder ein anderes geeignetes Format. Ältere GeoJSON-Varianten mit abweichendem CRS nicht mit RFC-7946-konformen Dateien gleichsetzen.
+
+**Klärung zur technischen Bereitstellung (offen):** Die Kurzfassung von [A12](#a12) nennt einen „Extract-Service“, während die [Architektur](03_ARCHITEKTUR.md#gis-funktionen) und der [Softwarevergleich SW-06](software/06_GEODATENAUSZUG.md) zunächst vorhandene Exportfunktionen vorsehen. **Ob A12 tatsächlich einen eigenständigen Dienst festlegt oder nur die berechtigte Exportfunktion, lässt sich aus dem konsolidierten Register nicht sicher ableiten.** Die bisherige A12-Festlegung bleibt bis zur ausdrücklichen Klärung unverändert; keine stillschweigende Architekturänderung.
 
 ### [A24](#a24) – Deployment
 Die Varianten **A native VMs**, **B Datenbank nativ plus containerisierte GIS-Dienste**, **C umfassende Containerisierung** bleiben gleichberechtigte Untersuchungsoptionen. Vergleich nach Betrieb, IT-Know-how, Sicherheit, Wartbarkeit, Backup, Kosten und Zukunftsfähigkeit; kein voreiliger Technologieentscheid.
@@ -89,6 +92,10 @@ Gemeinsam bearbeitete geeignete Vektordaten bevorzugt PostGIS, QGIS-Projekte und
 
 ### [A37](#a37) / [A38](#a38) – Bewusst zurückgestellt
 [A37](#a37): Pflege, strukturelle Änderungen und Ablösung zentraler Geodatenbestände. [A38](#a38): technische Integritätsregeln in PostGIS und QGIS. **Keine stillschweigende Freigabe von Option B.**
+
+### [A39](#a39) – Organisationsmodell (offen)
+
+Die [Modelle für Umsetzung, Wissensaufbau und Betrieb](06_UMSETZUNGS_UND_BETRIEBSMODELLE.md) sind vollständig als **Optionen**, nicht als ausgewählte Lösung dokumentiert. Die Auswahl von Aufbau- und Betriebsorganisation ist eine spätere Entscheidung durch **Geschäftsführung und IT** in ihren Zuständigkeiten; GIS-Team und Fachbereiche liefern die fachliche Bewertung. Die bestehende Rollenverteilung nach [A31](#a31) und der Grundsatz des Wissensaufbaus nach [A33](#a33) bleiben unverändert.
 
 ## Änderungsdisziplin
 

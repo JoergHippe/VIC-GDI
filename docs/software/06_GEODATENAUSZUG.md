@@ -7,12 +7,12 @@
 
 Berechtigte Nutzer sollen ausgewählte Geodaten in passenden Formaten und ggf. räumlich begrenzten Ausschnitten exportieren können. Das kann ein einfacher QGIS-Arbeitsablauf, eine vorhandene Viewer-/Serverfunktion oder erst bei nachgewiesenem Bedarf ein schlanker gesicherter Auszugsdienst sein.
 
-**Abgrenzung:** Eine dedizierte Extract-Plattform ist **nicht** beschlossen. Die technische Differenz zwischen **Objektselektion** und **tatsächlichem geometrischem Clipping** ist fachlich entscheidend. Rechte müssen auch bei direkten API-/Dienstaufrufen gelten.
+**Abgrenzung:** Die Kurzfassung [A12](../04_ENTSCHEIDUNGEN.md#a12) nennt einen „Extract-Service“; **ob damit ein eigenständiger Serverdienst zwingend festgelegt wurde, ist noch offen** und muss anhand des ursprünglichen Beschlusses oder einer Folgeentscheidung geklärt werden. Eine dedizierte Extract-Plattform ist **nicht** als Produkt beschlossen. Die technische Differenz zwischen **Objektselektion** und **tatsächlichem geometrischem Clipping** ist fachlich entscheidend. Rechte müssen auch bei direkten API-/Dienstaufrufen gelten.
 
 ## 2. Besondere Anforderungen
 
 - **Muss:** Auszug nur aus explizit autorisierten Layern und Datenbeständen; keine Rechteumgehung durch Exportpfade.
-- **Muss:** Benötigte Formate und CRS mit nachvollziehbarer Auswahl und korrekter Geometrie-/Attributbehandlung.
+- **Muss:** Benötigte Formate und **formatverträgliche CRS** mit nachvollziehbarer Auswahl, korrekter Transformation und Geometrie-/Attributbehandlung. **GeoJSON nach [RFC 7946](https://www.rfc-editor.org/rfc/rfc7946#section-4)** ist auf WGS 84/CRS84 (Länge/Breite) festgelegt; für EPSG:25832/25833 z. B. GeoPackage wählen.
 - **Soll:** Nutzerfreundlicher Ablauf auch ohne umfangreiche GIS-Kenntnisse, soweit Pilotbedarf.
 - **Offen:** Formate (GPKG, GeoJSON, Shapefile, CSV), Größe, Auszugsfläche, Objektselektion versus Clipping, automatisierter Abruf.
 
@@ -69,6 +69,8 @@ Standardisierte Dimensionen und Gewichte nach [Methodik](BEWERTUNGSMETHODIK.md);
 
 - [QGIS Benutzerhandbuch](https://docs.qgis.org/3.44/en/docs/user_manual/) – offizielle Dokumentation; vorhandene Auswahl-/Export-Funktionen
 - [GDAL/OGR – ogr2ogr](https://gdal.org/en/stable/programs/ogr2ogr.html) – offizielle Dokumentation; Filter, räumlicher Zuschnitt, Konvertierung und CRS
+- [RFC 7946 § 4 – Coordinate Reference System](https://www.rfc-editor.org/rfc/rfc7946#section-4) – verbindlicher CRS-Rahmen bei standardkonformem GeoJSON
+- [GDAL RFC 65 – GeoJSON RFC 7946](https://gdal.org/en/stable/development/rfc/rfc65_rfc7946_geojson.html) – konkrete Implementierung/Transformation bei GDAL-Ausgabe
 - [QWC-Dokumentation](https://docs.qwc.app/) – offizielle Projektdoku; mögliche Webviewer-/Dienstintegrationen; Auswahl noch offen
 - [VIC-GDI Entscheidung A12](../04_ENTSCHEIDUNGEN.md#a12) – intern; Fachgrenzen des Auszugs
 

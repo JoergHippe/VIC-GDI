@@ -4,7 +4,7 @@
 
 ## Fachliche Anforderungen
 
-Die Tabelle beschreibt das Zielbild. Webkarten, Suche, [Geodatenauszug](ANHANG_A_GLOSSAR.md#extract) und mobile Arbeit (F05–F08) gehören zum ersten nutzbaren Stand, soweit ein priorisierter Pilotablauf sie benötigt. Die [Roadmap](06_ROADMAP.md#mvp-abgrenzung) führt den gemeinsamen Mindestumfang.
+Die Tabelle beschreibt das Zielbild. Webkarten, Suche, [Geodatenauszug](ANHANG_A_GLOSSAR.md#extract) und mobile Arbeit (F05–F08) gehören zum ersten nutzbaren Stand, soweit ein priorisierter Pilotablauf sie benötigt. Die [Roadmap](07_ROADMAP.md#mvp-abgrenzung) führt den gemeinsamen Mindestumfang.
 
 | ID | Anforderung | Bezug |
 |---|---|---|
@@ -14,7 +14,7 @@ Die Tabelle beschreibt das Zielbild. Webkarten, Suche, [Geodatenauszug](ANHANG_A
 | F04 | [QGIS](ANHANG_A_GLOSSAR.md#qgis) Desktop mit zentralen Ressourcen, aber eigenständigen Fachprojekten | [A04](04_ENTSCHEIDUNGEN.md#a04), [A17](04_ENTSCHEIDUNGEN.md#a17) |
 | F05 | Webkarten für Gelegenheitsnutzer mit einfacher und erweiterter Sicht | [A10](04_ENTSCHEIDUNGEN.md#a10), [A11](04_ENTSCHEIDUNGEN.md#a11), [A18](04_ENTSCHEIDUNGEN.md#a18), [A19](04_ENTSCHEIDUNGEN.md#a19) |
 | F06 | Suche nach Projekten, Orten/Adressen und ausgewählten Objekten | [A20](04_ENTSCHEIDUNGEN.md#a20) |
-| F07 | Berechtigter Geodatenauszug in geeigneten Formaten und Raumbezügen | [A12](04_ENTSCHEIDUNGEN.md#a12) |
+| F07 | Berechtigter Geodatenauszug in geeigneten Formaten und zueinander passenden Raumbezügen (z. B. GeoJSON nach RFC 7946 nur WGS 84/CRS84) | [A12](04_ENTSCHEIDUNGEN.md#a12) |
 | F08 | Mobile Online-/Offline-Arbeit mit erprobten Werkzeugen | [A13](04_ENTSCHEIDUNGEN.md#a13) |
 | F09 | Amtliche Basisdaten bevorzugt über Dienste; dokumentierte Stände bei Bedarf | [A05](04_ENTSCHEIDUNGEN.md#a05), [A22](04_ENTSCHEIDUNGEN.md#a22) |
 | F10 | Geodatenquellen, Aktualität, Herkunft und Nutzungseinschränkungen nachvollziehen | [A15](04_ENTSCHEIDUNGEN.md#a15) |

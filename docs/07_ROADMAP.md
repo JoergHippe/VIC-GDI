@@ -36,7 +36,7 @@ Aktuell laufen Vorbereitung und Abstimmung. IT klärt den Betriebsrahmen, die Ge
 - Problematische synchronisierte SharePoint-/OneDrive-GIS-Arbeitsdatenhaltung in der Baubetreuung identifizieren.
 - Konkrete Pilot-Use-Cases und Minimalerfolgskriterien festlegen.
 - Wissens- und Schulungsbedarf samt Kapazitäten einplanen ([A33](04_ENTSCHEIDUNGEN.md#a33)).
-- [Modelle für Umsetzung, Qualifizierung und dauerhaften Betrieb](08_UMSETZUNGS_UND_BETRIEBSMODELLE.md) (intern/gemeinsam/extern, D1–D3) anhand interner Kompetenzen und Ressourcen mit GIS/IT bewerten; **Auswahl durch GF und IT offen**, keine Beauftragung vor der Variantenklärung.
+- [Modelle für Umsetzung, Qualifizierung und dauerhaften Betrieb](06_UMSETZUNGS_UND_BETRIEBSMODELLE.md) (intern/gemeinsam/extern, D1–D3) anhand interner Kompetenzen und Ressourcen mit GIS/IT bewerten; **Entscheidung [A39](04_ENTSCHEIDUNGEN.md#a39) durch GF und IT offen**, vor produktivem Pilotbetrieb verbindlich klären.
 
 ### 1 – Gemeinsame technische Basis
 - [PostGIS](ANHANG_A_GLOSSAR.md#postgis) und QGIS-Desktop-Anbindung; geeignete gemeinsame Datenmodelle.

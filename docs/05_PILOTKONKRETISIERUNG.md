@@ -130,6 +130,6 @@ Für jeden bestätigten Anwendungsfall ein kompakter Datensatz:
 1. Pro Pilot ein bis zwei **bestätigte** Anwendungsfälle priorisieren.
 2. Daraus gemeinsamen GDI-Kern und getrennte Pilot-MVPs ableiten.
 3. Nur dafür benötigte technische [PoCs](ANHANG_A_GLOSSAR.md#poc) und IT-Abstimmungen ansetzen.
-4. Ergebnisse mit [Roadmap](06_ROADMAP.md), [Anforderungen](02_ANFORDERUNGEN.md) und [Offenen Punkten](07_OFFENE_PUNKTE.md) synchronisieren.
+4. Ergebnisse mit [Roadmap](07_ROADMAP.md), [Anforderungen](02_ANFORDERUNGEN.md) und [Offenen Punkten](08_OFFENE_PUNKTE.md) synchronisieren.
 
 **Abgrenzung:** Dieses Dokument ist ein Erhebungsleitfaden. Es ist kein bereits bestätigtes Fachkonzept und enthält keine erfundenen fachlichen Anforderungen.

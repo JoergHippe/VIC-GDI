@@ -30,9 +30,19 @@ Für die beiden Pilotbereiche liegt ein [Erhebungsleitfaden](05_PILOTKONKRETISIE
 
 ## Offene Organisationsentscheidung: Umsetzung und Betrieb
 
-- **Wer setzt die GDI um?** Die Optionen **A1–A3** (intern mit Selbststudium/Schulung/Beratung), **B1** (gemeinsame Umsetzung) und **C1/C2** (externe Umsetzung mit Übergabe bzw. Betrieb) sind in [08_UMSETZUNGS_UND_BETRIEBSMODELLE.md](08_UMSETZUNGS_UND_BETRIEBSMODELLE.md) beschrieben und **nicht entschieden**.
+- **Wer setzt die GDI um? ([A39](04_ENTSCHEIDUNGEN.md#a39))** Die Optionen **A1–A3** (intern mit Selbststudium/Schulung/Beratung), **B1** (gemeinsame Umsetzung) und **C1/C2** (externe Umsetzung mit Übergabe bzw. Betrieb) sind in [06_UMSETZUNGS_UND_BETRIEBSMODELLE.md](06_UMSETZUNGS_UND_BETRIEBSMODELLE.md) beschrieben und **nicht entschieden**.
 - **Wie werden Wissen und dauerhafter Betrieb sichergestellt?** Schulungs-/Wissenstransferbedarf und **D1–D3** (interner, unterstützter oder überwiegend externer Betrieb) getrennt vom Aufbau klären ([A31](04_ENTSCHEIDUNGEN.md#a31), [A33](04_ENTSCHEIDUNGEN.md#a33)).
 - **Nächster Schritt:** GIS/IT konkretisieren Kompetenzen, Personentage, Betriebsverantwortung, externe Leistungspakete und Gesamtkosten; **GF und IT wählen das Modell erst auf dieser Grundlage** in ihren jeweiligen Zuständigkeiten. A3/B1 mit D2 bleibt eine unverbindliche Prüfrichtung.
+
+## Offener fachlicher Beschlussinhalt: Geodatenauszug ([A12](04_ENTSCHEIDUNGEN.md#a12))
+
+Die Kurzfassung A12 nennt einen „Extract-Service“; Architektur und [SW-06](software/06_GEODATENAUSZUG.md) lassen dagegen ausdrücklich offen, ob ein **eigener Dienst** benötigt wird. **GIS und IT müssen anhand des ursprünglichen Beschlusses bzw. einer Folgeentscheidung klären, ob A12 nur die Exportfunktion oder tatsächlich einen dedizierten Service festlegt.** Bis dahin keine stillschweigende Änderung von A12 und keine vorschnelle Eigenentwicklung.
+
+## Öffentliches GitHub-Repository: Freigabe- und Lizenzklärung
+
+- Verifizieren, dass Konzeptinhalte und interne organisatorische Angaben für eine **öffentliche Veröffentlichung freigegeben** sind; bei Vertraulichkeitsbedenken umgehend mit den Verantwortlichen klären.
+- Prüfen, ob und unter welchen Bedingungen Dritte die Dokumentation weiterverwenden dürfen. Eine fehlende `LICENSE`-Datei ist **keine** automatische Open-Source-Freigabe. Entscheidung durch die hierfür zuständigen Unternehmensstellen, nicht aus der GDI-Konzeption ableiten.
+- Vorlagen, Bilder, Fremdtexte und andere Drittinhalte vor späterer Erweiterung auf Weitergaberechte prüfen; auch Git-Historie bei versehentlich veröffentlichten sensiblen Inhalten berücksichtigen.
 
 ## Kosten- und Lizenzklärung mit IT
 
@@ -53,7 +63,7 @@ Für die beiden Pilotbereiche liegt ein [Erhebungsleitfaden](05_PILOTKONKRETISIE
 
 ## Dokumentationsqualität
 
-- [A01](04_ENTSCHEIDUNGEN.md#a01)–[A38](04_ENTSCHEIDUNGEN.md#a38) anhand der ursprünglichen Gesprächsprotokolle bei Verfügbarkeit einzeln gegenprüfen; die Erstfassung ist eine konsolidierte Zusammenfassung, keine vollständige Transkription.
+- [A01](04_ENTSCHEIDUNGEN.md#a01)–[A39](04_ENTSCHEIDUNGEN.md#a39) anhand der ursprünglichen Gesprächsprotokolle bei Verfügbarkeit einzeln gegenprüfen; die Erstfassung ist eine konsolidierte Zusammenfassung, keine vollständige Transkription.
 - Anforderungen mit überprüfbaren Akzeptanzkriterien ergänzen, wenn die jeweiligen Piloten konkret werden.
 - Für die von IT betreibbaren Varianten die offenen Aufwandsannahmen zu Einrichtung, Betrieb und Qualifizierung ergänzen.
 - Beschlossene Architektur und technische Vorzugsvarianten stets unterscheiden.
