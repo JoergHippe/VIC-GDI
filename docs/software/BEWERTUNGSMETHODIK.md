@@ -50,7 +50,7 @@ Diese drei **Sachangaben** stehen oberhalb der gewichteten Bewertungszeilen. Sie
 
 **Quellenregeln:** Für wichtige Aussagen möglichst die konkrete offizielle Doku/Version verlinken; unabhängige Reviews und Issue-Tracker ergänzen, aber nicht mit Herstelleraussagen gleichsetzen. Release-, Sicherheits- und Lizenzinformationen datieren; keine Sterne, Scores oder Benchmarks ohne belastbare Quelle. Ein fehlender unabhängiger Bericht wird als `noch nicht vorhanden` notiert, nicht erfunden.
 
-**Lizenzprinzip:** Open Source und keine zusätzlichen Lizenzgebühren sind das Ziel des GDI-Kerns ([Kostenrahmen](../ANHANG_C_SOFTWARE_LIZENZEN_KOSTEN.md)). Proprietäre oder gehostete Alternativen nur bei nachweislichem Zusatznutzen und mit transparenten Folgekosten betrachten. **„Kostenlos“ bedeutet nicht „ohne Betriebs-/Personalaufwand“.**
+**Lizenzprinzip:** Open Source und keine zusätzlichen Lizenzgebühren sind das Ziel des GDI-Kerns ([Lizenz- und Kostenüberblick](README.md#lizenz--und-kostenüberblick-gdi-kern)). Proprietäre oder gehostete Alternativen nur bei nachweislichem Zusatznutzen und mit transparenten Folgekosten betrachten. **„Kostenlos“ bedeutet nicht „ohne Betriebs-/Personalaufwand“.**
 
 ## Einheitliche Dokumentstruktur
 
