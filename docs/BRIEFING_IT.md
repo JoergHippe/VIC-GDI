@@ -83,7 +83,7 @@ Die **Personen und Organisationen, die den Aufbau ausführen**, sind noch nicht 
 - TEST und PROD trennen; einfache kontrollierte Releases statt vollständiger [CI/CD](ANHANG_A_GLOSSAR.md#ci-cd)-Pflicht ([A27](04_ENTSCHEIDUNGEN.md#a27), [A30](04_ENTSCHEIDUNGEN.md#a30)).
 - Zugang intern/VPN; externe authentifizierte Zusammenarbeit nur nach Bedarf. Serverrechte gelten unabhängig von der Oberfläche ([A09](04_ENTSCHEIDUNGEN.md#a09), [A18](04_ENTSCHEIDUNGEN.md#a18), [A25](04_ENTSCHEIDUNGEN.md#a25), [A26](04_ENTSCHEIDUNGEN.md#a26)).
 
-**GIS-/CAD-Auszug ([A12](04_ENTSCHEIDUNGEN.md#a12)):** GPKG, klassisches GeoJSON mit CRS (RFC 7946 separat), DXF und CSV werden fachlich vorgesehen; EPSG:25832/25833 sowie **EPSG:3068 (DHDN / Soldner Berlin)** gezielt prüfen. Die IT klärt mit GIS insbesondere DXF-Einheiten/CRS-Nachweis, empfangende CAD-Programme und verfügbare Transformationsgitter, bevor produktive Exportpfade festgelegt werden.
+**GIS-/CAD-Auszug ([A12](04_ENTSCHEIDUNGEN.md#a12)):** Für einen konkret benötigten Pilotexport prüft IT mit GIS **Berechtigungen über alle Zugriffspfade**, sichere Freigabe und technisch korrekte Datenübergabe. Bereits beschlossene Formate/CRS bleiben gültig; Prüfdetails zu GeoJSON, DXF, Soldner-Transformation und Testfällen stehen im [SW-06-Prüfkatalog](software/06_GEODATENAUSZUG.md). Kein eigener Auszugsdienst ohne nachgewiesenen Bedarf.
 
 ## Serverbetriebssystem und Deployment ([A23](04_ENTSCHEIDUNGEN.md#a23)/[A24](04_ENTSCHEIDUNGEN.md#a24))
 
