@@ -39,7 +39,7 @@ Herstellerquellen: [Kostenloser Einsatz](https://www.proxmox.com/de/produkte/pro
 | **Einmalige interne Aufwände** | Ist-Aufnahme, Installation, Anbindung, Datenmigration, Datenmodelle, Tests, Berechtigungen, Dokumentation und Einführung. |
 | **Laufender Personal-/Betriebsaufwand** | IT-/GIS-Administration, Sicherheitspatches, Datenpflege, Monitoring, Datensicherung, Restore-Tests, Support und Weiterentwicklung. |
 | **Qualifizierung** | Einarbeitung, Schulung und Vertretung; siehe [A33](04_ENTSCHEIDUNGEN.md#a33). |
-| **Infrastruktur** | Zusätzliche Server-/Speicher-/Backup-Kapazität, ggf. neue Hardware, Netzwerk- und Energiebedarf; Nutzung vorhandener Ressourcen prüfen. |
+| **Infrastruktur (Bedarf offen)** | Eventuell müssen bestehende Ressourcen aufgestockt werden, etwa Speicherplatz, RAM, CPU-Leistung, Backup-Speicher oder Serverhardware. **Nur die IT kann anhand der verfügbaren Infrastruktur und des konkretisierten Pilotbedarfs feststellen, ob dies nötig ist und welche Kosten entstehen.** Zusätzlicher Netzwerk- und Energiebedarf ist ebenfalls bei Bedarf zu bewerten. Keine Hardware-Neubeschaffung vorwegnehmen. |
 | **Optionale Supportleistungen** | Proxmox-Subskription, externer IT-/GIS-Support, Schulungen, Wartungsleistungen; nur bei fachlich/betrieblich begründetem Bedarf. |
 | **Optionale Zusatzangebote und Daten** | Gehostete Cloud-Dienste, kommerzielle Add-ons, Karten-/Geodaten-Abonnements, API-Nutzungsgebühren oder zusätzliche proprietäre Produkte. **Nicht Teil der pauschalen Null-Lizenzkosten-Aussage.** |
 
