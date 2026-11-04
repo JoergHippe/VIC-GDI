@@ -10,6 +10,12 @@ Ein [GIS](ANHANG_A_GLOSSAR.md#gis) bearbeitet und zeigt räumliche Daten, etwa d
 
 Die [Architekturübersicht](03_ARCHITEKTUR.md#architekturübersicht-logisches-zielbild) zeigt, wie Desktop, Browser und Mobilgeräte auf Daten und Dienste zugreifen.
 
+## Softwarelizenzen und optionaler Herstellersupport
+
+Der vorgesehene GDI-Kern (QGIS, PostgreSQL/PostGIS, bevorzugt QGIS Server und freie Webviewer) kann ohne zusätzliche Softwarelizenzgebühren betrieben werden. Auch Debian, Git und **Proxmox VE** sind grundsätzlich kostenlos nutzbar. Eine Proxmox-Subskription ist **optional**, kann aber für das Enterprise-Repository und Herstellersupport im Produktivbetrieb aus Betriebs-/Sicherheitsgründen sinnvoll sein. Bei vorhandener Proxmox-Infrastruktur zunächst belegte CPU-Sockel, bestehende Subskriptionsstufe, Kapazität und Backup-Abdeckung klären; keine automatische Lizenzmehrbelastung pro zusätzlicher VM unterstellen.
+
+**Lizenzgrenzen beachten:** QField-App kostenlos, gehostete QFieldCloud bei benötigten Funktionen gegebenenfalls kostenpflichtig; Docker Engine unter Linux Open Source, Docker Desktop unter Umständen lizenzpflichtig. Projekt-, Personal-, Betriebs- und Datenkosten sind getrennt zu ermitteln. Siehe [Softwarelizenzen und Kostenrahmen](ANHANG_C_SOFTWARE_LIZENZEN_KOSTEN.md).
+
 ## Mindestbedarf für einen produktiven Pilotbetrieb
 
 | Bereich | Was IT bereitstellen oder verbindlich klären soll |
