@@ -10,6 +10,20 @@ Ein [GIS](ANHANG_A_GLOSSAR.md#gis) bearbeitet und zeigt räumliche Daten, etwa d
 
 Die [Architekturübersicht](03_ARCHITEKTUR.md#architekturübersicht-logisches-zielbild) zeigt, wie Desktop, Browser und Mobilgeräte auf Daten und Dienste zugreifen.
 
+## Ziel des ersten IT-Termins: Machbarkeit und A39
+
+IT und GIS sollen **zuerst** klären, unter welchen Bedingungen ein sicherer, dauerhaft betreibbarer GDI-Pilot überhaupt realistisch ist. Die bereits dokumentierte Architektur ist eine Planungsgrundlage, **keine Anweisung zur sofortigen Bereitstellung**.
+
+| Jetzt beantworten | Spätere Vertiefung |
+|---|---|
+| Welche internen Zuständigkeiten, Vertretungen und real verfügbaren Personentage gibt es? | Zuständigkeitsmatrix und konkrete Administrationsverfahren |
+| Welche Linux-, PostgreSQL-, GIS-Dienst-, Sicherheits- und Restore-Kompetenzen sind vorhanden? | Gezielt nötige Qualifizierung, externe Beratung oder Co-Implementation |
+| Können bestehende Infrastruktur, Zugänge, Backup und Sicherheitsvorgaben einen Pilot tragen? | Dimensionierung, technische Tests und ggf. zusätzliche Ressourcen |
+| Welches Umsetzungs-/Wissens-/Betriebsmodell erscheint tragfähig ([A39](04_ENTSCHEIDUNGEN.md#a39))? | Vergleich von 2–3 realistischen Varianten mit Kosten und Übergabe |
+| Welche Pilotanforderungen müssen vor einer konkreten IT-Zusage noch erhoben werden? | Technische Komponenten- und Deploymententscheidung [A24](04_ENTSCHEIDUNGEN.md#a24) |
+
+**Ergebnis des Termins:** dokumentierte Machbarkeits- und Ressourcenfragen sowie konkrete nächste Verantwortliche, **keine Produktivfreigabe**. Vertiefende Anforderungen, Rollen und Prüfaufträge folgen in den nachstehenden Abschnitten.
+
 ## Softwarelizenzen und optionaler Herstellersupport
 
 Der vorgesehene GDI-Kern (QGIS, PostgreSQL/PostGIS, bevorzugt QGIS Server und freie Webviewer) kann ohne zusätzliche Softwarelizenzgebühren betrieben werden. Auch Debian, Git und **Proxmox VE** sind grundsätzlich kostenlos nutzbar. Eine Proxmox-Subskription ist **optional**, kann aber für das Enterprise-Repository und Herstellersupport im Produktivbetrieb aus Betriebs-/Sicherheitsgründen sinnvoll sein. Bei vorhandener Proxmox-Infrastruktur zunächst belegte CPU-Sockel, bestehende Subskriptionsstufe, Kapazität und Backup-Abdeckung klären; keine automatische Lizenzmehrbelastung pro zusätzlicher VM unterstellen.
