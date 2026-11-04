@@ -23,6 +23,12 @@ Der geplante GDI-Kern basiert auf **freier Open-Source-Software ohne zusätzlich
 6. [Roadmap](docs/06_ROADMAP.md) – [MVP](docs/ANHANG_A_GLOSSAR.md#mvp), Piloten, Einführungsfolge
 7. [Offene Punkte](docs/07_OFFENE_PUNKTE.md) – Klärungsbedarf, nächste Schritte und Rückstellungen
 
+## Softwareauswahl und Bewertungen
+
+- [Softwarekomponenten – Übersicht](docs/software/README.md) – sechs noch zu klärende Komponenten und die Abgrenzung zu bestehenden Festlegungen
+- [Einheitliche Bewertungsmethodik](docs/software/BEWERTUNGSMETHODIK.md) – Kriterien, Prüfschritte, Belege, Vergleichsskala
+- [Fiktiver Mustervergleich](docs/software/BEISPIEL_DUMMY.md) – vollständig ausgefülltes **Layoutbeispiel**, keine reale Bewertung
+
 ## Nachschlagen und mitarbeiten
 
 - [Glossar](docs/ANHANG_A_GLOSSAR.md) – Fachbegriffe und Abkürzungen
