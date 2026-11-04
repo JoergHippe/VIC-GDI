@@ -7,7 +7,7 @@
 
 Berechtigte Nutzer sollen ausgewählte Geodaten in passenden Formaten und ggf. räumlich begrenzten Ausschnitten exportieren können. Das kann ein einfacher QGIS-Arbeitsablauf, eine vorhandene Viewer-/Serverfunktion oder erst bei nachgewiesenem Bedarf ein schlanker gesicherter Auszugsdienst sein.
 
-**Abgrenzung:** Die Kurzfassung [A12](../04_ENTSCHEIDUNGEN.md#a12) nennt einen „Extract-Service“; **ob damit ein eigenständiger Serverdienst zwingend festgelegt wurde, ist noch offen** und muss anhand des ursprünglichen Beschlusses oder einer Folgeentscheidung geklärt werden. Eine dedizierte Extract-Plattform ist **nicht** als Produkt beschlossen. Die technische Differenz zwischen **Objektselektion** und **tatsächlichem geometrischem Clipping** ist fachlich entscheidend. Rechte müssen auch bei direkten API-/Dienstaufrufen gelten.
+**Abgrenzung:** [A12 – Option A](../04_ENTSCHEIDUNGEN.md#a12) legt die **Funktion des berechtigten Geodatenauszugs** fest, nicht einen eigenständigen Extract-Service. Zuerst sind vorhandene Funktionen zu prüfen; eine zusätzliche Plattform kommt nur bei nachgewiesenem Bedarf infrage. Die technische Differenz zwischen **Objektselektion** und **tatsächlichem geometrischem Clipping** ist fachlich entscheidend. Rechte müssen auch bei direkten API-/Dienstaufrufen gelten.
 
 ## 2. Besondere Anforderungen
 
@@ -61,7 +61,7 @@ Standardisierte Dimensionen und Gewichte nach [Methodik](BEWERTUNGSMETHODIK.md);
 
 ## 6. Bewertung und Empfehlung
 
-**Aktueller Status: Noch keine belastbare Produktempfehlung.** Der vorhandene QGIS- und Viewer-Funktionsumfang hat Vorrang vor einer Eigenentwicklung. Es ist nicht sicher, dass ein eigener Auszugsdienst überhaupt benötigt wird.
+**Beschlossene Leitplanke:** A12 verlangt den berechtigten Auszug als Funktion, **keinen eigenen Serverdienst**. **Softwareauswahl weiterhin offen:** QGIS- und Viewer-/Dienst-Bordmittel haben Vorrang; falls sie die bestätigten Anforderungen nicht erfüllen, ist ein zusätzlicher Dienst begründet zu prüfen. Eine belastbare Produktempfehlung steht noch aus.
 
 **Nächster Schritt:** Anhand eines Pilotlayers zwei Fälle testen: vollständige Objektselektion und echtes Clipping einer definierten Fläche; dazu Benutzerrechte, Zielformat, CRS, Maße/Geometrien und Bedienaufwand vergleichen.
 

@@ -65,7 +65,7 @@ Aktuell laufen Vorbereitung und Abstimmung. IT klärt den Betriebsrahmen, die Ge
 
 **Je nach Pilot:** Webviewer, mobile Erfassung, Suche, Datenexport, spezifische Datenmodelle.
 
-**Nicht pauschal MVP:** vollständiger [Extract](ANHANG_A_GLOSSAR.md#extract)-Service, alle Fachbereiche, komplexe [CI/CD](ANHANG_A_GLOSSAR.md#ci-cd)- oder [HA](ANHANG_A_GLOSSAR.md#ha)-Plattform, umfassende Datenfreigabeworkflows.
+**Nicht pauschal MVP:** eigenständiger [Extract](ANHANG_A_GLOSSAR.md#extract)-Service (A12 verlangt nur die Funktion; vorhandene Exportmöglichkeiten zuerst nutzen), alle Fachbereiche, komplexe [CI/CD](ANHANG_A_GLOSSAR.md#ci-cd)- oder [HA](ANHANG_A_GLOSSAR.md#ha)-Plattform, umfassende Datenfreigabeworkflows.
 
 ## Prüfpunkte
 
