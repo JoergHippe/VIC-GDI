@@ -72,6 +72,8 @@ flowchart TB
 - Getrennte TEST-/PROD-Umgebung, versionierte Konfiguration und Datenbankmigrationen, kontrollierte Bereitstellung ([A27](04_ENTSCHEIDUNGEN.md#a27), [A30](04_ENTSCHEIDUNGEN.md#a30)).
 - Bestehende IT-Backups und Monitoring nutzen, um [GDI](ANHANG_A_GLOSSAR.md#gdi)-spezifische Prüfungen und Restore-Tests ergänzen ([A28](04_ENTSCHEIDUNGEN.md#a28), [A29](04_ENTSCHEIDUNGEN.md#a29)).
 
+Die noch offenen produktbezogenen Auswahlfragen sind als [einheitlich bewertete Softwarekategorien](software/README.md) vorbereitet. Die Kandidaten dort sind **Prüfoptionen, keine zusätzlichen Architekturfestlegungen**; der reale Pilotbedarf entscheidet, ob ein eigener Katalog- oder Auszugsdienst überhaupt benötigt wird.
+
 ## Bewusst nicht festgelegt
 
 Deploymentmodell [A24](04_ENTSCHEIDUNGEN.md#a24), Details des Identitäts- und Berechtigungsmodells, Datenlebenszyklus [A37](04_ENTSCHEIDUNGEN.md#a37) und konkrete Datenbankvalidierung [A38](04_ENTSCHEIDUNGEN.md#a38). Diese Themen sind in [07_OFFENE_PUNKTE.md](07_OFFENE_PUNKTE.md) dokumentiert. Nicht jede hier genannte bevorzugte Technologie ist bereits technisch freigegeben.
