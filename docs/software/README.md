@@ -8,6 +8,23 @@ Hier werden **noch zu klärende Softwarekomponenten bzw. unmittelbar damit verbu
 - [Dokumentvorlage](VORLAGE.md) – einheitlicher Aufbau je Kategorie
 - [Fiktiver Mustervergleich](BEISPIEL_DUMMY.md) – ausgefüllte Darstellung zum Prüfen des Formats, **keine reale Produktbewertung**
 
+## Lizenz- und Kostenüberblick (GDI-Kern)
+
+**Grundsatz:** Der vorgesehene GDI-Kern kann gewerblich mit freier Open-Source-Software **ohne zusätzliche Softwarelizenz- oder Nutzergebühren** aufgebaut werden. Die hier genannten Projekte/Editionen sind keine bereits abschließend geprüfte Softwarestückliste. **Open Source bedeutet nicht lizenzfrei:** Lizenz- und Hinweis-/Weitergabepflichten sind für die tatsächlich eingesetzten Versionen und Erweiterungen zu prüfen.
+
+| Schicht / Werkzeug | Lizenz- und Kosteneinordnung | Nachweis / Vertiefung |
+|---|---|---|
+| QGIS Desktop | Freie Software, keine Nutzerlizenzgebühr | [QGIS-Lizenz](https://qgis.org/license/) |
+| PostgreSQL / PostGIS | Freie Datenbank und räumliche Erweiterung, keine Softwarelizenzgebühr | [PostgreSQL-Lizenz](https://www.postgresql.org/about/licence/), [PostGIS-Lizenz](https://postgis.net/documentation/faq/gpl-license/) |
+| QGIS Server (bevorzugt, offen) | Freier GIS-Server, keine Lizenzgebühr | [QGIS](https://qgis.org/download/), [SW-02](02_KARTENSERVER.md) |
+| Lizmap / QWC2 (Kandidaten) | Freie Open-Source-Varianten, keine Lizenzgebühr für diese Editionen | [Lizmap](https://github.com/3liz/lizmap-web-client), [QWC2](https://github.com/qgis/qwc2), [SW-03](03_WEBVIEWER.md) |
+| QField-App (vorhanden) | App kostenlos; gehostete QFieldCloud **separat** und ggf. kostenpflichtig | [QField-Lizenz](https://docs.qfield.org/get-started/license/), [SW-05](05_MOBILER_DATENAUSTAUSCH.md) |
+| Debian (OS-Kandidat) und Git | Freie Standardsoftware ohne Lizenzgebühr; Betrieb/Hosting gesondert | [Debian](https://www.debian.org/intro/why_debian), [Git](https://git-scm.com/about/free-and-open-source), [SW-01](01_SERVERBETRIEBSSYSTEM.md) |
+| Proxmox VE (bestehende/beschlossene Vorzugsinfrastruktur) | Ohne kostenpflichtige Lizenz betreibbar; **Enterprise-Repository/Herstellersupport optional per Subskription** | [Proxmox Einstieg](https://www.proxmox.com/de/produkte/proxmox-virtual-environment/erste-schritte), [Subskriptionen](https://www.proxmox.com/en/products/proxmox-virtual-environment/pricing), [IT-Briefing](../BRIEFING_IT.md#softwarelizenzen-und-optionaler-herstellersupport) |
+| Docker Engine unter Linux (A24 offen) | Open-Source-Engine; **nicht mit Docker Desktop** und dessen ggf. kostenpflichtigen Unternehmenslizenzen verwechseln | [Engine](https://docs.docker.com/engine/), [Desktop-Lizenz](https://docs.docker.com/subscription-billing/desktop-license/) |
+
+**Nicht von „keine zusätzlichen Softwarelizenzgebühren“ erfasst:** einmalige Einrichtung und Migration, interne Arbeitszeit, Schulung/Wissensaufbau, Administration, Infrastruktur-/Backup-Kapazitäten, externe Unterstützung, optionale Supportabos oder Cloudleistungen, proprietäre Zusatzprodukte sowie Nutzungsentgelte und Rechte an Geodaten. Für die wirtschaftliche Gesamtsicht und A39 ist [Umsetzung und Betrieb – Kostenrahmen](../06_UMSETZUNGS_UND_BETRIEBSMODELLE.md#kostenrahmen-und-lizenzabgrenzung) maßgeblich. Vor Pilotfreigabe tatsächliche Versionen, Abhängigkeiten, Lizenztexte, Open-Source-Pflichten und externe Datenrechte prüfen.
+
 ## Kategorien und Reihenfolge
 
 | ID | Kategorie | Bezug | Stand / Auslöser |
