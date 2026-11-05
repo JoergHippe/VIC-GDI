@@ -4,7 +4,7 @@
 
 ## Zielbild
 
-Eine gemeinsame [Geodateninfrastruktur](ANHANG_A_GLOSSAR.md#gdi) soll Geodaten fachbereichsübergreifend nutzbar machen, Mehrfachhaltung reduzieren und [GIS](ANHANG_A_GLOSSAR.md#gis)-Arbeitsabläufe in der VIC zuverlässiger gestalten. Sie ergänzt die bestehenden [CAD](ANHANG_A_GLOSSAR.md#cad)-, [BIM](ANHANG_A_GLOSSAR.md#bim)-, Fachabläufe um eine gemeinsame Geodatenbasis. Die Einführung erfolgt schrittweise mit zwei Pilotbereichen: Baubetreuung und Verkehrsanlagenplanung.
+**GIS-Team und beteiligte Fachkollegen möchten VIC-GDI als unternehmensweite, fachbereichsneutrale [Geodateninfrastruktur](ANHANG_A_GLOSSAR.md#gdi) etablieren.** Sie soll gemeinsame Datenbestände zuverlässiger nutzbar machen, Mehrfachpflege reduzieren und [GIS](ANHANG_A_GLOSSAR.md#gis)-Arbeitsabläufe in der VIC vereinfachen. Die vorhandenen [CAD](ANHANG_A_GLOSSAR.md#cad)-, [BIM](ANHANG_A_GLOSSAR.md#bim)- und Fachsysteme werden ergänzt, nicht ersetzt. **Vorgeschlagen wird eine gestaffelte Einführung**, beginnend in Baubetreuung und Verkehrsanlagenplanung. Für Umsetzung, Ressourcen und Betrieb sind die Entscheidungen von Geschäftsführung und IT noch erforderlich.
 
 ## Warum das Vorhaben wichtig ist
 
@@ -14,7 +14,18 @@ Heute verteilen sich Geodaten und QGIS-Projekte auf unterschiedliche Speicherort
 
 **Zwei praktische Beispiele:** Die **Baubetreuung** kann vor Ort erfasste Leitungsverläufe kontrolliert übernehmen, statt mobile Arbeitsstände ungeprüft mit dem zentralen Bestand gleichzusetzen. In der **Verkehrsanlagenplanung** können mehrere Projekte geeignete gemeinsame Geodaten nutzen, ohne voneinander unabhängige Kopien fortzuschreiben.
 
-Der erwartete Nutzen ist **fachlich** (verlässlichere Datenstände und Herkunft), **organisatorisch** (weniger Mehrfachpflege und Abstimmung) und **technisch** (wiederverwendbare Komponenten, klarere Betriebswege). **Noch nicht nachgewiesen** sind messbare Einsparungen. Die GDI ist nur dann wirtschaftlich sinnvoll, wenn die Piloten reale Verbesserungen zeigen und Aufbau, Qualifizierung sowie Dauerbetrieb in einem angemessenen Verhältnis dazu stehen. Vertiefung: [Projektkonzept](01_PROJEKTKONZEPT.md#warum-wir-vic-gdi-einführen-wollen).
+**Die fachliche Begründung ist klar:** Gemeinsame, verantwortete Geodaten und standardisierte Zugriffswege verbessern die Voraussetzungen für Datenqualität, Zusammenarbeit und Wiederverwendung. Die Geschäftsführung entscheidet nicht darüber, ob diese Grundprinzipien nützlich sind, sondern über den **geeigneten Einführungsweg, Prioritäten, Ressourcen und wirtschaftlich tragfähigen Betrieb**. Belastbare Zahlen zu eingesparter Arbeitszeit oder Geld liegen derzeit nicht vor und werden nicht unterstellt. Vertiefung: [Projektkonzept](01_PROJEKTKONZEPT.md#warum-wir-vic-gdi-einführen-wollen).
+
+## Konkreter Mehrwert für VIC
+
+- **Verlässliche Datengrundlage:** Geeignete Geodaten werden mit klarer Zuständigkeit gemeinsam geführt, statt unabhängig kopiert und unterschiedlich fortgeschrieben.
+- **Effizientere Zusammenarbeit:** Berechtigte Projektteams greifen auf denselben Datenstand zu; unnötige Abstimmungs- und Übergabeschritte können reduziert werden.
+- **Bessere Verfügbarkeit:** Wiederkehrende Datenquellen, Karten und GIS-Ressourcen sind einfacher auffindbar und für weitere Projekte nutzbar.
+- **Zugänglichkeit für mehr Mitarbeitende:** Einfache Webkarten können Informationen auch ohne QGIS-Arbeitsplatz bereitstellen.
+- **Kontrollierte mobile Abläufe:** Erfasste Informationen werden nachvollziehbar geprüft und übernommen; problematische synchronisierte GIS-Arbeitsablagen können ersetzt werden.
+- **Zukunftsfähige Organisation:** Offene Schnittstellen, zentrale Ressourcen und dokumentierte Betriebswege erleichtern die Weiterentwicklung und mindern Abhängigkeiten von Einzelpersonen.
+
+**Wichtig:** Das sind nachvollziehbare Ziele und strukturelle Vorteile der GDI, **keine bereits gemessenen Einsparbeträge**. Die Pilotbereiche setzen erste Verbesserungen um und liefern Erfahrungen zur Optimierung des weiteren Ausbaus.
 
 ## Aktueller Beschlussbedarf: Vorbereitung von A39
 
@@ -32,25 +43,14 @@ Der erwartete Nutzen ist **fachlich** (verlässlichere Datenstände und Herkunft
 
 Softwarelizenzen und Quellen: [Softwareübersicht](software/README.md#lizenz--und-kostenüberblick-gdi-kern). Einmalige und laufende Kosten: [Kostenrahmen der A39-Entscheidungsgrundlage](06_UMSETZUNGS_UND_BETRIEBSMODELLE.md#kostenrahmen-und-lizenzabgrenzung).
 
-## Erwarteter Nutzen – noch zu validieren
+## Erste Einführungsschritte und konkrete Ergebnisse
 
-- Weniger redundante, widersprüchliche Geodatenstände.
-- Verlässlicher Zugriff auf gemeinsame Projekt- und Fachdaten.
-- Einfachere Karteninformationen auch für gelegentliche Anwender.
-- Bessere Wiederverwendbarkeit von GIS-Diensten, Datenmodellen und Vorlagen.
-- Weniger Probleme durch ungeeignete synchronisierte GIS-Arbeitsverzeichnisse.
-- Verbesserte Nachvollziehbarkeit und geringere technische Abhängigkeiten von Einzelpersonen.
-
-Dies sind **Zielwirkungen**, keine bereits gemessenen Einsparungen.
-
-## Pilotvorschläge und Erfolgskriterien
-
-| Pilot | Möglicher erster Ablauf | Späterer Nachweis |
+| Pilotbereich | Möglicher erster Einführungsablauf | Überprüfbares Umsetzungsergebnis |
 |---|---|---|
 | Baubetreuung | Bei der [Bestandsdokumentation (BB-01)](05_PILOTKONKRETISIERUNG.md#bb-01) einen vor Ort erfassten Leitungsverlauf prüfen und in einen führenden Bestand übernehmen. | Freigegebener Stand, Herkunft und Prüfstatus sind nachvollziehbar. Übergabeschritte und aufgetretene Datenkonflikte werden erfasst. |
 | Verkehrsanlagenplanung | Einen wiederkehrenden Geodatenbestand aus zwei Planungsprojekten nutzen. | Beide Projekte finden den freigegebenen Stand mit den vorgesehenen Rechten. Suchaufwand und Zahl zusätzlicher Arbeitskopien werden mit dem heutigen Ablauf verglichen. |
 
-Die Fachbereiche priorisieren je Pilot einen ersten Ablauf und legen vor der Umsetzung Ausgangswerte und Abnahmekriterien fest. Beide Piloten können zeitlich gestaffelt werden. Details und Status der Anwendungsfälle stehen in der [Pilotkonkretisierung](05_PILOTKONKRETISIERUNG.md).
+Die Fachbereiche priorisieren je Pilot einen ersten Ablauf und definieren vor der Umsetzung nachvollziehbare Abnahmekriterien. Wo Aufwand oder Zeitgewinn beziffert werden sollen, werden geeignete Ausgangswerte erfasst. Beide Pilotbereiche können zeitlich gestaffelt eingeführt werden. Details und Status der Anwendungsfälle stehen in der [Pilotkonkretisierung](05_PILOTKONKRETISIERUNG.md).
 
 ## Investitions- und Ressourcenfelder
 
