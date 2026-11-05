@@ -4,9 +4,9 @@
 
 ## Wozu VIC-GDI?
 
-VIC-GDI ist die geplante unternehmensweite, fachbereichsneutrale [Geodateninfrastruktur](docs/ANHANG_A_GLOSSAR.md#gdi) für die Infrastrukturplanung. Heute liegen Geodaten und QGIS-Arbeitsbestände an unterschiedlichen Orten; geeignete gemeinsame Daten werden teils mehrfach geführt, und Aktualität, fachliche Zuständigkeit und Weitergabe können zusätzliche Abstimmung erfordern. Die GDI soll **verlässliche führende Datenbestände, geregelte Zugriffe und gemeinsame Nutzung** ermöglichen – durch QGIS am Facharbeitsplatz, bei Bedarf über einfache Webkarten und in geeigneten mobilen Abläufen. Sie ergänzt vorhandene CAD-, BIM- und Fachsysteme, statt sie zu ersetzen.
+VIC-GDI ist die geplante unternehmensweite, fachbereichsneutrale [Geodateninfrastruktur](docs/ANHANG_A_GLOSSAR.md#gdi) für die VIC. Heute liegen Geodaten und QGIS-Projekte an unterschiedlichen Orten; geeignete gemeinsame Daten werden teils mehrfach geführt, und Aktualität, fachliche Zuständigkeit und Weitergabe können zusätzliche Abstimmung erfordern. Die GDI soll **verlässliche führende Datenbestände, geregelte Zugriffe und gemeinsame Nutzung** ermöglichen – durch QGIS am Arbeitsplatz, bei Bedarf über einfache Webkarten im Browser und in geeigneten mobilen Abläufen. Sie ergänzt vorhandene CAD-, BIM- und Fachsysteme, statt sie zu ersetzen.
 
-**Konkrete Beispiele:** Die Baubetreuung prüft mobil erfasste Leitungsverläufe vor einer Übernahme; die Verkehrsanlagenplanung soll geeignete freigegebene Geodaten projektübergreifend verwenden. Das sind **Ziele für die Piloten**, keine bereits nachgewiesenen Einsparungen. [Ausführliche Ausgangslage, Praxisbeispiele, Nutzen und Grenzen](docs/01_PROJEKTKONZEPT.md#warum-wir-vic-gdi-einführen-wollen).
+**Konkrete Beispiele:** Die Baubetreuung prüft mobil erfasste Leitungsverläufe, oder ermittelt Mengen; die Verkehrsanlagenplanung soll geeignete Geodaten projektübergreifend verwenden. Das sind **Ziele für die Piloten**, keine bereits nachgewiesenen Einsparungen. [Ausführliche Ausgangslage, Praxisbeispiele, Nutzen und Grenzen](docs/01_PROJEKTKONZEPT.md#warum-wir-vic-gdi-einführen-wollen).
 
 ## Was aktuell geklärt werden muss: A39
 
@@ -18,7 +18,7 @@ VIC-GDI ist die geplante unternehmensweite, fachbereichsneutrale [Geodateninfras
 | **IT** | [IT-Briefing](docs/BRIEFING_IT.md): Welche Infrastruktur, Kompetenzen, Sicherheits- und Betriebsverantwortung sind tragfähig? |
 | **GF + IT + GIS-Team** | [A39-Modellvergleich](docs/06_UMSETZUNGS_UND_BETRIEBSMODELLE.md): Wer setzt um, wie sichern wir Wissen, wer betreibt dauerhaft? |
 
-**Kostenprinzip:** Der geplante GDI-Kern verwendet **freie Open-Source-Software ohne zusätzliche Softwarelizenzgebühren**. Auch Proxmox VE ist ohne zwingende kostenpflichtige Subskription nutzbar. Das macht **Aufbau, Arbeitszeit, Schulungen, Betrieb, Infrastruktur und optionale externe Dienste nicht kostenlos**. [Komponenten und Lizenzquellen](docs/software/README.md#lizenz--und-kostenüberblick-gdi-kern) · [wirtschaftlicher Gesamtrahmen](docs/06_UMSETZUNGS_UND_BETRIEBSMODELLE.md#kostenrahmen-und-lizenzabgrenzung).
+**Kostenprinzip:** Der geplante GDI-Kern verwendet **freie Open-Source-Software ohne zusätzliche Softwarelizenzgebühren**. Auch Proxmox VE als Betriebssystemebene ist ohne zwingende kostenpflichtige Subskription nutzbar. Das macht **Aufbau, Arbeitszeit, Schulungen, Betrieb, Infrastruktur und optionale externe Dienste nicht kostenlos**. [Komponenten und Lizenzquellen](docs/software/README.md#lizenz--und-kostenüberblick-gdi-kern) · [wirtschaftlicher Gesamtrahmen](docs/06_UMSETZUNGS_UND_BETRIEBSMODELLE.md#kostenrahmen-und-lizenzabgrenzung).
 
 ## Fachliches und technisches Konzept (gezielt vertiefen)
 
