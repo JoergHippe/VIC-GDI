@@ -48,7 +48,7 @@ Aktuell laufen die Planung und Abstimmung der **fachlich gewünschten GDI-Einfü
 - Problematische synchronisierte SharePoint-/OneDrive-GIS-Arbeitsdatenhaltung in der Baubetreuung identifizieren.
 - Konkrete Pilot-Use-Cases und Minimalerfolgskriterien festlegen.
 - Wissens- und Schulungsbedarf samt Kapazitäten einplanen ([A33](04_ENTSCHEIDUNGEN.md#a33)).
-- [Modelle für Umsetzung, Qualifizierung und dauerhaften Betrieb](06_UMSETZUNGS_UND_BETRIEBSMODELLE.md) (intern/gemeinsam/extern, D1–D3) anhand interner Kompetenzen und Ressourcen mit GIS/IT bewerten; **C3/GDIaaS als eigene Service-/Hostingoption einbeziehen**; **Entscheidung [A39](04_ENTSCHEIDUNGEN.md#a39) durch GF und IT offen**, vor produktivem Pilotbetrieb verbindlich klären.
+- [Umsetzung, Qualifizierung, Betrieb und Hosting-/Bezugsmodelle H1–H4](06_UMSETZUNGS_UND_BETRIEBSMODELLE.md) anhand interner Kompetenzen, **bestehender Proxmox-Kapazitäten**, Miet-/Managed-Hosting-Angeboten und ggf. geeigneten GDIaaS-Angeboten mit GIS/IT bewerten; **[A39](04_ENTSCHEIDUNGEN.md#a39) bleibt offen** und ist vor produktivem Pilotbetrieb mit GF/IT verbindlich zu klären.
 
 ### 1 – Gemeinsame technische Basis
 - [PostGIS](ANHANG_A_GLOSSAR.md#postgis) und QGIS-Desktop-Anbindung; geeignete gemeinsame Datenmodelle.

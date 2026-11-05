@@ -110,6 +110,12 @@ Organisierte Daten, Dienste, Standards und Zuständigkeiten für Geodatennutzung
 
 Weiterführend · [Wikipedia](https://de.wikipedia.org/wiki/Geodateninfrastruktur)
 
+<a id="gdiaas"></a>
+
+## GDIaaS (GDI as a Service)
+
+Beim Anbieter gehostete und betriebene Geodateninfrastruktur als Dienstleistung. Der gebuchte Funktionsumfang und die Administrations-/Datenzugriffsmöglichkeiten sind vertraglich festgelegt. VIC-GDI führt dieses Bezugsmodell unter **H4** ([A39](04_ENTSCHEIDUNGEN.md#a39)); nicht mit einer selbst betriebenen GDI auf gemieteten Servern (**H2**) verwechseln.
+
 <a id="geodaten"></a>
 
 ## Geodaten
@@ -203,6 +209,12 @@ Weiterführend · [Produktseite](https://happy-q.com/)
 Dienst zur Authentifizierung und Bereitstellung von Identitätsinformationen. Er bestätigt einer Anwendung die Identität einer Person. Die Anwendung oder der jeweilige Dienst entscheidet anhand seiner Berechtigungsregeln, welche Daten sie nutzen darf.
 
 Weiterführend · [Wikipedia](https://de.wikipedia.org/wiki/Identitätsanbieter)
+
+<a id="iaas"></a>
+
+## IaaS (Infrastructure as a Service)
+
+Gemietete IT-Infrastruktur wie virtuelle Maschinen, Speicher und Netzkomponenten. Der Hoster verwaltet die vertraglich vereinbarte Infrastruktur; Betriebssystem, Datenbanken und GIS-Anwendungen liegen bei unverwalteten Angeboten weiterhin in der Verantwortung des Kunden bzw. seiner beauftragten Dienstleister. Bei VIC-GDI entspricht dies vor allem **H2** ([A39](04_ENTSCHEIDUNGEN.md#a39)). Siehe [Shared Responsibility bei IaaS](https://aws.amazon.com/de/compliance/shared-responsibility-model/).
 
 <a id="itsm"></a>
 

@@ -18,7 +18,7 @@ Die [Architekturübersicht](03_ARCHITEKTUR.md#architekturübersicht-logisches-zi
 |---|---|
 | Welche internen Zuständigkeiten, Vertretungen und real verfügbaren Personentage gibt es? | Zuständigkeitsmatrix und konkrete Administrationsverfahren |
 | Welche Linux-, PostgreSQL-, GIS-Dienst-, Sicherheits- und Restore-Kompetenzen sind vorhanden? | Gezielt nötige Qualifizierung, externe Beratung oder Co-Implementation |
-| Welche bestehende Infrastruktur, Zugänge, Backups und Sicherheitsstandards können für den ersten Ausbauschritt genutzt werden und wo braucht es Ergänzungen? | Dimensionierung, gezielte technische Tests und ggf. zusätzliche Ressourcen |
+| Welche vorhandenen Ressourcen eignen sich für H1, welche gemieteten oder betreuten Hostingangebote H2/H3 beziehungsweise Plattformangebote H4 sind ggf. sinnvoll? | Dimensionierung, Netzanbindung, Betriebspflichten, Datensicherheit und Kosten auf gleichem Maßstab vergleichen |
 | Welches Umsetzungs-/Wissens-/Betriebsmodell erscheint tragfähig ([A39](04_ENTSCHEIDUNGEN.md#a39))? | Vergleich von 2–3 realistischen Varianten mit Kosten und Übergabe |
 | Welche Pilotanforderungen müssen vor einer konkreten IT-Zusage noch erhoben werden? | Technische Komponenten- und Deploymententscheidung [A24](04_ENTSCHEIDUNGEN.md#a24) |
 
@@ -36,7 +36,7 @@ Der vorgesehene GDI-Kern (QGIS, PostgreSQL/PostGIS, bevorzugt QGIS Server und fr
 
 | Bereich | Was IT bereitstellen oder verbindlich klären soll |
 |---|---|
-| Hosting und Speicher | Verwaltete Serverumgebung mit getrennten TEST-/PROD-Umgebungen, persistentem Speicher und freigegebenen Dateiablagen. **IT prüft vorhandene Kapazitätsreserven und entscheidet, ob eine Aufstockung von Speicherplatz, RAM, CPU-Leistung, Backup-Speicher oder ggf. Serverhardware notwendig ist.** Dimensionierung anhand von Datenvolumen, Wachstum, gleichzeitigen Nutzern, Kartenlast und Sicherungsbedarf ableiten. Etwaigen Mehrbedarf und Kosten erst nach dieser Prüfung ausweisen. |
+| Hosting und Speicher | Für **H1–H4** je nach Angebotsumfang getrennte TEST-/PROD-Bereiche, persistente Datenhaltung, Backup/Restore und freigegebene Zugriffswege sicherstellen. **IT prüft für H1 vorhandene Kapazitäten und eventuelle Hardwareergänzungen, für H2/H3 geeignete Mietressourcen und Betriebsgrenzen, für H4 die gebuchten Serviceleistungen.** Dimensionierung nach Datenvolumen, Wachstum, gleichzeitigen Nutzern, Kartenlast, Netz-/Transferlast und Sicherungsbedarf; Kosten erst auf dieser Grundlage ausweisen. |
 | Datenbank | Betreibbare [PostgreSQL](ANHANG_A_GLOSSAR.md#postgresql)-Instanz mit [PostGIS](ANHANG_A_GLOSSAR.md#postgis) für geeignete gemeinsam genutzte Geodaten. Rollen, Verbindungsschutz, Updates und Sicherung mit GIS abstimmen. |
 | Kartendienste | Wenn Webkarten im Pilotumfang liegen, internen HTTPS-Endpunkt und den Betrieb eines Kartendiensts einplanen. [QGIS Server](ANHANG_A_GLOSSAR.md#qgis-server) ist der bevorzugte Kandidat und stellt Karten aus freigegebenen Webprojekten bereit. QGIS Desktop greift je nach Quelle direkt auf Datenbank, Dateien oder Dienste zu. |
 | Netz und Zugang | Interne Namensauflösung, Zertifikate, Firewallregeln und Zugriff vom Arbeitsplatz bzw. über [VPN](ANHANG_A_GLOSSAR.md#vpn) klären. Datenbankzugriff auf erforderliche Clients und Dienste begrenzen. |
@@ -64,7 +64,7 @@ Für kritische Aufgaben federführende Person und Vertretung festlegen; kein eig
 
 ## Umsetzung, Qualifizierung und spätere Betreuung – IT-Prüfauftrag
 
-Die **Personen und Organisationen, die den Aufbau ausführen**, sind noch nicht festgelegt ([A39](04_ENTSCHEIDUNGEN.md#a39)). Der [gesonderte Variantenvergleich](06_UMSETZUNGS_UND_BETRIEBSMODELLE.md) hält **A1–A3** (eigener Aufbau), **B1** (Co-Implementation), **C1/C2** (externe Umsetzung, ggf. mit Betrieb) und **C3/GDIaaS** (gehostete und extern betriebene GDI-Plattform) sowie die unabhängig zu wählenden Betriebsmodelle **D1** (intern), **D2** (intern mit externem Spezialistensupport) und **D3** (überwiegend extern) offen. Fachlich erscheint A3/B1 + D2 prüfenswert, **ohne IT-Bewertung oder GF-Entscheidung vorwegzunehmen**.
+Die **Personen und Organisationen, die den Aufbau ausführen**, sind noch nicht festgelegt ([A39](04_ENTSCHEIDUNGEN.md#a39)). Der [gesonderte Variantenvergleich](06_UMSETZUNGS_UND_BETRIEBSMODELLE.md) hält **Umsetzung A1–A3/B1/C1–C2**, **Wissensaufbau**, **Betrieb D1–D3** und die eigenständige **Hosting-/Bezugsdimension H1 (On-prem), H2 (gemietete Infrastruktur, eigene GDI), H3 (Managed Hosting) und H4 (GDIaaS, vormals C3)** offen. H2/H3 legen die Verantwortlichkeiten für die GIS-Dienste nicht automatisch fest; D1–D3 sind zusätzlich nach tatsächlichem Leistungsumfang zuzuweisen. Fachlich erscheint A3/B1 + D2 prüfenswert, **ohne IT-Bewertung oder GF-Entscheidung vorwegzunehmen**.
 
 **IT soll dazu insbesondere klären:**
 
@@ -72,11 +72,11 @@ Die **Personen und Organisationen, die den Aufbau ausführen**, sind noch nicht 
 - Welche Aufgaben **intern durchführbar**, durch Schulung/Beratung erreichbar oder sinnvoll **gemeinsam bzw. extern umzusetzen** sind. Selbststudium und Schulungen als echte Zeit-/Kostenposition behandeln ([A33](04_ENTSCHEIDUNGEN.md#a33)).
 - Wer bei jedem Modell den **dauerhaften Betrieb**, 2nd-Level-Support, Eskalation, Migration und Pflege der Konfigurationen übernimmt ([A31](04_ENTSCHEIDUNGEN.md#a31)); auch bei D3 bleiben interne Ansprechpartner und Kontrollfähigkeit nötig.
 - Bei Fremdleistungen **Dokumentation, Nutzungs-/Änderungsrechte, Übergabe, reale Restore-/Update-Probe, externe Zugriffsrechte sowie Exit-/Anbieterwechsel** und ggf. Serviceumfang vertraglich absichern.
-- Gemeinsam mit GIS 2–3 realistische Kombinationen vergleichen, **GDIaaS (C3) als Servicealternative separat auf Eignung prüfen** und **GF/IT zur Auswahl vorlegen**. Keine vorgezogene Beauftragung oder Festlegung eines Betriebsmodells.
+- Gemeinsam mit GIS **2–3 realistische U/W/D/H-Kombinationen** vergleichen: H1 mit bestehenden Proxmox-Ressourcen, **H2 mit selbst betriebener GDI auf gemieteten Servern**, H3 mit geklärtem Managed-Umfang sowie H4/GDIaaS als Plattformservice. Bei Bedarf vorab Eignungs-/Marktcheck; **GF/IT zur Auswahl vorlegen**. Keine vorgezogene Beauftragung oder Festlegung.
 
 ## Technische Rahmenbedingungen
 
-- Bevorzugt On-prem auf vorhandener Proxmox-Infrastruktur, Linux/[Debian](ANHANG_A_GLOSSAR.md#debian) als naheliegende Option; keine endgültige VM-/Containerentscheidung ([A23](04_ENTSCHEIDUNGEN.md#a23), [A24](04_ENTSCHEIDUNGEN.md#a24)). **GDIaaS/C3 wird als ergänzende externe Hosting-/Servicealternative verglichen**, ohne die bisherige On-prem-Präferenz vorweg zu ändern.
+- **[A23](04_ENTSCHEIDUNGEN.md#a23):** On-prem auf vorhandener Proxmox-Infrastruktur (H1) bleibt bevorzugter Ausgangspunkt; **H2–H4 sind ergänzende Alternativen** ohne Vorentscheidung. Linux/[Debian](ANHANG_A_GLOSSAR.md#debian) bleibt naheliegende Option. **[A24](04_ENTSCHEIDUNGEN.md#a24):** native, gemischte oder containerisierte Dienste unabhängig vom H1–H3-Hosting bewerten; bei H4 betreibt der Plattformanbieter die gebuchten Schichten.
 - Zentrale PostgreSQL/PostGIS-Datenhaltung mit fachlichen Schemas ([A02](04_ENTSCHEIDUNGEN.md#a02)).
 - QGIS Server bevorzugt, technische Validierung erforderlich ([A10](04_ENTSCHEIDUNGEN.md#a10)).
 - [Git](ANHANG_A_GLOSSAR.md#git) für Konfigurationen, Skripte, [QML](ANHANG_A_GLOSSAR.md#qml), Vorlagen und Migrationen, nicht für produktive Geodaten oder Backups ([A30](04_ENTSCHEIDUNGEN.md#a30)).
@@ -99,14 +99,15 @@ VM und [Docker](ANHANG_A_GLOSSAR.md#docker) liegen auf unterschiedlichen Ebenen.
 
 **Bewertungskriterien:** IT-Kompetenz, Sicherheitsvorgaben, Wartbarkeit, Updatefähigkeit, Backup/Restore, Debugging, Ressourceneinsatz, langfristige Zukunftsfähigkeit. Keine Container-Orchestrierung ohne Bedarf. Mit IT die dauerhaft betreibbaren Varianten eingrenzen. Verbleibende Machbarkeitsfragen bei Bedarf nach gesonderter Freigabe mit einem kleinen [PoC](ANHANG_A_GLOSSAR.md#poc) klären.
 
-### GDI as a Service (C3) – ergänzender IT-Prüfrahmen
+### Hosting und Bezugsform H1–H4 – ergänzender IT-Prüfrahmen
 
-- **Funktionsumfang:** Handelt es sich um eine vollwertige Daten- und Dienstplattform oder nur einen Webkarten-Viewer? QGIS-Desktop-Workflows, PostGIS-/Datenzugang, WMS/WFS und benötigte OGC-APIs, QGIS-Projekte, Fachschemata, ggf. QField-Anbindung und Geodatenexport überprüfen.
-- **Integration:** Unternehmensidentitäten (AD/Entra/SSO), Daten- und Exportrechte, Zugriffe registrierter Geräte über freigegebene Netze/VPN bzw. private Endpunkte, Anbindung lokaler CAD-/Fileserverdaten klären.
-- **Betrieb und Datenschutz:** Standort/Unterauftragnehmer, Verschlüsselung, Backups und getesteter Restore, Verfügbarkeit/Support, Servicegrenzen und datenschutzrechtliche Vereinbarungen prüfen.
-- **Portabilität und Kosten:** vollständige Daten-/Schema-/QGIS-Projekt-/Stil-/Metadaten-Exporte, Rückmigration, Löschung und nutzungsabhängige Entgelte prüfen. OGC-Schnittstellen ersetzen keine vollständige Exit-Strategie.
+- **H1 (eigene Infrastruktur):** Tatsächlich vorhandene Proxmox-Kapazitäten, Backup-Ressourcen, Standortsicherheit und Betriebspersonal erfassen; keine zusätzlichen Hardwarekosten unterstellen.
+- **H2 (gemietete Server, eigene GDI):** Virtual-/Root-Server passend dimensionieren; **Gastbetriebssystem, Datenbank, GIS-Dienste, Updates, Security, Monitoring, PostgreSQL-konsistente Backups und Restore** sind weiterhin durch VIC/Partner zu organisieren. VPN/Netzkopplung, QGIS-Desktop-Performance, CAD-/Rasterdatenzugriff, Transferkosten und Recovery prüfen. [IaaS-Verantwortungsmodell](https://aws.amazon.com/de/compliance/shared-responsibility-model/) als Referenz.
+- **H3 (Managed Hosting):** Verträge auf **tatsächlich betreute Schichten** prüfen: nur OS? auch PostgreSQL, QGIS Server, Security-Patching, Backup/Restore und Notfallreaktion? Die beim Unternehmen verbleibende Verantwortung nach D-Modell festhalten.
+- **H4 (GDIaaS):** Handelt es sich um eine vollständige Daten-/Dienstplattform oder bloß einen Webviewer? QGIS Desktop, PostGIS-/Datenzugang, WMS/WFS/OGC-APIs, Fachmodelle, QGIS-Projekte, ggf. QField und Exportabläufe prüfen.
+- **Für alle externen Bezugsformen:** Sichere Anbindung registrierter Geräte über freigegebene Netze/VPN/private Endpunkte; AD/Entra/SSO, differenzierte Daten- und Exportrechte, Datenstandort/Unterauftragnehmer, Verschlüsselung, dokumentierte Wiederherstellung, Nachvollziehbarkeit, Daten-/Projekt-/Schema-/Stil-Export und Rückmigration. Lizenz- und Vertraulichkeitsbedingungen für lokale Fachdaten beachten.
 
-**Abgrenzung:** Externe Administration von VIC-Servern ist eher C2/D3, eine vom Anbieter gehostete und betriebene GDI-Plattform C3/D3. Fachliche Datenhoheit und vertragliche Steuerung bleiben intern. Siehe [A39-Vergleich](06_UMSETZUNGS_UND_BETRIEBSMODELLE.md).
+**Abgrenzung:** **H2/H3 sind eigene GDI-Architektur auf angemieteter Infrastruktur**, H4 eine Anbieterplattform als Dienst. Die **D1–D3-Betriebszuständigkeit** wird je tatsächlich betriebener Schicht zugewiesen; der H4-Anbieter verantwortet seine gebuchte Plattform. On-prem-Präferenz [A23](04_ENTSCHEIDUNGEN.md#a23) und offene Deploymentwahl [A24](04_ENTSCHEIDUNGEN.md#a24) bleiben erhalten. [A39-Vergleich](06_UMSETZUNGS_UND_BETRIEBSMODELLE.md).
 
 ## Noch abzustimmen
 

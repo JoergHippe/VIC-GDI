@@ -46,7 +46,7 @@
 | <a id="a36"></a>A36 | Migration | B | **B+**: verbindliche Zielarchitektur, selektive Migration, problematische SharePoint-/OneDrive-GIS-Arbeitsbestände ablösen · [überprüfungsbedürftig](#erneute-prüfung-a04-a15-und-a36) |
 | <a id="a37"></a>A37 | Datenlebenszyklus | Z | Option B plausibel, aber nicht beschlossen; später klären |
 | <a id="a38"></a>A38 | Datenbankregeln | Z | Option B plausibel, aber nicht beschlossen; später klären |
-| <a id="a39"></a>A39 | Umsetzungs-, Qualifizierungs- und Betriebsmodell | O | [A1–A3, B1, C1–C3 (C3 = GDI as a Service) und D1–D3](06_UMSETZUNGS_UND_BETRIEBSMODELLE.md) sind Prüfoptionen; **GF und IT** entscheiden auf Grundlage von GIS-/IT-Bedarf, Kapazitäten und Kosten; keine Variante beschlossen |
+| <a id="a39"></a>A39 | Umsetzungs-, Qualifizierungs-, Betriebs- und Hostingmodell | O | Vier getrennte Entscheidungsdimensionen: [Umsetzung A1–A3/B1/C1–C2, Wissensaufbau, Betrieb D1–D3 und Hosting/Bezug H1–H4](06_UMSETZUNGS_UND_BETRIEBSMODELLE.md). **H2: gemietete Infrastruktur mit eigener GDI**, H3: betreute Mietinfrastruktur, H4: GDIaaS (vormals C3). **GF und IT** entscheiden anhand von Bedarf, Ressourcen, Sicherheit und Kosten; keine Variante beschlossen. |
 
 ## Erneute Prüfung [A04](#a04), [A15](#a15) und [A36](#a36)
 
@@ -102,7 +102,7 @@ Gemeinsam bearbeitete geeignete Vektordaten bevorzugt PostGIS, QGIS-Projekte und
 
 ### [A39](#a39) – Organisationsmodell (offen)
 
-Die [Modelle für Umsetzung, Wissensaufbau, Betrieb und GDI as a Service (C3)](06_UMSETZUNGS_UND_BETRIEBSMODELLE.md) sind vollständig als **Optionen**, nicht als ausgewählte Lösung dokumentiert. **C2** kann externen Betrieb auf VIC-eigener Infrastruktur bedeuten, **C3** eine vom Anbieter gehostete und betriebene GDI-Plattform. Das On-prem-Vorzugsziel [A23](#a23) und die offene technische Bereitstellung [A24](#a24) bleiben unberührt; die Prüfung von C3 ist keine Änderung dieser Beschlüsse. Die Auswahl von Aufbau- und Betriebsorganisation ist eine spätere Entscheidung durch **Geschäftsführung und IT** in ihren Zuständigkeiten; GIS-Team und Fachbereiche liefern die fachliche Bewertung. Die bestehende Rollenverteilung nach [A31](#a31) und der Grundsatz des Wissensaufbaus nach [A33](#a33) bleiben unverändert.
+Die [Modelle für Umsetzung, Wissensaufbau, Betrieb und Hosting](06_UMSETZUNGS_UND_BETRIEBSMODELLE.md) sind **Prüfoptionen**, nicht die ausgewählte Lösung. **Fortschreibung vom 05.11.2026:** Die zuvor als **C3/GDIaaS** geführte Serviceoption wird systematisch als **H4** in die neue eigenständige Hosting-/Bezugsdimension **H1–H4** überführt. **Neu ausdrücklich berücksichtigt sind H2: selbst aufgebaute GDI auf gemieteten Cloud-VMs/Root-Servern sowie H3: betreute Mietinfrastruktur.** C2 bleibt das Paket aus externer Umsetzung und längerfristiger Betriebsleistung, unabhängig vom Hostingort. H3 garantiert nur vertraglich vereinbarte Managed-Services; die übrige Betriebszuständigkeit ist nach D1–D3 abzugrenzen. **[A23](#a23) behält die On-prem-Präferenz**, [A24](#a24) die offene technische Deploymententscheidung; die Variantenprüfung ändert keinen dieser Beschlüsse. Die Auswahl von Aufbau- und Betriebsorganisation ist eine spätere Entscheidung durch **Geschäftsführung und IT** in ihren Zuständigkeiten; GIS-Team und Fachbereiche liefern die fachliche Bewertung. Die bestehende Rollenverteilung nach [A31](#a31) und der Grundsatz des Wissensaufbaus nach [A33](#a33) bleiben unverändert.
 
 ## Änderungsdisziplin
 
