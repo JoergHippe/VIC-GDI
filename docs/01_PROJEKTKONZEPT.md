@@ -76,6 +76,17 @@ Diese Pilotbereiche bilden die ersten **praktischen Einführungsschritte**. Sie 
 - Kein umfassendes formales Qualitätsmanagement für amtliche Geobasisdaten.
 - Kein umfangreiches [ITSM](ANHANG_A_GLOSSAR.md#itsm)-, [CI/CD](ANHANG_A_GLOSSAR.md#ci-cd)- oder [HA](ANHANG_A_GLOSSAR.md#ha)-System ohne nachgewiesenen Bedarf.
 
-## Prinzipien
+## Projektgrundsätze
 
-Bedarf vor Technik; Datenhoheit; nachvollziehbare Änderungen; Standard vor Sonderlösung; schrittweise Einführung; zentrale Bereitstellung ohne unnötige Kopien. Verbindliche Details siehe [Entscheidungen](04_ENTSCHEIDUNGEN.md), technische Umsetzung siehe [Architektur](03_ARCHITEKTUR.md).
+Die folgenden **übergeordneten Leitplanken** bündeln die im [Festlegungs- und Entscheidungsregister](04_ENTSCHEIDUNGEN.md) dokumentierten Vorgaben. Sie sind kein zweiter Beschlusskatalog: **Status, konkrete Festlegungen und noch offene Ausgestaltungen werden ausschließlich dort geführt.**
+
+1. **Fachbereichsneutralität:** Eine gemeinsame, schrittweise erweiterbare GDI für mehrere Fachbereiche; Baubetreuung und Verkehrsanlagenplanung bilden die ersten beiden Piloten ([A01](04_ENTSCHEIDUNGEN.md#a01), [A34](04_ENTSCHEIDUNGEN.md#a34)).
+2. **Gemeinsame PostGIS-Basis:** PostgreSQL/PostGIS ist die gesetzte zentrale Geodatenbasis für geeignete gemeinsam genutzte Bestände. Eine gemeinsame Datenbank mit fachlichen Schemas konkretisiert die Architektur; kein Zwang, alle Dateien oder Datenarten dorthin zu verlagern ([A02](04_ENTSCHEIDUNGEN.md#a02)).
+3. **Datenhoheit statt Dubletten:** Führende fachliche Verantwortung und gemeinsame Projektidentität; gemeinsame Nutzung nur mit wirksamen, zuständigkeitsabhängigen Rechten ([A08](04_ENTSCHEIDUNGEN.md#a08), [A09](04_ENTSCHEIDUNGEN.md#a09)).
+4. **Klare fachliche Abgrenzung:** Schlanke Projektstammdaten und Geodatenbereitstellung statt eigenem Projektmanagement- oder universellen Fachinformationssystem ([A07](04_ENTSCHEIDUNGEN.md#a07)).
+5. **Standard vor Eigenentwicklung:** Etablierte freie GIS-Werkzeuge und vorhandene Funktionen bevorzugen; zusätzliche Dienste und Automatisierung nur bei bestätigtem Bedarf ([A11](04_ENTSCHEIDUNGEN.md#a11), [A13](04_ENTSCHEIDUNGEN.md#a13), [A14](04_ENTSCHEIDUNGEN.md#a14)).
+6. **Sicherheit und Nachvollziehbarkeit:** Rechte an jedem tatsächlich genutzten Datenzugriff durchsetzen, kontrollierte Änderungen und geeignete Versionierung; technische Details mit IT klären ([A09](04_ENTSCHEIDUNGEN.md#a09), [A26](04_ENTSCHEIDUNGEN.md#a26), [A30](04_ENTSCHEIDUNGEN.md#a30)).
+7. **Bedarfsgerechte Einführung:** Gemeinsam nutzbare Grundfunktionen und fachliche Pilotumfänge unterscheiden; kontrollierte selektive Migration statt pauschaler Ablösung bestehender Fachsysteme ([A34](04_ENTSCHEIDUNGEN.md#a34)–[A36](04_ENTSCHEIDUNGEN.md#a36)).
+8. **Dauerhafte Handlungsfähigkeit:** Rollenbezogenen Wissensaufbau einschließlich realer Ressourcen planen; Betrieb und Verantwortlichkeiten mit IT und Geschäftsführung tragfähig klären ([A31](04_ENTSCHEIDUNGEN.md#a31)–[A33](04_ENTSCHEIDUNGEN.md#a33), [A39](04_ENTSCHEIDUNGEN.md#a39)).
+
+**Gültigkeitsgrenze:** Projektgrundsätze und fachliche Festlegungen sind nicht mit einer bereits erfolgten Umsetzungs-, Budget- oder IT-Betriebsfreigabe gleichzusetzen. [Technisches Zielbild](03_ARCHITEKTUR.md), [offene Fragen](08_OFFENE_PUNKTE.md).
