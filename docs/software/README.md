@@ -2,7 +2,7 @@
 
 **Status:** Bewertungsgerüst, 04.11.2026. **Keine neue Produktauswahl beschlossen.**
 
-Hier werden **noch zu klärende Softwarekomponenten bzw. unmittelbar damit verbundene Lösungswege** systematisch verglichen. Jede Kategorie erhält eine eigene Datei mit denselben Abschnitten, Bewertungsmaßstäben, Quellenangaben und klarer Empfehlung bzw. offenem Prüfbedarf.
+Hier werden **offene Softwarekomponenten und Lösungswege** mit einheitlichen Muss-Kriterien und Quellen geführt. Solange noch keine belastbare Produktauswahl ansteht, genügt eine **Kandidaten- und Prüfbedarfsübersicht**; leere Punktetabellen werden nicht vorgehalten. Die vollständige Matrix kommt bei einer konkreten Auswahl nach der Methodik hinzu.
 
 - [Bewertungsmethodik](BEWERTUNGSMETHODIK.md) – verbindliche Kriterien, Skala, Evidenz und Entscheidungsweg
 - [Dokumentvorlage](VORLAGE.md) – einheitlicher Aufbau je Kategorie
@@ -42,8 +42,8 @@ Hier werden **noch zu klärende Softwarekomponenten bzw. unmittelbar damit verbu
 
 1. Konkrete Pilotanforderungen und Muss-Kriterien mit GIS/Fachbereich/IT bestätigen.
 2. Maximal zwei bis vier ernsthaft relevante Kandidaten einschließlich **„keine zusätzliche Software“**, wo sinnvoll, untersuchen.
-3. Herstellerdokumentation, **Erstveröffentlichung, aktuelle stabile Version mit Datum und Entwicklungsaktivität der letzten 12 Monate**, Sicherheitsinformationen, externe Erfahrungsberichte und bei Bedarf PoC-Belege zuordnen. Bewertungsstichtag dokumentieren. **Nicht recherchierte Angaben bleiben `?`; nicht anwendbare Angaben werden als `n. a.` gekennzeichnet.**
-4. Anhand der [Methodik](BEWERTUNGSMETHODIK.md) bewerten, sachliche Vor-/Nachteile formulieren und eine **vorläufige Empfehlung** mit Unsicherheiten kennzeichnen.
+3. **Bei tatsächlichem Auswahlbedarf** Herstellerdokumentation, Erstveröffentlichung, stabile Version/Datum, Entwicklungsaktivität der letzten 12 Monate, Sicherheitsinformationen und ggf. PoC-Belege erheben. Bewertungsstichtag dokumentieren; Unbekanntes bleibt `?`, nicht Anwendbares `n. a.`.**
+4. Erst danach die [vollständige Vergleichsmatrix](VORLAGE.md#4-vergleichsmatrix) nach [Methodik](BEWERTUNGSMETHODIK.md) ausfüllen und eine **vorläufige Empfehlung** samt Unsicherheiten begründen.
 5. **Freigabe/Beschluss ausschließlich im [Entscheidungsregister](../04_ENTSCHEIDUNGEN.md)** festhalten. Die Einzeldateien sind Analyse, keine zweite Entscheidungsquelle.
 
 Kein Produkt aufgrund von „mehr Funktionen“ empfehlen, wenn eine schlankere Lösung die bestätigten Anforderungen ausreichend erfüllt. Unterschiede beim Aufwand für Einführung, Updates, IT-Kompetenz, Lizenz-/Supportkosten und Datenhoheit ausdrücklich berücksichtigen.
