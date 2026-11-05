@@ -22,17 +22,17 @@
 
 ## Fachliches und technisches Konzept (gezielt vertiefen)
 
-1. [Projektkonzept](docs/01_PROJEKTKONZEPT.md) – Motivation, Ziele, Nutzen, Abgrenzung und Piloten.
+1. [Projektkonzept und acht Projektgrundsätze](docs/01_PROJEKTKONZEPT.md#projektgrundsätze) – Motivation, Leitplanken, Abgrenzung und Piloten.
 2. [Anforderungen](docs/02_ANFORDERUNGEN.md) – fachlicher und nichtfunktionaler Rahmen.
 3. [Pilotkonkretisierung](docs/05_PILOTKONKRETISIERUNG.md) – tatsächliche Praxis, Vorschläge und noch zu erhebende Anforderungen.
 4. [Roadmap](docs/07_ROADMAP.md) – Vorbereitung, Freigabeschritte und gestaffelte Einführung.
 5. [Offene Punkte](docs/08_OFFENE_PUNKTE.md) – **nach Entscheidungszeitpunkt priorisierte** Prüfaufträge.
 6. [Architektur](docs/03_ARCHITEKTUR.md) – logisches Zielbild und technische Leitplanken, keine Implementierungsfreigabe.
-7. [Entscheidungsregister A01–A39](docs/04_ENTSCHEIDUNGEN.md) – führender Ort für Status, Begründungen und Prüfvorbehalte.
+7. [Festlegungs- und Entscheidungsregister A01–A39](docs/04_ENTSCHEIDUNGEN.md) – stabile Kennungen, Kategorien, Status und Prüfvorbehalte.
 
 ## Technische Vertiefung und Nachschlagen
 
-- [Softwarekandidaten, Lizenzüberblick und Bewertungen](docs/software/README.md) – Prüfgrundlagen, **keine endgültige Produktauswahl**.
+- [Softwarekandidaten und Lizenzüberblick](docs/software/README.md) – Prüfgrundlagen ohne vorgetäuschte Punktbewertungen; vollständiger Vergleich erst bei Bedarf.
 - [Glossar](docs/ANHANG_A_GLOSSAR.md) – Fachbegriffe und Abkürzungen.
 - [Dokumentationspflege](docs/ANHANG_B_DOKUMENTATIONSPFLEGE.md) – Regeln für konsistente, wartbare Dokumente.
 
