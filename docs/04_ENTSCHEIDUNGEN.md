@@ -34,10 +34,10 @@
 | <a id="a20"></a>A20 | Fachfunktion | Suche | B | Schlanke integrierte Suche; keine separate Suchplattform |
 | <a id="a21"></a>A21 | Fachfunktion | Koordinatenreferenz | B | ETRS89/UTM EPSG:25832/25833 bevorzugt; EPSG:3068 unterstützen, weitere Lage-/Höhenbezüge bedarfsabhängig. |
 | <a id="a22"></a>A22 | Architektur/Daten | Raster | B | Externe Dienste bevorzugt, lokale [GeoTIFF](ANHANG_A_GLOSSAR.md#geotiff)/[COG](ANHANG_A_GLOSSAR.md#cog) nach Bedarf |
-| <a id="a23"></a>A23 | Betrieb/Organisation | Hosting | G | On-prem/Proxmox als Ausgangspräferenz, Hosting-/Bezugsmodell H1–H4 noch offen. |
+| <a id="a23"></a>A23 | Betrieb/Organisation | Hosting | G | On-prem/Proxmox als Ausgangspräferenz, hybride Lösungen möglich; Hosting-/Bezugsmodell H1–H4 offen. |
 | <a id="a24"></a>A24 | Betrieb/Organisation | Deployment | O | [VM](ANHANG_A_GLOSSAR.md#vm)-nativ, hybrid oder containerisiert – gemeinsam mit IT entscheiden |
 | <a id="a25"></a>A25 | Betrieb/Organisation | Identitäten | G | AD/M365 und zentraler [IdP](ANHANG_A_GLOSSAR.md#idp) bevorzugt; technische Umsetzung IT-Entscheid |
-| <a id="a26"></a>A26 | Betrieb/Organisation | Berechtigungen | G | Rechte über alle tatsächlichen Zugriffspfade durchsetzen; konkrete Rollen und Granularität offen. |
+| <a id="a26"></a>A26 | Betrieb/Organisation | Berechtigungen | G | Gemeinsames Rollen-/Rechteprinzip über alle tatsächlichen Zugriffspfade durchsetzen; Rollen und Granularität offen. |
 | <a id="a27"></a>A27 | Betrieb/Organisation | Umgebungen | G | Schlanke getrennte TEST/PROD, lokale Entwicklung, Git/Migrationen; IT-Abstimmung |
 | <a id="a28"></a>A28 | Betrieb/Organisation | Backup | G | Bestehendes IT-Backup plus GDI-spezifische Sicherung/Restore; IT-Abstimmung |
 | <a id="a29"></a>A29 | Betrieb/Organisation | Monitoring | G | Bestehendes Monitoring um funktionale GIS-Prüfungen ergänzen; IT-Abstimmung |
@@ -47,7 +47,7 @@
 | <a id="a33"></a>A33 | Grundsatz | Wissensaufbau | B | Themen-/rollenbezogen A/B/C kombinieren; Ressourcen verbindlich einplanen |
 | <a id="a34"></a>A34 | Grundsatz | Pilotstrategie | B | Gemeinsame GDI-Basis; zwei früh beteiligte, zeitlich staffelbare Pilotbereiche. |
 | <a id="a35"></a>A35 | Grundsatz | [MVP](ANHANG_A_GLOSSAR.md#mvp) | B | Schlanker priorisierter MVP; GDI-Basis und fachliche Pilotumfänge unterscheiden. |
-| <a id="a36"></a>A36 | Grundsatz | Migration | B | Selektive Migration mit kontrollierter Ablösung problematischer synchronisierter GIS-Arbeitsbestände; Projektablage erneut prüfen. |
+| <a id="a36"></a>A36 | Grundsatz | Migration | B | Migrationslinie B+: verbindliche Zielarchitektur, selektive Ablösung problematischer synchronisierter GIS-Arbeitsbestände; Projektablage erneut prüfen. |
 | <a id="a37"></a>A37 | Architektur/Daten | Datenlebenszyklus | Z | Option B plausibel, aber nicht beschlossen; später klären |
 | <a id="a38"></a>A38 | Architektur/Daten | Datenbankregeln | Z | Konkrete DB-/QGIS-Fachvalidierungen zurückgestellt; grundlegende Datenintegrität bleibt verpflichtend. |
 | <a id="a39"></a>A39 | Betrieb/Organisation | Umsetzungs-, Qualifizierungs-, Betriebs- und Hostingmodell | O | Vier offene Dimensionen: Umsetzung, Wissensaufbau, Betriebsverantwortung und Hosting/Bezug (H1–H4); Entscheidung durch GF und IT. |
@@ -84,9 +84,9 @@ Eine fachlich führende Stelle je Datenbestand; berechtigter fachbereichsübergr
 
 ### A12/A21 – Berechtigter Geodatenauszug
 
-**Beschlossen:** Export als Funktion ohne Pflicht zu eigenem Dienst; vollständige Objektselektion für vom Auswahlgebiet betroffene Objekte als Standard, Clipping als bewusst wählbare Zusatzoption; GPKG, klassisches GeoJSON (GeoJSON 2008), DXF und CSV; Shapefile optional. Quell-/wählbares Ziel-CRS einschließlich EPSG:25832/25833/3068. RFC 7946 mit WGS84/CRS84 nur als optionaler GeoJSON-Sondermodus.
+**Beschlossen:** Export als Funktion ohne Pflicht zu eigenem Dienst (Option A); vollständige Objektselektion für vom Auswahlgebiet betroffene Objekte als Standard, Clipping als bewusst wählbare Zusatzoption (Punkt 1/C); GPKG, klassisches GeoJSON (GeoJSON 2008), DXF und CSV; Shapefile optional. Quell-/wählbares Ziel-CRS einschließlich EPSG:25832/25833/3068. RFC 7946 mit WGS84/CRS84 nur als optionaler GeoJSON-Sondermodus.
 
-**Offen:** konkrete Rollen-/Rechtegranularität und technische Validierung. Vollständige Objekte dürfen **keine räumlichen Rechtebeschränkungen umgehen**; ungeschützte Exportwege nicht produktiv freischalten. Vorgaben zu GeoJSON-CRS, DXF-Einheiten, Transformationen, Herkunft und Geometrie-/Attributkorrektheit sowie Testfälle stehen führend im [SW-06-Prüfkatalog](software/06_GEODATENAUSZUG.md); [A26](#a26) gilt unabhängig davon.
+**Offen:** konkrete Rollen-/Rechtegranularität (Punkt 3/D) und technische Validierung. Vollständige Objekte dürfen **keine räumlichen Rechtebeschränkungen umgehen**; ungeschützte Exportwege nicht produktiv freischalten. Vorgaben zu GeoJSON-CRS, DXF-Einheiten, Transformationen, Herkunft und Geometrie-/Attributkorrektheit sowie Testfälle stehen führend im [SW-06-Prüfkatalog](software/06_GEODATENAUSZUG.md); [A26](#a26) gilt unabhängig davon.
 
 ### A23/A24/A39 – Hosting, technische Bereitstellung und Zuständigkeit
 
