@@ -4,7 +4,11 @@
 
 ## Zielbild
 
-**GIS-Team und beteiligte Fachkollegen möchten VIC-GDI als unternehmensweite, fachbereichsneutrale [Geodateninfrastruktur](ANHANG_A_GLOSSAR.md#gdi) etablieren.** Sie soll gemeinsame Datenbestände zuverlässiger nutzbar machen, Mehrfachpflege reduzieren und [GIS](ANHANG_A_GLOSSAR.md#gis)-Arbeitsabläufe in der VIC vereinfachen. Die vorhandenen [CAD](ANHANG_A_GLOSSAR.md#cad)-, [BIM](ANHANG_A_GLOSSAR.md#bim)- und Fachsysteme werden ergänzt, nicht ersetzt. **Vorgeschlagen wird eine gestaffelte Einführung**, beginnend in Baubetreuung und Verkehrsanlagenplanung. Für Umsetzung, Ressourcen und Betrieb sind die Entscheidungen von Geschäftsführung und IT noch erforderlich.
+Für Straßen-, Brücken- und andere Infrastrukturprojekte benötigen Mitarbeitende Informationen mit Ortsbezug, beispielsweise Leitungsverläufe, Vermessungsdaten oder Projektgebiete. Diese Informationen sollen leichter auffindbar, verlässlich aktuell und für berechtigte Teams gemeinsam nutzbar werden – statt sie an mehreren Stellen unabhängig zu pflegen.
+
+**Dafür soll VIC-GDI eine gemeinsame organisatorische und technische Grundlage schaffen.** Eine **Geodateninfrastruktur (GDI)** ist kein einzelnes Programm: Sie verbindet geordnete Datenhaltung, ein Verzeichnis zum Wiederfinden der Informationen, geeignete Zugriffswege und klare Verantwortlichkeiten. [Einfaches Schaubild und Erläuterung](01_PROJEKTKONZEPT.md#was-ist-eine-geodateninfrastruktur--und-wie-funktioniert-sie).
+
+Das GIS-Team und beteiligte Fachkollegen schlagen eine **gestaffelte Einführung** in Baubetreuung und Verkehrsanlagenplanung vor. Bestehende Planungs- und Fachprogramme werden ergänzt, nicht ersetzt. **Umsetzung, Ressourcen und Betrieb sind noch von Geschäftsführung und IT zu entscheiden.**
 
 ## Warum das Vorhaben wichtig ist
 
