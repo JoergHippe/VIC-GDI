@@ -2,6 +2,8 @@
 
 **Status:** Interner Arbeitsentwurf · beschlossene Grundsätze und noch offene technische Festlegungen getrennt.
 
+**Für Leser ohne GIS-Vorkenntnisse:** Die [einfache Erklärung mit Drei-Funktionsbereiche-Modell](01_PROJEKTKONZEPT.md#was-ist-eine-geodateninfrastruktur--und-wie-funktioniert-sie) beschreibt zunächst den Zweck. Dieses Dokument zeigt anschließend die **technische Umsetzung und tatsächliche Datenzugriffswege**, nicht ein verpflichtendes Schichtenmodell.
+
 Die Architektur zeigt den bisherigen Beschlussstand. Zentrale [PostgreSQL](ANHANG_A_GLOSSAR.md#postgresql)-Projektablage und erweiterter interner Katalog mit hybrider Metadatenpflege sind [Prüfvarianten](04_ENTSCHEIDUNGEN.md#erneute-prüfung-a04-a15-und-a36) zu [A04](04_ENTSCHEIDUNGEN.md#a04), [A15](04_ENTSCHEIDUNGEN.md#a15) und [A36](04_ENTSCHEIDUNGEN.md#a36).
 
 ## Logische Architektur
@@ -17,7 +19,7 @@ Die Architektur zeigt den bisherigen Beschlussstand. Zentrale [PostgreSQL](ANHAN
 
 ### Architekturübersicht (logisches Zielbild)
 
-Das Diagramm zeigt die **wesentlichen Nutzungspfade und Datenhaltungen**, ohne einzelne technische Dienste oder Server aufzuschlüsseln. Der mobile Austausch ist noch zu validieren; gestrichelte Linien markieren mögliche, noch nicht festgelegte Zielanbindungen. Identität, Berechtigungen, Betrieb und Deployment gelten übergreifend und sind bewusst nicht als zusätzliche Pfeile dargestellt.
+Im Unterschied zum [einfachen GDI-Funktionsmodell](01_PROJEKTKONZEPT.md#drei-funktionsbereiche-und-ein-gemeinsames-fundament) zeigt dieses Diagramm die **wesentlichen technischen Nutzungspfade und Datenhaltungen**, ohne einzelne Server aufzuschlüsseln. Der mobile Austausch ist noch zu validieren; gestrichelte Linien markieren mögliche, noch nicht festgelegte Zielanbindungen. Identität, Berechtigungen, Betrieb und Deployment gelten übergreifend und sind bewusst nicht als zusätzliche Pfeile dargestellt.
 
 ```mermaid
 flowchart TB
