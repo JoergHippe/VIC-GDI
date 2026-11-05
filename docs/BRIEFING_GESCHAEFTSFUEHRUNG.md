@@ -14,7 +14,7 @@ Heute verteilen sich Geodaten und QGIS-Projekte auf unterschiedliche Speicherort
 
 **Zwei praktische Beispiele:** Die **Baubetreuung** kann vor Ort erfasste Leitungsverläufe kontrolliert übernehmen, statt mobile Arbeitsstände ungeprüft mit dem zentralen Bestand gleichzusetzen. In der **Verkehrsanlagenplanung** können mehrere Projekte geeignete gemeinsame Geodaten nutzen, ohne voneinander unabhängige Kopien fortzuschreiben.
 
-**Die fachliche Begründung ist klar:** Gemeinsame, verantwortete Geodaten und standardisierte Zugriffswege verbessern die Voraussetzungen für Datenqualität, Zusammenarbeit und Wiederverwendung. Die Geschäftsführung entscheidet nicht darüber, ob diese Grundprinzipien nützlich sind, sondern über den **geeigneten Einführungsweg, Prioritäten, Ressourcen und wirtschaftlich tragfähigen Betrieb**. Belastbare Zahlen zu eingesparter Arbeitszeit oder Geld liegen derzeit nicht vor und werden nicht unterstellt. Vertiefung: [Projektkonzept](01_PROJEKTKONZEPT.md#warum-wir-vic-gdi-einführen-wollen).
+**Die fachliche Begründung ist klar:** Gemeinsame, verantwortete Geodaten und standardisierte Zugriffswege verbessern die Voraussetzungen für Datenqualität, Zusammenarbeit und Wiederverwendung. Die anstehende Managemententscheidung betrifft den **geeigneten Einführungsweg, Prioritäten, Ressourcen und einen wirtschaftlich tragfähigen Betrieb**. Belastbare Zahlen zu eingesparter Arbeitszeit oder Geld liegen derzeit nicht vor und werden nicht unterstellt. Vertiefung: [Projektkonzept](01_PROJEKTKONZEPT.md#warum-wir-vic-gdi-einführen-wollen).
 
 ## Konkreter Mehrwert für VIC
 

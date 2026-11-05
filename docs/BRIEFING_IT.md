@@ -12,7 +12,7 @@ Die [Architekturübersicht](03_ARCHITEKTUR.md#architekturübersicht-logisches-zi
 
 ## Ziel des ersten IT-Termins: Einführungsweg und A39
 
-**Der fachliche Nutzen einer gemeinsamen GDI ist die Ausgangsbasis, nicht Gegenstand eines technischen Grundsatzexperiments.** IT und GIS erarbeiten gemeinsam, **wie** die GDI sicher, nachhaltig und mit vertretbaren Ressourcen eingeführt werden kann. Die bereits dokumentierte Architektur ist eine Planungsgrundlage, **keine Anweisung zur sofortigen Bereitstellung**.
+**Die fachliche Zielsetzung der GDI bildet die Grundlage der Abstimmung.** IT und GIS erarbeiten gemeinsam, **wie** sie sicher, nachhaltig und mit vertretbaren Ressourcen eingeführt werden kann. Die bereits dokumentierte Architektur ist eine Planungsgrundlage, **keine Anweisung zur sofortigen Bereitstellung**.
 
 | Jetzt beantworten | Spätere Vertiefung |
 |---|---|
