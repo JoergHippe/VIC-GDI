@@ -4,11 +4,15 @@
 
 ## Worum es geht
 
-Ein [GIS](ANHANG_A_GLOSSAR.md#gis) bearbeitet und zeigt räumliche Daten, etwa den dokumentierten Verlauf einer Leitung. Die GDI organisiert, wo solche Daten geführt werden, wie berechtigte Personen sie finden und nutzen und wer sie pflegt. Die Baubetreuung kann beispielsweise einen Leitungsverlauf fachlich prüfen und übernehmen. Berechtigte Planende können anschließend denselben freigegebenen Stand in [QGIS](ANHANG_A_GLOSSAR.md#qgis) nutzen.
+Unsere Fachbereiche arbeiten mit Informationen, die einen Ort haben: beispielsweise Leitungsverläufe, Vermessungspunkte oder Planungsgebiete. Diese Informationen sollen nachvollziehbar geführt, gefunden und von berechtigten Mitarbeitenden für unterschiedliche Aufgaben genutzt werden können.
+
+**Eine Geodateninfrastruktur (GDI) ist dafür keine einzelne Anwendung.** Sie erfüllt drei Aufgaben: **Datenhaltung** (Informationen geordnet speichern und pflegen), **Katalog** (Bestände, Herkunft und Aktualität auffindbar beschreiben) und **Datenbereitstellung** (berechtigten Zugriff ermöglichen). Die Nutzer arbeiten darüber mit Fachprogrammen, Browserkarten oder mobilen Anwendungen. **Zuständigkeiten, Rechte, Qualität und Betrieb** gelten übergreifend. [Einfaches Funktionsmodell mit Schaubild](01_PROJEKTKONZEPT.md#was-ist-eine-geodateninfrastruktur--und-wie-funktioniert-sie).
+
+**Für die IT wichtig:** Diese Funktionen müssen nicht je einem eigenen Server oder Produkt entsprechen. GIS-Fachprogramme können Daten auch direkt aus einer Datenbank oder Dateien lesen. Der Katalog muss kein separates Softwareprodukt sein; ein Kartendienst wird nur benötigt, wenn entsprechende Webfunktionen vorgesehen sind. Die späteren Abschnitte beschreiben die technischen Anforderungen und offenen Betriebsfragen.
 
 **Gesprächsziel:** Das vom GIS-Team und beteiligten Fachkollegen angestoßene GDI-Vorhaben gemeinsam mit der IT in eine **sichere, wartbare und dauerhaft betreibbare Einführungsplanung** überführen. Dafür Ressourcen, technische Rahmenbedingungen, Verantwortlichkeiten und realistischen Aufwand klären. Einzelne technische Tests und Bereitstellungen werden gesondert geplant und freigegeben.
 
-Die [Architekturübersicht](03_ARCHITEKTUR.md#architekturübersicht-logisches-zielbild) zeigt, wie Desktop, Browser und Mobilgeräte auf Daten und Dienste zugreifen.
+Die [technische Architekturübersicht](03_ARCHITEKTUR.md#architekturübersicht-logisches-zielbild) zeigt anschließend die tatsächlichen Datenzugriffswege für Desktop, Browser und Mobilgeräte.
 
 ## Ziel des ersten IT-Termins: Einführungsweg und A39
 
@@ -26,11 +30,9 @@ Die [Architekturübersicht](03_ARCHITEKTUR.md#architekturübersicht-logisches-zi
 
 ## Softwarelizenzen und optionaler Herstellersupport
 
-Der vorgesehene GDI-Kern (QGIS, PostgreSQL/PostGIS, bevorzugt QGIS Server und freie Webviewer) kann ohne zusätzliche Softwarelizenzgebühren betrieben werden. Auch Debian, Git und **Proxmox VE** sind grundsätzlich kostenlos nutzbar. Eine Proxmox-Subskription ist **optional**, kann aber für das Enterprise-Repository und Herstellersupport im Produktivbetrieb aus Betriebs-/Sicherheitsgründen sinnvoll sein. Bei vorhandener Proxmox-Infrastruktur zunächst belegte CPU-Sockel, bestehende Subskriptionsstufe, Kapazität und Backup-Abdeckung klären; keine automatische Lizenzmehrbelastung pro zusätzlicher VM unterstellen.
+QGIS, PostgreSQL/PostGIS, bevorzugt QGIS Server, freie Webviewer, Debian und Git sind **ohne zusätzliche Softwarelizenzgebühren** nutzbar. Auch **Proxmox VE** benötigt keine kostenpflichtige Nutzungslizenz. Eine optionale Subskription kann für das **Enterprise-Repository** und Herstellersupport im Produktivbetrieb sinnvoll sein; das `pve-no-subscription`-Repository wird vom Hersteller **nicht als bevorzugtes Produktiv-Repository** empfohlen. Für vorhandene Hosts/Cluster belegte physische CPU-Sockel, Subskriptionsstand, Backup und Kapazitäten prüfen; eine zusätzliche GDI-VM verursacht nicht automatisch neue Proxmox-Abonnementkosten. [Proxmox-Tarife](https://www.proxmox.com/en/products/proxmox-virtual-environment/pricing) · [Repositories](https://pve.proxmox.com/pve-docs/pve-admin-guide.html).
 
-**Lizenzgrenzen beachten:** QField-App kostenlos, gehostete QFieldCloud gegebenenfalls kostenpflichtig; Docker Engine unter Linux Open Source, Docker Desktop im gewerblichen Einsatz abhängig von den Lizenzbedingungen ggf. kostenpflichtig und für den Serverbetrieb nicht erforderlich. Bestehende Windows-/M365-/AD-Verträge und externe Datenlizenzen sind nicht von der freien GDI-Kernsoftware abgedeckt. Einzelheiten: [Software-/Lizenzübersicht](software/README.md#lizenz--und-kostenüberblick-gdi-kern) und [Kostenrahmen der A39-Entscheidung](06_UMSETZUNGS_UND_BETRIEBSMODELLE.md#kostenrahmen-und-lizenzabgrenzung).
-
-**Proxmox-Konkretisierung:** Proxmox VE ist als Open-Source-Virtualisierung auch gewerblich ohne kostenpflichtige Subskription nutzbar. Das `pve-no-subscription`-Repository ist verfügbar, wird vom Hersteller jedoch **nicht als bevorzugtes Produktiv-Repository** empfohlen. Eine kostenpflichtige Subskription ermöglicht Enterprise-Repository und je nach Tarif Herstellersupport – dies ist eine Frage des Betriebsrisikos, keine zwingende Nutzungslizenz. Bei einem Ausbau sind belegte physische CPU-Sockel pro Host (bei Clustern alle betroffenen Hosts), vorhandene Verträge, Backup-Abdeckung und mögliche zusätzliche Ressourcen zu prüfen; neue GDI-VMs allein lösen nicht automatisch weitere Subskriptionen aus. Quellen: [Proxmox-Tarife](https://www.proxmox.com/en/products/proxmox-virtual-environment/pricing), [Admin-Guide/Repositories](https://pve.proxmox.com/pve-docs/pve-admin-guide.html). **A24 bleibt offen.**
+**Kosten-/Lizenzgrenzen:** QField-App frei, gehostete QFieldCloud ggf. kostenpflichtig; Docker Engine unter Linux offen, Docker Desktop mit gesonderten gewerblichen Lizenzbedingungen und für Server nicht erforderlich. Bestehende Windows-/M365-/AD-Verträge, Dritt-Geodatenlizenzen, Schulung, Administration, Infrastruktur und externe Dienste sind nicht von der Aussage über den freien GDI-Kern gedeckt. [Lizenzübersicht](software/README.md#lizenz--und-kostenüberblick-gdi-kern) · [A39-Kostenrahmen](06_UMSETZUNGS_UND_BETRIEBSMODELLE.md#kostenrahmen-und-lizenzabgrenzung). **A24 bleibt offen.**
 
 ## Mindestbedarf für einen produktiven Pilotbetrieb
 

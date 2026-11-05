@@ -1,80 +1,59 @@
 # Offene Punkte und zurückgestellte Entscheidungen
 
-**Status:** Interner Arbeitsentwurf. Hier stehen Aufgaben zur **Vorbereitung der fachlich angestrebten GDI-Einführung**, keine vorweggenommenen Freigaben oder Beschlüsse. Der grundsätzliche Nutzen einer gemeinsamen GDI ist nicht als offene Prüfaufgabe aufgeführt.
-
-Gesprächsunterlagen: [IT-Briefing](BRIEFING_IT.md) und [Geschäftsführungs-Briefing](BRIEFING_GESCHAEFTSFUEHRUNG.md). Die [Prüfaufträge](04_ENTSCHEIDUNGEN.md#erneute-prüfung-a04-a15-und-a36) zu [A04](04_ENTSCHEIDUNGEN.md#a04), [A15](04_ENTSCHEIDUNGEN.md#a15) und [A36](04_ENTSCHEIDUNGEN.md#a36) ergänzen die bisherigen Beschlüsse. Die nächsten Termine dienen der Umsetzungsvorbereitung und Abstimmung. Gezielte technische Tests folgen bei Bedarf nach gesonderter Freigabe.
+**Status:** Interner Arbeitsentwurf; Arbeitsvorrat zur geplanten Einführung der VIC-GDI, **keine Umsetzungs- oder IT-Freigabe**. Verbindliche Festlegungen und Status: [Register A01–A39](04_ENTSCHEIDUNGEN.md). Bereits entschiedene Grundsätze werden hier nicht erneut verhandelt.
 
 ## Arbeitspriorität nach Entscheidungshorizont
 
-**Diese Prioritäten steuern nur den nächsten Prüf-/Arbeitszeitpunkt.** Sie ändern weder die Beschlussstatus **B/G/Z/O** noch bestehende fachliche Festlegungen im [Entscheidungsregister](04_ENTSCHEIDUNGEN.md). Ein Thema kann bei konkret priorisiertem Pilotbedarf vorgezogen werden; es ist kein pauschaler Implementierungsstopp.
+**P0–P3 beschreiben ausschließlich den sinnvollen Klärungszeitpunkt, nicht den Beschlussstatus B/G/Z/O.** Muss ein Pilot Sicherheits-, Rechte- oder Wiederherstellungsfragen früher lösen, werden diese vorgezogen. PoC, produktiver Pilot und Dauerbetrieb benötigen jeweils die erforderlichen Freigaben.
 
-| Horizont | Was jetzt relevant ist | Auslöser für Vertiefung |
+| Horizont | Offene Klärung | Auslöser / nächster Schritt |
 |---|---|---|
-| **P0 – Organisations-/Vorbereitungsentscheidung** | **[A39](04_ENTSCHEIDUNGEN.md#a39)**: Umsetzung, Qualifizierung, Betrieb und **Hosting-/Bezugsmodell H1–H4**, GIS-/IT-Kapazitäten sowie Kosten; **[A31](04_ENTSCHEIDUNGEN.md#a31)** Zuständigkeiten/Vertretungen im Grundsatz; fachliche Pilotfälle und Ist-Situation | Gespräch und Vorbereitungsauftrag durch GF/IT |
-| **P1 – Vor Pilotfreigabe** | Pilotumfang/[A35](04_ENTSCHEIDUNGEN.md#a35), überprüfbare Erfolgskriterien, IT-Sicherheits-/Betriebsrahmen (insb. [A25–A29](04_ENTSCHEIDUNGEN.md#a25)), ggf. erforderliche Machbarkeitstests, Konkretisierung A39 | Entscheidung über konkrete Erprobung bzw. produktiven Pilot |
-| **P2 – Vor jeweiliger technischer Implementierung** | Deployment [A24](04_ENTSCHEIDUNGEN.md#a24), Softwarekandidaten, technische Ausgestaltung von [A10](04_ENTSCHEIDUNGEN.md#a10), [A12](04_ENTSCHEIDUNGEN.md#a12), [A13](04_ENTSCHEIDUNGEN.md#a13), [A15](04_ENTSCHEIDUNGEN.md#a15), [A30](04_ENTSCHEIDUNGEN.md#a30) sowie QGIS-Projektablage A04/A36 | Bestätigter Pilotbedarf und zuständiges Umsetzungsteam |
-| **P3 – Spätere Vertiefung/bei Bedarf** | Zurückgestellte [A37](04_ENTSCHEIDUNGEN.md#a37)/[A38](04_ENTSCHEIDUNGEN.md#a38), nicht pilotrelevante Funktionen und umfangreichere Produktauswahl | Nachgewiesener fachlicher, Sicherheits- oder Betriebsbedarf |
+| **P0 – Vorbereitung** | [A39](04_ENTSCHEIDUNGEN.md#a39): Umsetzungs-, Qualifizierungs-, Betriebs- und Hosting-/Bezugsmodell; [A31](04_ENTSCHEIDUNGEN.md#a31): Zuständigkeiten und Vertretungen; Pilot-Ist-Situation | GF/IT beauftragen eine abgegrenzte Ressourcen- und Variantenbewertung; GIS und Fachbereiche liefern echte Anwendungsfälle |
+| **P1 – Vor Pilotfreigabe** | [A35](04_ENTSCHEIDUNGEN.md#a35): MVP und Abnahme; [A25](04_ENTSCHEIDUNGEN.md#a25)/[A26](04_ENTSCHEIDUNGEN.md#a26): Identitäten/Rechte; [A27–A29](04_ENTSCHEIDUNGEN.md#a27): TEST/PROD, Backup/Restore, Monitoring; A39-Konkretisierung | Konkreten Pilotablauf definieren, Sicherheits- und Betriebsfähigkeit belegen |
+| **P2 – Vor jeweiliger Umsetzung** | [A24](04_ENTSCHEIDUNGEN.md#a24): Bereitstellungsform; [A04](04_ENTSCHEIDUNGEN.md#a04)/[A36](04_ENTSCHEIDUNGEN.md#a36): Projektablage/Migration; [A10](04_ENTSCHEIDUNGEN.md#a10), [A12](04_ENTSCHEIDUNGEN.md#a12), [A13](04_ENTSCHEIDUNGEN.md#a13), [A15](04_ENTSCHEIDUNGEN.md#a15), [A30](04_ENTSCHEIDUNGEN.md#a30): tatsächliche Ausgestaltung | Nur bei bestätigtem Pilotbedarf gezielt prüfen; bei Sicherheitsrelevanz nach P1 vorziehen |
+| **P3 – Später/bei Bedarf** | [A37](04_ENTSCHEIDUNGEN.md#a37): Datenlebenszyklus; [A38](04_ENTSCHEIDUNGEN.md#a38): zusätzliche fachliche DB-/QGIS-Validierung; nicht pilotrelevante Funktionen | Konkreter Anlass oder fachlich begründeter Nutzen |
 
-**Sicherheitsvorbehalt:** Rechte, Datenintegrität und Wiederherstellbarkeit werden **nicht** aufgeschoben, wenn ein konkreter Pilot oder Exportweg sie bereits benötigt. Freigaben für PoC, produktiven Piloten und Dauerbetrieb sind voneinander zu unterscheiden. Die Detailtabellen unten bleiben als Arbeitsvorrat erhalten; ihre Reihenfolge ist **keine** gleichrangige Sofort-Priorisierung.
+## Architekturentscheidungen und technische Prüfaufträge
 
-## Architekturentscheidungen
-
-| Bezug | Offene Frage | Nächster sinnvoller Schritt |
+| Bezug | Konkret noch offen | Prüfschritt / Grenze |
 |---|---|---|
-| [A10](04_ENTSCHEIDUNGEN.md#a10) | [QGIS](ANHANG_A_GLOSSAR.md#qgis) Server: tatsächliche Eignung, benötigte [OGC](ANHANG_A_GLOSSAR.md#ogc)-Funktionen | Bei priorisiertem Webbedarf technischer [PoC](ANHANG_A_GLOSSAR.md#poc) mit repräsentativer Pilotkarte |
-| [A12](04_ENTSCHEIDUNGEN.md#a12) | **Auswahl/Clipping und Formate/CRS fachlich entschieden:** Umsetzung und Validierung (GPKG, GeoJSON klassisch/RFC 7946 optional, DXF, CSV; Shapefile optional; EPSG:25832/25833/3068) noch offen. **Berechtigungsmodell ausdrücklich offen (Punkt 3, D).** | GIS/Fachbereiche/IT erheben Rollen, Datenbestände, Zugriffspfade; danach Positiv-/Negativtests, Objektselektion/Clipping, GeoJSON-CRS, CAD/DXF und Soldner-Transformationen im PoC prüfen; keine ungeschützten Exporte |
-| [A13](04_ENTSCHEIDUNGEN.md#a13) | Mobiler Datenaustausch mit [QField](ANHANG_A_GLOSSAR.md#qfield): Offline-Sync, Konflikte und Sicherheit | [Cloud und lokalen USB-Transfer vergleichen](05_PILOTKONKRETISIERUNG.md#mobile-erfassung-und-datenaustausch). |
-| [A24](04_ENTSCHEIDUNGEN.md#a24) | Natives [VM](ANHANG_A_GLOSSAR.md#vm)-Deployment vs. Hybrid vs. Container | IT-Workshop, Variantenvergleich; **noch keine Entscheidung** |
-| [A25](04_ENTSCHEIDUNGEN.md#a25) | [IdP](ANHANG_A_GLOSSAR.md#idp)/[SSO](ANHANG_A_GLOSSAR.md#sso), Desktop-QGIS, externe Identitäten | Mit IT/Auth-Verantwortlichen konkretisieren |
-| [A26](04_ENTSCHEIDUNGEN.md#a26) | Rollen, Gruppen, Datenbank-/Dienstrechte **einschließlich Exportwegen**; Granularität erst aus realen Datenbeständen und Nutzern ableiten | GIS/Fachbereiche/IT inventarisieren reale Zugriffswege (QGIS/PostGIS/Webdienst/Export), prüfen räumliche Begrenzungen, Views/Spalten und Download-/Zwischendateien; daraus Rechte-Matrix und Positiv-/Negativtests ableiten |
-| [A27](04_ENTSCHEIDUNGEN.md#a27) | Technische Ausgestaltung TEST/PROD | IT-Abstimmung |
-| [A28](04_ENTSCHEIDUNGEN.md#a28) | Backupumfang, Restore, [RPO/RTO](ANHANG_A_GLOSSAR.md#rpo-rto), mobile Offline-Daten | IT-Abstimmung und Wiederherstellungstest |
-| [A29](04_ENTSCHEIDUNGEN.md#a29) | Funktionale [GIS](ANHANG_A_GLOSSAR.md#gis)-Checks, Alarmierung und Log-Retention | Bestehendes IT-Monitoring aufnehmen |
-| [A30](04_ENTSCHEIDUNGEN.md#a30) | [Git](ANHANG_A_GLOSSAR.md#git)-Arbeitsweise, Deployment-Skripte, Freigabeverfahren | GIS/IT gemeinsam festlegen |
-| [A31](04_ENTSCHEIDUNGEN.md#a31) | Konkrete Aufgabenverteilung und Vertretungen | Schlanke Zuständigkeitsmatrix GIS/IT |
-| [A35](04_ENTSCHEIDUNGEN.md#a35) | Tatsächlicher [MVP](ANHANG_A_GLOSSAR.md#mvp)-Umfang und Abnahmekriterien | Pilot-Use-Cases priorisieren |
-| [A04](04_ENTSCHEIDUNGEN.md#a04)/[A36](04_ENTSCHEIDUNGEN.md#a36) | Zentrale [PostgreSQL](ANHANG_A_GLOSSAR.md#postgresql)-Projektablage und Auswirkungen auf Migration | GIS und IT grenzen geeignete Projekte anhand des Inventars ein. Der [Prüfrahmen](04_ENTSCHEIDUNGEN.md#prüfrahmen-für-die-projektablage-a04a36) dient der späteren Erprobung. |
-| [A15](04_ENTSCHEIDUNGEN.md#a15) | Erweiterter interner Katalog und hybride Metadatenpflege | GIS und Fachbereiche priorisieren Suchfälle und Felder. Mit IT automatisierbare Quellen und mit den Fachbereichen redaktionelle Zuständigkeiten abgrenzen. |
-| [A36](04_ENTSCHEIDUNGEN.md#a36) | Bestandsaufnahme und Migrationsplanung BB | Datenquellen, Dubletten, Konflikte und Pfade inventarisieren. |
-| [A37](04_ENTSCHEIDUNGEN.md#a37) | Pflege und Lebenszyklus zentraler Daten | **Zurückgestellt**; Option B nur Empfehlung |
-| [A38](04_ENTSCHEIDUNGEN.md#a38) | [PostGIS](ANHANG_A_GLOSSAR.md#postgis)-Constraints, QGIS-Eingabevalidierung | **Zurückgestellt**; Option B nur Empfehlung |
-
-Für die beiden Pilotbereiche liegt ein [Erhebungsleitfaden](05_PILOTKONKRETISIERUNG.md) vor. Die Baubetreuung hat Tätigkeiten benannt und nutzt bereits mobile Werkzeuge. Für beide Piloten stehen die Auswahl des ersten Ablaufs und seine Abnahmekriterien aus.
+| [A04](04_ENTSCHEIDUNGEN.md#a04)/[A36](04_ENTSCHEIDUNGEN.md#a36) | PostgreSQL als QGIS-Projektablage; geeignete Bestandsprojekte, Datenpfade und Rechte | Ein repräsentatives Fachprojekt mit Vektordaten und Rasterreferenz, zwei Arbeitsplätzen und getrennten Rollen testen: Speichern/Öffnen, berechtigtes und verweigertes Ändern, konkurrierende Projekt- **und getrennt davon Datenänderungen**, Wiederherstellung und ggf. QGIS-Server-Veröffentlichung. Inventar, Pfad-/Abhängigkeitsprüfung, Rückfallweg und fachliche Abnahme für Migration erfassen. **Keine neue Ablageentscheidung vorwegnehmen.** |
+| [A15](04_ENTSCHEIDUNGEN.md#a15) | Umfang und Pflege eines internen Metadatenkatalogs | Echte Suchfälle und Mindestfelder priorisieren. Automatisch ableitbare technische Metadaten von redaktionellen Angaben trennen; je Feld führende Quelle, Zuständigkeit und Konfliktbehandlung festlegen. Eigene Katalogsoftware/OGC-Schnittstelle nur bei nachgewiesenem Bedarf ([SW-04](software/04_METADATENKATALOG.md)). |
+| [A10](04_ENTSCHEIDUNGEN.md#a10) | QGIS-Server-Eignung und erforderliche OGC-Funktionen | Bei Webbedarf repräsentative Pilotkarte und Zugriffsrechte testen ([SW-02](software/02_KARTENSERVER.md)). |
+| [A12](04_ENTSCHEIDUNGEN.md#a12)/[A26](04_ENTSCHEIDUNGEN.md#a26) | **Berechtigungsmodell offen**, Verfahren/Formate/CRS fachlich festgelegt | Zuerst reale Nutzerrollen, Bestände und Zugriffspfade erheben. Danach Positiv-/Negativtests aller Exportwege, Objektselektion/Clipping (insb. Rechte über Auswahlgebietsgrenzen hinaus), GPKG/GeoJSON 2008 und optional RFC 7946, DXF/CSV und EPSG:25832/25833/3068 durchführen. Nicht abgesicherte Wege nicht produktiv freischalten ([SW-06](software/06_GEODATENAUSZUG.md)). |
+| [A13](04_ENTSCHEIDUNGEN.md#a13) | QField-Rückübertragung, Offline-/Konfliktverhalten, Sicherheitsfreigabe | Gehosteten Cloudweg und lokalen USB-Transfer anhand derselben BB-Beispieldaten vergleichen; Synchronisation ist keine fachliche Freigabe ([Pilot](05_PILOTKONKRETISIERUNG.md#mobile-erfassung-und-datenaustausch)). |
+| [A24](04_ENTSCHEIDUNGEN.md#a24) | Natives VM-, Hybrid- oder Container-Deployment | IT bewertet Betriebskompetenz, Wartung, Sicherheit, Backup und Kosten. Keine Variante vorab festlegen. |
+| [A25](04_ENTSCHEIDUNGEN.md#a25)–[A29](04_ENTSCHEIDUNGEN.md#a29) | Unternehmens-SSO/IdP, Rollenmatrix inkl. direktem DB-Zugriff, TEST/PROD, RPO/RTO, Restore, GIS-Monitoring | Vor Pilotfreigabe mit IT konkretisieren; Rechte, Sicherung und Wiederherstellung mit realen Testfällen nachweisen. |
+| [A30](04_ENTSCHEIDUNGEN.md#a30)/[A31](04_ENTSCHEIDUNGEN.md#a31) | Git-/Bereitstellungsabläufe, Verantwortlichkeiten/Vertretungen | Einfache Verfahrens- und Zuständigkeitsmatrix GIS/IT vereinbaren, vorhandene Werkzeuge nutzen. |
+| [A35](04_ENTSCHEIDUNGEN.md#a35) | Erster GDI- und Pilot-MVP, nachvollziehbare Erfolgskriterien | Je Pilot ein bis zwei reale Abläufe priorisieren; fachliche Abnahme festlegen ([Pilotkonkretisierung](05_PILOTKONKRETISIERUNG.md)). |
+| [A37](04_ENTSCHEIDUNGEN.md#a37)/[A38](04_ENTSCHEIDUNGEN.md#a38) | Lebenszyklusdetails und **zusätzliche** fachliche Validierungsregeln | Bewusst zurückgestellt; weder Option B noch ein vollständiges Regelwerk beschlossen. **Grundlegende Datenintegrität und Sicherheit bleiben Pflicht.** |
 
 ## Offene Organisationsentscheidung: Umsetzung und Betrieb
 
-- **Wer setzt die GDI um und wo wird sie bereitgestellt? ([A39](04_ENTSCHEIDUNGEN.md#a39))** **Umsetzung A1–A3/B1/C1–C2**, **Wissensaufbau**, **Betrieb D1–D3** und **Hosting/Bezug H1–H4** sind im [Modellvergleich](06_UMSETZUNGS_UND_BETRIEBSMODELLE.md) getrennt dargestellt und **nicht entschieden**. **H2 (eigene GDI auf gemietetem Server)** und H3 (Managed Hosting) sind ausdrücklich berücksichtigt; bisheriges C3/GDIaaS heißt jetzt H4.
-- **Wie werden Wissen und dauerhafter Betrieb sichergestellt?** Schulungs-/Wissenstransferbedarf und **D1–D3** (interner, unterstützter oder überwiegend externer Betrieb) getrennt vom Aufbau klären ([A31](04_ENTSCHEIDUNGEN.md#a31), [A33](04_ENTSCHEIDUNGEN.md#a33)).
-- **Nächster Schritt:** GIS/IT vergleichen H1 (verfügbare Proxmox-Ressourcen) mit H2/H3 (Miet-/Managed-Angebote samt Betrieb, Netz-/Transferkosten und Backup) und H4 (vollständige Plattformfunktion, IT-Integration, Datenschutz, Exit). Für repräsentative U/W/D/H-Kombinationen Kompetenzen, Personentage, Zuständigkeiten, Datensicherheit, Rückmigration und Gesamtkosten auf gleichen Zeithorizont bringen. **GF und IT wählen erst auf dieser Grundlage**; A3/B1 mit D2 ist nur eine Prüfrichtung.
+**[A39](04_ENTSCHEIDUNGEN.md#a39) bleibt vorrangig und offen.** Umsetzung (A1–A3/B1/C1–C2), rollenbezogener Wissensaufbau, Betrieb (D1–D3) und Hosting/Bezug (H1–H4) **getrennt** vergleichen. H1 = eigene Infrastruktur, H2 = gemietete Infrastruktur mit eigener GDI, H3 = betreute Mietinfrastruktur, H4 = GDIaaS (früher C3). Mietserver bedeuten **nicht automatisch externen GIS-Betrieb**.
+
+GIS/IT prüfen wenige realistische Kombinationen auf gleichen Kosten- und Zeithorizont: vorhandene Proxmox-Ressourcen, Cloud-/Netz-/Transferkosten, Kompetenzen, Vertretung, Backup/Restore, Sicherheit, Portabilität und Ausstieg. **GF und IT** entscheiden im jeweiligen Verantwortungsbereich; [A3/B1 mit D2](06_UMSETZUNGS_UND_BETRIEBSMODELLE.md) ist nur eine Prüfrichtung. Führender [Variantenvergleich](06_UMSETZUNGS_UND_BETRIEBSMODELLE.md).
 
 ## Öffentliches GitHub-Repository: Freigabe- und Lizenzklärung
 
-- Verifizieren, dass Konzeptinhalte und interne organisatorische Angaben für eine **öffentliche Veröffentlichung freigegeben** sind; bei Vertraulichkeitsbedenken umgehend mit den Verantwortlichen klären.
-- Prüfen, ob und unter welchen Bedingungen Dritte die Dokumentation weiterverwenden dürfen. Eine fehlende `LICENSE`-Datei ist **keine** automatische Open-Source-Freigabe. Entscheidung durch die hierfür zuständigen Unternehmensstellen, nicht aus der GDI-Konzeption ableiten.
-- Vorlagen, Bilder, Fremdtexte und andere Drittinhalte vor späterer Erweiterung auf Weitergaberechte prüfen; auch Git-Historie bei versehentlich veröffentlichten sensiblen Inhalten berücksichtigen.
+- **Inhalte:** Veröffentlichungsfreigabe für interne und organisatorische Angaben prüfen; bei vertraulichen Inhalten auch Git-Historie berücksichtigen.
+- **Nachnutzung:** Fehlende `LICENSE` bedeutet **keine** automatische Open-Source-Freigabe der Dokumentation; Rechteklärung durch zuständige Unternehmensstellen.
+- **Fremdinhalte:** Vorlagen, Bilder und fremde Textteile auf zulässige Weitergabe prüfen.
 
 ## Kosten- und Lizenzklärung mit IT
 
-- Den [Software-/Lizenzüberblick](software/README.md#lizenz--und-kostenüberblick-gdi-kern) und den [A39-Kostenrahmen](06_UMSETZUNGS_UND_BETRIEBSMODELLE.md#kostenrahmen-und-lizenzabgrenzung) für den später ausgewählten GDI-MVP bestätigen: Kernsoftware, konkret eingesetzte Versionen/Erweiterungen und Open-Source-Lizenzpflichten.
-- **Proxmox:** Bestehende Hosts und belegte CPU-Sockel, Subskriptions-/Repository-Strategie, Kapazitäten, Sicherung und mögliche Zusatzkosten mit IT klären; kostenpflichtige Subskription nicht als zwingende Softwarelizenz darstellen.
-- **Hardware-Ressourcen (IT-Prüfauftrag):** Die IT beurteilt auf Basis der vorhandenen Infrastruktur und der konkretisierten Pilotlast, ob zusätzliche Kapazitäten für Speicherplatz, RAM, CPU und Backups oder neue Hardware nötig werden. Erst danach ggf. Kosten beziffern; noch keine Notwendigkeit oder Beschaffung unterstellen.
-- Bei mobilem Datenaustausch optionalen Bedarf und mögliche Kosten einer gehosteten QFieldCloud von der kostenfreien QField-App trennen; erst nach Vergleich der Übertragungswege.
-- Budgetschätzung nach Lizenzgebühren, einmaligen internen Aufwänden, laufendem Betrieb und optionalen Leistungen aufgliedern; keine pauschalen Einsparungen ohne Daten behaupten.
+- Die [Kernsoftware- und Lizenzübersicht](software/README.md#lizenz--und-kostenüberblick-gdi-kern) für die tatsächlich eingesetzten Versionen prüfen: **keine zusätzlichen Lizenzgebühren für den freien GDI-Kern**, aber geltende Open-Source-Pflichten und Rechte an Fremddaten.
+- **Proxmox:** vorhandene Hosts/CPU-Sockel, Subskriptionen, Update-Repository, Support und Backup prüfen. Eine kostenpflichtige Subskription ist **keine zwingende Nutzungslizenz**.
+- **Ressourcen:** IT prüft auf Basis der echten Pilotlast RAM, CPU, Speicher, Sicherung und ggf. Hardwarebedarf; zusätzliche Beschaffung weder unterstellen noch ausschließen.
+- **Optionale Dienste:** Gehostete QFieldCloud, Miet-/Managed-Hosting, externer Betrieb und Support mit ihren eigenen Gebühren getrennt bewerten.
+- **Gesamtwirtschaftlichkeit:** Einmalige interne/externe Aufwände, Schulung, Wartung, Infrastruktur, Laufkosten und optionalen Bezug getrennt schätzen. Keine Einsparungen ohne Ist-Daten behaupten. Führend: [A39-Kostenrahmen](06_UMSETZUNGS_UND_BETRIEBSMODELLE.md#kostenrahmen-und-lizenzabgrenzung).
 
 ## Fachliche Konkretisierung
 
-- Pilot-Use-Cases mit echten Anwendern und Erfolgskriterien aufnehmen.
-- Gemeinsame Datenbestände, fachliche Datenhoheit und Ausnahmen ermitteln.
-- Projektstammdaten, optionale Geometrie und Projektbezug praktisch prüfen.
-- Datenkatalog-Felder und Lizenzrestriktionen mit realen Daten testen.
-- Zielgruppen für einfache Webkartenansichten und mobile Bedienung festlegen.
-- Abgrenzung zwischen gemeinsamem [GDI](ANHANG_A_GLOSSAR.md#gdi)-Kern und Fachbereichserweiterungen schärfen.
+Fachbereiche legen für die Pilotfälle reale Nutzer, Datenbestände, Verantwortliche, Quelle/Aktualität, mögliche gemeinsame Daten, Projektbezug, Bedienanforderungen und fachliche Abnahmekriterien fest. Suchfelder, Datenrechte, CAD-/GIS-Schnittstellen, mobile Nutzung und einfache Webansichten nur soweit vertiefen, wie der ausgewählte Ablauf sie braucht. [Erhebungsleitfaden](05_PILOTKONKRETISIERUNG.md).
 
 ## Dokumentationsqualität
 
-- [A01](04_ENTSCHEIDUNGEN.md#a01)–[A39](04_ENTSCHEIDUNGEN.md#a39) anhand der ursprünglichen Gesprächsprotokolle bei Verfügbarkeit einzeln gegenprüfen; die Erstfassung ist eine konsolidierte Zusammenfassung, keine vollständige Transkription.
-- Anforderungen mit überprüfbaren Akzeptanzkriterien ergänzen, wenn die jeweiligen Piloten konkret werden.
-- Für die von IT betreibbaren Varianten die offenen Aufwandsannahmen zu Einrichtung, Betrieb und Qualifizierung ergänzen.
-- Beschlossene Architektur und technische Vorzugsvarianten stets unterscheiden.
-
-Bei der Pilotkonkretisierung Datenschutz, Lizenzbedingungen und interne Sicherheitsvorgaben für die tatsächlich genutzten Daten und Zugriffspfade klären. Standards dienen als fachliche Orientierung.
+- A01–A39 bei Verfügbarkeit mit ursprünglichen Gesprächsnotizen abgleichen; Register ist eine **Konsolidierung**, kein vollständiges Transkript.
+- Spätere Detailanforderungen nur mit bestätigten Pilotfällen und überprüfbaren Kriterien präzisieren.
+- Beschlossene Grundlagen, Prüfhypothesen und formale GF-/IT-Freigaben sauber auseinanderhalten; Datenschutz, interne IT-Vorgaben und Daten-/Lizenzrechte vor tatsächlicher Nutzung prüfen.

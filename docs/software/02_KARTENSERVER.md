@@ -33,23 +33,9 @@ Ein GIS-Kartenserver stellt Karten und gegebenenfalls Geodaten über standardisi
 
 ## 4. Vergleichsmatrix
 
-Standardisierte Dimensionen und Gewichte nach [Methodik](BEWERTUNGSMETHODIK.md); `0–3` nur nach Quellenprüfung bzw. Test, sonst `?`.
+**Bewertung noch nicht begonnen:** Alle bisherigen Punkte- und Produktstandfelder waren `?` bzw. `n. a.`; eine ausgefüllte Matrix würde hier fälschlich eine belastbare Vergleichsstufe suggerieren. QGIS Server bleibt bevorzugter, aber noch nicht technisch freigegebener Kandidat; alternative Server werden nur bei relevantem Funktionsbedarf bewertet.
 
-**Produkt-/Release-Recherche noch ausstehend:** `?` = noch nicht geprüft, `n. a.` = kein eigenständig versioniertes Produkt bzw. gegenwärtig keine konkrete Software ausgewählt. Beim tatsächlichen Vergleich Erstveröffentlichung, Version samt Releasedatum und Aktivität der letzten 12 Monate mit offiziellem Release-/Changelog-Beleg und Bewertungsstichtag ergänzen. Diese drei Angaben werden nicht zusätzlich bepunktet.
-
-| Dimension (Gewicht) | QGIS Server | GeoServer | MapServer |
-|---|---:|---:|---:|
-| **Erstveröffentlichung / seit (Jahr)** | ? | ? | ? |
-| **Aktuelle stabile Version (Releasedatum)** | ? | ? | ? |
-| **Entwicklungsaktivität (12 Monate)** | ? | ? | ? |
-| Fachliche/funktionale Eignung (30 %) | ? | ? | ? |
-| Integration/Interoperabilität (20 %) | ? | ? | ? |
-| Sicherheit/Berechtigungen (15 %) | ? | ? | ? |
-| Betrieb/Wartbarkeit (15 %) | ? | ? | ? |
-| Reife/Zukunftsfähigkeit (10 %) | ? | ? | ? |
-| Kosten/Lizenzen (10 %) | ? | ? | ? |
-| **Gesamt (noch nicht berechenbar)** | — | — | — |
-| **Evidenzstand** | E0 | E0 | E0 |
+Sobald ein bestätigter Pilotbedarf eine echte Auswahl erforderlich macht, die [standardisierte Vergleichsmatrix](VORLAGE.md#4-vergleichsmatrix) nach [Methodik](BEWERTUNGSMETHODIK.md) mit aktuellem Produkt-/Versionsstand, nachgewiesenen Muss-Kriterien, Quellen und Bewertungsstichtag erstellen. **Keine Rangfolge oder Gesamtpunktzahl ohne Belege.**
 
 ## 5. Vor- und Nachteile – vorläufige Prüfhypothesen
 

@@ -56,13 +56,13 @@ Aktuell laufen die Planung und Abstimmung der **fachlich gewünschten GDI-Einfü
 - [Git](ANHANG_A_GLOSSAR.md#git)-basierte Ressourcen und kontrollierte Änderungen etablieren.
 
 ### 2 – Erste nutzbare Pilotfunktionen
-- **BB:** ausgewählte räumliche Arbeitsabläufe und, wo erforderlich, mobile Nutzung.
+- **BB:** ausgewählte räumliche Arbeitsabläufe und, wo erforderlich, mobile Nutzung. Für einen gewählten Pilotablauf kann die **kontrollierte Migration des betroffenen GIS-Arbeitsbestands schon hier erforderlich sein**.
 - Einfache Karten über den geprüften Standard-[Webviewer](ANHANG_A_GLOSSAR.md#webviewer) bereitstellen, sofern der ausgewählte Ablauf sie braucht.
 - **Verkehrsanlagenplanung:** gemeinsame [Geodaten](ANHANG_A_GLOSSAR.md#geodaten), Projektbezug und QGIS-Workflows.
 - Fachliche Abnahme an realen Daten; keine Pflicht zu gleichem Funktionsumfang.
 
-### 3 – Stabilisierung und kontrollierte Migration
-- OneDrive-/SharePoint-basierte führende GIS-Arbeitsbestände der BB nach [A36](04_ENTSCHEIDUNGEN.md#a36) kontrolliert ablösen.
+### 3 – Stabilisierung und weitere kontrollierte Migration
+- Über den ersten Pilotumfang hinausgehende OneDrive-/SharePoint-basierte führende GIS-Arbeitsbestände der BB nach [A36](04_ENTSCHEIDUNGEN.md#a36) kontrolliert ablösen.
 - Datenquellen, Mehrbenutzerbearbeitung, Datenhoheit und Berechtigungen testen.
 - Betriebs-, Schulungs- und Supportaufwand aus der Praxis erfassen.
 

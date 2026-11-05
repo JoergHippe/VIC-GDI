@@ -60,11 +60,11 @@ flowchart TB
   Work <--> Master
 ```
 
-Die **Rückübertragung** muss für beide Varianten gesondert praktisch nachgewiesen werden. Ein erfolgreicher Transfer ersetzt keine fachliche Prüfung; die Darstellung schreibt keine Freigabe-Engine vor.
+Die **Rückübertragung** ist für beide Varianten praktisch nachzuweisen. Transfer ist keine fachliche Prüfung; eine eigene Freigabe-Engine ist nicht vorgesehen.
 
 **Vergleichstest:** Mit denselben Beispieldaten Hin- und Rückweg, Offline-Erfassung, Geometrien/Attribute/Anhänge, konkurrierende Änderungen, Berechtigungen, Bedienaufwand sowie Datenstand und fachliche Übernahme prüfen. Keine der beiden Varianten vorab bevorzugen.
 
-**Noch nicht belegt:** verwendete Synchronisationskomponenten, Online-/Offline-Anteile, führender Speicherort, Übertragungsformate, Konfliktverhalten, Benutzerrechte und Freigabeschritte. Keine technische Variante als bereits produktiv erprobt oder beschlossen behandeln.
+**Noch offen:** tatsächliche Synchronisationskomponenten, Speicherorte, Online-/Offline-Bedarf, Konfliktverhalten, Rechte und Übernahme. Keine Variante als erprobt oder beschlossen darstellen.
 
 **Für den Pilot getrennt prüfen:**
 1. Erfassung auf dem Mobilgerät: Geometrien, Attribute, Messwerte, Koordinaten-/Höhenbezug und Nachweise.
@@ -75,11 +75,7 @@ Die **Rückübertragung** muss für beide Varianten gesondert praktisch nachgewi
 
 ### Nächste fachliche Erhebung
 
-- Wie werden BB-01 bis BB-03 heute praktisch durchgeführt (Geräte, Messmittel, QGIS-Projekt, Datenquellen)?
-- Wer erhebt, kontrolliert und übernimmt Ergebnisse in den führenden Datenbestand?
-- Welche Genauigkeit und welcher Lage-/Höhenbezug sind erforderlich?
-- Welche Nachweise (z. B. Messprotokoll, Foto, Datum, Herkunft) werden tatsächlich benötigt?
-- Welche Tätigkeiten bieten sich aufgrund ihres Nutzens und überschaubaren Aufwands als erster Einführungsschritt an?
+Die Fragen des ersten Pilotabschnitts für **BB-01 bis BB-03** anhand realer Geräte, Projekte und Datenquellen beantworten. Zusätzlich fachliche Prüf- und Übernahmeverantwortung, Genauigkeit/Lage-/Höhenbezug sowie benötigte Nachweise (Messprotokoll, Foto, Datum, Herkunft) festhalten; anschließend den ersten Ablauf nach Nutzen und Aufwand priorisieren.
 
 ## Pilot 2 – Verkehrsanlagenplanung
 

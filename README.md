@@ -4,7 +4,11 @@
 
 ## Wozu VIC-GDI?
 
-**VIC-GDI ist eine vom GIS-Team und beteiligten Fachkollegen vorangetriebene Initiative** für eine unternehmensweite, fachbereichsneutrale [Geodateninfrastruktur](docs/ANHANG_A_GLOSSAR.md#gdi). Heute liegen Geodaten und QGIS-Projekte an unterschiedlichen Orten; geeignete gemeinsame Daten werden teils mehrfach geführt, und Aktualität, fachliche Zuständigkeit und Weitergabe erfordern zusätzliche Abstimmung. Die GDI schafft die Grundlage für **verlässliche führende Datenbestände, geregelte Zugriffe und fachbereichsübergreifende Wiederverwendung** – mit QGIS am Arbeitsplatz, einfachen Webkarten bei Bedarf und geeigneten mobilen Arbeitsabläufen. Sie ergänzt CAD-, BIM- und Fachsysteme, statt sie zu ersetzen. **Die formale Freigabe von Umsetzung, Ressourcen und Betrieb steht noch aus.**
+Viele Informationen in unseren Projekten haben einen Ort: Leitungsverläufe, Grundstücke, Vermessungspunkte oder Bauwerke. Heute liegen solche Informationen teils an unterschiedlichen Stellen. Wer sie verwenden möchte, muss zunächst den richtigen Stand finden und wissen, wer dafür verantwortlich ist.
+
+**VIC-GDI soll eine gemeinsame Grundlage für diese Informationen schaffen:** Geeignete Daten werden nachvollziehbar gepflegt, sind leichter auffindbar und können von berechtigten Mitarbeitenden wiederverwendet werden. Eine **Geodateninfrastruktur (GDI)** ist deshalb **kein einzelnes Programm**, sondern das Zusammenspiel von Datenhaltung, Auffindbarkeit, Bereitstellung und verlässlichem Betrieb. [Einfach erklärte Funktionsbereiche mit Schaubild](docs/01_PROJEKTKONZEPT.md#was-ist-eine-geodateninfrastruktur--und-wie-funktioniert-sie).
+
+Die Initiative geht vom GIS-Team und beteiligten Fachkollegen aus. Für die Facharbeit sind QGIS, für andere Mitarbeitende einfache Browserkarten und für geeignete Aufgaben mobile Abläufe vorgesehen. Die GDI ergänzt bestehende CAD-, BIM- und Fachsysteme; sie ersetzt diese nicht. **Die formale Freigabe von Umsetzung, Ressourcen und Betrieb steht noch aus.**
 
 **Konkrete Einstiegsmöglichkeiten:** Die Baubetreuung übernimmt mobil erfasste Leitungsverläufe nach fachlicher Prüfung oder wertet erfasste Mengen aus; die Verkehrsanlagenplanung nutzt geeignete Daten projektübergreifend aus einem gemeinsamen Bestand. Die Piloten erschließen solche Vorteile **schrittweise in der Praxis**. Konkrete Zeit- und Kosteneinsparungen werden nicht ohne belastbare Zahlen behauptet. [Fachliche Begründung und Praxisbeispiele](docs/01_PROJEKTKONZEPT.md#warum-wir-vic-gdi-einführen-wollen).
 
@@ -22,17 +26,17 @@
 
 ## Fachliches und technisches Konzept (gezielt vertiefen)
 
-1. [Projektkonzept](docs/01_PROJEKTKONZEPT.md) – Motivation, Ziele, Nutzen, Abgrenzung und Piloten.
+1. [Projektkonzept mit GDI-Einführung und acht Projektgrundsätzen](docs/01_PROJEKTKONZEPT.md) – verständliches Grundmodell, Motivation, Leitplanken und Piloten.
 2. [Anforderungen](docs/02_ANFORDERUNGEN.md) – fachlicher und nichtfunktionaler Rahmen.
 3. [Pilotkonkretisierung](docs/05_PILOTKONKRETISIERUNG.md) – tatsächliche Praxis, Vorschläge und noch zu erhebende Anforderungen.
 4. [Roadmap](docs/07_ROADMAP.md) – Vorbereitung, Freigabeschritte und gestaffelte Einführung.
 5. [Offene Punkte](docs/08_OFFENE_PUNKTE.md) – **nach Entscheidungszeitpunkt priorisierte** Prüfaufträge.
 6. [Architektur](docs/03_ARCHITEKTUR.md) – logisches Zielbild und technische Leitplanken, keine Implementierungsfreigabe.
-7. [Entscheidungsregister A01–A39](docs/04_ENTSCHEIDUNGEN.md) – führender Ort für Status, Begründungen und Prüfvorbehalte.
+7. [Festlegungs- und Entscheidungsregister A01–A39](docs/04_ENTSCHEIDUNGEN.md) – stabile Kennungen, Kategorien, Status und Prüfvorbehalte.
 
 ## Technische Vertiefung und Nachschlagen
 
-- [Softwarekandidaten, Lizenzüberblick und Bewertungen](docs/software/README.md) – Prüfgrundlagen, **keine endgültige Produktauswahl**.
+- [Softwarekandidaten und Lizenzüberblick](docs/software/README.md) – Prüfgrundlagen ohne vorgetäuschte Punktbewertungen; vollständiger Vergleich erst bei Bedarf.
 - [Glossar](docs/ANHANG_A_GLOSSAR.md) – Fachbegriffe und Abkürzungen.
 - [Dokumentationspflege](docs/ANHANG_B_DOKUMENTATIONSPFLEGE.md) – Regeln für konsistente, wartbare Dokumente.
 

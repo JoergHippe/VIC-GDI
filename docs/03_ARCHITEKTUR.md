@@ -2,22 +2,24 @@
 
 **Status:** Interner Arbeitsentwurf · beschlossene Grundsätze und noch offene technische Festlegungen getrennt.
 
+**Für Leser ohne GIS-Vorkenntnisse:** Die [einfache Erklärung mit Drei-Funktionsbereiche-Modell](01_PROJEKTKONZEPT.md#was-ist-eine-geodateninfrastruktur--und-wie-funktioniert-sie) beschreibt zunächst den Zweck. Dieses Dokument zeigt anschließend die **technische Umsetzung und tatsächliche Datenzugriffswege**, nicht ein verpflichtendes Schichtenmodell.
+
 Die Architektur zeigt den bisherigen Beschlussstand. Zentrale [PostgreSQL](ANHANG_A_GLOSSAR.md#postgresql)-Projektablage und erweiterter interner Katalog mit hybrider Metadatenpflege sind [Prüfvarianten](04_ENTSCHEIDUNGEN.md#erneute-prüfung-a04-a15-und-a36) zu [A04](04_ENTSCHEIDUNGEN.md#a04), [A15](04_ENTSCHEIDUNGEN.md#a15) und [A36](04_ENTSCHEIDUNGEN.md#a36).
 
 ## Logische Architektur
 
 - **Clients:** [QGIS](ANHANG_A_GLOSSAR.md#qgis) Desktop als Facharbeitsplatz; [Webviewer](ANHANG_A_GLOSSAR.md#webviewer) für vereinfachte und erweiterte Kartennutzung; [QField](ANHANG_A_GLOSSAR.md#qfield)/[HAPPY MINI Q](ANHANG_A_GLOSSAR.md#happy-mini-q) für geeignete mobile Online-/Offline-Szenarien.
-- **Daten:** Gemeinsame PostgreSQL/[PostGIS](ANHANG_A_GLOSSAR.md#postgis)-Instanz mit fachbereichsbezogenen Schemas; projektbezogene Zuordnung über `project_id` nur, wo fachlich sinnvoll ([A02](04_ENTSCHEIDUNGEN.md#a02), [A03](04_ENTSCHEIDUNGEN.md#a03)).
+- **Daten:** Gemeinsame PostgreSQL/[PostGIS](ANHANG_A_GLOSSAR.md#postgis)-Datenbank mit fachbereichsbezogenen Schemas; projektbezogene Zuordnung über `project_id` nur, wo fachlich sinnvoll ([A02](04_ENTSCHEIDUNGEN.md#a02), [A03](04_ENTSCHEIDUNGEN.md#a03)).
 - **Fachprojekte:** QGIS-Projekte bleiben fachbereichs- bzw. projektbezogen; zentral gepflegte Verbindungen, Vorlagen und [QML](ANHANG_A_GLOSSAR.md#qml)-Stile können wiederverwendet und überschrieben werden ([A04](04_ENTSCHEIDUNGEN.md#a04), [A17](04_ENTSCHEIDUNGEN.md#a17)).
 - **Dienste:** [QGIS Server](ANHANG_A_GLOSSAR.md#qgis-server) bevorzugt, vorbehaltlich technischem [PoC](ANHANG_A_GLOSSAR.md#poc); Standard-Webviewer (z. B. [Lizmap](ANHANG_A_GLOSSAR.md#lizmap)/[QWC2](ANHANG_A_GLOSSAR.md#qwc2)) mit begrenzten Anpassungen; Webpublikation über getrennte Kartenprojekte ([A10](04_ENTSCHEIDUNGEN.md#a10), [A11](04_ENTSCHEIDUNGEN.md#a11), [A18](04_ENTSCHEIDUNGEN.md#a18)).
-- **Zusatzfunktionen:** Schlanke integrierte Suche und [Geodatenauszug](ANHANG_A_GLOSSAR.md#extract) mit eigener Rechteprüfung ([A12](04_ENTSCHEIDUNGEN.md#a12), [A20](04_ENTSCHEIDUNGEN.md#a20)). Der Geodatenauszug ist nach [A12](04_ENTSCHEIDUNGEN.md#a12) als **Funktion**, nicht als separater Extract-Service beschlossen. Für priorisierten Pilotbedarf zuerst vorhandene QGIS-, Viewer- und Dienstfunktionen prüfen; einen eigenständigen Dienst nur bei nachgewiesenem Mehrbedarf vorsehen.
+- **Zusatzfunktionen:** Integrierte Suche und berechtigter [Geodatenauszug](ANHANG_A_GLOSSAR.md#extract). Export **als Funktion** ohne Pflicht zu eigenem Dienst; vorhandene QGIS-/Viewer-/Dienstfunktionen zuerst prüfen ([A12](04_ENTSCHEIDUNGEN.md#a12), [A20](04_ENTSCHEIDUNGEN.md#a20)).
 - **Hosting und Betrieb:** [A23](04_ENTSCHEIDUNGEN.md#a23) bevorzugt weiterhin On-prem auf [Proxmox](ANHANG_A_GLOSSAR.md#proxmox) (**H1**). Alternativen sind **gemietete Infrastruktur mit eigener GDI (H2)**, betreutes Miet-Hosting (**H3**) oder GDIaaS (**H4**) gemäß [A39-Vergleich](06_UMSETZUNGS_UND_BETRIEBSMODELLE.md). **Betriebsverantwortung D1–D3** und technische native/hybride/containerisierte Bereitstellung [A24](04_ENTSCHEIDUNGEN.md#a24) sind getrennt zu klären. Keine dieser Alternativen ist beschlossen.
 
 **Lizenz-/Kostenprinzip:** Die hier vorgesehenen GDI-Kernkomponenten sind freie Open-Source-Software ohne zusätzliche Softwarelizenzgebühren. Proxmox VE ist ebenfalls ohne verpflichtende kostenpflichtige Lizenz nutzbar; eine Subskription für Enterprise-Repository/Support kann sich betrieblich empfehlen. Optional benötigte Drittanbieter-Dienste, Betriebsressourcen und die konkrete Softwarestückliste werden getrennt geprüft. Siehe [Software-/Lizenzübersicht](software/README.md#lizenz--und-kostenüberblick-gdi-kern) und [A39-Kostenrahmen](06_UMSETZUNGS_UND_BETRIEBSMODELLE.md#kostenrahmen-und-lizenzabgrenzung). Dies legt keine der offenen Deploymentvarianten [A24](04_ENTSCHEIDUNGEN.md#a24) fest.
 
 ### Architekturübersicht (logisches Zielbild)
 
-Das Diagramm zeigt die **wesentlichen Nutzungspfade und Datenhaltungen**, ohne einzelne technische Dienste oder Server aufzuschlüsseln. Der mobile Austausch ist noch zu validieren; gestrichelte Linien markieren mögliche, noch nicht festgelegte Zielanbindungen. Identität, Berechtigungen, Betrieb und Deployment gelten übergreifend und sind bewusst nicht als zusätzliche Pfeile dargestellt.
+Im Unterschied zum [einfachen GDI-Funktionsmodell](01_PROJEKTKONZEPT.md#drei-funktionsbereiche-und-ein-gemeinsames-fundament) zeigt dieses Diagramm die **wesentlichen technischen Nutzungspfade und Datenhaltungen**, ohne einzelne Server aufzuschlüsseln. Der mobile Austausch ist noch zu validieren; gestrichelte Linien markieren mögliche, noch nicht festgelegte Zielanbindungen. Identität, Berechtigungen, Betrieb und Deployment gelten übergreifend und sind bewusst nicht als zusätzliche Pfeile dargestellt.
 
 ```mermaid
 flowchart TB
@@ -29,7 +31,7 @@ flowchart TB
   subgraph Plattform["Gemeinsame GDI"]
     Map["GIS-Dienste / Kartenbereitstellung"]
     Data[("PostGIS: gemeinsame Vektordaten")]
-    Files["Fileserver: QGIS-Projekte und Fachdateien"]
+    Files["Fileserver: Fachdateien, ggf. QGIS-Projekte"]
   end
   External["Externe Geodaten / Dienste"]
   MobileSync["Mobiler Datenaustausch: Weg offen"]
@@ -45,7 +47,7 @@ flowchart TB
   MobileSync -.-> Files
 ```
 
-**Lesart:** QGIS Desktop arbeitet je nach Datenart mit PostGIS, Fileservern und externen Diensten. Der Webviewer nutzt [GIS](ANHANG_A_GLOSSAR.md#gis)-Dienste zur Kartenbereitstellung. Fachdateien verbleiben bei Bedarf auf dem Fileserver; geeignete gemeinsam bearbeitete Vektordaten liegen in PostGIS. Der mobile Rückweg und die Sicherheitsintegration sind noch zu konkretisieren.
+**Lesart:** QGIS Desktop arbeitet je nach Datenart mit PostGIS, Fileservern und externen Diensten. Der Webviewer nutzt [GIS](ANHANG_A_GLOSSAR.md#gis)-Dienste zur Kartenbereitstellung. Fachdateien verbleiben bei Bedarf auf dem Fileserver; geeignete gemeinsam bearbeitete Vektordaten liegen in PostGIS. **Die PostgreSQL-Ablage von QGIS-Projekten wird nach A04/A36 geprüft; das Diagramm stellt den bisherigen Ausgangsweg dar.** Der mobile Rückweg und die Sicherheitsintegration sind noch zu konkretisieren.
 
 ## Datenorganisation
 
@@ -62,7 +64,7 @@ flowchart TB
 - **Auszug:** Der berechtigte Geodatenauszug ist als **Funktion**, nicht als eigener Dienst beschlossen. Objektselektion vollständig als Standard, geometrisches Clipping optional; Austauschformate und CRS sind fachlich festgelegt ([A12](04_ENTSCHEIDUNGEN.md#a12), [A21](04_ENTSCHEIDUNGEN.md#a21)). **Rechteausgestaltung bleibt offen** ([A26](04_ENTSCHEIDUNGEN.md#a26)); kein ungeschützter Exportweg darf produktiv freigegeben werden. Technische Detailanforderungen (GeoJSON-Version/CRS, DXF, EPSG:3068, GDAL-Tests) stehen an einer Stelle im [SW-06-Prüfkatalog](software/06_GEODATENAUSZUG.md), nicht zusätzlich als Implementierungsanweisung hier.
 - **Mobil:** Vorhandene Synchronisationsmechanismen verwenden; Konfliktbehandlung und Rückübertragung pilotieren, keine eigene Offline-Engine ([A13](04_ENTSCHEIDUNGEN.md#a13)).
 - **[ETL](ANHANG_A_GLOSSAR.md#etl):** Manuelle Verfahren und Skripte zuerst; kontrollierte Staging-/Importprüfungen, später selektiv automatisieren ([A14](04_ENTSCHEIDUNGEN.md#a14)).
-- **Metadaten:** Schlanker Katalog für Quelle, Datensatz und Dienst; je Layer u. a. Herkunft, Datenstand, Lizenz, Importzeit, CRS ([A15](04_ENTSCHEIDUNGEN.md#a15)).
+- **Metadaten:** Interner Katalog als Ausgangspunkt für Herkunft, Datenstand, Lizenz und Zuständigkeit; Erweiterung und hybride Pflege noch zu prüfen ([A15](04_ENTSCHEIDUNGEN.md#a15)).
 - **Qualität:** Amtliche Daten nur auf technische Import-/Transformationsfehler prüfen; eigene gemeinsame Daten fachlich im normalen Arbeitsprozess plausibilisieren, ohne formalen Freigabeapparat ([A16](04_ENTSCHEIDUNGEN.md#a16)).
 
 ## Sicherheits- und Betriebsprinzipien
