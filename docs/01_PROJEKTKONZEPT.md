@@ -12,20 +12,43 @@ Solche Informationen liegen heute teils an unterschiedlichen Stellen. Wer sie be
 
 ```mermaid
 flowchart TB
-  Apps["Nutzung / Anwendungen<br/>Fachprogramme · Karten im Browser · mobile Erfassung"]
-  subgraph GDI["Drei Funktionsbereiche"]
+  %% --- STYLES ---
+  classDef appStyle fill:#ebf3f9,stroke:#2b5c8f,stroke-width:2px,color:#1a365d,font-weight:bold;
+  classDef coreStyle fill:#fff7ed,stroke:#ea580c,stroke-width:2px,color:#431407,font-weight:bold;
+  
+  %% Macht die Boxen der Fundament-Punkte unsichtbar, behält nur den Text
+  classDef invisibleText fill:none,stroke:none,color:#18181b,font-weight:500;
+
+  %% --- NODES ---
+  Apps["**Nutzung**<br/>• Web-Karten<br/>• Desktop-GIS Anwender<br/>• Mobile Datenerfassung"]:::appStyle
+  
+  subgraph GDI["**GDI-Core**"]
     direction LR
-    Daten["Datenhaltung<br/>geordnet speichern und pflegen"]
-    Katalog["Katalog<br/>finden und einordnen"]
-    Bereit["Datenbereitstellung<br/>zugänglich machen"]
+    Daten["**Geodatenbasis**<br/>*Speicherung & Integration*"]:::coreStyle
+    Katalog["**Katalogdienste**<br/>*Metadaten: Suchen & Finden*"]:::coreStyle
+    Bereit["**Geodatendienste**<br/>*Interoperable Bereitstellung*"]:::coreStyle
+    
+    Daten ~~~ Katalog ~~~ Bereit
   end
-  Basis["Gemeinsames Fundament<br/>Zuständigkeiten · Zugriffsrechte · Datenqualität · sicherer Betrieb"]
-  Apps -.- Daten
-  Apps -.- Katalog
-  Apps -.- Bereit
-  Daten -.- Basis
-  Katalog -.- Basis
-  Bereit -.- Basis
+  style GDI fill:#fffcf9,stroke:#f97316,stroke-width:1px
+
+  %% Ein Subgraph als Klammer, in dem die Elemente logisch nebeneinander liegen müssen
+  subgraph Basis["**GDI-Governance & Fundament**"]
+    direction LR
+    F1["• Zuständigkeiten"]:::invisibleText
+    F2["• Zugriffsrechte & Sicherheit"]:::invisibleText
+    F3["• Datenqualität"]:::invisibleText
+    F4["• IT-Infrastrukturbetrieb"]:::invisibleText
+    
+    F1 ~~~ F2 ~~~ F3 ~~~ F4
+  end
+  style Basis fill:#f4f4f5,stroke:#71717a,stroke-width:2px,color:#18181b
+
+  %% --- LINKS ---
+  Apps --- GDI
+  
+  %% Erzeugt den gewünschten deutlichen Abstand nach unten
+  GDI ---- Basis
 ```
 
 **Lesart:** Das Schaubild zeigt **Aufgabenbereiche**, keine vorgeschriebene Softwareaufteilung und keine technische Reihenfolge. Eine Anwendung kann beispielsweise direkt auf einen Datenbestand zugreifen, ohne zuvor einen Katalog oder Kartendienst zu verwenden. Die drei Bereiche können Funktionen vorhandener Systeme nutzen.
