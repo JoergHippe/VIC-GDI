@@ -10,7 +10,7 @@ Gesprächsunterlagen: [IT-Briefing](BRIEFING_IT.md) und [Geschäftsführungs-Bri
 
 | Horizont | Was jetzt relevant ist | Auslöser für Vertiefung |
 |---|---|---|
-| **P0 – Organisations-/Vorbereitungsentscheidung** | **[A39](04_ENTSCHEIDUNGEN.md#a39)**: Umsetzungs-, Qualifizierungs- und Betriebsrichtung, reale GIS-/IT-Kapazitäten und erste Kostenfelder; **[A31](04_ENTSCHEIDUNGEN.md#a31)** Zuständigkeiten/Vertretungen im Grundsatz; fachliche Pilotfälle und Ist-Situation | Gespräch und Vorbereitungsauftrag durch GF/IT |
+| **P0 – Organisations-/Vorbereitungsentscheidung** | **[A39](04_ENTSCHEIDUNGEN.md#a39)**: Umsetzung, Qualifizierung, Betrieb und **Hosting-/Bezugsmodell H1–H4**, GIS-/IT-Kapazitäten sowie Kosten; **[A31](04_ENTSCHEIDUNGEN.md#a31)** Zuständigkeiten/Vertretungen im Grundsatz; fachliche Pilotfälle und Ist-Situation | Gespräch und Vorbereitungsauftrag durch GF/IT |
 | **P1 – Vor Pilotfreigabe** | Pilotumfang/[A35](04_ENTSCHEIDUNGEN.md#a35), überprüfbare Erfolgskriterien, IT-Sicherheits-/Betriebsrahmen (insb. [A25–A29](04_ENTSCHEIDUNGEN.md#a25)), ggf. erforderliche Machbarkeitstests, Konkretisierung A39 | Entscheidung über konkrete Erprobung bzw. produktiven Pilot |
 | **P2 – Vor jeweiliger technischer Implementierung** | Deployment [A24](04_ENTSCHEIDUNGEN.md#a24), Softwarekandidaten, technische Ausgestaltung von [A10](04_ENTSCHEIDUNGEN.md#a10), [A12](04_ENTSCHEIDUNGEN.md#a12), [A13](04_ENTSCHEIDUNGEN.md#a13), [A15](04_ENTSCHEIDUNGEN.md#a15), [A30](04_ENTSCHEIDUNGEN.md#a30) sowie QGIS-Projektablage A04/A36 | Bestätigter Pilotbedarf und zuständiges Umsetzungsteam |
 | **P3 – Spätere Vertiefung/bei Bedarf** | Zurückgestellte [A37](04_ENTSCHEIDUNGEN.md#a37)/[A38](04_ENTSCHEIDUNGEN.md#a38), nicht pilotrelevante Funktionen und umfangreichere Produktauswahl | Nachgewiesener fachlicher, Sicherheits- oder Betriebsbedarf |
@@ -43,9 +43,9 @@ Für die beiden Pilotbereiche liegt ein [Erhebungsleitfaden](05_PILOTKONKRETISIE
 
 ## Offene Organisationsentscheidung: Umsetzung und Betrieb
 
-- **Wer setzt die GDI um? ([A39](04_ENTSCHEIDUNGEN.md#a39))** Die Optionen **A1–A3** (intern mit Selbststudium/Schulung/Beratung), **B1** (gemeinsame Umsetzung) und **C1/C2** (externe Umsetzung mit Übergabe bzw. Betrieb) sowie **C3/GDIaaS** (extern gehostete und betriebene GDI-Plattform) sind in [06_UMSETZUNGS_UND_BETRIEBSMODELLE.md](06_UMSETZUNGS_UND_BETRIEBSMODELLE.md) beschrieben und **nicht entschieden**.
+- **Wer setzt die GDI um und wo wird sie bereitgestellt? ([A39](04_ENTSCHEIDUNGEN.md#a39))** **Umsetzung A1–A3/B1/C1–C2**, **Wissensaufbau**, **Betrieb D1–D3** und **Hosting/Bezug H1–H4** sind im [Modellvergleich](06_UMSETZUNGS_UND_BETRIEBSMODELLE.md) getrennt dargestellt und **nicht entschieden**. **H2 (eigene GDI auf gemietetem Server)** und H3 (Managed Hosting) sind ausdrücklich berücksichtigt; bisheriges C3/GDIaaS heißt jetzt H4.
 - **Wie werden Wissen und dauerhafter Betrieb sichergestellt?** Schulungs-/Wissenstransferbedarf und **D1–D3** (interner, unterstützter oder überwiegend externer Betrieb) getrennt vom Aufbau klären ([A31](04_ENTSCHEIDUNGEN.md#a31), [A33](04_ENTSCHEIDUNGEN.md#a33)).
-- **Nächster Schritt:** GIS/IT konkretisieren Kompetenzen, Personentage, Betriebsverantwortung, externe Leistungspakete und Gesamtkosten; **GDIaaS gesondert hinsichtlich Funktionsabdeckung, IT-Integration, Datenschutz, Portabilität und Serviceentgelten prüfen**; **GF und IT wählen das Modell erst auf dieser Grundlage** in ihren jeweiligen Zuständigkeiten. A3/B1 mit D2 bleibt eine unverbindliche Prüfrichtung.
+- **Nächster Schritt:** GIS/IT vergleichen H1 (verfügbare Proxmox-Ressourcen) mit H2/H3 (Miet-/Managed-Angebote samt Betrieb, Netz-/Transferkosten und Backup) und H4 (vollständige Plattformfunktion, IT-Integration, Datenschutz, Exit). Für repräsentative U/W/D/H-Kombinationen Kompetenzen, Personentage, Zuständigkeiten, Datensicherheit, Rückmigration und Gesamtkosten auf gleichen Zeithorizont bringen. **GF und IT wählen erst auf dieser Grundlage**; A3/B1 mit D2 ist nur eine Prüfrichtung.
 
 ## Öffentliches GitHub-Repository: Freigabe- und Lizenzklärung
 

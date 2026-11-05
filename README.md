@@ -10,13 +10,13 @@
 
 ## Was aktuell geklärt werden muss: A39
 
-**Nicht der grundsätzliche Nutzen einer GDI, sondern ihre konkrete Einführung ist jetzt zu entscheiden.** Für eine belastbare Pilot-/Umsetzungsfreigabe erarbeiten Geschäftsführung, IT und GIS-Team eine tragfähige Richtung für **Umsetzung, Wissensaufbau und Dauerbetrieb**. Interner Aufbau, gemeinsame Umsetzung, externe Leistungen und **GDI as a Service (GDIaaS)** als gehostete Plattform sind weiterhin offene Varianten. Auch Zuständigkeiten, verfügbare Personentage, fachliche Anforderungen und Kosten müssen realistisch geklärt werden. Die Entscheidung über vorbereitende Ressourcen ist von einer späteren verbindlichen Pilotfreigabe zu unterscheiden.
+**Nicht der grundsätzliche Nutzen einer GDI, sondern ihre konkrete Einführung ist jetzt zu entscheiden.** Für eine belastbare Pilot-/Umsetzungsfreigabe erarbeiten Geschäftsführung, IT und GIS-Team eine tragfähige Richtung für **Umsetzung, Wissensaufbau und Dauerbetrieb**. Interner Aufbau, gemeinsame Umsetzung und externe Leistungen sind ebenso offene Varianten wie die eigenständige **Hosting-/Bezugsdimension H1–H4**: vorhandene VIC-Server, **gemieteter Server mit eigener GDI**, Managed Hosting oder eine **GDI as a Service (GDIaaS)**-Plattform. Auch Zuständigkeiten, verfügbare Personentage, fachliche Anforderungen und Kosten müssen realistisch geklärt werden. Die Entscheidung über vorbereitende Ressourcen ist von einer späteren verbindlichen Pilotfreigabe zu unterscheiden.
 
 | Für wen? | Einstiegslektüre und nächste Frage |
 |---|---|
 | **Geschäftsführung** | [GF-Briefing](docs/BRIEFING_GESCHAEFTSFUEHRUNG.md): Warum das Projekt? Welche Ressourcen für Vorbereitung und spätere Umsetzung? |
 | **IT** | [IT-Briefing](docs/BRIEFING_IT.md): Welche Infrastruktur, Kompetenzen, Sicherheits- und Betriebsverantwortung sind tragfähig? |
-| **GF + IT + GIS-Team** | [A39-Modellvergleich](docs/06_UMSETZUNGS_UND_BETRIEBSMODELLE.md): Wer setzt um, wie sichern wir Wissen, wer betreibt dauerhaft? |
+| **GF + IT + GIS-Team** | [A39-Modellvergleich](docs/06_UMSETZUNGS_UND_BETRIEBSMODELLE.md): Wer setzt um, wie sichern wir Wissen, wer betreibt, und wo wird die GDI gehostet? |
 
 **Kostenprinzip:** Der geplante GDI-Kern verwendet **freie Open-Source-Software ohne zusätzliche Softwarelizenzgebühren**. Auch Proxmox VE als Virtualisierungsplattform ist ohne zwingende kostenpflichtige Subskription nutzbar. Das macht **Aufbau, Arbeitszeit, Schulungen, Betrieb, Infrastruktur und optionale externe Dienste nicht kostenlos**. [Komponenten und Lizenzquellen](docs/software/README.md#lizenz--und-kostenüberblick-gdi-kern) · [wirtschaftlicher Gesamtrahmen](docs/06_UMSETZUNGS_UND_BETRIEBSMODELLE.md#kostenrahmen-und-lizenzabgrenzung).
 
