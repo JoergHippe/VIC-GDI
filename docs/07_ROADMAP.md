@@ -2,41 +2,41 @@
 
 **Status:** Interner Arbeitsentwurf · keine Termin-, Budget- oder Personalzusage.
 
-Die [Pilotkonkretisierung](05_PILOTKONKRETISIERUNG.md) trennt fachlich benannte Tätigkeiten und bestehende mobile Praxis der Baubetreuung von Ablaufvorschlägen und offenen Fragen. Die Auswahl und Abnahme der ersten Pilotabläufe stehen aus.
+VIC-GDI ist eine fachlich vom GIS-Team und beteiligten Fachkollegen vorangetriebene Infrastrukturinitiative. Die [Pilotkonkretisierung](05_PILOTKONKRETISIERUNG.md) dokumentiert die fachliche Ausgangslage und mögliche erste Einsatzabläufe. **Die Piloten sind gestaffelte Schritte zur Einführung der GDI**; auszuwählen und abzunehmen sind die konkreten Abläufe und technischen Lösungen, nicht der grundsätzliche Nutzen einer GDI.
 
 ## Vorgehensprinzip
 
 Gemeinsame, schlanke [GDI](ANHANG_A_GLOSSAR.md#gdi)-Basis und zwei früh beteiligte Pilotbereiche ([A34](04_ENTSCHEIDUNGEN.md#a34)). Der [MVP](ANHANG_A_GLOSSAR.md#mvp) ist priorisiert und anpassbar; gemeinsamer GDI-MVP und fachliche Pilot-MVPs werden getrennt geplant ([A35](04_ENTSCHEIDUNGEN.md#a35)). Phasen dürfen sich überlappen.
 
-### Ablauf bis zur belastbaren Pilotentscheidung
+### Vorbereitung der gestaffelten GDI-Einführung
 
 ```mermaid
 flowchart LR
-  Prepare["Vorbereitungsressourcen und Ist-Abläufe klären"]
+  Prepare["Ressourcen und Ist-Abläufe konkretisieren"]
   Model["A39: Umsetzung, Wissen und Betrieb bewerten"]
-  Select["Pilotfälle und Prüfumfang festlegen"]
-  Release["Erprobung gesondert freigeben"]
-  Test["Offene Machbarkeit gezielt prüfen"]
+  Select["Erste Einführungsabläufe und Umfang festlegen"]
+  Release["Gezielten Techniktest freigeben"]
+  Test["Technische Detailfrage absichern"]
   Decide{"Produktiven Pilot freigeben?"}
-  Use["Pilot umsetzen"]
+  Use["Ersten GDI-Ausbauschritt umsetzen"]
   Prepare --> Model --> Select
-  Select -->|Machbarkeit offen| Release
+  Select -->|Technische Detailfrage offen| Release
   Release --> Test --> Decide
-  Select -->|Machbarkeit ausreichend geklärt| Decide
+  Select -->|Technik ausreichend geklärt| Decide
   Decide -->|Ja, inkl. tragfähigem Betrieb| Use
-  Decide -->|Überarbeiten| Model
+  Decide -->|Rahmen anpassen| Model
 ```
 
-Aktuell laufen Vorbereitung und Abstimmung. IT klärt den Betriebsrahmen, die Geschäftsführung entscheidet über Ressourcen für die Vorbereitung. Praktische Erprobung folgt nach gesonderter Freigabe. Über Umfang, Budget und Start der Piloten entscheidet die Geschäftsführung anhand der Ergebnisse und des mit IT geklärten Betriebsrahmens. Siehe [Mindestabnahme für den Betrieb](BRIEFING_IT.md#mindestabnahme-vor-produktivem-pilot) und [Folgeentscheidung der Geschäftsführung](BRIEFING_GESCHAEFTSFUEHRUNG.md#folgeentscheidung).
+Aktuell laufen die Planung und Abstimmung der **fachlich gewünschten GDI-Einführung**. Die IT klärt den Betriebsrahmen, die Geschäftsführung entscheidet über die notwendigen Vorbereitungsressourcen. **Gezielte technische Tests** erfolgen bei Bedarf nach gesonderter Freigabe. Über Umfang, Budget und Start der Piloten entscheidet die Geschäftsführung anhand der Ergebnisse und des mit IT geklärten Betriebsrahmens. Siehe [Mindestabnahme für den Betrieb](BRIEFING_IT.md#mindestabnahme-vor-produktivem-pilot) und [Folgeentscheidung der Geschäftsführung](BRIEFING_GESCHAEFTSFUEHRUNG.md#folgeentscheidung).
 
 ## Entscheidungstore und Abhängigkeiten
 
 | Entscheidungstor | Erforderliche Grundlage | Ergebnis |
 |---|---|---|
-| **Vorbereitung ermöglichen** | Erster fachlicher Nutzen, Pilotvorschläge, Ansprechpersonen, grober GIS-/IT-Prüfauftrag | GF legt priorisierte Vorbereitungsressourcen fest; **keine Umsetzungsfreigabe** |
+| **Vorbereitung ermöglichen** | Fachlich begründete Zielsetzung, Pilotvorschläge, Ansprechpersonen, grober GIS-/IT-Planungsauftrag | GF legt priorisierte Vorbereitungsressourcen fest; **keine Umsetzungsfreigabe** |
 | **A39-Richtung bewerten** | Verfügbare Kompetenzen/Kapazitäten, realistische interne/externe Varianten, Qualifizierung, Kostenfelder, dauerhafte Verantwortung | GF/IT erarbeiten bzw. treffen in ihren Zuständigkeiten die tragfähige Organisationsrichtung; fehlende Voraussetzungen ausdrücklich dokumentieren |
 | **Gezielte Erprobung freigeben (falls nötig)** | Konkrete offene Machbarkeitsfrage, begrenzter Testumfang und Zuständigkeit | Separate Freigabe für einen PoC, **noch kein produktiver Pilot** |
-| **Produktiven Pilot freigeben** | Bestätigter Nutzen-/MVP-Umfang, Sicherheit/Rechte, Backup/Restore, Betriebsverantwortung und Ressourcen | GF entscheidet über Umfang/Budget, IT über tragfähigen Betrieb; fachliche Abnahme durch Pilotbereiche |
+| **Produktiven Pilot freigeben** | Abgestimmter Pilot-/MVP-Umfang und Abnahmekriterien, Sicherheit/Rechte, Backup/Restore, Betriebsverantwortung und Ressourcen | GF entscheidet über Umfang/Budget, IT über tragfähigen Betrieb; fachliche Abnahme durch Pilotbereiche |
 
 **A39 ist vorrangig, aber kein Totalstopp:** Für eine vernünftige A39-Bewertung dürfen fachliche Pilotfälle, ein logisches Zielbild und grobe technische Aufwandstreiber bereits geklärt werden. Detailauswahl und Optimierung ohne unmittelbaren Einfluss auf A39 oder einen konkret freigegebenen Pilot werden zurückgestellt. [Priorisierte offene Punkte](08_OFFENE_PUNKTE.md#arbeitspriorität-nach-entscheidungshorizont).
 
@@ -67,9 +67,9 @@ Aktuell laufen Vorbereitung und Abstimmung. IT klärt den Betriebsrahmen, die Ge
 - Betriebs-, Schulungs- und Supportaufwand aus der Praxis erfassen.
 
 ### 4 – Review und Ausbau
-- Nutzen, Bedienbarkeit, Datenqualität, Wartbarkeit, Ressourcen und Akzeptanz bewerten.
-- Architektur bei Bedarf korrigieren, offene Entscheidungen gezielt bearbeiten.
-- Weitere Fachbereiche und Komfortfunktionen nur nach nachgewiesenem Nutzen aufnehmen.
+- Die im ersten Ausbauschritt erreichten Verbesserungen dokumentieren; Bedienbarkeit, Datenqualität, Wartbarkeit, Ressourcen und Akzeptanz bewerten.
+- Architektur und Arbeitsabläufe anhand der Betriebserfahrungen gezielt verbessern; offene Entscheidungen bearbeiten.
+- Weitere Fachbereiche und Komfortfunktionen nach fachlichen Prioritäten, vorhandenen Kapazitäten und Betriebserfahrungen aufnehmen.
 
 ## MVP-Abgrenzung
 
