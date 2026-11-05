@@ -2,6 +2,55 @@
 
 **Status:** Interner Arbeitsentwurf · fachliche Initiative des GIS-Teams und beteiligter Fachkollegen; Umsetzungs-, Budget- und Betriebsfreigabe durch GF/IT noch offen.
 
+## Was ist eine Geodateninfrastruktur – und wie funktioniert sie?
+
+Viele Informationen, mit denen wir arbeiten, haben einen konkreten Ort: Wo verläuft eine Leitung? Welches Bauwerk ist betroffen? Welche Vermessungsdaten liegen für eine Planung vor?
+
+Solche Informationen liegen heute teils an unterschiedlichen Stellen. Wer sie benötigt, muss zunächst den richtigen Datenbestand finden und wissen, ob er aktuell ist und verwendet werden darf. **Eine Geodateninfrastruktur (GDI) schafft dafür eine gemeinsame, verlässliche Grundlage.** Sie organisiert, **wo Informationen geführt werden, wie man sie findet, wie sie bereitgestellt werden und wer dafür verantwortlich ist**. Eine GDI ist somit **kein einzelnes Programm und nicht bloß ein weiterer Server**.
+
+### Drei Funktionsbereiche und ein gemeinsames Fundament
+
+```mermaid
+flowchart TB
+  Apps["Nutzung / Anwendungen<br/>Fachprogramme · Karten im Browser · mobile Erfassung"]
+  subgraph GDI["Drei Funktionsbereiche"]
+    direction LR
+    Daten["Datenhaltung<br/>geordnet speichern und pflegen"]
+    Katalog["Katalog<br/>finden und einordnen"]
+    Bereit["Datenbereitstellung<br/>zugänglich machen"]
+  end
+  Basis["Gemeinsames Fundament<br/>Zuständigkeiten · Zugriffsrechte · Datenqualität · sicherer Betrieb"]
+  Apps -.- Daten
+  Apps -.- Katalog
+  Apps -.- Bereit
+  Daten -.- Basis
+  Katalog -.- Basis
+  Bereit -.- Basis
+```
+
+**Lesart:** Das Schaubild zeigt **Aufgabenbereiche**, keine vorgeschriebene Softwareaufteilung und keine technische Reihenfolge. Eine Anwendung kann beispielsweise direkt auf einen Datenbestand zugreifen, ohne zuvor einen Katalog oder Kartendienst zu verwenden. Die drei Bereiche können Funktionen vorhandener Systeme nutzen.
+
+- **Datenhaltung – Wo liegen die Informationen?** Geeignete gemeinsame Daten werden geordnet gespeichert und mit einer klaren Zuständigkeit gepflegt, statt unnötig viele voneinander abweichende Kopien zu erzeugen. Das kann Leitungen, Vermessungspunkte oder Projektgebiete betreffen.
+- **Katalog – Welche Informationen gibt es?** Vergleichbar mit einem Bibliotheksverzeichnis beschreibt er die vorhandenen Daten: Inhalt, Herkunft, Stand, zuständige Stelle und mögliche Nutzungsbeschränkungen. Die Daten selbst müssen dafür **nicht** im Katalog gespeichert sein.
+- **Datenbereitstellung – Wie kommen die Informationen an?** Berechtigte Mitarbeitende und Anwendungen können Daten als Karte, als abrufbaren Datensatz oder über einen direkten Datenzugang nutzen. Dabei gelten die jeweils erforderlichen Zugriffsrechte.
+- **Nutzung / Anwendungen – Was sieht der Mitarbeiter?** GIS-Fachprogramme, einfach bedienbare Karten im Browser und mobile Erfassungsanwendungen erfüllen unterschiedliche Aufgaben. **Ein eigenes umfassendes Geoportal ist dafür nicht zwingend erforderlich.** Bearbeitungsfunktionen im Browser werden nur vorgesehen, wenn ein bestätigter Bedarf besteht.
+- **Gemeinsames Fundament – Wer sorgt für Verlässlichkeit?** Fachbereiche klären Inhalt und Zuständigkeit, das GIS-Team die fachlich-technischen Abläufe und die IT die mit ihr zu vereinbarenden Betriebs- und Sicherheitsaufgaben. Datenqualität, Berechtigungen, Sicherung und Wartung betreffen **alle** Bereiche. Die genaue Betriebsaufteilung ist noch offen.
+
+**Beispiel aus der Baubetreuung:** Ein vor Ort erfasster Leitungsverlauf wird übertragen und fachlich geprüft. Erst ein geeigneter, freigegebener Stand wird in den verantworteten Datenbestand übernommen. Andere berechtigte Mitarbeitende können ihn anschließend finden und für ihre Planung verwenden. Die Übertragung allein bedeutet **keine automatische fachliche Freigabe**.
+
+### Umsetzung dieser Aufgaben in VIC-GDI
+
+Erst auf dieser Ebene werden konkrete Produkte relevant:
+
+| Aufgabe im Modell | Vorgesehener Ansatz in VIC-GDI | Status |
+|---|---|---|
+| Datenhaltung | **PostgreSQL/PostGIS** als zentrale Basis für geeignete gemeinsame Geodaten; weitere Daten verbleiben je nach Art in Dateien oder externen Quellen | Grundsatz beschlossen ([A02](04_ENTSCHEIDUNGEN.md#a02)) |
+| Katalog | Schlanke Übersicht zu Datenquellen, Datenständen und Zuständigkeiten; **kein eigener Katalogserver zwingend** | Grundsatz beschlossen, Ausgestaltung/Umfang erneut zu prüfen ([A15](04_ENTSCHEIDUNGEN.md#a15)) |
+| Datenbereitstellung | Direkter Datenzugriff, wo sachgerecht; für Webkarten bevorzugt **QGIS Server** mit vorhandenen standardisierten Schnittstellen | QGIS Server bevorzugt, technische Eignung zu prüfen ([A10](04_ENTSCHEIDUNGEN.md#a10)) |
+| Anwendungen | **QGIS Desktop** für Fachanwender, bei Bedarf einfacher Browser-Kartenviewer und **QField** für mobile Abläufe | Unterschiedliche fachliche Festlegungen und Pilotprüfungen ([A11](04_ENTSCHEIDUNGEN.md#a11), [A13](04_ENTSCHEIDUNGEN.md#a13)) |
+
+**Wichtig:** Datenimport, Verarbeitung und Synchronisation sind ergänzende **Arbeitsabläufe**, keine zusätzliche zwingende Säule. Das Modell stellt **weder eine neue Softwareauswahl noch eine Freigabe für Aufbau oder Betrieb** dar. Die tatsächlichen Zugriffswege zeigt die [technische Architekturübersicht](03_ARCHITEKTUR.md#architekturübersicht-logisches-zielbild).
+
 ## Ausgangslage
 
 [Geodaten](ANHANG_A_GLOSSAR.md#geodaten) und [QGIS](ANHANG_A_GLOSSAR.md#qgis)-Projekte werden in unterschiedlichen Fachbereichen und Speicherorten verwaltet. Gemeinsame Datennutzung, einheitliche Bereitstellung und kontrollierter Betrieb sollen verbessert werden. In der Baubetreuung werden QGIS-Arbeitsbestände teilweise über synchronisierte SharePoint-/OneDrive-Verzeichnisse genutzt; diese Arbeitsweise soll für führende [GIS](ANHANG_A_GLOSSAR.md#gis)-Arbeitsdaten kontrolliert abgelöst werden ([A36](04_ENTSCHEIDUNGEN.md#a36)).
@@ -25,18 +74,7 @@ Die geplante [Geodateninfrastruktur](ANHANG_A_GLOSSAR.md#gdi) soll **nicht bloß
 
 ### Zielprinzip auf einen Blick
 
-```mermaid
-flowchart LR
-  A["Projekt A: eigene Datenkopie"] --> X["Heute: mehrere Arbeitsstände"]
-  B["Projekt B: eigene Datenkopie"] --> X
-  X -.->|Für geeignete gemeinsame Daten| D["Ziel: ein führender, fachlich verantworteter Bestand"]
-  D --> Q["QGIS-Facharbeitsplätze"]
-  D --> W["Freigegebene Webkarten bei Bedarf"]
-  M["Mobile Erfassung"] --> P["Fachliche Prüfung"]
-  P --> D
-```
-
-**Einordnung:** Das Diagramm illustriert ein Zielprinzip, keinen nachgewiesenen heutigen Ablauf und keine Pflicht, sämtliche QGIS-Projekte, Raster- oder CAD-Dateien in PostGIS zu speichern. Der mobile Datenweg und die Webbereitstellung sind pilotabhängig.
+**Für geeignete gemeinsame Daten gilt: Ein fachlich verantworteter Bestand statt unnötiger unabhängiger Arbeitskopien.** Fachprogramme und berechtigte Browseransichten können dieselben freigegebenen Informationen nutzen; mobile Erfassungen werden erst nach fachlicher Prüfung übernommen. Das [einfach erklärte Funktionsmodell](#was-ist-eine-geodateninfrastruktur--und-wie-funktioniert-sie) zeigt die Zusammenhänge. Nicht sämtliche QGIS-Projekte, Raster- oder CAD-Dateien müssen dafür in der zentralen Datenbank liegen.
 
 ### Was das im Arbeitsalltag bedeuten kann
 
