@@ -4,13 +4,13 @@
 
 ## Ziel und Vorgehen
 
-Die Piloten sollen die gemeinsame [GDI](ANHANG_A_GLOSSAR.md#gdi)-Basis anhand realer Arbeitsabläufe überprüfen. Nicht beide Fachbereiche müssen dieselben Funktionen benötigen. Pro Pilot zunächst **ein bis zwei häufige oder problematische Abläufe** auswählen, vorhandene Daten/Programme prüfen, minimalen Sollablauf beschreiben, danach Akzeptanzkriterien und [MVP](ANHANG_A_GLOSSAR.md#mvp)-Umfang festlegen. Keine zusätzlichen Architekturentscheidungen aus unbestätigten Annahmen ableiten.
+Die Piloten sind **erste praktische Einführungsschritte** der vom GIS-Team und beteiligten Fachkollegen angestrebten gemeinsamen [GDI](ANHANG_A_GLOSSAR.md#gdi). Sie sollen die bekannten Potenziale in konkreten Fachabläufen erschließen, Arbeitsweisen verbessern und technische Details der Umsetzung absichern – **nicht den grundsätzlichen Nutzen einer GDI beweisen**. Nicht beide Fachbereiche benötigen denselben Funktionsumfang. Pro Pilot zunächst **ein bis zwei relevante Abläufe** auswählen, vorhandene Daten/Programme erfassen, einen schlanken Sollablauf beschreiben und anschließend Abnahmekriterien und [MVP](ANHANG_A_GLOSSAR.md#mvp)-Umfang festlegen. Neue Architekturentscheidungen nicht aus unbelegten Detailannahmen ableiten.
 
 ## Pilot 1 – Baubetreuung / Bauüberwachung
 
 **Gesichert:** Baubetreuung ist Pilotbereich; bisherige führende [QGIS](ANHANG_A_GLOSSAR.md#qgis)-Arbeitsdaten in synchronisierten SharePoint-/OneDrive-Verzeichnissen verursachen Probleme. [A36](04_ENTSCHEIDUNGEN.md#a36) legt eine kontrollierte selektive Migration fest.
 
-**Prüfhypothesen, nicht beschlossen:**
+**Mögliche Funktionsbausteine (noch zu priorisieren, nicht beschlossen):**
 - Projektbezogene [Geodaten](ANHANG_A_GLOSSAR.md#geodaten) und Pläne sicher finden, anzeigen und mit geeigneten Informationen verknüpfen.
 - Vor Ort auf Tablet/mobilem Gerät Karten verwenden; Online-/Offline-Bedarf tatsächlich ermitteln.
 - Gemeinsame Vektordaten ohne Synchronisationskonflikte bearbeiten; andere Dateien geeignet auf Fileservern verwalten.
@@ -22,7 +22,7 @@ Die Piloten sollen die gemeinsame [GDI](ANHANG_A_GLOSSAR.md#gdi)-Basis anhand re
 4. Ist mobile Erfassung nötig oder reicht lesender Karten-/Plan-Zugriff?
 5. Welche Offline-Situationen, Geräte, Berechtigungen und Freigaben sind relevant?
 
-**Möglicher erster Testfall:** Ein bestehendes QGIS-Projekt mit realen, nicht sensitiven bzw. freigegebenen Testdaten auf geeignete Datenhaltung umstellen; Datenquellen, Pfade, gleichzeitige Nutzung und Rechte testen. Nur nach fachlicher Bestätigung priorisieren.
+**Möglicher erster Einführungsschritt:** Ein vorhandenes QGIS-Projekt mit geeigneten, freigegebenen Daten kontrolliert auf die gemeinsame Datenhaltung umstellen; Datenquellen, Pfade, gleichzeitige Nutzung und Rechte dabei praktisch prüfen. Nach fachlicher Priorisierung und der erforderlichen IT-Freigabe umsetzen.
 
 ## Fachlich benannte Anwendungsfälle der Baubetreuung
 
@@ -79,13 +79,13 @@ Die **Rückübertragung** muss für beide Varianten gesondert praktisch nachgewi
 - Wer erhebt, kontrolliert und übernimmt Ergebnisse in den führenden Datenbestand?
 - Welche Genauigkeit und welcher Lage-/Höhenbezug sind erforderlich?
 - Welche Nachweise (z. B. Messprotokoll, Foto, Datum, Herkunft) werden tatsächlich benötigt?
-- Welche Tätigkeiten sind häufig genug und einfach genug für einen ersten Pilotversuch?
+- Welche Tätigkeiten bieten sich aufgrund ihres Nutzens und überschaubaren Aufwands als erster Einführungsschritt an?
 
 ## Pilot 2 – Verkehrsanlagenplanung
 
 **Gesichert:** Verkehrsanlagenplanung ist zweiter Pilotbereich; gemeinsame Projektidentität, geeignete zentrale Vektordaten und eigenständige QGIS-Fachprojekte sind Architekturgrundsätze.
 
-**Prüfhypothesen, nicht beschlossen:**
+**Mögliche Funktionsbausteine (noch zu priorisieren, nicht beschlossen):**
 - Projekt- und fachbereichsübergreifende Geobasis- und Fachdaten ohne redundante Kopien nutzen.
 - Wiederkehrende QGIS-Layer, Datenquellen und [QML](ANHANG_A_GLOSSAR.md#qml)-Stile zentral bereitstellen.
 - Bei Bedarf Karten für weniger GIS-erfahrene Projektbeteiligte im Browser veröffentlichen.
@@ -97,7 +97,7 @@ Die **Rückübertragung** muss für beide Varianten gesondert praktisch nachgewi
 4. Welche Kartenansichten werden von Projektleitung oder anderen Beteiligten benötigt?
 5. Welche Abläufe sind aktuell besonders fehleranfällig oder zeitaufwendig?
 
-**Möglicher erster Testfall:** Einen realen, wiederkehrenden gemeinsamen Datenbestand in [PostGIS](ANHANG_A_GLOSSAR.md#postgis) bereitstellen und aus zwei fachlich getrennten QGIS-Projekten mit definierten Leserechten nutzen. Nur nach fachlicher Bestätigung priorisieren.
+**Möglicher erster Einführungsschritt:** Einen wiederkehrend benötigten gemeinsamen Datenbestand in [PostGIS](ANHANG_A_GLOSSAR.md#postgis) bereitstellen und aus zwei fachlich getrennten QGIS-Projekten mit definierten Leserechten verwenden. Nach fachlicher Priorisierung und der erforderlichen IT-Freigabe umsetzen.
 
 ## Einheitliches Erhebungsraster
 
@@ -111,14 +111,14 @@ Für jeden bestätigten Anwendungsfall ein kompakter Datensatz:
 | Soll-Ablauf | Minimal nötiger fachlicher Ablauf |
 | Daten und Verantwortung | Quellen, Formate, führende Stelle, Rechte |
 | Arbeitsumgebung | Desktop, Browser, Tablet; online/offline |
-| Häufigkeit und Nutzen | Beobachtbare Wirkung, nicht erfundene Einsparungen |
+| Priorität und Nutzen | Fachlicher Mehrwert und beobachtbare Verbesserung; Zeit-/Kosteneffekte nur bei belastbaren Ausgangsdaten beziffern |
 | Abnahme | Messbares Ergebnis anhand echter Testfälle |
 | Abhängigkeiten | IT, Rechte, Migration, Schulung, Dienste |
 | Priorität / Status | Kandidat, fachlich bestätigt, für MVP ausgewählt, später |
 
 ## Gemeinsame Prüfkriterien
 
-- **Fachlicher Nutzen:** Ein bestätigter Vorgang funktioniert Ende-zu-Ende.
+- **Fachliche Wirksamkeit:** Der priorisierte Vorgang funktioniert Ende-zu-Ende und der angestrebte Verbesserungsbeitrag ist im Arbeitsablauf nachvollziehbar.
 - **Datenintegrität:** Keine unbemerkten widersprüchlichen führenden Stände.
 - **Rechte:** Zugriff nur für berechtigte Personen über alle tatsächlich genutzten Zugriffswege.
 - **Betrieb:** Sicherung, Wiederherstellung und Zuständigkeiten sind für den Pilotumfang geklärt.

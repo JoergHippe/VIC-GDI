@@ -1,6 +1,6 @@
 # Projektkonzept VIC-GDI
 
-**Status:** Interner Arbeitsentwurf
+**Status:** Interner Arbeitsentwurf · fachliche Initiative des GIS-Teams und beteiligter Fachkollegen; Umsetzungs-, Budget- und Betriebsfreigabe durch GF/IT noch offen.
 
 ## Ausgangslage
 
@@ -8,13 +8,13 @@
 
 ## Warum wir VIC-GDI einführen wollen
 
-Die heutige Arbeit mit Geodaten verteilt sich auf Fachbereiche, Projekte und unterschiedliche Speicherorte. Gemeinsame Bestände sind dadurch nicht immer unmittelbar auffindbar; Daten können mehrfach kopiert und unabhängig fortgeschrieben werden. Das erhöht den Abstimmungsaufwand und das Risiko voneinander abweichender Datenstände. In der Baubetreuung werden GIS-Arbeitsbestände teilweise über synchronisierte SharePoint-/OneDrive-Verzeichnisse genutzt; diese Arbeitsweise soll für führende Arbeitsdaten kontrolliert abgelöst werden. Wie groß die einzelnen Probleme tatsächlich sind, wird mit den Pilotbereichen erhoben.
+Die heutige Arbeit mit Geodaten verteilt sich auf Fachbereiche, Projekte und unterschiedliche Speicherorte. Gemeinsame Bestände sind dadurch nicht immer unmittelbar auffindbar; Daten können mehrfach kopiert und unabhängig fortgeschrieben werden. Das erhöht den Abstimmungsaufwand und das Risiko voneinander abweichender Datenstände. In der Baubetreuung werden GIS-Arbeitsbestände teilweise über synchronisierte SharePoint-/OneDrive-Verzeichnisse genutzt; diese Arbeitsweise soll für führende Arbeitsdaten kontrolliert abgelöst werden. **Die Initiative zur Verbesserung geht vom GIS-Team und beteiligten Fachkollegen aus.** Die Bestandsaufnahme mit den Pilotbereichen dient der Priorisierung und passgenauen Einführung, nicht der Grundsatzprüfung, ob eine GDI Vorteile bietet.
 
 Die geplante [Geodateninfrastruktur](ANHANG_A_GLOSSAR.md#gdi) soll **nicht bloß neue Server bereitstellen**, sondern eine gemeinsame, verlässliche Arbeitsgrundlage organisieren: Wo liegt ein führender Datenbestand? Wer verantwortet und pflegt ihn? Wie greifen andere Berechtigte auf denselben freigegebenen Stand zu? Wie können QGIS-Fachanwender, gelegentliche Kartennutzer und mobile Teams aufgabenbezogen arbeiten? Die GDI **ergänzt** vorhandene CAD-, BIM-, M365- und Fachsysteme; sie ersetzt sie nicht.
 
 ### Heutige Herausforderungen und angestrebte Verbesserung
 
-| Ausgangssituation / zu prüfendes Problem | Erwarteter Beitrag der GDI |
+| Heutige Herausforderung | Angestrebte Verbesserung durch VIC-GDI |
 |---|---|
 | Daten, QGIS-Projekte und Zuständigkeiten verteilen sich auf verschiedene Ablagen. | Nachvollziehbare Quellen, klare Datenhoheit und verlässliche Zugriffswege. |
 | Geeignete Bestände werden zwischen Projekten kopiert und ggf. unterschiedlich weitergeführt. | Gemeinsame Nutzung führender Daten statt unnötiger unabhängiger Kopien. |
@@ -44,9 +44,11 @@ flowchart LR
 - **Verkehrsanlagenplanung:** Zwei Planungsprojekte verwenden einen geeigneten gemeinsamen Geodatenbestand, anstatt eigene Kopien mit möglicherweise verschiedenen Aktualisierungsständen zu pflegen.
 - **Gelegentliche Kartennutzung:** Wer kein QGIS benötigt, kann bei entsprechendem Pilotbedarf freigegebene Karten im Browser einsehen, ohne die führenden Daten verändern zu können.
 
-### Erwarteten Nutzen nachweisen, nicht voraussetzen
+### Nutzen der GDI erschließen und die Einführung gezielt gestalten
 
-Die Piloten sollen untersuchen, ob sich **fachlich** Herkunft, Aktualität und Datenqualität verbessern, **organisatorisch** Such-, Kopier- und Übergabeschritte reduzieren und **technisch** sichere, einfach nutzbare und wartbare Abläufe erreichen lassen. Dafür sind Ausgangssituation und geeignete Abnahmekriterien vorab zu erfassen. Die genannten Wirkungen sind **Ziele, keine bereits gemessenen Einsparungen**. Aufbau, Qualifizierung und laufender Betrieb müssen sich am tatsächlichen Nutzen messen lassen.
+Eine gemeinsame Geodateninfrastruktur bietet gegenüber einer dezentralen, teils redundanten Ablage **klare strukturelle Vorteile**: geeignete Datenbestände können an einer verantwortlichen Stelle gepflegt, berechtigt gemeinsam genutzt und in verschiedenen Fachabläufen wiederverwendet werden. **Fachlich** verbessert das die Grundlage für aktuelle, nachvollziehbare Datenstände; **organisatorisch** reduziert es unnötige Kopier- und Abstimmungswege; **technisch** ermöglicht es standardisierte, wartbare Zugriffs- und Bereitstellungswege.
+
+**Die Piloten sind erste Schritte der GDI-Einführung und keine Experimente zur grundsätzlichen Sinnhaftigkeit.** Mit ihnen werden relevante Arbeitsabläufe priorisiert, Datenmodelle und Schnittstellen abgestimmt, Funktionen eingeführt und die Betriebsfähigkeit überprüft. Fachliche Abnahme und geeignete Vergleichsgrößen zeigen anschließend, **wie gut** die Vorteile im jeweiligen Ablauf realisiert wurden. Quantifizierte Zeit- oder Kosteneinsparungen werden ohne belastbare Ausgangsdaten nicht versprochen. Aufwand und laufender Betrieb sind für die **konkreten Umsetzungsvarianten** verantwortlich zu planen; dies stellt die strategische Zielsetzung nicht infrage.
 
 ## Ziele
 
@@ -63,7 +65,7 @@ Die Piloten sollen untersuchen, ob sich **fachlich** Herkunft, Aktualität und D
 1. **Baubetreuung:** räumlich bezogene Vorgänge, Karten, geeignete mobile Arbeitsabläufe.
 2. **Verkehrsanlagenplanung:** projektbezogene und gemeinsam genutzte Geodaten, QGIS-Arbeitsabläufe.
 
-Die Piloten sind unterschiedlich und müssen nicht zeitgleich denselben Funktionsumfang erreichen ([A34](04_ENTSCHEIDUNGEN.md#a34)).
+Diese Pilotbereiche bilden die ersten **praktischen Einführungsschritte**. Sie dürfen unterschiedliche fachliche Anforderungen und Einführungszeitpunkte haben; ein identischer Funktionsumfang ist nicht erforderlich ([A34](04_ENTSCHEIDUNGEN.md#a34)).
 
 ## Abgrenzung
 

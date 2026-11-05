@@ -6,23 +6,23 @@
 
 Ein [GIS](ANHANG_A_GLOSSAR.md#gis) bearbeitet und zeigt räumliche Daten, etwa den dokumentierten Verlauf einer Leitung. Die GDI organisiert, wo solche Daten geführt werden, wie berechtigte Personen sie finden und nutzen und wer sie pflegt. Die Baubetreuung kann beispielsweise einen Leitungsverlauf fachlich prüfen und übernehmen. Berechtigte Planende können anschließend denselben freigegebenen Stand in [QGIS](ANHANG_A_GLOSSAR.md#qgis) nutzen.
 
-**Gesprächsziel:** Machbaren Betriebsrahmen, Zuständigkeiten und Aufwand für die nächste Planungsstufe ermitteln. Der Termin dient der Abstimmung. Technische Erprobungen und Bereitstellung folgen erst nach gesonderter Planung.
+**Gesprächsziel:** Das vom GIS-Team und beteiligten Fachkollegen angestoßene GDI-Vorhaben gemeinsam mit der IT in eine **sichere, wartbare und dauerhaft betreibbare Einführungsplanung** überführen. Dafür Ressourcen, technische Rahmenbedingungen, Verantwortlichkeiten und realistischen Aufwand klären. Einzelne technische Tests und Bereitstellungen werden gesondert geplant und freigegeben.
 
 Die [Architekturübersicht](03_ARCHITEKTUR.md#architekturübersicht-logisches-zielbild) zeigt, wie Desktop, Browser und Mobilgeräte auf Daten und Dienste zugreifen.
 
-## Ziel des ersten IT-Termins: Machbarkeit und A39
+## Ziel des ersten IT-Termins: Einführungsweg und A39
 
-IT und GIS sollen **zuerst** klären, unter welchen Bedingungen ein sicherer, dauerhaft betreibbarer GDI-Pilot überhaupt realistisch ist. Die bereits dokumentierte Architektur ist eine Planungsgrundlage, **keine Anweisung zur sofortigen Bereitstellung**.
+**Die fachliche Zielsetzung der GDI bildet die Grundlage der Abstimmung.** IT und GIS erarbeiten gemeinsam, **wie** sie sicher, nachhaltig und mit vertretbaren Ressourcen eingeführt werden kann. Die bereits dokumentierte Architektur ist eine Planungsgrundlage, **keine Anweisung zur sofortigen Bereitstellung**.
 
 | Jetzt beantworten | Spätere Vertiefung |
 |---|---|
 | Welche internen Zuständigkeiten, Vertretungen und real verfügbaren Personentage gibt es? | Zuständigkeitsmatrix und konkrete Administrationsverfahren |
 | Welche Linux-, PostgreSQL-, GIS-Dienst-, Sicherheits- und Restore-Kompetenzen sind vorhanden? | Gezielt nötige Qualifizierung, externe Beratung oder Co-Implementation |
-| Können bestehende Infrastruktur, Zugänge, Backup und Sicherheitsvorgaben einen Pilot tragen? | Dimensionierung, technische Tests und ggf. zusätzliche Ressourcen |
+| Welche bestehende Infrastruktur, Zugänge, Backups und Sicherheitsstandards können für den ersten Ausbauschritt genutzt werden und wo braucht es Ergänzungen? | Dimensionierung, gezielte technische Tests und ggf. zusätzliche Ressourcen |
 | Welches Umsetzungs-/Wissens-/Betriebsmodell erscheint tragfähig ([A39](04_ENTSCHEIDUNGEN.md#a39))? | Vergleich von 2–3 realistischen Varianten mit Kosten und Übergabe |
 | Welche Pilotanforderungen müssen vor einer konkreten IT-Zusage noch erhoben werden? | Technische Komponenten- und Deploymententscheidung [A24](04_ENTSCHEIDUNGEN.md#a24) |
 
-**Ergebnis des Termins:** dokumentierte Machbarkeits- und Ressourcenfragen sowie konkrete nächste Verantwortliche, **keine Produktivfreigabe**. Vertiefende Anforderungen, Rollen und Prüfaufträge folgen in den nachstehenden Abschnitten.
+**Ergebnis des Termins:** ein abgestimmter Rahmen für die nächste Einführungsplanung mit konkreten Zuständigen, Ressourcen-/Qualifizierungsbedarfen und noch zu prüfenden technischen Detailfragen; **keine automatische Produktivfreigabe**. Vertiefende Anforderungen, Rollen und Prüfaufträge folgen in den nachstehenden Abschnitten.
 
 ## Softwarelizenzen und optionaler Herstellersupport
 
