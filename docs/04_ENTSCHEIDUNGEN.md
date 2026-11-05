@@ -1,109 +1,109 @@
-# Architekturentscheidungen [A01](#a01)–[A39](#a39)
+# Festlegungs- und Entscheidungsregister A01–A39
 
-**Status:** Konsolidierter interner Arbeitsentwurf. Dieses Register ist die führende Stelle für Beschlussstatus und Entscheidungsbegründungen. Die knappen Zusammenfassungen ersetzen nicht die spätere Detailprüfung mit IT und Fachbereichen.
+**Status:** Konsolidierter interner Arbeitsentwurf. Dieses Register ist die **führende Stelle für den aktuellen fachlichen Festlegungs- und Entscheidungsstand**, nicht der Nachweis einer Projekt-, Budget- oder Betriebsfreigabe durch Geschäftsführung oder IT. Fachliche Ausgangslage und übergeordnete Prinzipien: [Projektkonzept](01_PROJEKTKONZEPT.md#projektgrundsätze).
 
-**Quellenlage:** Erstkonsolidierung aus den bisherigen Architekturgesprächen [A01](#a01)–[A39](#a39). Wo kein detailliertes Entscheidungsprotokoll vorliegt, sind die Aussagen bewusst auf die gesicherten Grundsätze begrenzt. Die Dokumente sind keine Implementierungs- oder Freigabenachweise.
+**Einordnung:** Die früher pauschal als „Architekturentscheidungen“ bezeichneten A01–A39 enthalten unterschiedliche Arten von Festlegungen. Die Kennungen sind **dauerhaft stabil**; Kategorie, Status und Priorität sind davon unabhängig. Eine Festlegung kann Grundsatz **und** konkrete Ausprägung enthalten; die Tabelle benennt ihre primäre Kategorie.
 
-**Statusschlüssel:** **B** = beschlossen; **G** = Grundsatz beschlossen, Detail offen; **Z** = zurückgestellt; **O** = offen.
+- **Kategorie:** Grundsatz = verbindliche Projektleitplanke bzw. Ausgangsvorgabe; Architektur/Daten = technische oder Datenmodellgestaltung; Fachfunktion = konkreter fachlicher Funktionsumfang; Betrieb/Organisation = sichere Bereitstellung und dauerhafte Verantwortung.
+- **Status:** **B** = fachlich beschlossen; **G** = Grundsatz beschlossen, Details offen; **Z** = bewusst zurückgestellt; **O** = offen. **B/G bedeuten keine formale GF-/IT-Umsetzungsfreigabe.**
+- **Prioritäten:** Bearbeitungszeitpunkt P0–P3 ausschließlich bei [offenen Punkten](08_OFFENE_PUNKTE.md#arbeitspriorität-nach-entscheidungshorizont), nicht in der ID. Eine offene Detailklärung hebt einen weiterhin geltenden Grundsatz nicht auf.
 
-| ID | Thema | Status | Festlegung / Ergebnis |
-|---|---|---|---|
-| <a id="a01"></a>A01 | Ausrichtung | B | Fachbereichsneutrale [GDI](ANHANG_A_GLOSSAR.md#gdi), Piloten BB und Verkehrsanlagenplanung |
-| <a id="a02"></a>A02 | Datenbankorganisation | B | Gemeinsame [PostGIS](ANHANG_A_GLOSSAR.md#postgis)-Datenbank mit fachlichen Schemas |
-| <a id="a03"></a>A03 | Projektbezug | B | Fachliche gemeinsame Tabellen; `project_id` selektiv, Ausnahmen zulässig |
-| <a id="a04"></a>A04 | [QGIS](ANHANG_A_GLOSSAR.md#qgis)-Projekte | B | Zentrale Ressourcen, eigenständige Fach-QGIS-Projekte; getrennte Webprojekte · [überprüfungsbedürftig](#erneute-prüfung-a04-a15-und-a36) |
-| <a id="a05"></a>A05 | Externe Basisdaten | B | Live bevorzugt; unveränderliche, nachvollziehbare [Snapshots](ANHANG_A_GLOSSAR.md#snapshot) bei Bedarf |
-| <a id="a06"></a>A06 | Projektgeometrie | B | Optional; keine verpflichtende Projekt-[AOI](ANHANG_A_GLOSSAR.md#aoi) |
-| <a id="a07"></a>A07 | Projektstammdaten | B | Schlanker gemeinsamer Kern, kein Projektmanagement |
-| <a id="a08"></a>A08 | Fachbereichsübergreifende Nutzung | B | Gemeinsame Projektidentität, eindeutige Datenhoheit, keine führenden Dubletten |
-| <a id="a09"></a>A09 | Datenzugriff | B | Freigegebene gemeinsame Daten lesbar, Schreiben zuständigkeitsabhängig; serverseitige Durchsetzung |
-| <a id="a10"></a>A10 | [GIS](ANHANG_A_GLOSSAR.md#gis)-Server | G | [QGIS Server](ANHANG_A_GLOSSAR.md#qgis-server) bevorzugt; [PoC](ANHANG_A_GLOSSAR.md#poc) und [OGC](ANHANG_A_GLOSSAR.md#ogc)-Fähigkeiten prüfen |
-| <a id="a11"></a>A11 | [Webviewer](ANHANG_A_GLOSSAR.md#webviewer) | B | Etablierte Open-Source-Lösung, gezielte Erweiterungen statt Eigenportal |
-| <a id="a12"></a>A12 | [Geodatenauszug](ANHANG_A_GLOSSAR.md#extract) | G | **Funktion statt eigenem Dienst** (Option A); **Objektselektion als Standard + optionales Clipping** (Punkt 1, C); GPKG, GeoJSON, DXF und CSV vorgesehen, Shapefile optional; Quell-/Ziel-CRS inkl. EPSG:3068 (Punkt 2). **Rechtemodell offen** (Punkt 3, D); bestehende Zugriffsrechte bleiben verbindlich. |
-| <a id="a13"></a>A13 | Mobile Arbeit | G | [QField](ANHANG_A_GLOSSAR.md#qfield) mit [HAPPY MINI Q](ANHANG_A_GLOSSAR.md#happy-mini-q) zur Positionserfassung, etablierte Synchronisation, keine Eigenentwicklung |
-| <a id="a14"></a>A14 | [ETL](ANHANG_A_GLOSSAR.md#etl) | B | Stufenweise Skript-/Importautomatisierung, keine ETL-Plattform vorab |
-| <a id="a15"></a>A15 | Metadaten | B | Schlanker quellen-/datensatz-/dienstbezogener Katalog · [überprüfungsbedürftig](#erneute-prüfung-a04-a15-und-a36) |
-| <a id="a16"></a>A16 | Datenqualität | B | Amtliche Daten technisch prüfen, eigene Daten pragmatisch fachlich prüfen; kein formales QA-System |
-| <a id="a17"></a>A17 | QGIS-Stile | B | Zentrale [Git](ANHANG_A_GLOSSAR.md#git)-versionierte [QML](ANHANG_A_GLOSSAR.md#qml), projektspezifische Overrides |
-| <a id="a18"></a>A18 | Webpublikation | B | Eigene Webkartenprojekte; primär intern, extern geschützt bei Bedarf |
-| <a id="a19"></a>A19 | Web-UI | B | Eine Anwendung, einfache Grundansicht und bedarfsbezogene Erweiterungen |
-| <a id="a20"></a>A20 | Suche | B | Schlanke integrierte Suche; keine separate Suchplattform |
-| <a id="a21"></a>A21 | Koordinatenreferenz | B | EPSG:25832/25833 bevorzugt; **EPSG:3068 (DHDN / Soldner Berlin)** zusätzlich ausdrücklich unterstützen; weitere Quell-/Ziel-CRS und Höhenbezug nach Bedarf beachten |
-| <a id="a22"></a>A22 | Raster | B | Externe Dienste bevorzugt, lokale [GeoTIFF](ANHANG_A_GLOSSAR.md#geotiff)/[COG](ANHANG_A_GLOSSAR.md#cog) nach Bedarf |
-| <a id="a23"></a>A23 | Hosting | G | On-prem/[Proxmox](ANHANG_A_GLOSSAR.md#proxmox) bevorzugt; hybride Optionen möglich |
-| <a id="a24"></a>A24 | Deployment | O | [VM](ANHANG_A_GLOSSAR.md#vm)-nativ, hybrid oder containerisiert – gemeinsam mit IT entscheiden |
-| <a id="a25"></a>A25 | Identitäten | G | AD/M365 und zentraler [IdP](ANHANG_A_GLOSSAR.md#idp) bevorzugt; technische Umsetzung IT-Entscheid |
-| <a id="a26"></a>A26 | Berechtigungen | G | Gemeinsames Rollen-/Rechteprinzip; Durchsetzung über alle Zugriffspfade, IT-Detailklärung |
-| <a id="a27"></a>A27 | Umgebungen | G | Schlanke getrennte TEST/PROD, lokale Entwicklung, Git/Migrationen; IT-Abstimmung |
-| <a id="a28"></a>A28 | Backup | G | Bestehendes IT-Backup plus GDI-spezifische Sicherung/Restore; IT-Abstimmung |
-| <a id="a29"></a>A29 | Monitoring | G | Bestehendes Monitoring um funktionale GIS-Prüfungen ergänzen; IT-Abstimmung |
-| <a id="a30"></a>A30 | Deploymentprozess | G | Git für geeignete Ressourcen, zunächst kontrollierte Bereitstellung, später bedarfsweise automatisieren; IT-Abstimmung |
-| <a id="a31"></a>A31 | Betriebsverantwortung | G | Gemeinsames GIS-/IT-Betriebsmodell, konkrete Zuständigkeiten noch abzustimmen |
-| <a id="a32"></a>A32 | Support und Weiterentwicklung | B | Schlanker gemeinsamer Prozess, vorhandene Werkzeuge bevorzugen |
-| <a id="a33"></a>A33 | Wissensaufbau | B | Themen-/rollenbezogen A/B/C kombinieren; Ressourcen verbindlich einplanen |
-| <a id="a34"></a>A34 | Pilotstrategie | B | Gemeinsame Basis, zwei früh beteiligte und zeitlich staffelbare Piloten |
-| <a id="a35"></a>A35 | [MVP](ANHANG_A_GLOSSAR.md#mvp) | B | Priorisierter anpassbarer Umfang; gemeinsame Basis und Pilot-MVPs unterscheiden |
-| <a id="a36"></a>A36 | Migration | B | **B+**: verbindliche Zielarchitektur, selektive Migration, problematische SharePoint-/OneDrive-GIS-Arbeitsbestände ablösen · [überprüfungsbedürftig](#erneute-prüfung-a04-a15-und-a36) |
-| <a id="a37"></a>A37 | Datenlebenszyklus | Z | Option B plausibel, aber nicht beschlossen; später klären |
-| <a id="a38"></a>A38 | Datenbankregeln | Z | Option B plausibel, aber nicht beschlossen; später klären |
-| <a id="a39"></a>A39 | Umsetzungs-, Qualifizierungs-, Betriebs- und Hostingmodell | O | Vier getrennte Entscheidungsdimensionen: [Umsetzung A1–A3/B1/C1–C2, Wissensaufbau, Betrieb D1–D3 und Hosting/Bezug H1–H4](06_UMSETZUNGS_UND_BETRIEBSMODELLE.md). **H2: gemietete Infrastruktur mit eigener GDI**, H3: betreute Mietinfrastruktur, H4: GDIaaS (vormals C3). **GF und IT** entscheiden anhand von Bedarf, Ressourcen, Sicherheit und Kosten; keine Variante beschlossen. |
+## Register
 
-## Erneute Prüfung [A04](#a04), [A15](#a15) und [A36](#a36)
+| ID | Kategorie | Thema | Status | Kernaussage |
+|---|---|---|---|---|
+| <a id="a01"></a>A01 | Grundsatz | Ausrichtung | B | Fachbereichsneutrale GDI; zwei Pilotbereiche im Einführungskonzept. |
+| <a id="a02"></a>A02 | Grundsatz | Datenbankorganisation | B | PostgreSQL/PostGIS ist die gesetzte zentrale Geodatenbasis; gemeinsame Datenbank mit fachlichen Schemas. |
+| <a id="a03"></a>A03 | Architektur/Daten | Projektbezug | B | Projektzuordnung für gemeinsame Fachtabellen selektiv über `project_id`; fachlich begründete Ausnahmen. |
+| <a id="a04"></a>A04 | Architektur/Daten | [QGIS](ANHANG_A_GLOSSAR.md#qgis)-Projekte | B | Zentrale Ressourcen, eigenständige Fach-QGIS-Projekte und getrennte Webprojekte; Projektablage erneut prüfen. |
+| <a id="a05"></a>A05 | Architektur/Daten | Externe Basisdaten | B | Live bevorzugt; unveränderliche, nachvollziehbare [Snapshots](ANHANG_A_GLOSSAR.md#snapshot) bei Bedarf |
+| <a id="a06"></a>A06 | Architektur/Daten | Projektgeometrie | B | Optional; keine verpflichtende Projekt-[AOI](ANHANG_A_GLOSSAR.md#aoi) |
+| <a id="a07"></a>A07 | Grundsatz | Projektstammdaten | B | Schlanke gemeinsame Projektstammdaten; kein Projektmanagementsystem. |
+| <a id="a08"></a>A08 | Grundsatz | Fachbereichsübergreifende Nutzung | B | Gemeinsame Projektidentität, klare fachliche Datenhoheit, keine redundanten führenden Bestände. |
+| <a id="a09"></a>A09 | Grundsatz | Datenzugriff | B | Freigegebene gemeinsame Daten lesbar, Schreiben zuständigkeitsabhängig; serverseitige Durchsetzung |
+| <a id="a10"></a>A10 | Architektur/Daten | [GIS](ANHANG_A_GLOSSAR.md#gis)-Server | G | [QGIS Server](ANHANG_A_GLOSSAR.md#qgis-server) bevorzugt; [PoC](ANHANG_A_GLOSSAR.md#poc) und [OGC](ANHANG_A_GLOSSAR.md#ogc)-Fähigkeiten prüfen |
+| <a id="a11"></a>A11 | Grundsatz | [Webviewer](ANHANG_A_GLOSSAR.md#webviewer) | B | Etablierte freie Webviewer-Software vor Eigenentwicklung; Erweiterungen nur gezielt. |
+| <a id="a12"></a>A12 | Fachfunktion | [Geodatenauszug](ANHANG_A_GLOSSAR.md#extract) | G | Berechtigter Export als Funktion statt Pflicht zu eigenem Dienst; vollständige Objektselektion, optional Clipping; GPKG/GeoJSON/DXF/CSV, Shapefile optional; CRS-Auswahl; Rechteausgestaltung offen. |
+| <a id="a13"></a>A13 | Fachfunktion | Mobile Arbeit | G | Bestehende BB-Praxis: QField und HAPPY MINI Q; Übertragungsweg offen, keine eigene Synchronisationsplattform. |
+| <a id="a14"></a>A14 | Grundsatz | [ETL](ANHANG_A_GLOSSAR.md#etl) | B | Stufenweise Skript-/Importautomatisierung, keine ETL-Plattform vorab |
+| <a id="a15"></a>A15 | Architektur/Daten | Metadaten | B | Interner Metadatenkatalog als Basis; Umfang und hybride Datenpflege erneut prüfen. |
+| <a id="a16"></a>A16 | Fachfunktion | Datenqualität | B | Technische Eingangsprüfung amtlicher Daten, angemessene Fachprüfung eigener Daten; kein umfassendes formales QA-System. |
+| <a id="a17"></a>A17 | Architektur/Daten | QGIS-Stile | B | Zentrale [Git](ANHANG_A_GLOSSAR.md#git)-versionierte [QML](ANHANG_A_GLOSSAR.md#qml), projektspezifische Overrides |
+| <a id="a18"></a>A18 | Architektur/Daten | Webpublikation | B | Eigene Webkartenprojekte; primär intern, extern geschützt bei Bedarf |
+| <a id="a19"></a>A19 | Fachfunktion | Web-UI | B | Eine Anwendung, einfache Grundansicht und bedarfsbezogene Erweiterungen |
+| <a id="a20"></a>A20 | Fachfunktion | Suche | B | Schlanke integrierte Suche; keine separate Suchplattform |
+| <a id="a21"></a>A21 | Fachfunktion | Koordinatenreferenz | B | ETRS89/UTM EPSG:25832/25833 bevorzugt; EPSG:3068 unterstützen, weitere Lage-/Höhenbezüge bedarfsabhängig. |
+| <a id="a22"></a>A22 | Architektur/Daten | Raster | B | Externe Dienste bevorzugt, lokale [GeoTIFF](ANHANG_A_GLOSSAR.md#geotiff)/[COG](ANHANG_A_GLOSSAR.md#cog) nach Bedarf |
+| <a id="a23"></a>A23 | Betrieb/Organisation | Hosting | G | On-prem/Proxmox als Ausgangspräferenz, Hosting-/Bezugsmodell H1–H4 noch offen. |
+| <a id="a24"></a>A24 | Betrieb/Organisation | Deployment | O | [VM](ANHANG_A_GLOSSAR.md#vm)-nativ, hybrid oder containerisiert – gemeinsam mit IT entscheiden |
+| <a id="a25"></a>A25 | Betrieb/Organisation | Identitäten | G | AD/M365 und zentraler [IdP](ANHANG_A_GLOSSAR.md#idp) bevorzugt; technische Umsetzung IT-Entscheid |
+| <a id="a26"></a>A26 | Betrieb/Organisation | Berechtigungen | G | Rechte über alle tatsächlichen Zugriffspfade durchsetzen; konkrete Rollen und Granularität offen. |
+| <a id="a27"></a>A27 | Betrieb/Organisation | Umgebungen | G | Schlanke getrennte TEST/PROD, lokale Entwicklung, Git/Migrationen; IT-Abstimmung |
+| <a id="a28"></a>A28 | Betrieb/Organisation | Backup | G | Bestehendes IT-Backup plus GDI-spezifische Sicherung/Restore; IT-Abstimmung |
+| <a id="a29"></a>A29 | Betrieb/Organisation | Monitoring | G | Bestehendes Monitoring um funktionale GIS-Prüfungen ergänzen; IT-Abstimmung |
+| <a id="a30"></a>A30 | Betrieb/Organisation | Deploymentprozess | G | Git für geeignete Ressourcen, zunächst kontrollierte Bereitstellung, später bedarfsweise automatisieren; IT-Abstimmung |
+| <a id="a31"></a>A31 | Betrieb/Organisation | Betriebsverantwortung | G | Gemeinsames GIS-/IT-Betriebsmodell, konkrete Zuständigkeiten noch abzustimmen |
+| <a id="a32"></a>A32 | Betrieb/Organisation | Support und Weiterentwicklung | B | Schlanker gemeinsamer Prozess, vorhandene Werkzeuge bevorzugen |
+| <a id="a33"></a>A33 | Grundsatz | Wissensaufbau | B | Themen-/rollenbezogen A/B/C kombinieren; Ressourcen verbindlich einplanen |
+| <a id="a34"></a>A34 | Grundsatz | Pilotstrategie | B | Gemeinsame GDI-Basis; zwei früh beteiligte, zeitlich staffelbare Pilotbereiche. |
+| <a id="a35"></a>A35 | Grundsatz | [MVP](ANHANG_A_GLOSSAR.md#mvp) | B | Schlanker priorisierter MVP; GDI-Basis und fachliche Pilotumfänge unterscheiden. |
+| <a id="a36"></a>A36 | Grundsatz | Migration | B | Selektive Migration mit kontrollierter Ablösung problematischer synchronisierter GIS-Arbeitsbestände; Projektablage erneut prüfen. |
+| <a id="a37"></a>A37 | Architektur/Daten | Datenlebenszyklus | Z | Option B plausibel, aber nicht beschlossen; später klären |
+| <a id="a38"></a>A38 | Architektur/Daten | Datenbankregeln | Z | Konkrete DB-/QGIS-Fachvalidierungen zurückgestellt; grundlegende Datenintegrität bleibt verpflichtend. |
+| <a id="a39"></a>A39 | Betrieb/Organisation | Umsetzungs-, Qualifizierungs-, Betriebs- und Hostingmodell | O | Vier offene Dimensionen: Umsetzung, Wissensaufbau, Betriebsverantwortung und Hosting/Bezug (H1–H4); Entscheidung durch GF und IT. |
 
-Die Kennzeichnung ergänzt den bisherigen Status. Bis zu einer dokumentierten Folgeentscheidung gelten die bisherigen Festlegungen.
+## Erneute Prüfung A04, A15 und A36
 
-| Bezug | Neue Präferenz zur Prüfung | Vor einer Änderung klären |
+**Prüfvorbehalt, kein Widerruf:** Die Grundfestlegungen gelten weiter, bis eine ausdrücklich dokumentierte Folgeentscheidung sie verändert. Prüfbedarf und Realisierung sind keine zusätzlichen Beschlüsse.
+
+| Bezug | Bestehender Rahmen | Offener Prüfpunkt |
 |---|---|---|
-| [A04](#a04) | QGIS-Projekte zentral in [PostgreSQL](ANHANG_A_GLOSSAR.md#postgresql) ablegen. Fachprojekte und getrennte Webprojekte bleiben der Ausgangspunkt. | Umfang, Projekt- und Publikationsrechte, parallele Bearbeitung, Versionierung, externe Ressourcen und Wiederherstellung. QGIS unterstützt Projektablage in PostgreSQL. [QGIS-Dokumentation](https://docs.qgis.org/testing/en/docs/user_manual/introduction/project_files.html#managing-qgis-project-files-from-postgresql-databases) |
-| [A15](#a15) | Internen Katalog über den bisherigen schlanken Umfang hinaus erweitern und Metadaten hybrid pflegen. | Welche Suche und Felder bringen Nutzen? Technisch ableitbare Angaben wie Schema oder Importzeit automatisiert übernehmen. Fachliche Angaben wie Zweck, Zuständigkeit und Nutzungsauflagen redaktionell pflegen und freigeben. Führende Quelle je Feld und Aktualisierung bei Konflikten klären. |
-| [A36](#a36) | Zentrale PostgreSQL-Projektablage als Ziel für geeignete Projekte prüfen. | Projektinventar, Pfade und externe Dateien, Rechte, Übernahme, Rückfallweg und fachliche Abnahme. Selektive Migration und kontrollierte Ablösung problematischer Synchronisationsordner bleiben der Ausgangspunkt. |
+| [A04](#a04) | Eigenständige Fach-QGIS-Projekte, getrennte Webprojekte, gemeinsame Ressourcen | Zentrale QGIS-Projektablage in PostgreSQL: Rechte, Parallelität, Versionierung, externe Ressourcen, Wiederherstellung und QGIS-Server-Eignung |
+| [A15](#a15) | Internes Metadatenverzeichnis für Quellen, Daten und Dienste | Tatsächliche Such-/Pflegefelder, hybride automatische/manuelle Metadatenpflege, Feldhoheit und ggf. Katalogschnittstellen |
+| [A36](#a36) | Selektive Migration, problematische synchronisierte GIS-Arbeitsbestände kontrolliert ablösen | Geeignete QGIS-Projekte für zentrale Ablage, Inventar, Konflikte, Pfade, Rückfallweg und fachliche Abnahme |
 
-### Prüfrahmen für die Projektablage ([A04](#a04)/[A36](#a36))
+Konkrete Prüfaufträge und Zeitpunkt: [offene Punkte](08_OFFENE_PUNKTE.md). QGIS-Projektablage wird unterstützt, aber die betriebliche Eignung muss im Pilot geprüft werden: [QGIS-Dokumentation](https://docs.qgis.org/testing/en/docs/user_manual/introduction/project_files.html#managing-qgis-project-files-from-postgresql-databases).
 
-Für eine spätere, gesondert freigegebene Erprobung genügt ein repräsentatives Projekt mit PostGIS-Vektordaten und einer referenzierten Rasterdatei, zwei QGIS-Arbeitsplätzen und getrennten Rollen.
+### Prüfrahmen für die Projektablage (A04/A36)
 
-- **Grundfunktion:** Projekt speichern und mit dem zweiten Konto öffnen. Leserecht, verweigertes Überschreiben und erreichbare Rasterreferenzen prüfen.
-- **Zusammenarbeit:** Gleichzeitige Änderungen an Vektordaten und konkurrierende Änderungen an der Projektdefinition getrennt betrachten. Das Konfliktverhalten muss nachvollziehbar sein. Für Datenänderungen ist ein Umgang ohne unkontrollierten Verlust erforderlich.
-- **Wiederherstellung:** Einen praktikablen Weg zu einem früheren Projektstand samt benötigten Ressourcen prüfen.
-- **Webpublikation:** Bei vorgesehener Webnutzung zusätzlich Kartenbereitstellung über QGIS Server mit den vorgesehenen Rechten prüfen. Die Desktop-Eignung separat bewerten.
+Für einen später freigegebenen Test reichen ein repräsentatives Projekt mit PostGIS-Vektordaten und Rasterreferenz, zwei Arbeitsplätze und getrennte Rollen. Zu prüfen sind **Lesen/Schreiben, konkurrierende Projektänderungen gegenüber Datenänderungen, externe Ressourcen, Wiederherstellung** sowie bei Webbedarf die eigenständige QGIS-Server-Tauglichkeit. Die konkrete Durchführung gehört in [offene Punkte](08_OFFENE_PUNKTE.md) bzw. den Pilotplan; dies ist noch kein freigegebener PoC.
 
-### Katalogumfang und Standards ([A15](#a15))
+### Katalogumfang und Standards (A15)
 
-Priorisierte Suchfälle und vorhandene Quellen bestimmen den Katalogumfang. [OGC API – Records](https://docs.ogc.org/is/20-004r1/20-004r1.html) kann als Referenz für die Auffindbarkeit dienen. Eine Katalogsoftware oder Schnittstelle wird erst bei konkretem Bedarf ausgewählt.
+Automatisierbare technische Angaben (z. B. Schema, Importzeit) und redaktionelle Fachangaben (Zweck, Verantwortung, Nutzungsauflagen) unterscheiden. Feldführerschaft, Aktualisierung und tatsächlichen Suchbedarf noch festlegen. [OGC API – Records](https://docs.ogc.org/is/20-004r1/20-004r1.html) ist eine mögliche Schnittstellenreferenz, **keine beschlossene Katalogsoftware**. Bewertung: [SW-04](software/04_METADATENKATALOG.md).
 
-## Erläuterungen zu entscheidenden Festlegungen
+## Wesentliche Abgrenzungen und Begründungen
 
-### [A09](#a09) / [A26](#a26) – Datenhoheit und Rechte
-Eine fachlich führende Stelle je gemeinsamem Datenbestand. Lesende fachbereichsübergreifende Nutzung nach Freigabe, Schreibrechte nach Rolle und Zuständigkeit. Die Durchsetzung muss in DB, Diensten, Extract und mobilen Pfaden wirksam sein; das konkrete Berechtigungsdesign ist offen.
+### A02/A03 – Geodatenbasis und Projektbezug
 
-### [A12](#a12) – Berechtigter Geodatenauszug
+PostGIS ist als zentrale Basis gesetzt; **eine gemeinsame Datenbank mit Fachschemas** konkretisiert dies architektonisch. Nicht alle Geodaten oder Fachdateien müssen in PostGIS liegen. `project_id` ist nur dort zweckmäßig, wo ein realer Projektbezug besteht; keine pauschale Pflicht für jede Tabelle. [Architektur](03_ARCHITEKTUR.md#datenorganisation).
 
-**Fortschreibung vom 04.11.2026, Punkte 1–3:**
-- **Grundsatz (Option A, zuvor beschlossen):** Die **Exportfunktion** ist verpflichtend, kein eigenständiger Extract-Service. QGIS-/Viewer-/Dienst-Bordmittel zunächst prüfen; zusätzlicher Dienst nur bei nachgewiesenem Bedarf.
-- **1. Räumliches Verfahren (Option C, beschlossen):** **Vollständige Objektselektion** für vom Auswahlgebiet betroffene Objekte ist der **Standard**. **Geometrisches Clipping** (an der Auswahlgrenze gekappte Geometrien) ist eine **zusätzliche, ausdrücklich gewählte Option**. Originaldaten bleiben unverändert; bei Clipping Herkunft/Objekt-ID möglichst nachvollziehbar halten, abgeleitete Längen-/Flächenattribute bei Bedarf neu berechnen. Vollständige Objektselektion darf **keine räumliche oder sonstige Zugriffsbeschränkung aushebeln**: Wo das vollständige Objekt nicht freigegeben ist, darf es nicht vollständig ausgegeben werden.
-- **2. Formate/CRS (fachlich festgelegt):** **GeoPackage (GPKG), GeoJSON, DXF und CSV fest vorsehen**; **Shapefile als optionales Kompatibilitätsformat**; weitere nur bei konkretem Bedarf. Der Export bietet das **Quell-CRS** sowie – soweit von Format und Werkzeug unterstützt – eine wählbare **Transformation ins Ziel-CRS**. Neben ETRS89/UTM **EPSG:25832** und **EPSG:25833** wird **DHDN / Soldner Berlin, EPSG:3068**, ausdrücklich unterstützt ([A21](#a21)). Sonstige lokale/historische und vertikale Referenzen bedarfsabhängig prüfen.
-- **GeoJSON bewusst differenzieren:** Für den internen fachlichen Austausch **klassisches GeoJSON (GeoJSON 2008)** mit Quell- oder Ziel-CRS vorsehen; **abweichende CRS explizit kennzeichnen** und Empfängerkompatibilität prüfen (nicht jeder Client wertet ein legacy-`crs`-Mitglied aus). **RFC 7946** ist ein **separater optionaler Exportmodus** mit WGS 84/CRS84 und Koordinaten in Länge/Breite – **nicht** der Standard für VIC-GDI. Siehe [GDAL/OGR GeoJSON-Treiber](https://gdal.org/en/stable/drivers/vector/geojson.html) und [RFC 7946 § 4](https://www.rfc-editor.org/rfc/rfc7946#section-4).
-- **DXF und Soldner:** DXF ist fest vorgesehen; **CRS/Zeichnungseinheiten** sind für Empfänger eindeutig zu dokumentieren, da [GDAL/OGR-DXF](https://gdal.org/en/stable/drivers/vector/dxf.html) selbst keine verlässliche Georeferenzierung transportiert. Beim Übergang GIS→CAD die Abbildung von Koordinatenachsen, Layern, Geometrietypen und Attributen prüfen. Für **EPSG:3068 ↔ ETRS89** zulässige, räumlich passende Transformationsverfahren und benötigte Gitter prüfen; keine unbemerkte Genauigkeitsverschlechterung. Höhenbezüge separat behandeln.
-- **3. Rechte (Option D, ausdrücklich offen):** **Keine neue Berechtigungsgranularität beschlossen.** Fachbereiche, GIS-Team und IT erheben zuerst reale Nutzerrollen, Datenbestände und Zugriffspfade. Die bereits geltenden [A09](#a09)/[A26](#a26) bleiben bindend: **Nur berechtigte Daten exportieren**, Rechte in Datenbank, Webdiensten und ggf. Export-Backend wirksam durchsetzen; keine Freigabe allein durch UI-Ausblendung. Vollständige Objekte außerhalb der Auswahlfläche sind bei räumlicher Rechtebegrenzung besonders zu prüfen. Nicht abgesicherte Exportwege dürfen nicht produktiv freigeschaltet werden.
+### A08/A09/A26 – Datenhoheit und Rechte
 
-**Technisch offen (Status G):** Priorisierung konkreter Pilotszenarien, erreichbare Formatfunktionen je Software, Korrektheit von Clipping-/DXF-Konvertierungen, verfügbare CRS-Transformationen sowie Rollen- und Zugriffsmatrix mit Negativtests. Diese Punkte sind **keine erneute Grundsatzentscheidung** über Verfahren oder Formatauswahl. Siehe [SW-06](software/06_GEODATENAUSZUG.md) und [offene Aufgaben](08_OFFENE_PUNKTE.md).
+Eine fachlich führende Stelle je Datenbestand; berechtigter fachbereichsübergreifender Lesezugriff, Schreiben nach Verantwortung und Rolle. **Direkter Datenbankzugriff, Dienste, Export und mobile Nutzung** müssen wirksam abgesichert sein. Das konkrete Rollen-/Rechtemodell bleibt mit der IT zu klären.
 
-### [A24](#a24) – Deployment
-Die Varianten **A native VMs**, **B Datenbank nativ plus containerisierte GIS-Dienste**, **C umfassende Containerisierung** bleiben gleichberechtigte Untersuchungsoptionen. Vergleich nach Betrieb, IT-Know-how, Sicherheit, Wartbarkeit, Backup, Kosten und Zukunftsfähigkeit; kein voreiliger Technologieentscheid.
+### A12/A21 – Berechtigter Geodatenauszug
 
-### [A33](#a33) – Wissensaufbau
-Eigenständige Einarbeitung, gezielte Schulungen und umfangreiche Schulung/Zertifizierung können je Thema und Rolle wirtschaftlich sein. **Zeitliche, personelle und ggf. finanzielle Ressourcen sind verbindlich zu planen.**
+**Beschlossen:** Export als Funktion ohne Pflicht zu eigenem Dienst; vollständige Objektselektion für vom Auswahlgebiet betroffene Objekte als Standard, Clipping als bewusst wählbare Zusatzoption; GPKG, klassisches GeoJSON (GeoJSON 2008), DXF und CSV; Shapefile optional. Quell-/wählbares Ziel-CRS einschließlich EPSG:25832/25833/3068. RFC 7946 mit WGS84/CRS84 nur als optionaler GeoJSON-Sondermodus.
 
-### [A36](#a36) – Migration
-Gemeinsam bearbeitete geeignete Vektordaten bevorzugt PostGIS, QGIS-Projekte und geeignete Fachdateien auf Fileserver, Dokumente/Austauschpakete weiterhin SharePoint. Die führende GIS-Arbeitsdatenhaltung in synchronisierten OneDrive-/SharePoint-Ordnern der Baubetreuung soll kontrolliert abgelöst werden. Vorher Inventarisierung, Konfliktklärung, Pfad-/Funktionsprüfung und fachliche Abnahme.
+**Offen:** konkrete Rollen-/Rechtegranularität und technische Validierung. Vollständige Objekte dürfen **keine räumlichen Rechtebeschränkungen umgehen**; ungeschützte Exportwege nicht produktiv freischalten. Vorgaben zu GeoJSON-CRS, DXF-Einheiten, Transformationen, Herkunft und Geometrie-/Attributkorrektheit sowie Testfälle stehen führend im [SW-06-Prüfkatalog](software/06_GEODATENAUSZUG.md); [A26](#a26) gilt unabhängig davon.
 
-### [A37](#a37) / [A38](#a38) – Bewusst zurückgestellt
-[A37](#a37): Pflege, strukturelle Änderungen und Ablösung zentraler Geodatenbestände. [A38](#a38): technische Integritätsregeln in PostGIS und QGIS. **Keine stillschweigende Freigabe von Option B.**
+### A23/A24/A39 – Hosting, technische Bereitstellung und Zuständigkeit
 
-### [A39](#a39) – Organisationsmodell (offen)
+**A23:** On-prem/Proxmox ist die Ausgangspräferenz, keine ausschließliche Festlegung. **A24:** Natives VM-Deployment, Mischbetrieb oder umfassende Containerisierung bleiben bis zur IT-Entscheidung offen. **A39:** Umsetzung, Qualifizierung, Betrieb (D1–D3) und Hosting/Bezug (H1–H4) sind getrennte offene Entscheidungsdimensionen. H2 ist **eigene GDI auf gemieteter Infrastruktur**, H3 **betreute Mietinfrastruktur**, H4 **GDIaaS** (zuvor C3). Keine dieser Varianten gilt als ausgewählt. Vergleich und Zuständigkeiten: [Umsetzungs- und Betriebsmodelle](06_UMSETZUNGS_UND_BETRIEBSMODELLE.md).
 
-Die [Modelle für Umsetzung, Wissensaufbau, Betrieb und Hosting](06_UMSETZUNGS_UND_BETRIEBSMODELLE.md) sind **Prüfoptionen**, nicht die ausgewählte Lösung. **Fortschreibung vom 05.11.2026:** Die zuvor als **C3/GDIaaS** geführte Serviceoption wird systematisch als **H4** in die neue eigenständige Hosting-/Bezugsdimension **H1–H4** überführt. **Neu ausdrücklich berücksichtigt sind H2: selbst aufgebaute GDI auf gemieteten Cloud-VMs/Root-Servern sowie H3: betreute Mietinfrastruktur.** C2 bleibt das Paket aus externer Umsetzung und längerfristiger Betriebsleistung, unabhängig vom Hostingort. H3 garantiert nur vertraglich vereinbarte Managed-Services; die übrige Betriebszuständigkeit ist nach D1–D3 abzugrenzen. **[A23](#a23) behält die On-prem-Präferenz**, [A24](#a24) die offene technische Deploymententscheidung; die Variantenprüfung ändert keinen dieser Beschlüsse. Die Auswahl von Aufbau- und Betriebsorganisation ist eine spätere Entscheidung durch **Geschäftsführung und IT** in ihren Zuständigkeiten; GIS-Team und Fachbereiche liefern die fachliche Bewertung. Die bestehende Rollenverteilung nach [A31](#a31) und der Grundsatz des Wissensaufbaus nach [A33](#a33) bleiben unverändert.
+### A33/A34/A35 – Wissen und stufenweise Einführung
+
+Rollenbezogenen Wissensaufbau **mit Zeit, Personen und gegebenenfalls Budget** einplanen. Gemeinsame technische Basis und zwei gestaffelte Piloten; konkrete erste Anwendungsfälle und MVP-Umfang noch priorisieren. [Roadmap](07_ROADMAP.md), [Pilotkonkretisierung](05_PILOTKONKRETISIERUNG.md).
+
+### A36 – Selektive Migration
+
+Geeignete gemeinsam bearbeitete Vektordaten bevorzugt nach PostGIS; Fachdateien bei Bedarf auf Fileservern, Dokumente/Austauschpakete weiterhin in SharePoint. Problematische synchronisierte SharePoint-/OneDrive-GIS-Arbeitsbestände der Baubetreuung kontrolliert ablösen. Inventar, Konflikte, Pfade und fachliche Abnahme sind erforderlich; zentraler PostgreSQL-Projektspeicher bleibt gesondert zu prüfen.
+
+### A37/A38 – Zurückgestellt, aber keine Sicherheitsausnahme
+
+Lebenszyklusdetails und spezifische DB-/QGIS-Validierungsregeln (jeweils bisher Option B) sind **nicht beschlossen**. Das hebt weder grundlegende Datenintegrität noch Rechte, Nachvollziehbarkeit und Wiederherstellbarkeit auf. Ausgestaltung erst bei tatsächlichem Pilot-/Umsetzungsbedarf.
 
 ## Änderungsdisziplin
 
-Neue Entscheidungen fortlaufend nummerieren. Änderungen bestehender Beschlüsse mit Anlass, neuem Ergebnis und betroffenen Dokumenten nachvollziehbar dokumentieren. Keine rein technische Präferenz als formalen Beschluss ausgeben.
+Neue Kennungen fortlaufend vergeben; **nicht nach Priorität umnummerieren**. Änderung eines bestehenden Beschlusses mit Anlass, Ergebnis und Auswirkungen dokumentieren. Die fachlich führende Stelle für Umsetzungstests, Kandidatenvergleiche und Prüfschritte bleibt jeweils das zuständige Dokument; dieses Register ist **kein zweites technisches Lastenheft**. Keine Empfehlung als Beschluss ausgeben.
