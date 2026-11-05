@@ -106,7 +106,7 @@ Weiterführend · [Wikipedia](https://de.wikipedia.org/wiki/ETL-Prozess)
 
 ## GDI (Geodateninfrastruktur)
 
-Organisierte Daten, Dienste, Standards und Zuständigkeiten für Geodatennutzung. In VIC-GDI sollen die Fachbereiche gemeinsame Daten finden und verwenden können. Dazu gehören ein nachvollziehbarer Datenstand, geregelte Zugriffsrechte und eine zuständige Stelle für die Pflege.
+Eine Geodateninfrastruktur organisiert das geordnete Führen, Wiederfinden und Bereitstellen raumbezogener Informationen sowie die dazugehörigen Verantwortlichkeiten und Rechte. Sie ist **kein einzelnes Programm**. In VIC-GDI sollen Fachbereiche geeignete gemeinsame Daten verlässlich nutzen können. [Einsteigererklärung mit einfachem Schaubild](01_PROJEKTKONZEPT.md#was-ist-eine-geodateninfrastruktur--und-wie-funktioniert-sie).
 
 Weiterführend · [Wikipedia](https://de.wikipedia.org/wiki/Geodateninfrastruktur)
 
