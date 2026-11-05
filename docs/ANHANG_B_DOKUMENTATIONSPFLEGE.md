@@ -3,7 +3,7 @@
 ## Pflegegrundsätze
 
 1. **Keine Empfehlung als Beschluss ausgeben.** Status: Beschlossen; Grundsatz beschlossen – Detail offen; Zurückgestellt; Offen.
-2. Das [Entscheidungsregister](04_ENTSCHEIDUNGEN.md) hält Beschluss und Begründung fest. Die [Anforderungen](02_ANFORDERUNGEN.md) beschreiben das **Was**, die [Architektur](03_ARCHITEKTUR.md) das **Wie**. Zielgruppensichten verweisen auf diese führenden Stellen.
+2. Das [Festlegungs- und Entscheidungsregister](04_ENTSCHEIDUNGEN.md) führt **ID, Kategorie, Beschlussstatus und Kernaussage**; die übergeordneten [Projektgrundsätze](01_PROJEKTKONZEPT.md#projektgrundsätze) sind dort nur zusammengefasst. [Anforderungen](02_ANFORDERUNGEN.md) beschreiben das **Was**, [Architektur](03_ARCHITEKTUR.md) das **Wie**. Briefings verweisen auf diese Quellen.
 3. Bei jeder Änderung Auswirkungen auf andere Dokumente prüfen und betroffene Dateien im selben Änderungspaket aktualisieren.
 4. Nicht beschlossene Varianten bleiben sichtbar; technische Details mit IT abstimmen.
 5. Nur bei tatsächlichem Bedarf zusätzliche Dokumente, Verzeichnisse oder Prozesse einführen.
@@ -11,7 +11,7 @@
 7. Fachbegriffe, Abkürzungen und Produkte auf jeder Seite beim ersten Auftreten zum [Glossar](ANHANG_A_GLOSSAR.md) verlinken. Allgemein bekannte Begriffe wie Windows, Linux, Microsoft 365, SharePoint und OneDrive voraussetzen. Bei unklarer Aufnahme ins Glossar nachfragen. Für Produkte offizielle Projektseiten oder Herstellerdokumentation verwenden.
 8. Kleine, thematisch nachvollziehbare Commits. Den geschützten Hauptbranch `main` gemäß den aktuellen GitHub-Rulesets per Arbeitsbranch und Pull Request aktualisieren; keine Schutzregeln für Dokumentationsänderungen umgehen.
 9. Aktuelle Dokumente halten geltende Beschlüsse samt Begründungen, den bekannten Ist-Stand und offene Aufgaben fest. Abgelöste Zwischenstände und abgeschlossene Dokumentationsreviews sind im Git-Verlauf nachvollziehbar.
-10. Jede Nennung einer Architekturentscheidungs-ID direkt mit der Zeile im Entscheidungsregister verlinken. Bei Bereichen beide Endpunkte verlinken. Einen konkreten Prüfauftrag zusätzlich über seinen Abschnitt verlinken.
+10. Kennungen A01–A39 **dauerhaft stabil halten**, nicht nach Priorität neu nummerieren. Primäre Kategorie (Grundsatz, Architektur/Daten, Fachfunktion, Betrieb/Organisation), Beschlussstatus B/G/Z/O und Bearbeitungspriorität P0–P3 strikt trennen. Jede ID direkt mit dem Registereintrag verlinken; bei Bereichen die Endpunkte, bei Prüfaufträgen das zuständige Fach-/Aufgabendokument.
 
 ## Lesbarkeit und führende Informationsquellen
 
@@ -24,7 +24,7 @@
 
 ## Softwarebewertungen
 
-Für noch offene Produktauswahlen ist [`docs/software/`](software/README.md) der einheitliche Bewertungsbereich. Alle Kategorie-Dateien folgen der [gemeinsamen Methodik](software/BEWERTUNGSMETHODIK.md) und [Vorlage](software/VORLAGE.md): klare Anforderungen, Muss-Prüfung, begrenzte Kandidatenliste, standardisierte Vergleichsmatrix, belegte Vor-/Nachteile und eine als solche gekennzeichnete Empfehlung bzw. offener Prüfauftrag. **Unbekannte Aussagen bleiben `?`; fiktive Beispielwerte dürfen nie als echte Bewertung oder Entscheidung übernommen werden.**
+Für noch offene Produktauswahlen ist [`docs/software/`](software/README.md) der einheitliche Bewertungsbereich. Die Kategorie-Dateien nutzen die [gemeinsame Methodik](software/BEWERTUNGSMETHODIK.md) und [Vorlage](software/VORLAGE.md): klare Anforderungen, Muss-Prüfung, begrenzte Kandidatenliste und belegte Vor-/Nachteile. **Leere Wertungsmatrizen entfallen**, solange noch keine konkrete Auswahl ansteht; vor einer Empfehlung sind Vergleichsmatrix und Quellenstand vollständig zu prüfen. Fiktive Beispielwerte dürfen nie als reale Bewertung gelten.
 
 Kandidaten, deren Funktionsumfang bereits durch vorhandene Software abgedeckt werden könnte, und der Verzicht auf weitere Dienste sind mitzuberücksichtigen. Externe Bewertungen mit Datum, Version und Übertragbarkeit belegen. Neue Kategorien nur bei tatsächlich offenem Softwareauswahlbedarf anlegen. Verbindliche Beschlüsse gehören weiterhin ausschließlich ins [Entscheidungsregister](04_ENTSCHEIDUNGEN.md), nicht in einen zweiten Beschlusskatalog.
 
