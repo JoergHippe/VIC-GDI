@@ -43,9 +43,9 @@ Für die beiden Pilotbereiche liegt ein [Erhebungsleitfaden](05_PILOTKONKRETISIE
 
 ## Offene Organisationsentscheidung: Umsetzung und Betrieb
 
-- **Wer setzt die GDI um? ([A39](04_ENTSCHEIDUNGEN.md#a39))** Die Optionen **A1–A3** (intern mit Selbststudium/Schulung/Beratung), **B1** (gemeinsame Umsetzung) und **C1/C2** (externe Umsetzung mit Übergabe bzw. Betrieb) sind in [06_UMSETZUNGS_UND_BETRIEBSMODELLE.md](06_UMSETZUNGS_UND_BETRIEBSMODELLE.md) beschrieben und **nicht entschieden**.
+- **Wer setzt die GDI um? ([A39](04_ENTSCHEIDUNGEN.md#a39))** Die Optionen **A1–A3** (intern mit Selbststudium/Schulung/Beratung), **B1** (gemeinsame Umsetzung) und **C1/C2** (externe Umsetzung mit Übergabe bzw. Betrieb) sowie **C3/GDIaaS** (extern gehostete und betriebene GDI-Plattform) sind in [06_UMSETZUNGS_UND_BETRIEBSMODELLE.md](06_UMSETZUNGS_UND_BETRIEBSMODELLE.md) beschrieben und **nicht entschieden**.
 - **Wie werden Wissen und dauerhafter Betrieb sichergestellt?** Schulungs-/Wissenstransferbedarf und **D1–D3** (interner, unterstützter oder überwiegend externer Betrieb) getrennt vom Aufbau klären ([A31](04_ENTSCHEIDUNGEN.md#a31), [A33](04_ENTSCHEIDUNGEN.md#a33)).
-- **Nächster Schritt:** GIS/IT konkretisieren Kompetenzen, Personentage, Betriebsverantwortung, externe Leistungspakete und Gesamtkosten; **GF und IT wählen das Modell erst auf dieser Grundlage** in ihren jeweiligen Zuständigkeiten. A3/B1 mit D2 bleibt eine unverbindliche Prüfrichtung.
+- **Nächster Schritt:** GIS/IT konkretisieren Kompetenzen, Personentage, Betriebsverantwortung, externe Leistungspakete und Gesamtkosten; **GDIaaS gesondert hinsichtlich Funktionsabdeckung, IT-Integration, Datenschutz, Portabilität und Serviceentgelten prüfen**; **GF und IT wählen das Modell erst auf dieser Grundlage** in ihren jeweiligen Zuständigkeiten. A3/B1 mit D2 bleibt eine unverbindliche Prüfrichtung.
 
 ## Öffentliches GitHub-Repository: Freigabe- und Lizenzklärung
 

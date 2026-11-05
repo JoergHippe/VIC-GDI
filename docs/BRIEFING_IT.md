@@ -64,7 +64,7 @@ Für kritische Aufgaben federführende Person und Vertretung festlegen; kein eig
 
 ## Umsetzung, Qualifizierung und spätere Betreuung – IT-Prüfauftrag
 
-Die **Personen und Organisationen, die den Aufbau ausführen**, sind noch nicht festgelegt ([A39](04_ENTSCHEIDUNGEN.md#a39)). Der [gesonderte Variantenvergleich](06_UMSETZUNGS_UND_BETRIEBSMODELLE.md) hält **A1–A3** (eigener Aufbau), **B1** (Co-Implementation), **C1/C2** (externe Umsetzung, ggf. mit Betrieb) sowie die unabhängig zu wählenden Betriebsmodelle **D1** (intern), **D2** (intern mit externem Spezialistensupport) und **D3** (überwiegend extern) offen. Fachlich erscheint A3/B1 + D2 prüfenswert, **ohne IT-Bewertung oder GF-Entscheidung vorwegzunehmen**.
+Die **Personen und Organisationen, die den Aufbau ausführen**, sind noch nicht festgelegt ([A39](04_ENTSCHEIDUNGEN.md#a39)). Der [gesonderte Variantenvergleich](06_UMSETZUNGS_UND_BETRIEBSMODELLE.md) hält **A1–A3** (eigener Aufbau), **B1** (Co-Implementation), **C1/C2** (externe Umsetzung, ggf. mit Betrieb) und **C3/GDIaaS** (gehostete und extern betriebene GDI-Plattform) sowie die unabhängig zu wählenden Betriebsmodelle **D1** (intern), **D2** (intern mit externem Spezialistensupport) und **D3** (überwiegend extern) offen. Fachlich erscheint A3/B1 + D2 prüfenswert, **ohne IT-Bewertung oder GF-Entscheidung vorwegzunehmen**.
 
 **IT soll dazu insbesondere klären:**
 
@@ -72,11 +72,11 @@ Die **Personen und Organisationen, die den Aufbau ausführen**, sind noch nicht 
 - Welche Aufgaben **intern durchführbar**, durch Schulung/Beratung erreichbar oder sinnvoll **gemeinsam bzw. extern umzusetzen** sind. Selbststudium und Schulungen als echte Zeit-/Kostenposition behandeln ([A33](04_ENTSCHEIDUNGEN.md#a33)).
 - Wer bei jedem Modell den **dauerhaften Betrieb**, 2nd-Level-Support, Eskalation, Migration und Pflege der Konfigurationen übernimmt ([A31](04_ENTSCHEIDUNGEN.md#a31)); auch bei D3 bleiben interne Ansprechpartner und Kontrollfähigkeit nötig.
 - Bei Fremdleistungen **Dokumentation, Nutzungs-/Änderungsrechte, Übergabe, reale Restore-/Update-Probe, externe Zugriffsrechte sowie Exit-/Anbieterwechsel** und ggf. Serviceumfang vertraglich absichern.
-- Gemeinsam mit GIS 2–3 realistische Kombinationen vergleichen und **GF/IT zur Auswahl vorlegen**. Keine vorgezogene Beauftragung oder Festlegung eines Betriebsmodells.
+- Gemeinsam mit GIS 2–3 realistische Kombinationen vergleichen, **GDIaaS (C3) als Servicealternative separat auf Eignung prüfen** und **GF/IT zur Auswahl vorlegen**. Keine vorgezogene Beauftragung oder Festlegung eines Betriebsmodells.
 
 ## Technische Rahmenbedingungen
 
-- Bevorzugt On-prem auf vorhandener Proxmox-Infrastruktur, Linux/[Debian](ANHANG_A_GLOSSAR.md#debian) als naheliegende Option; keine endgültige VM-/Containerentscheidung ([A23](04_ENTSCHEIDUNGEN.md#a23), [A24](04_ENTSCHEIDUNGEN.md#a24)).
+- Bevorzugt On-prem auf vorhandener Proxmox-Infrastruktur, Linux/[Debian](ANHANG_A_GLOSSAR.md#debian) als naheliegende Option; keine endgültige VM-/Containerentscheidung ([A23](04_ENTSCHEIDUNGEN.md#a23), [A24](04_ENTSCHEIDUNGEN.md#a24)). **GDIaaS/C3 wird als ergänzende externe Hosting-/Servicealternative verglichen**, ohne die bisherige On-prem-Präferenz vorweg zu ändern.
 - Zentrale PostgreSQL/PostGIS-Datenhaltung mit fachlichen Schemas ([A02](04_ENTSCHEIDUNGEN.md#a02)).
 - QGIS Server bevorzugt, technische Validierung erforderlich ([A10](04_ENTSCHEIDUNGEN.md#a10)).
 - [Git](ANHANG_A_GLOSSAR.md#git) für Konfigurationen, Skripte, [QML](ANHANG_A_GLOSSAR.md#qml), Vorlagen und Migrationen, nicht für produktive Geodaten oder Backups ([A30](04_ENTSCHEIDUNGEN.md#a30)).
@@ -98,6 +98,15 @@ VM und [Docker](ANHANG_A_GLOSSAR.md#docker) liegen auf unterschiedlichen Ebenen.
 | C – Weitgehend containerisiert | Reproduzierbare Services, standardisierte Bereitstellung | Kompetenzbedarf, persistente Daten, Orchestrierung nicht automatisch nötig |
 
 **Bewertungskriterien:** IT-Kompetenz, Sicherheitsvorgaben, Wartbarkeit, Updatefähigkeit, Backup/Restore, Debugging, Ressourceneinsatz, langfristige Zukunftsfähigkeit. Keine Container-Orchestrierung ohne Bedarf. Mit IT die dauerhaft betreibbaren Varianten eingrenzen. Verbleibende Machbarkeitsfragen bei Bedarf nach gesonderter Freigabe mit einem kleinen [PoC](ANHANG_A_GLOSSAR.md#poc) klären.
+
+### GDI as a Service (C3) – ergänzender IT-Prüfrahmen
+
+- **Funktionsumfang:** Handelt es sich um eine vollwertige Daten- und Dienstplattform oder nur einen Webkarten-Viewer? QGIS-Desktop-Workflows, PostGIS-/Datenzugang, WMS/WFS und benötigte OGC-APIs, QGIS-Projekte, Fachschemata, ggf. QField-Anbindung und Geodatenexport überprüfen.
+- **Integration:** Unternehmensidentitäten (AD/Entra/SSO), Daten- und Exportrechte, Zugriffe registrierter Geräte über freigegebene Netze/VPN bzw. private Endpunkte, Anbindung lokaler CAD-/Fileserverdaten klären.
+- **Betrieb und Datenschutz:** Standort/Unterauftragnehmer, Verschlüsselung, Backups und getesteter Restore, Verfügbarkeit/Support, Servicegrenzen und datenschutzrechtliche Vereinbarungen prüfen.
+- **Portabilität und Kosten:** vollständige Daten-/Schema-/QGIS-Projekt-/Stil-/Metadaten-Exporte, Rückmigration, Löschung und nutzungsabhängige Entgelte prüfen. OGC-Schnittstellen ersetzen keine vollständige Exit-Strategie.
+
+**Abgrenzung:** Externe Administration von VIC-Servern ist eher C2/D3, eine vom Anbieter gehostete und betriebene GDI-Plattform C3/D3. Fachliche Datenhoheit und vertragliche Steuerung bleiben intern. Siehe [A39-Vergleich](06_UMSETZUNGS_UND_BETRIEBSMODELLE.md).
 
 ## Noch abzustimmen
 
