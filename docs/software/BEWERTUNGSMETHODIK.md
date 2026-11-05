@@ -7,11 +7,11 @@
 1. **Bedarf zuerst:** Aufgabe, Nutzer, Pilotbezug und betroffene Schnittstellen kurz beschreiben. „Keine zusätzliche Software“ bzw. vorhandene Werkzeuge als Kandidat zulassen, soweit sachlich möglich.
 2. **Muss-Kriterien separat:** Als `erfüllt`, `nicht erfüllt` oder `?` bewerten. Ein belegtes, nicht erfülltes Muss-Kriterium scheidet den Kandidaten aus; ein offenes Muss-Kriterium verhindert eine endgültige Empfehlung.
 3. **Kandidaten begrenzen:** Zwei bis vier ernsthaft geeignete Varianten. Bei stark verschiedenen Lösungswegen (z. B. Cloud vs. USB) die Architektur-/Kostenfolgen ausdrücklich nennen.
-4. **Einheitlicher Vergleich:** Die sechs übergreifenden Kriterien und zusätzlich **Produktalter, aktuelle stabile Version und Entwicklungsaktivität** verwenden; je Kategorie konkrete fachliche Prüfhinweise ergänzen, **ohne die Gewichte stillschweigend zu verändern**.
+4. **Einheitlicher Vergleich bei tatsächlicher Auswahl:** Die sechs übergreifenden Kriterien und **Produktalter, aktuelle stabile Version und Entwicklungsaktivität** erst bei bestätigtem Entscheidungsbedarf mit Belegen erheben. Leere Punktetabellen in bloßen Kandidatenübersichten vermeiden; Gewichte nicht stillschweigend verändern.
 5. **Belege und Nachteile:** Nach jedem Vergleich textlich die wichtigsten Stärken, Schwächen, Ausschlussgründe und offene Risiken nennen.
 6. **Ergebnisstatus:** `offen` / `vorläufig empfohlen` / `durch IT/Pilot zu prüfen` / `beschlossen`. **Nur das Entscheidungsregister** kann eine Beschlusslage belegen.
 
-## Produktstand und Entwicklungsaktivität (in jeder Vergleichsmatrix)
+## Produktstand und Entwicklungsaktivität (bei echter Bewertung)
 
 Diese drei **Sachangaben** stehen oberhalb der gewichteten Bewertungszeilen. Sie erhalten **keine eigenen Punkte oder zusätzlichen Gewichte**; ihre Bedeutung fließt begründet in **Reife und Zukunftsfähigkeit** (ggf. Betrieb/Sicherheit) ein.
 
@@ -53,6 +53,8 @@ Diese drei **Sachangaben** stehen oberhalb der gewichteten Bewertungszeilen. Sie
 **Lizenzprinzip:** Open Source und keine zusätzlichen Lizenzgebühren sind das Ziel des GDI-Kerns ([Lizenz- und Kostenüberblick](README.md#lizenz--und-kostenüberblick-gdi-kern)). Proprietäre oder gehostete Alternativen nur bei nachweislichem Zusatznutzen und mit transparenten Folgekosten betrachten. **„Kostenlos“ bedeutet nicht „ohne Betriebs-/Personalaufwand“.**
 
 ## Einheitliche Dokumentstruktur
+
+**Frühe Kandidatenübersichten** dürfen in Abschnitt 4 statt einer ausschließlich mit `?` gefüllten Matrix auf die [Vorlage](VORLAGE.md) verweisen. **Vor einer Produktempfehlung/Entscheidung** ist die vollständige Vergleichsmatrix mit Quellen, Muss-Prüfung und Bewertungsstichtag erforderlich. Die übrigen fachlichen Prüfhinweise bleiben dokumentiert.
 
 1. Zweck und Abgrenzung
 2. Spezifische Anforderungen / Muss-Prüfung
