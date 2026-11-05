@@ -10,7 +10,7 @@
 
 ## Was aktuell geklärt werden muss: A39
 
-**Nicht der grundsätzliche Nutzen einer GDI, sondern ihre konkrete Einführung ist jetzt zu entscheiden.** Für eine belastbare Pilot-/Umsetzungsfreigabe erarbeiten Geschäftsführung, IT und GIS-Team eine tragfähige Richtung für **Umsetzung, Wissensaufbau und Dauerbetrieb**. Interner Aufbau, gemeinsame Umsetzung und externe Leistungen sind weiterhin offene Varianten. Auch Zuständigkeiten, verfügbare Personentage, fachliche Anforderungen und Kosten müssen realistisch geklärt werden. Die Entscheidung über vorbereitende Ressourcen ist von einer späteren verbindlichen Pilotfreigabe zu unterscheiden.
+**Nicht der grundsätzliche Nutzen einer GDI, sondern ihre konkrete Einführung ist jetzt zu entscheiden.** Für eine belastbare Pilot-/Umsetzungsfreigabe erarbeiten Geschäftsführung, IT und GIS-Team eine tragfähige Richtung für **Umsetzung, Wissensaufbau und Dauerbetrieb**. Interner Aufbau, gemeinsame Umsetzung, externe Leistungen und **GDI as a Service (GDIaaS)** als gehostete Plattform sind weiterhin offene Varianten. Auch Zuständigkeiten, verfügbare Personentage, fachliche Anforderungen und Kosten müssen realistisch geklärt werden. Die Entscheidung über vorbereitende Ressourcen ist von einer späteren verbindlichen Pilotfreigabe zu unterscheiden.
 
 | Für wen? | Einstiegslektüre und nächste Frage |
 |---|---|
