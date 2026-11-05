@@ -4,11 +4,15 @@
 
 ## Worum es geht
 
-Ein [GIS](ANHANG_A_GLOSSAR.md#gis) bearbeitet und zeigt räumliche Daten, etwa den dokumentierten Verlauf einer Leitung. Die GDI organisiert, wo solche Daten geführt werden, wie berechtigte Personen sie finden und nutzen und wer sie pflegt. Die Baubetreuung kann beispielsweise einen Leitungsverlauf fachlich prüfen und übernehmen. Berechtigte Planende können anschließend denselben freigegebenen Stand in [QGIS](ANHANG_A_GLOSSAR.md#qgis) nutzen.
+Unsere Fachbereiche arbeiten mit Informationen, die einen Ort haben: beispielsweise Leitungsverläufe, Vermessungspunkte oder Planungsgebiete. Diese Informationen sollen nachvollziehbar geführt, gefunden und von berechtigten Mitarbeitenden für unterschiedliche Aufgaben genutzt werden können.
+
+**Eine Geodateninfrastruktur (GDI) ist dafür keine einzelne Anwendung.** Sie erfüllt drei Aufgaben: **Datenhaltung** (Informationen geordnet speichern und pflegen), **Katalog** (Bestände, Herkunft und Aktualität auffindbar beschreiben) und **Datenbereitstellung** (berechtigten Zugriff ermöglichen). Die Nutzer arbeiten darüber mit Fachprogrammen, Browserkarten oder mobilen Anwendungen. **Zuständigkeiten, Rechte, Qualität und Betrieb** gelten übergreifend. [Einfaches Funktionsmodell mit Schaubild](01_PROJEKTKONZEPT.md#was-ist-eine-geodateninfrastruktur--und-wie-funktioniert-sie).
+
+**Für die IT wichtig:** Diese Funktionen müssen nicht je einem eigenen Server oder Produkt entsprechen. GIS-Fachprogramme können Daten auch direkt aus einer Datenbank oder Dateien lesen. Der Katalog muss kein separates Softwareprodukt sein; ein Kartendienst wird nur benötigt, wenn entsprechende Webfunktionen vorgesehen sind. Die späteren Abschnitte beschreiben die technischen Anforderungen und offenen Betriebsfragen.
 
 **Gesprächsziel:** Das vom GIS-Team und beteiligten Fachkollegen angestoßene GDI-Vorhaben gemeinsam mit der IT in eine **sichere, wartbare und dauerhaft betreibbare Einführungsplanung** überführen. Dafür Ressourcen, technische Rahmenbedingungen, Verantwortlichkeiten und realistischen Aufwand klären. Einzelne technische Tests und Bereitstellungen werden gesondert geplant und freigegeben.
 
-Die [Architekturübersicht](03_ARCHITEKTUR.md#architekturübersicht-logisches-zielbild) zeigt, wie Desktop, Browser und Mobilgeräte auf Daten und Dienste zugreifen.
+Die [technische Architekturübersicht](03_ARCHITEKTUR.md#architekturübersicht-logisches-zielbild) zeigt anschließend die tatsächlichen Datenzugriffswege für Desktop, Browser und Mobilgeräte.
 
 ## Ziel des ersten IT-Termins: Einführungsweg und A39
 
