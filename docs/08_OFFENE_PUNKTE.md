@@ -1,8 +1,8 @@
 # Offene Punkte und zurückgestellte Entscheidungen
 
-**Status:** Interner Arbeitsentwurf. Hier stehen Aufgaben zur Klärung, **keine vorweggenommenen Beschlüsse**.
+**Status:** Interner Arbeitsentwurf. Hier stehen Aufgaben zur **Vorbereitung der fachlich angestrebten GDI-Einführung**, keine vorweggenommenen Freigaben oder Beschlüsse. Der grundsätzliche Nutzen einer gemeinsamen GDI ist nicht als offene Prüfaufgabe aufgeführt.
 
-Gesprächsunterlagen: [IT-Briefing](BRIEFING_IT.md) und [Geschäftsführungs-Briefing](BRIEFING_GESCHAEFTSFUEHRUNG.md). Die [Prüfaufträge](04_ENTSCHEIDUNGEN.md#erneute-prüfung-a04-a15-und-a36) zu [A04](04_ENTSCHEIDUNGEN.md#a04), [A15](04_ENTSCHEIDUNGEN.md#a15) und [A36](04_ENTSCHEIDUNGEN.md#a36) ergänzen die bisherigen Beschlüsse. Die nächsten Termine dienen der Planung und Abstimmung. Praktische Erprobungen folgen bei Bedarf nach gesonderter Freigabe.
+Gesprächsunterlagen: [IT-Briefing](BRIEFING_IT.md) und [Geschäftsführungs-Briefing](BRIEFING_GESCHAEFTSFUEHRUNG.md). Die [Prüfaufträge](04_ENTSCHEIDUNGEN.md#erneute-prüfung-a04-a15-und-a36) zu [A04](04_ENTSCHEIDUNGEN.md#a04), [A15](04_ENTSCHEIDUNGEN.md#a15) und [A36](04_ENTSCHEIDUNGEN.md#a36) ergänzen die bisherigen Beschlüsse. Die nächsten Termine dienen der Umsetzungsvorbereitung und Abstimmung. Gezielte technische Tests folgen bei Bedarf nach gesonderter Freigabe.
 
 ## Arbeitspriorität nach Entscheidungshorizont
 
