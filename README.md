@@ -10,7 +10,7 @@ Viele Informationen in unseren Projekten haben einen räumlichen Bezug: Kataster
 
 Die Initiative zum Aufbau einer GDI geht vom GIS-Team aus. Für die Facharbeit sind QGIS, für andere Mitarbeitende einfache browserbasierende Kartenviewer-/editoren und für geeignete Aufgaben mobile Abläufe vorgesehen. Die GDI ergänzt bestehende CAD-, BIM- und Fachsysteme, sie ersetzt diese nicht.
 
-**Konkrete Einstiegsmöglichkeiten:** Die Baubetreuung übernimmt mobil erfasste Leitungsverläufe oder wertet erfasste Mengen aus. Die Verkehrsanlagenplanung nutzt geeignete Daten projektübergreifend aus einem gemeinsamen Bestand und wertet diese aus. Vorgesehene Piloten erschließen solche Vorteile **schrittweise in der Praxis**. [Fachliche Begründung und Praxisbeispiele](docs/01_PROJEKTKONZEPT.md#warum-wir-vic-gdi-einführen-wollen).
+**Konkrete Einstiegsmöglichkeiten:** Die Baubetreuung übernimmt mobil erfasste Leitungsverläufe oder wertet erfasste Mengen aus. Die Verkehrsanlagenplanung nutzt geeignete Daten projektübergreifend aus einem gemeinsamen Bestand und wertet diese aus und integriert sie in ihre Pläne. Vorgesehene Piloten erschließen solche Vorteile **schrittweise in der Praxis**. [Fachliche Begründung und Praxisbeispiele](docs/01_PROJEKTKONZEPT.md#warum-wir-vic-gdi-einführen-wollen).
 
 ## Was aktuell geklärt werden muss
 
